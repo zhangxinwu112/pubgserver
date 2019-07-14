@@ -80,7 +80,8 @@
     <Compile Include="PubgSession.cs" />
     <Compile Include="PubgServer.cs" />
     <Compile Include="ServerInit.cs" />
-    <Compile Include="Tool\MySqlHelper.cs" />
+    <Compile Include="Tool\MySQLHelp.cs" />
+    <Compile Include="Tool\MySqlExecute.cs" />
     <Compile Include="Tool\Singleton\ISingleton.cs" />
     <Compile Include="Tool\Singleton\Singleton.cs" />
     <Compile Include="Tool\Singleton\SingletonCreator.cs" />

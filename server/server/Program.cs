@@ -14,7 +14,7 @@ namespace server
         static void Main(string[] args)
         {
             MySQLHelp.Instance.Connect();
-             ServerInit serverInit = new ServerInit();
+            ServerInit serverInit = new ServerInit();
             serverInit.Init();
 
         }

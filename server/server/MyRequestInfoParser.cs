@@ -11,15 +11,16 @@ namespace server
     {
         public StringRequestInfo ParseRequestInfo(string source)
         {
-            int pos = source.IndexOf('?');
+            int pos = source.IndexOf('!');
 
             if (pos <= 0)
                 return null;
 
-            string param = source.Substring(pos + 1);
+            string body = source.Substring(pos + 1);
 
-            return new StringRequestInfo(source.Substring(0, pos), param,
-                param.Split(new string[] { "#" }, StringSplitOptions.RemoveEmptyEntries));
+            string key = source.Substring(0, pos);
+            return new StringRequestInfo(source.Substring(0, pos), body,
+                body.Split(new string[] { "!" }, StringSplitOptions.RemoveEmptyEntries));
         }
     }
 }

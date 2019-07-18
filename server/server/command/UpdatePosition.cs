@@ -12,7 +12,7 @@ namespace server.command
     /// <summary>
     /// 更新位置
     /// </summary>
-   public class UpdatePostion:CommandBase<AppSession, StringRequestInfo>
+   public class UpdatePosition:CommandBase<AppSession, StringRequestInfo>
     {
         public override void ExecuteCommand(AppSession session, StringRequestInfo requestInfo)
         {

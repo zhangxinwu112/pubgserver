@@ -1,4 +1,5 @@
-﻿using SuperSocket.SocketBase;
+﻿using ServerFramework.Tool;
+using SuperSocket.SocketBase;
 using SuperSocket.SocketEngine;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,8 @@ namespace server
     {
         static void Main(string[] args)
         {
-            ServerInit serverInit = new ServerInit();
+            MySQLHelp.Instance.Connect();
+             ServerInit serverInit = new ServerInit();
             serverInit.Init();
 
         }

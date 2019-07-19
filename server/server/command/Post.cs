@@ -12,11 +12,11 @@ namespace server.command
     /// <summary>
     /// Post
     /// </summary>
-   public class Post : CommandBase<AppSession, StringRequestInfo>
+   public class Post : CommandBase<PubgSession, StringRequestInfo>
     {
-        public override void ExecuteCommand(AppSession session, StringRequestInfo requestInfo)
+        public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-            Console.WriteLine("key result: {0}!", requestInfo.Key);
+            Console.WriteLine("key result: {0},{1}", requestInfo.Key, requestInfo.Body);
             //session.Send(requestInfo.Parameters.Select(p => Convert.ToInt32(p)).Sum().ToString());
         }
     }

@@ -11,7 +11,7 @@ namespace server
     {
         public StringRequestInfo ParseRequestInfo(string source)
         {
-            int pos = source.IndexOf('!');
+            int pos = source.IndexOf(':');
 
             if (pos <= 0)
                 return null;
@@ -20,7 +20,7 @@ namespace server
 
             string key = source.Substring(0, pos);
             return new StringRequestInfo(source.Substring(0, pos), body,
-                body.Split(new string[] { "!" }, StringSplitOptions.RemoveEmptyEntries));
+                body.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries));
         }
     }
 }

@@ -12,11 +12,11 @@ namespace server.command
     /// <summary>
     /// 充值
     /// </summary>
-   public class AddScore : CommandBase<AppSession, StringRequestInfo>
+   public class AddScore : CommandBase<PubgSession, StringRequestInfo>
     {
-        public override void ExecuteCommand(AppSession session, StringRequestInfo requestInfo)
+        public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-            //session.Send(requestInfo.Parameters.Select(p => Convert.ToInt32(p)).Sum().ToString());
+           // session.Send(requestInfo.Parameters.Select(p => Convert.ToInt32(p)).Sum().ToString());
         }
     }
 }

@@ -74,7 +74,7 @@
   <ItemGroup>
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />
-    <Compile Include="command\UpdatePostion.cs" />
+    <Compile Include="command\UpdatePosition.cs" />
     <Compile Include="MyRequestInfoParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

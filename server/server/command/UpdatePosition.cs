@@ -12,9 +12,9 @@ namespace server.command
     /// <summary>
     /// 更新位置
     /// </summary>
-   public class UpdatePosition:CommandBase<AppSession, StringRequestInfo>
+   public class UpdatePosition:CommandBase<PubgSession, StringRequestInfo>
     {
-        public override void ExecuteCommand(AppSession session, StringRequestInfo requestInfo)
+        public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
             //session.Send(requestInfo.Parameters.Select(p => Convert.ToInt32(p)).Sum().ToString());
         }

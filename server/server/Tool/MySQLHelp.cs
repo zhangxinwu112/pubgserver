@@ -11,7 +11,7 @@ namespace ServerFramework.Tool
 
         public MySQLHelp()
         {
-            Connect();
+           // Connect();
         }
         /// <summary>
         /// 连接
@@ -22,6 +22,7 @@ namespace ServerFramework.Tool
             try
             {
                 SqlConn.Open();
+                Console.WriteLine("database is open:" );
                 return SqlConn;
             }
             catch(Exception e)

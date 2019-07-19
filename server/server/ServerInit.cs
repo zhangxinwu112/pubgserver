@@ -10,6 +10,7 @@ namespace server
 {
     public class ServerInit
     {
+        private IBootstrap bootstrap;
         public void Init()
         {
             //Console.WriteLine("Press any key to start the server!");
@@ -17,7 +18,7 @@ namespace server
             //Console.ReadKey();
             //Console.WriteLine();
 
-            var bootstrap = BootstrapFactory.CreateBootstrap();
+            bootstrap = BootstrapFactory.CreateBootstrap();
 
             if (!bootstrap.Initialize())
             {
@@ -53,5 +54,16 @@ namespace server
             Console.WriteLine("The server was stopped!");
             Console.ReadKey();
         }
+
+        ~ServerInit()
+        {
+            if(bootstrap!=null)
+            {
+                bootstrap.Stop();
+            }
+            
+        }
     }
+
+    
 }

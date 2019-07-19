@@ -12,10 +12,10 @@ namespace server
     {
         public void Init()
         {
-            Console.WriteLine("Press any key to start the server!");
+            //Console.WriteLine("Press any key to start the server!");
 
-            Console.ReadKey();
-            Console.WriteLine();
+            //Console.ReadKey();
+            //Console.WriteLine();
 
             var bootstrap = BootstrapFactory.CreateBootstrap();
 

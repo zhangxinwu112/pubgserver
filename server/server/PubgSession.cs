@@ -13,6 +13,8 @@ namespace server
         protected override void OnSessionStarted()
         {
             this.Send("ECHO:Welcome to SuperSocket pubg Server"+Environment.NewLine);
+
+           //  this.Send(testStr());
         }
 
         protected override void HandleUnknownRequest(StringRequestInfo requestInfo)
@@ -30,5 +32,18 @@ namespace server
             //add you logics which will be executed after the session is closed
             base.OnSessionClosed(reason);
         }
+
+        //private string testStr()
+        //{
+        //    string result = "ECHO:";
+
+        //    for(int i=0;i<10000;i++)
+        //    {
+        //        result += "a";
+        //    }
+
+        //    result += "over" + Environment.NewLine;
+        //    return result;
+        //}
     }
 }

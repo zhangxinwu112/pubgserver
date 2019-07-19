@@ -16,8 +16,9 @@ namespace server.command
     {
         public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-            Console.WriteLine("key result: {0},{1}", requestInfo.Key, requestInfo.Body);
-            //session.Send(requestInfo.Parameters.Select(p => Convert.ToInt32(p)).Sum().ToString());
+            List<string> parametors = requestInfo.Parameters.ToList<string>();
+            parametors.RemoveAt(0);
+           
         }
     }
 }

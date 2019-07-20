@@ -1,4 +1,6 @@
-﻿using ServerFramework.Tool;
+﻿using mysql;
+using server.Test;
+using ServerFramework.Tool;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketEngine;
 using System;
@@ -14,6 +16,7 @@ namespace server
         static void Main(string[] args)
         {
             MySQLHelp.Instance.Connect();
+            //TestSql.TestLogin("admin", "1234563");
             ServerInit serverInit = new ServerInit();
             serverInit.Init();
 

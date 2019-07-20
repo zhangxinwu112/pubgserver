@@ -11,15 +11,12 @@ using System.Threading.Tasks;
 
 namespace server
 {
-    public  class Login
+    public  class Code
     {
-        public void CheckLogin(PubgSession session, string body, string username, string password)
+        public void CheckCode(PubgSession session,string body,string name,string deviceUniqueIdentifier,string type)
         {
-
-            string sql = "select * from user where username = @username and password = @password";
-            int result = MySqlExecuteTools.GetCountResult(sql, 
-                new MySqlParameter[] { new MySqlParameter("@username", username), new MySqlParameter("@password", password) });
-          
+            string sql = "select * from code where name = @name";
+            int result = MySqlExecuteTools.GetCountResult(sql,new MySqlParameter[] { new MySqlParameter("@name", name)});
             DataResult dataResult = new DataResult();
             if(result==0)
             {

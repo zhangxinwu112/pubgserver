@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="fastJSON">
+      <HintPath>..\packages\fastJSON.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
@@ -75,13 +78,19 @@
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />
     <Compile Include="command\UpdatePosition.cs" />
+    <Compile Include="DAO\Code.cs" />
     <Compile Include="DAO\Login.cs" />
+    <Compile Include="Model\DataResult.cs" />
     <Compile Include="MyRequestInfoParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PubgSession.cs" />
     <Compile Include="PubgServer.cs" />
     <Compile Include="ServerInit.cs" />
+    <Compile Include="Test\TestSql.cs" />
+    <Compile Include="Tool\CollectionsConvert.cs" />
+    <Compile Include="Tool\Constant.cs" />
+    <Compile Include="Tool\MySqlExecuteTools.cs" />
     <Compile Include="Tool\MySQLHelp.cs" />
     <Compile Include="Tool\MySqlExecute.cs" />
     <Compile Include="Tool\Singleton\ISingleton.cs" />

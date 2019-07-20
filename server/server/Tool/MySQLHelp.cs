@@ -3,9 +3,9 @@ using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using ServerFramework.Tool.Singleton;
 
-namespace ServerFramework.Tool
+namespace mysql
 {
-    class MySQLHelp : Singleton<MySQLHelp>
+    public class MySQLHelp : Singleton<MySQLHelp>
     {
         public const string ConnectionString = "datasource=127.0.0.1;port=3306;database=cs;user=root;pwd=root";
 
@@ -13,22 +13,32 @@ namespace ServerFramework.Tool
         {
            // Connect();
         }
+
+        private MySqlConnection SqlConn = null;
+        public MySqlConnection GetSqlConn
+        {
+            get
+            {
+                return SqlConn;
+
+            }
+        }
         /// <summary>
         /// 连接
         /// </summary>
-        public MySqlConnection Connect()
+        public void Connect()
         {
             MySqlConnection SqlConn = new MySqlConnection(ConnectionString);
             try
             {
                 SqlConn.Open();
                 Console.WriteLine("database is open:" );
-                return SqlConn;
+                this.SqlConn = SqlConn;
             }
             catch(Exception e)
             {
                 Console.WriteLine("[MySQLHelper]Connect:" + e.Message);
-                return null;
+                SqlConn = null;
             }
         }
         //关闭数据库连接

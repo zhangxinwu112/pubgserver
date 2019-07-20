@@ -1,4 +1,5 @@
-﻿using SuperSocket.SocketBase.Protocol;
+﻿using server.Tool;
+using SuperSocket.SocketBase.Protocol;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace server
     {
         public StringRequestInfo ParseRequestInfo(string source)
         {
-            int pos = source.IndexOf(':');
+            int pos = source.IndexOf(Constant.START_SPLIT.ToCharArray()[0]);
 
             if (pos <= 0)
                 return null;
@@ -20,7 +21,7 @@ namespace server
 
             string key = source.Substring(0, pos);
             return new StringRequestInfo(source.Substring(0, pos), body,
-                body.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries));
+                body.Split(new string[] { Constant.END_SPLIT }, StringSplitOptions.RemoveEmptyEntries));
         }
     }
 }

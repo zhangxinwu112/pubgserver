@@ -1,4 +1,5 @@
-﻿using SuperSocket.SocketBase;
+﻿using server.Tool;
+using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Command;
 using SuperSocket.SocketBase.Protocol;
 using System;
@@ -17,15 +18,13 @@ namespace server.command
     {
         public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-            //List<string> parametors = requestInfo.Parameters.ToList<string>();
-            //parametors.RemoveAt(0);
-
+           
             string methodkey = requestInfo.Parameters.ToList<string>()[0];
-            string[] strs = methodkey.Split('@');
+            string[] strs = methodkey.Split(Constant.METHOD_SPLIT.ToCharArray()[0]);
             string className = strs[0];
             string method = strs[1];
-            Assembly asm = Assembly.GetExecutingAssembly();//获取当前代码所在程序集
-            Object obj = asm.CreateInstance(className, true);//创建一个对象TestClass对
+            Assembly asm = Assembly.GetExecutingAssembly();
+            Object obj = asm.CreateInstance(className, true);
 
             MethodInfo mi = obj.GetType().GetMethod(method);
             if (mi != null)

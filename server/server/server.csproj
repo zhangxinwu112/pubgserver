@@ -80,6 +80,7 @@
     <Compile Include="command\UpdatePosition.cs" />
     <Compile Include="DAO\Code.cs" />
     <Compile Include="DAO\Login.cs" />
+    <Compile Include="DAO\Register.cs" />
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
     <Compile Include="MyRequestInfoParser.cs" />

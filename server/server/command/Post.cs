@@ -26,6 +26,11 @@ namespace server.command
             Assembly asm = Assembly.GetExecutingAssembly();
             Object obj = asm.CreateInstance(className, true);
 
+            if(obj==null)
+            {
+                Console.WriteLine(className +"未找到对象");
+                return;
+            }
             MethodInfo mi = obj.GetType().GetMethod(method);
             if (mi != null)
             {

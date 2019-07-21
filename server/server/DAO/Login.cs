@@ -16,7 +16,7 @@ namespace server
         public void CheckLogin(PubgSession session, string body, string username, string password)
         {
 
-            string sql = "select * from user where username = @username and password = @password";
+            string sql = "select * from user where telephone = @username and password = @password";
             int result = MySqlExecuteTools.GetCountResult(sql, 
                 new MySqlParameter[] { new MySqlParameter("@username", username), new MySqlParameter("@password", password) });
           

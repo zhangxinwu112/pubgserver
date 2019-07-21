@@ -32,7 +32,7 @@ namespace mysql
             try
             {
                 SqlConn.Open();
-                Console.WriteLine("database is open:" );
+                Console.WriteLine("数据库已成功打开" );
                 this.SqlConn = SqlConn;
             }
             catch(Exception e)

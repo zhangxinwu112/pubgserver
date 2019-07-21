@@ -38,4 +38,3 @@ E:\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CoreCompileInputs.
 E:\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 E:\cs\server\pubgserver\server\server\obj\Debug\server.exe
 E:\cs\server\pubgserver\server\server\obj\Debug\server.pdb
-E:\cs\server\pubgserver\server\server\bin\Debug\fastJSON.dll

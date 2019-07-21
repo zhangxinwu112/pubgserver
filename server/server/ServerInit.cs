@@ -22,23 +22,23 @@ namespace server
 
             if (!bootstrap.Initialize())
             {
-                Console.WriteLine("Failed to initialize!");
+                Console.WriteLine("服务器未初始化");
                 Console.ReadKey();
                 return;
             }
 
             var result = bootstrap.Start();
 
-            Console.WriteLine("Start result: {0}!", result);
+            Console.WriteLine("服务器启动结果{0}", result);
 
             if (result == StartResult.Failed)
             {
-                Console.WriteLine("Failed to start!");
+                Console.WriteLine("失败!");
                 Console.ReadKey();
                 return;
             }
 
-            Console.WriteLine("Press key 'q' to stop it!");
+            Console.WriteLine("按Q键退出服务器");
 
             while (Console.ReadKey().KeyChar != 'q')
             {
@@ -51,7 +51,7 @@ namespace server
             //Stop the appServer
             bootstrap.Stop();
 
-            Console.WriteLine("The server was stopped!");
+            Console.WriteLine("服务器正常停止!");
             Console.ReadKey();
         }
 

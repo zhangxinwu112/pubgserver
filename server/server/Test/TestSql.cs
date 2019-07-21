@@ -1,5 +1,7 @@
 ﻿using mysql;
 using MySql.Data.MySqlClient;
+using server.Model;
+using server.Tool;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,23 +15,25 @@ namespace server.Test
 
         public static void TestLogin(string username, string password)
         {
-       
-            MySqlCommand cmd = new MySqlCommand("select * from user where username = @username and password = @password", MySQLHelp.Instance.GetSqlConn);
-            cmd.Parameters.AddWithValue("username", username);
-            cmd.Parameters.AddWithValue("password", password);
-            MySqlDataReader  reader = cmd.ExecuteReader();
-            int result = 0;
-            while (reader.Read())
-            {
-                if (reader.HasRows)
-                {
-                    result = result + 1;
-                }
-            }
-          Console.WriteLine("count={0}", result);
 
-            Console.ReadKey();
-            Console.WriteLine();
+            //  MySqlCommand cmd = new MySqlCommand("select * from user where username = @username and password = @password", MySQLHelp.Instance.GetSqlConn);
+            //  cmd.Parameters.AddWithValue("username", username);
+            //  cmd.Parameters.AddWithValue("password", password);
+            //  MySqlDataReader  reader = cmd.ExecuteReader();
+            //  int result = 0;
+            //  while (reader.Read())
+            //  {
+            //      if (reader.HasRows)
+            //      {
+            //          result = result + 1;
+            //      }
+            //  }
+            //Console.WriteLine("count={0}", result);
+
+            //  Console.ReadKey();
+            //  Console.WriteLine();g 
+            string sql = "select * from code";
+            MySqlExecuteTools.GetObjectResult<CodeModel>(sql, null);
         }
     }
 }

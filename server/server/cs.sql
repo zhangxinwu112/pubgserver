@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : local
+Source Server         : localhost
 Source Server Version : 50528
 Source Host           : localhost:3306
 Source Database       : cs
@@ -10,13 +10,13 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2019-07-21 18:30:24
+Date: 2019-07-21 23:03:37
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `code`
+-- Table structure for code
 -- ----------------------------
 DROP TABLE IF EXISTS `code`;
 CREATE TABLE `code` (
@@ -36,7 +36,7 @@ INSERT INTO `code` VALUES ('2', '00002', '1', '0', '1563960333');
 INSERT INTO `code` VALUES ('3', '00003', '0', '3', '0');
 
 -- ----------------------------
--- Table structure for `machine`
+-- Table structure for machine
 -- ----------------------------
 DROP TABLE IF EXISTS `machine`;
 CREATE TABLE `machine` (
@@ -56,7 +56,7 @@ INSERT INTO `machine` VALUES ('2', '3', '071b41fa83732de2a508ab0a6d933b17fa62758
 INSERT INTO `machine` VALUES ('5', '3', '071b41fa83732de2a508ab0a6d933b17fa627585', 'Desktop', 'Windows 7 Service Pack 1 (6.1.7601) 64bit');
 
 -- ----------------------------
--- Table structure for `user`
+-- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -70,9 +70,9 @@ CREATE TABLE `user` (
   `note` varchar(1000) DEFAULT NULL,
   `createdate` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'admin', '123456', null, null, null, null, null, null);
+INSERT INTO `user` VALUES ('2', null, '123456', '???', '17391767972', null, null, null, null);

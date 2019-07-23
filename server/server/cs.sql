@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2019-07-21 23:03:37
+Date: 2019-07-23 23:12:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -61,18 +61,14 @@ INSERT INTO `machine` VALUES ('5', '3', '071b41fa83732de2a508ab0a6d933b17fa62758
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `nick` varchar(255) DEFAULT NULL,
-  `telephone` varchar(255) DEFAULT NULL,
-  `sex` smallint(2) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `note` varchar(1000) DEFAULT NULL,
-  `createdate` date DEFAULT NULL,
+  `telephone` varchar(255) DEFAULT '',
+  `password` varchar(255) DEFAULT '',
+  `nick` varchar(255) DEFAULT '',
+  `image` varchar(255) DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('2', null, '123456', '???', '17391767972', null, null, null, null);
+INSERT INTO `user` VALUES ('6', '18392120350', '123456', '你好', 'image1');

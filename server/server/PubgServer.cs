@@ -12,7 +12,7 @@ namespace server
     public class PubgServer: AppServer<PubgSession>
     {
         public PubgServer()
-        : base(new CommandLineReceiveFilterFactory(Encoding.Default, new MyRequestInfoParser()))
+        : base(new CommandLineReceiveFilterFactory(Encoding.UTF8, new MyRequestInfoParser()))
         {
 
         }

@@ -7,7 +7,7 @@ namespace mysql
 {
     public class MySQLHelp : Singleton<MySQLHelp>
     {
-        public const string ConnectionString = "datasource=127.0.0.1;port=3306;database=cs;user=root;pwd=root";
+        public const string ConnectionString = "datasource=127.0.0.1;port=3306;Charset=gb2312;database=cs;user=root;pwd=root";
 
         public MySQLHelp()
         {

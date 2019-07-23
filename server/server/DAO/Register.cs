@@ -26,8 +26,8 @@ namespace  server
             else
             {
                 dataResult.result = 0;
-                sql = "insert into user(password,nick ,telephone) " +
-                    "values('" + password + "','" + nick + "','" + telephone + "')";
+                sql = "insert into user(password,nick ,telephone,image) " +
+                    "values('" + password + "','" + nick + "','" + telephone + "','" + icon + "')";
                 MySqlExecuteTools.AddOrUpdate(sql);
             }
 

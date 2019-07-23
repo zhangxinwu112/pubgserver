@@ -83,6 +83,7 @@
     <Compile Include="DAO\Register.cs" />
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
+    <Compile Include="Model\UserName.cs" />
     <Compile Include="MyRequestInfoParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

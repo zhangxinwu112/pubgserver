@@ -17,11 +17,11 @@ namespace server
         {
 
             string sql = "select * from user where telephone = @username and password = @password";
-            int result = MySqlExecuteTools.GetCountResult(sql, 
+            List<UserName> result = MySqlExecuteTools.GetObjectResult<UserName> (sql, 
                 new MySqlParameter[] { new MySqlParameter("@username", username), new MySqlParameter("@password", password) });
           
             DataResult dataResult = new DataResult();
-            if(result==0)
+            if(result.Count==0)
             {
                 dataResult.result = 1;
                 dataResult.resean = "账号或密码有误，请重试!";
@@ -29,7 +29,7 @@ namespace server
             else
             {
                 dataResult.result = 0;
-                dataResult.data = 
+                dataResult.data = result[0];
             }
 
             string resultJson = Utils.CollectionsConvert.ToJSON(dataResult);

@@ -29,6 +29,7 @@ namespace server
             else
             {
                 dataResult.result = 0;
+                dataResult.data = 
             }
 
             string resultJson = Utils.CollectionsConvert.ToJSON(dataResult);

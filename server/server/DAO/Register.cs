@@ -29,21 +29,11 @@ namespace  server
                 sql = "insert into user(password,nick ,telephone) " +
                     "values('" + password + "','" + nick + "','" + telephone + "')";
                 MySqlExecuteTools.AddOrUpdate(sql);
-
-
             }
 
-
-
-            //string sql = "select * from user where username = @username and password = @password";
-            //int result = MySqlExecuteTools.GetCountResult(sql,
-            //    new MySqlParameter[] { new MySqlParameter("@username", username), new MySqlParameter("@password", password) });
-
-
-
-            //string resultJson = Utils.CollectionsConvert.ToJSON(dataResult);
-            //string sendata = "Post" + Constant.START_SPLIT + body + Constant.END_SPLIT + resultJson + Environment.NewLine;
-            //session.Send(sendata);
+            string resultJson = Utils.CollectionsConvert.ToJSON(dataResult);
+            string sendata = "Post" + Constant.START_SPLIT + body + Constant.END_SPLIT + resultJson + "\r\n";
+            session.Send(sendata);
         }
     }
 }

@@ -26,7 +26,6 @@ namespace server
                 Console.ReadKey();
                 return;
             }
-
             var result = bootstrap.Start();
 
             Console.WriteLine("服务器启动结果{0}", result);

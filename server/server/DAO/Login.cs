@@ -32,7 +32,7 @@ namespace server
             }
 
             string resultJson = Utils.CollectionsConvert.ToJSON(dataResult);
-            string sendata = "Post"+ Constant.START_SPLIT + body + Constant.END_SPLIT + resultJson + Environment.NewLine;
+            string sendata = "Post"+ Constant.START_SPLIT + body + Constant.END_SPLIT + resultJson + "\r\n";
             session.Send(sendata);
         }
     }

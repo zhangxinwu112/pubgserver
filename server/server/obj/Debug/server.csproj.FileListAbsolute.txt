@@ -12,7 +12,6 @@ D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\SuperSocket.Common.xml
 D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\SuperSocket.Facility.xml
 D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.xml
 D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\SuperSocket.SocketEngine.xml
-D:\svn\pubg\sever\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache
 D:\svn\pubg\sever\pubgserver\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
 D:\svn\pubg\sever\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 D:\svn\pubg\sever\pubgserver\server\server\obj\Debug\server.exe
@@ -39,3 +38,6 @@ E:\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 E:\cs\server\pubgserver\server\server\obj\Debug\server.exe
 E:\cs\server\pubgserver\server\server\obj\Debug\server.pdb
 E:\cs\server\pubgserver\server\server\bin\Debug\fastJSON.dll
+D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\MySql.Data.xml
+D:\svn\pubg\sever\pubgserver\server\server\bin\Debug\MySql.Data.dll
+D:\svn\pubg\sever\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache

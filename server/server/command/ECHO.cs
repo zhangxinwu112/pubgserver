@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace server.command
 {
     /// <summary>
-    /// 充值
+    /// 显示
     /// </summary>
    public class ECHO : CommandBase<AppSession, StringRequestInfo>
     {

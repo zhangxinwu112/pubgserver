@@ -12,14 +12,14 @@ namespace server
     {
         protected override void OnSessionStarted()
         {
-            this.Send("ECHO:Welcome to SuperSocket pubg Server"+Environment.NewLine);
+            this.Send("ECHO:Welcome to SuperSocket pubg Server"+ " \r\n");
 
            //  this.Send(testStr());
         }
 
         protected override void HandleUnknownRequest(StringRequestInfo requestInfo)
         {
-            this.Send("ECHO:UnknowRequest" + Environment.NewLine);
+            this.Send("ECHO:UnknowRequest" + " \r\n");
         }
 
         protected override void HandleException(Exception e)

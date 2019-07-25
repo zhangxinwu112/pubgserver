@@ -80,9 +80,9 @@ namespace server
             //时间戳
             else
             {
-                TimeSpan ts = DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0, 0);
-                long TotalSeconds = Convert.ToInt64(ts.TotalSeconds);
-                if(TotalSeconds> codeModel.expiretime)
+              
+                long TotalSeconds = TimeUtils.GetCurrentTimestamp();
+                if (TotalSeconds> codeModel.expiretime)
                 {
                     dataResult.result = 1;
                     dataResult.resean = "激活码过期，请重试。";

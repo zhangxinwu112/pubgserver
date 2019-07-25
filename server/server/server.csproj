@@ -77,12 +77,15 @@
   <ItemGroup>
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />
+    <Compile Include="command\HeartBeat.cs" />
     <Compile Include="command\UpdatePosition.cs" />
     <Compile Include="DAO\Code.cs" />
     <Compile Include="DAO\Login.cs" />
     <Compile Include="DAO\Register.cs" />
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
+    <Compile Include="Model\GPSItem.cs" />
+    <Compile Include="Model\SessionItem.cs" />
     <Compile Include="Model\UserName.cs" />
     <Compile Include="MyRequestInfoParser.cs" />
     <Compile Include="Program.cs" />
@@ -96,11 +99,13 @@
     <Compile Include="Tool\MySqlExecuteTools.cs" />
     <Compile Include="Tool\MySQLHelp.cs" />
     <Compile Include="Tool\MySqlExecute.cs" />
+    <Compile Include="Tool\SeverTimer.cs" />
     <Compile Include="Tool\Singleton\ISingleton.cs" />
     <Compile Include="Tool\Singleton\Singleton.cs" />
     <Compile Include="Tool\Singleton\SingletonCreator.cs" />
     <Compile Include="Tool\Singleton\SingletonProperty.cs" />
     <Compile Include="Tool\Sys.cs" />
+    <Compile Include="Tool\TimeUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

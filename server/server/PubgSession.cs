@@ -1,6 +1,9 @@
-﻿using SuperSocket.SocketBase;
+﻿using server.Model;
+using server.Tool;
+using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Protocol;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +13,17 @@ namespace server
 {
    public   class PubgSession:AppSession<PubgSession>
     {
+        public static ConcurrentDictionary<PubgSession, SessionItem> mOnLineConnections = new ConcurrentDictionary<PubgSession, SessionItem>();
+
+
         protected override void OnSessionStarted()
         {
             this.Send("ECHO:Welcome to SuperSocket pubg Server"+ " \r\n");
+            SessionItem item = new SessionItem();
+            mOnLineConnections.TryAdd(this, item);
 
-           //  this.Send(testStr());
+            Console.WriteLine("新的客户端连接。"+RemoteEndPoint);
+            Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
         }
 
         protected override void HandleUnknownRequest(StringRequestInfo requestInfo)
@@ -31,19 +40,15 @@ namespace server
         {
             //add you logics which will be executed after the session is closed
             base.OnSessionClosed(reason);
+            SessionItem sessionItem = null;
+            mOnLineConnections.TryRemove(this, out sessionItem);
+            string content = "客户端断开。";
+            if (sessionItem!=null && sessionItem.gpsItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
+            {
+                content += sessionItem.gpsItem.userName;
+            }
+            Console.WriteLine("客户端断开了。" + content + ":"+ RemoteEndPoint);
+            Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
         }
-
-        //private string testStr()
-        //{
-        //    string result = "ECHO:";
-
-        //    for(int i=0;i<10000;i++)
-        //    {
-        //        result += "a";
-        //    }
-
-        //    result += "over" + Environment.NewLine;
-        //    return result;
-        //}
     }
 }

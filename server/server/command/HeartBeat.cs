@@ -1,4 +1,5 @@
 ﻿using server.Model;
+using server.Tool;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Command;
 using SuperSocket.SocketBase.Protocol;
@@ -11,19 +12,17 @@ using System.Threading.Tasks;
 namespace server.command
 {
     /// <summary>
-    /// 更新位置
+    /// 心跳
     /// </summary>
-   public class UpdatePosition:CommandBase<PubgSession, StringRequestInfo>
+   public class HeartBeat : CommandBase<PubgSession, StringRequestInfo>
     {
         public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-          
             SessionItem sessionItem = null;
             PubgSession.mOnLineConnections.TryGetValue(session, out sessionItem);
             if(sessionItem!=null)
             {
-                GPSItem gpsItem = Utils.CollectionsConvert.ToObject<GPSItem>( requestInfo.Body.ToString());
-                sessionItem.gpsItem = gpsItem;
+                sessionItem.timestamp = TimeUtils.GetCurrentTimestamp();
             }
 
 

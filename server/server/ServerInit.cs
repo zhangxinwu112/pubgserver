@@ -1,4 +1,5 @@
-﻿using SuperSocket.SocketBase;
+﻿using server.Tool;
+using SuperSocket.SocketBase;
 using SuperSocket.SocketEngine;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,8 @@ namespace server
                 Console.ReadKey();
                 return;
             }
-
+            SeverTimer serverTimer = new SeverTimer();
+            serverTimer.Init();
             Console.WriteLine("按Q键退出服务器");
 
             while (Console.ReadKey().KeyChar != 'q')

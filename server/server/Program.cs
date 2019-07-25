@@ -1,5 +1,6 @@
 ﻿using mysql;
 using server.Test;
+using server.Tool;
 using ServerFramework.Tool;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketEngine;
@@ -19,6 +20,9 @@ namespace server
             //TestSql.TestLogin("admin", "1234563");
             ServerInit serverInit = new ServerInit();
             serverInit.Init();
+
+
+
 
         }
     }

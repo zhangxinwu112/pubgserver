@@ -64,7 +64,7 @@ color:'red'
     
         var map;
         var markArray = new Array(); 
-         CreateMarker(_data);
+         //CreateMarker(_data);
         function CreateMarker(data)
         {
            // console.log(data);
@@ -88,6 +88,7 @@ color:'red'
             map = new AMap.Map('container', {
             resizeEnable: true,
             center: [data[0].lon, data[0].lat],
+            showLabel:true,
             mapStyle: "amap://styles/whitesmoke",
             zoom: 13
             });

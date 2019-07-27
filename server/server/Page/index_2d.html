@@ -14,13 +14,28 @@
 <body>
     <div id="container"></div>
 
-    <input id="setFitView" type="button" class="btn" style="width: 80px;position: absolute;bottom:0;right: 0;" value="地图自适应"  />
+    <input id="setFitView" type="button" class="btn" style="width: 80px;position: absolute;bottom:0;left: 0;" value="地图自适应"  />
     <div class="info">
         <div id="centerCoord"></div>
         <div id="tips"></div>
     </div>
+    <div class="input-card" style="width:15rem;width: 170px;">
+        <h4>自定义样式</h4>
+        <div id="map-styles" style="width: 100%;height: 40px; display: flex;      flex-wrap:wrap ;">
+         
+           <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='normal'><span>标准</span></div>
+            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='dark'><span>幻影黑</span></div>
+            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='graffiti'><span>涂鸦</span></div>
+            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='wine'><span>酱籽</span></div>
+  
+
+    </div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b">
     </script>
+
+<script type="text/javascript" src="js/common.js">
+</script>
+   
     <script type="text/javascript">
         
         var _data = [{
@@ -45,9 +60,11 @@ color:'red'
             userName: `王五`
 
         }];
+
+    
         var map;
         var markArray = new Array(); 
-       //CreateMarker(_data);
+         CreateMarker(_data);
         function CreateMarker(data)
         {
            // console.log(data);
@@ -71,6 +88,7 @@ color:'red'
             map = new AMap.Map('container', {
             resizeEnable: true,
             center: [data[0].lon, data[0].lat],
+            mapStyle: "amap://styles/whitesmoke",
             zoom: 13
             });
         }

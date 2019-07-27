@@ -41,3 +41,25 @@ body,
 {
     width:"50px";
 }
+
+#map-styles .input-item {
+    height: 2rem;
+  }
+
+  #map-styles .input-item span{
+    display: inline-block;
+    width: 4rem;
+  }
+
+  #map-styles .input-item .input-text {
+    color: #0288d1;
+    margin-left: 1rem;
+    margin-right: 0rem;
+    width: 6rem;
+  }
+
+  .wrap {
+    width: 400px;
+    display: flex;
+    flex-wrap:wrap ;
+}

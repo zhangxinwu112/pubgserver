@@ -91,7 +91,7 @@ namespace server.Tool
                     SessionItem sessionItem = null;
                     dic.TryGetValue(session, out sessionItem);
                     long currentTime = TimeUtils.GetCurrentTimestamp();
-                    if (sessionItem!=null && sessionItem!=null && sessionItem.timestamp>0 && (currentTime- sessionItem.timestamp> connectTime))
+                    if (sessionItem!=null && (currentTime- sessionItem.timestamp> connectTime))
                     {
                         dic.TryRemove(session, out sessionItem);
                         Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");

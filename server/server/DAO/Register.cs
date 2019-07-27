@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿
+using MySql.Data.MySqlClient;
 using server.Model;
 using server.Tool;
 using System;
@@ -13,6 +14,9 @@ namespace  server
     {
         public void RegisterUser(PubgSession session, string body, string telephone, string password, string nick, string icon, string checkCode)
         {
+           // Logger.InfoFormat("新的客户端断开：{0}", session.RemoteEndPoint);
+
+
             string sql = "select * from user where telephone = @telephone";
             int result = MySqlExecuteTools.GetCountResult(sql,
                 new MySqlParameter[] { new MySqlParameter("@telephone", telephone) });

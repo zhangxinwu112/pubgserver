@@ -39,6 +39,7 @@ namespace server
             }
             SeverTimer serverTimer = new SeverTimer();
             serverTimer.Init();
+          
             Console.WriteLine("按Q键退出服务器");
 
             while (Console.ReadKey().KeyChar != 'q')

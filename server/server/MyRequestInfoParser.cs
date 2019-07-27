@@ -1,4 +1,5 @@
-﻿using server.Tool;
+﻿using log4net;
+using server.Tool;
 using SuperSocket.SocketBase.Protocol;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,11 @@ namespace server
 {
     public class MyRequestInfoParser : IRequestInfoParser<StringRequestInfo>
     {
+        ILog Logger = log4net.LogManager.GetLogger("server.MyRequestInfoParser");
+
         public StringRequestInfo ParseRequestInfo(string source)
         {
+            Logger.InfoFormat("接收到客户端数据：{0}", source);
             int pos = source.IndexOf(Constant.START_SPLIT.ToCharArray()[0]);
 
             if (pos <= 0)

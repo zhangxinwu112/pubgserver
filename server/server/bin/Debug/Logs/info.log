@@ -1,0 +1,445 @@
+﻿2019-07-27 11:05:30,743 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-07-27 11:05:51,632 [6] INFO  PubgServerA - Session: 00b00d16-41b5-48de-afdd-08884aa631ce/192.168.100.68:57273
+A new session connected!
+2019-07-27 11:05:51,643 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.68:57273
+2019-07-27 11:05:56,649 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:01,640 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:06,066 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 11:06:06,068 [12] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 11:06:06,217 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#877d946d60b29a01bc830439a3e8ed9b73dadced#Desktop#Windows 10  (10.0.0) 64bit
+2019-07-27 11:06:06,643 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:11,643 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:16,644 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:21,646 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:06:24,410 [8] INFO  PubgServerA - Session: 00b00d16-41b5-48de-afdd-08884aa631ce/192.168.100.68:57273
+This session was closed for ClientClosing!
+2019-07-27 11:06:24,411 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.68:57273
+2019-07-27 11:20:46,926 [6] INFO  PubgServerA - Session: ae638ebd-76a3-42ed-9445-df68290a1a60/192.168.100.110:39014
+A new session connected!
+2019-07-27 11:20:46,931 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:39014
+2019-07-27 11:20:52,041 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:20:55,222 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 11:20:55,222 [8] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 11:20:55,646 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 11:20:56,467 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:20:57,037 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:21:01,497 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:21:02,036 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:21:06,474 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:21:07,024 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:21:11,727 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:21:12,025 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:21:16,719 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:21:17,030 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:21:42,665 [9] INFO  PubgServerA - Session: ae638ebd-76a3-42ed-9445-df68290a1a60/192.168.100.110:39014
+This session was closed for SocketError!
+2019-07-27 11:21:42,668 [9] INFO  PubgServerA - 新的客户端断开：192.168.100.110:39014
+2019-07-27 11:39:12,997 [18] INFO  PubgServerA - Session: 1cf82547-98eb-441c-a641-3019598c226a/192.168.100.68:59761
+A new session connected!
+2019-07-27 11:39:12,998 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.68:59761
+2019-07-27 11:39:18,021 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:23,016 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:27,484 [18] INFO  PubgServerA - Session: b187a07c-78b9-4a5a-9a04-1048bd07a6c5/192.168.100.110:39716
+A new session connected!
+2019-07-27 11:39:27,485 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:39716
+2019-07-27 11:39:28,016 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:32,504 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:33,017 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:37,501 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:38,019 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:42,503 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:43,017 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:43,559 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#133
+2019-07-27 11:39:43,559 [15] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 11:39:47,503 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:48,017 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:52,504 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:53,017 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:55,037 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 11:39:55,037 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 11:39:57,504 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:58,018 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:39:59,278 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 11:40:00,175 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:40:02,491 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:03,018 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:05,260 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:40:07,506 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:08,020 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:10,379 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 11:40:12,507 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:13,019 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:17,510 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:18,019 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:22,507 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:23,020 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:24,115 [10] INFO  PubgServerA - Session: 1cf82547-98eb-441c-a641-3019598c226a/192.168.100.68:59761
+This session was closed for ClientClosing!
+2019-07-27 11:40:24,115 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.68:59761
+2019-07-27 11:40:27,512 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:32,513 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:37,515 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:42,496 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:47,514 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:52,515 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:40:57,517 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:41:02,521 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:41:07,527 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:41:12,524 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:41:28,580 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:41:53,468 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:42:24,007 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:42:45,478 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 11:42:46,689 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737268744,"lat":34.199699629454,"telephone":"18392120357"}
+2019-07-27 11:42:47,904 [10] INFO  PubgServerA - Session: b187a07c-78b9-4a5a-9a04-1048bd07a6c5/192.168.100.110:39716
+This session was closed for ClientClosing!
+2019-07-27 11:42:47,906 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:39716
+2019-07-27 12:07:15,634 [20] INFO  PubgServerA - Session: 040ec63d-a4c4-4d8e-a478-63f56df2db73/192.168.100.110:40828
+A new session connected!
+2019-07-27 12:07:15,637 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:40828
+2019-07-27 12:07:20,739 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:25,738 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:26,472 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:07:26,473 [15] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:07:30,727 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:31,134 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:07:32,001 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:07:35,730 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:37,009 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:07:40,728 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:42,029 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:07:45,743 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:47,032 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:07:50,731 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:52,036 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:07:55,736 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:07:57,189 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:08:00,773 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:08:02,191 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:08:05,744 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:08:07,180 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922787,"lat":34.1997263560587,"telephone":"18392120357"}
+2019-07-27 12:08:07,939 [12] INFO  PubgServerA - Session: 040ec63d-a4c4-4d8e-a478-63f56df2db73/192.168.100.110:40828
+This session was closed for ClientClosing!
+2019-07-27 12:08:07,941 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:40828
+2019-07-27 12:16:31,308 [5] INFO  PubgServerA - Session: 9fa5d5e8-1f08-4ebf-88cb-c3380e7facf0/192.168.100.110:40982
+A new session connected!
+2019-07-27 12:16:31,311 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:40982
+2019-07-27 12:16:36,396 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:16:40,913 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:16:40,913 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:16:41,407 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:16:45,273 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:16:45,999 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:16:46,394 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:16:51,016 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:16:51,395 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:16:56,011 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:16:56,410 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:01,028 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:01,395 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:06,031 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:06,396 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:11,035 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:11,397 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:16,222 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:16,405 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:21,226 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:21,397 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:26,226 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:26,398 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:31,233 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:31,398 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:36,236 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:17:36,403 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:17:36,557 [12] INFO  PubgServerA - Session: 9fa5d5e8-1f08-4ebf-88cb-c3380e7facf0/192.168.100.110:40982
+This session was closed for ClientClosing!
+2019-07-27 12:17:36,563 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:40982
+2019-07-27 12:20:32,243 [16] INFO  PubgServerA - Session: 61dc389b-0453-40ca-a85e-f8724be65772/192.168.100.110:41098
+A new session connected!
+2019-07-27 12:20:32,247 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41098
+2019-07-27 12:20:37,329 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:20:37,461 [9] INFO  PubgServerA - Session: 61dc389b-0453-40ca-a85e-f8724be65772/192.168.100.110:41098
+This session was closed for ClientClosing!
+2019-07-27 12:20:37,462 [9] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41098
+2019-07-27 12:20:54,729 [16] INFO  PubgServerA - Session: 66efe949-6042-45f2-89f9-2eb7a9adc641/192.168.100.110:41108
+A new session connected!
+2019-07-27 12:20:54,734 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41108
+2019-07-27 12:20:59,073 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:20:59,074 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:20:59,479 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:20:59,784 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:00,100 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:21:04,801 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:05,136 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:21:09,801 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:10,490 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:21:14,787 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:15,377 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950752574669,"lat":34.1997263707308,"telephone":"18392120357"}
+2019-07-27 12:21:18,633 [10] INFO  PubgServerA - Session: 66efe949-6042-45f2-89f9-2eb7a9adc641/192.168.100.110:41108
+This session was closed for ClientClosing!
+2019-07-27 12:21:18,634 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41108
+2019-07-27 12:21:45,672 [16] INFO  PubgServerA - Session: 492091fb-f06b-485e-97ba-ba22f826093a/192.168.100.110:41194
+A new session connected!
+2019-07-27 12:21:45,676 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41194
+2019-07-27 12:21:50,760 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:55,765 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:21:56,304 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:21:56,304 [12] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:22:00,766 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:22:02,488 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:22:02,977 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950714314358,"lat":34.19971484942,"telephone":"18392120357"}
+2019-07-27 12:22:05,759 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:22:08,047 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950714314358,"lat":34.19971484942,"telephone":"18392120357"}
+2019-07-27 12:22:10,759 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:22:13,250 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950714314358,"lat":34.19971484942,"telephone":"18392120357"}
+2019-07-27 12:22:15,759 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:22:18,238 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950714314358,"lat":34.19971484942,"telephone":"18392120357"}
+2019-07-27 12:22:20,774 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:22:23,044 [10] INFO  PubgServerA - Session: 492091fb-f06b-485e-97ba-ba22f826093a/192.168.100.110:41194
+This session was closed for ClientClosing!
+2019-07-27 12:22:23,046 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41194
+2019-07-27 12:28:32,693 [17] INFO  PubgServerA - Session: d221a4ae-2624-4b7d-afe3-6e27672c4d87/192.168.100.110:41332
+A new session connected!
+2019-07-27 12:28:32,697 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41332
+2019-07-27 12:28:37,795 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:28:42,813 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:28:45,766 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:28:45,766 [15] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:28:47,807 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:28:52,793 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:28:53,931 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:28:54,379 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:28:57,794 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:28:59,483 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:02,807 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:04,499 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:07,809 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:12,820 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:15,560 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:17,822 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:20,580 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:22,807 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:25,817 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:27,808 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:30,818 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:32,810 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:35,838 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:37,824 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:40,808 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:42,821 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:45,814 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:29:47,813 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:29:49,152 [12] INFO  PubgServerA - Session: d221a4ae-2624-4b7d-afe3-6e27672c4d87/192.168.100.110:41332
+This session was closed for ClientClosing!
+2019-07-27 12:29:49,154 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41332
+2019-07-27 12:29:55,963 [14] INFO  PubgServerA - Session: 891204f7-635e-4de5-90a7-9e9f2effa644/192.168.100.110:41382
+A new session connected!
+2019-07-27 12:29:55,968 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41382
+2019-07-27 12:30:00,163 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:30:00,163 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:30:00,584 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:30:00,969 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:01,026 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:05,994 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:06,038 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:10,998 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:11,048 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:16,000 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:16,048 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:21,006 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:21,047 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:26,038 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:28,548 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950721965611,"lat":34.199707232102,"telephone":"18392120357"}
+2019-07-27 12:30:31,142 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:34,690 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:30:36,036 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:40,797 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:30:41,037 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:45,802 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:30:46,048 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:50,806 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:30:51,039 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:30:55,810 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:30:56,039 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:00,814 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:01,044 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:05,816 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:06,041 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:10,821 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:11,042 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:15,824 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:16,042 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:20,821 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:21,042 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:26,608 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:40,877 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:43,093 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:45,880 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:48,088 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:50,880 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:53,086 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:31:55,869 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:31:58,089 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:32:00,884 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:32:03,092 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:32:05,872 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:32:08,110 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:32:10,888 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:32:13,115 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:32:15,888 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:32:18,103 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744922478,"lat":34.199722540068,"telephone":"18392120357"}
+2019-07-27 12:32:20,891 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:32:50,478 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:33:15,996 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:33:51,881 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:34:10,221 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:34:15,245 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:34:20,237 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:34:26,326 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:34:51,223 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:35:21,684 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:35:42,787 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:35:56,651 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:36:21,525 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:36:48,187 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:37:43,105 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:39:31,659 [29] INFO  PubgServerA - Session: 891204f7-635e-4de5-90a7-9e9f2effa644/192.168.100.110:41382
+The session will be closed for 108.4910854 timeout, the session start time: 2019/7/27 星期六 12:29:55, last active time: 2019/7/27 星期六 12:37:43!
+2019-07-27 12:39:31,663 [10] INFO  PubgServerA - Session: 891204f7-635e-4de5-90a7-9e9f2effa644/192.168.100.110:41382
+This session was closed for TimeOut!
+2019-07-27 12:39:31,664 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41382
+2019-07-27 12:52:15,214 [25] INFO  PubgServerA - Session: 70d7c9e2-9bfe-475a-b066-53857d4d3d6d/192.168.100.68:61513
+A new session connected!
+2019-07-27 12:52:15,216 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.68:61513
+2019-07-27 12:52:18,850 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:52:18,850 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:52:18,919 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#877d946d60b29a01bc830439a3e8ed9b73dadced#Desktop#Windows 10  (10.0.0) 64bit
+2019-07-27 12:52:20,222 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:52:25,223 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:52:30,223 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:52:33,963 [10] INFO  PubgServerA - Session: 70d7c9e2-9bfe-475a-b066-53857d4d3d6d/192.168.100.68:61513
+This session was closed for ClientClosing!
+2019-07-27 12:52:33,964 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.68:61513
+2019-07-27 12:54:31,932 [30] INFO  PubgServerA - Session: a62a715d-43f9-42fd-ad62-1c8a06b14153/192.168.100.110:41632
+A new session connected!
+2019-07-27 12:54:31,934 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41632
+2019-07-27 12:54:37,036 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:54:40,971 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:54:40,972 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:54:42,050 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:54:47,047 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:54:47,736 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:54:48,509 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:54:52,034 [31] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:54:53,519 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:54:57,036 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:54:58,806 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:55:02,049 [31] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:55:03,810 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:55:07,051 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:55:08,813 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:55:12,050 [31] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:55:13,822 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:55:17,050 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:55:18,422 [10] INFO  PubgServerA - Session: a62a715d-43f9-42fd-ad62-1c8a06b14153/192.168.100.110:41632
+This session was closed for ClientClosing!
+2019-07-27 12:55:18,424 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41632
+2019-07-27 12:56:06,655 [30] INFO  PubgServerA - Session: 530bdd42-c3a3-4d0a-b471-8ecb9ffeaa6b/192.168.100.110:41680
+A new session connected!
+2019-07-27 12:56:06,659 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41680
+2019-07-27 12:56:10,823 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 12:56:10,823 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 12:56:11,236 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 12:56:11,644 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:56:11,720 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:56:16,721 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:56:16,847 [31] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:56:21,735 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:56:21,819 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:56:26,722 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:56:37,545 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:56:42,564 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:57:06,680 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:57:37,967 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:57:57,319 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:58:24,051 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:58:39,390 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:58:52,623 [31] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:59:17,506 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:59:47,293 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 12:59:50,566 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737272144,"lat":34.1997416053518,"telephone":"18392120357"}
+2019-07-27 12:59:51,171 [10] INFO  PubgServerA - Session: 530bdd42-c3a3-4d0a-b471-8ecb9ffeaa6b/192.168.100.110:41680
+This session was closed for ClientClosing!
+2019-07-27 12:59:51,172 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41680
+2019-07-27 13:01:40,046 [28] INFO  PubgServerA - Session: bfa606be-2243-410d-be48-74a8f18f4fcf/192.168.100.110:41810
+A new session connected!
+2019-07-27 13:01:40,064 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:41810
+2019-07-27 13:01:45,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:01:50,134 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:01:54,808 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 13:01:54,809 [10] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 13:01:55,128 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:00,144 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:00,262 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 13:02:01,055 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744923096,"lat":34.1997301720494,"telephone":"18392120357"}
+2019-07-27 13:02:05,129 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:06,074 [29] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744923096,"lat":34.1997301720494,"telephone":"18392120357"}
+2019-07-27 13:02:10,143 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:11,076 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744923096,"lat":34.1997301720494,"telephone":"18392120357"}
+2019-07-27 13:02:15,143 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:16,052 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744923096,"lat":34.1997301720494,"telephone":"18392120357"}
+2019-07-27 13:02:20,137 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:21,053 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950744923096,"lat":34.1997301720494,"telephone":"18392120357"}
+2019-07-27 13:02:25,138 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 13:02:26,191 [12] INFO  PubgServerA - Session: bfa606be-2243-410d-be48-74a8f18f4fcf/192.168.100.110:41810
+This session was closed for ClientClosing!
+2019-07-27 13:02:26,191 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:41810
+2019-07-27 15:11:55,406 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-07-27 15:12:37,929 [5] INFO  PubgServerA - Session: 0b7d4f31-fb7c-432b-a3a6-5d513f61353a/192.168.100.110:42132
+A new session connected!
+2019-07-27 15:12:37,946 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:42132
+2019-07-27 15:12:43,018 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:12:48,014 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:12:48,146 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-07-27 15:12:48,148 [8] INFO  server.Login - 用户登陆验证：18392120357
+2019-07-27 15:12:52,570 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-07-27 15:12:53,007 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:12:53,482 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:12:58,005 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:12:58,500 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:03,009 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:03,517 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:07,995 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:08,522 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:12,995 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:13,515 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:18,009 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:18,514 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:23,010 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:23,533 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:28,010 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:28,529 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:32,997 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:33,545 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:38,011 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:38,543 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:43,015 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:46,486 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:48,013 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:51,475 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:53,013 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:13:56,494 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:13:58,013 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:14:05,111 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:14:15,778 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:14:41,589 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:14:56,630 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:15:00,558 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950737269362,"lat":34.1997072614353,"telephone":"18392120357"}
+2019-07-27 15:15:01,628 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:15:06,609 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:15:31,343 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:15:56,551 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:16:01,562 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:16:26,650 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:17:01,654 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-07-27 15:17:10,374 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:

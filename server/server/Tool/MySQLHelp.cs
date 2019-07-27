@@ -32,12 +32,12 @@ namespace mysql
             try
             {
                 SqlConn.Open();
-                Console.WriteLine("数据库已成功打开" );
+                Console.WriteLine("数据库已接成功" );
                 this.SqlConn = SqlConn;
             }
             catch(Exception e)
             {
-                Console.WriteLine("[MySQLHelper]Connect:" + e.Message);
+                Console.WriteLine("数据库异常：" + e.Message);
                 SqlConn = null;
             }
         }

@@ -1,4 +1,5 @@
-﻿using mysql;
+﻿using log4net;
+using mysql;
 using MySql.Data.MySqlClient;
 using server;
 using server.Model;
@@ -13,9 +14,11 @@ namespace server
 {
     public  class Login
     {
+         ILog Logger =  log4net.LogManager.GetLogger("server.Login");
         public void CheckLogin(PubgSession session, string body, string username, string password)
         {
 
+            Logger.InfoFormat("用户登陆验证：{0}", username);
             string sql = "select * from user where telephone = @username and password = @password";
             List<UserName> result = MySqlExecuteTools.GetObjectResult<UserName> (sql, 
                 new MySqlParameter[] { new MySqlParameter("@username", username), new MySqlParameter("@password", password) });

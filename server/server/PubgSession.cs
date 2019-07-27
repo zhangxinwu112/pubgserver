@@ -22,8 +22,11 @@ namespace server
             SessionItem item = new SessionItem();
             mOnLineConnections.TryAdd(this, item);
 
-            Console.WriteLine("新的客户端连接。"+RemoteEndPoint);
+            Console.WriteLine("有新的客户端连接。"+RemoteEndPoint);
             Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
+            Console.WriteLine("启用日志：" + Logger.IsErrorEnabled);
+           
+            Logger.InfoFormat("新的客户端连接：{0}", RemoteEndPoint);
         }
 
         protected override void HandleUnknownRequest(StringRequestInfo requestInfo)
@@ -42,13 +45,14 @@ namespace server
             base.OnSessionClosed(reason);
             SessionItem sessionItem = null;
             mOnLineConnections.TryRemove(this, out sessionItem);
-            string content = "客户端断开。";
+            string content = "客户端断开了连接。";
             if (sessionItem!=null && sessionItem.gpsItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
             {
                 content += sessionItem.gpsItem.userName;
             }
-            Console.WriteLine("客户端断开了。" + content + ":"+ RemoteEndPoint);
+            Console.WriteLine( content + ":"+ RemoteEndPoint);
             Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
+            Logger.InfoFormat("新的客户端断开：{0}", RemoteEndPoint);
         }
     }
 }

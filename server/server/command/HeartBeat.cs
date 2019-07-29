@@ -20,10 +20,12 @@ namespace server.command
         {
             SessionItem sessionItem = null;
             PubgSession.mOnLineConnections.TryGetValue(session, out sessionItem);
-            if(sessionItem!=null)
+            if (sessionItem!=null)
             {
-                sessionItem.timestamp = TimeUtils.GetCurrentTimestamp();
+              
+                sessionItem.heartTimeStamp = TimeUtils.GetCurrentTimestamp();
             }
+            
 
 
         }

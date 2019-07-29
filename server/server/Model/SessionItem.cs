@@ -11,6 +11,8 @@ namespace server.Model
 
         public GPSItem gpsItem = new GPSItem();
 
-        public long timestamp =-1;
+        public long heartTimeStamp =-1;
+
+        public long createTimeStamp = -1;
     }
 }

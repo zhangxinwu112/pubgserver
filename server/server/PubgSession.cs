@@ -20,6 +20,7 @@ namespace server
         {
             this.Send("ECHO:Welcome to SuperSocket pubg Server"+ " \r\n");
             SessionItem item = new SessionItem();
+            item.createTimeStamp= TimeUtils.GetCurrentTimestamp();
             mOnLineConnections.TryAdd(this, item);
 
             Console.WriteLine("有新的客户端连接。"+RemoteEndPoint);

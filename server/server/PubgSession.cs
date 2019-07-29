@@ -25,7 +25,7 @@ namespace server
 
             Console.WriteLine("有新的客户端连接。"+RemoteEndPoint);
             Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
-            Console.WriteLine("启用日志：" + Logger.IsErrorEnabled);
+           // Console.WriteLine("启用日志：" + Logger.IsErrorEnabled);
            
             Logger.InfoFormat("新的客户端连接：{0}", RemoteEndPoint);
         }

@@ -91,6 +91,7 @@ namespace server.Tool
                     SessionItem sessionItem = null;
                     dic.TryGetValue(session, out sessionItem);
                     long currentTime = TimeUtils.GetCurrentTimestamp();
+
                     if (sessionItem!=null && (sessionItem.heartTimeStamp>0 && (currentTime- sessionItem.heartTimeStamp > connectTime)||
 
                         sessionItem.heartTimeStamp == -1 && (currentTime - sessionItem.createTimeStamp > connectTime)))
@@ -98,6 +99,8 @@ namespace server.Tool
                         dic.TryRemove(session, out sessionItem);
                         Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");
                     }
+                        
+                    
                 }
 
                 Console.WriteLine("当前服务器连接数量：" + dic.Count);

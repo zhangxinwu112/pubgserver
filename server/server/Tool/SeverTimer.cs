@@ -92,9 +92,13 @@ namespace server.Tool
                     dic.TryGetValue(session, out sessionItem);
                     long currentTime = TimeUtils.GetCurrentTimestamp();
 
-                    if (sessionItem!=null && (sessionItem.heartTimeStamp>0 && (currentTime- sessionItem.heartTimeStamp > connectTime)||
+                    if (sessionItem!=null && (sessionItem.heartTimeStamp>0 && (currentTime- sessionItem.heartTimeStamp > connectTime)))
+                    {
+                        dic.TryRemove(session, out sessionItem);
+                        Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");
+                    }
 
-                        sessionItem.heartTimeStamp == -1 && (currentTime - sessionItem.createTimeStamp > connectTime)))
+                    if(sessionItem.heartTimeStamp == -1 && (currentTime - sessionItem.createTimeStamp > connectTime))
                     {
                         dic.TryRemove(session, out sessionItem);
                         Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");

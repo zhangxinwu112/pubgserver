@@ -46,14 +46,14 @@ namespace server
             base.OnSessionClosed(reason);
             SessionItem sessionItem = null;
             mOnLineConnections.TryRemove(this, out sessionItem);
-            string content = "客户端断开了连接。";
+            string content = "客户端主动断开了连接。";
             if (sessionItem!=null && sessionItem.gpsItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
             {
                 content += sessionItem.gpsItem.userName;
+                Console.WriteLine(content + ":" + RemoteEndPoint);
+                Logger.InfoFormat("客户端主动断开：{0}", RemoteEndPoint);
             }
-            Console.WriteLine( content + ":"+ RemoteEndPoint);
-            Console.WriteLine("当前客户端数量：" + mOnLineConnections.Count);
-            Logger.InfoFormat("新的客户端断开：{0}", RemoteEndPoint);
+           
         }
     }
 }

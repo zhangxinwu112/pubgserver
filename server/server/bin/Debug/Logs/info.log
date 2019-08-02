@@ -256,3 +256,251 @@ A new session connected!
 2019-08-02 10:17:14,498 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
 2019-08-02 10:17:14,673 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950637784974,"lat":34.1995811432421,"telephone":"18392120357"}
 2019-08-02 10:17:19,479 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:18:02,327 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-08-02 10:18:06,003 [6] INFO  PubgServerA - Session: 7e0ae326-8ee6-4769-ad80-43557824a992/192.168.100.110:49028
+A new session connected!
+2019-08-02 10:18:06,020 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49028
+2019-08-02 10:18:07,994 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950637785283,"lat":34.1995849592324,"telephone":"18392120357"}
+2019-08-02 10:18:10,987 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:18:12,985 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950637785283,"lat":34.1995849592324,"telephone":"18392120357"}
+2019-08-02 10:18:15,987 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:32:13,829 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-08-02 10:33:06,384 [5] INFO  PubgServerA - Session: 53fa6ad3-4a86-4676-afa8-b54658990fdf/192.168.100.110:49322
+A new session connected!
+2019-08-02 10:33:06,401 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49322
+2019-08-02 10:33:11,484 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:15,789 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-08-02 10:33:15,791 [8] INFO  server.Login - 用户登陆验证：18392120357
+2019-08-02 10:33:16,460 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:19,822 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-08-02 10:33:20,776 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950630135296,"lat":34.199607840535,"telephone":"18392120357"}
+2019-08-02 10:33:21,444 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:25,870 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950630135296,"lat":34.199607840535,"telephone":"18392120357"}
+2019-08-02 10:33:26,457 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:36,426 [5] INFO  PubgServerA - Session: 72b4fb23-b809-49d8-865a-be07c0d776f7/192.168.100.110:49366
+A new session connected!
+2019-08-02 10:33:36,427 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49366
+2019-08-02 10:33:36,444 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:38,234 [8] INFO  PubgServerA - Session: 53fa6ad3-4a86-4676-afa8-b54658990fdf/192.168.100.110:49322
+This session was closed for SocketError!
+2019-08-02 10:33:38,238 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49322
+2019-08-02 10:33:40,931 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950630135296,"lat":34.199607840535,"telephone":"18392120357"}
+2019-08-02 10:33:41,445 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:46,437 [5] INFO  PubgServerA - Session: 8f7be7a4-fbdf-4e7d-af9a-3e34402535f1/192.168.100.110:49390
+A new session connected!
+2019-08-02 10:33:46,438 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49390
+2019-08-02 10:33:46,452 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:51,435 [5] INFO  PubgServerA - Session: 293b7b67-7c68-4f52-b8ad-79e230660f2b/192.168.100.110:49430
+A new session connected!
+2019-08-02 10:33:51,437 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49430
+2019-08-02 10:33:51,452 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:33:53,242 [8] INFO  PubgServerA - Session: 72b4fb23-b809-49d8-865a-be07c0d776f7/192.168.100.110:49366
+This session was closed for SocketError!
+2019-08-02 10:33:53,243 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49366
+2019-08-02 10:33:55,941 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950630135296,"lat":34.199607840535,"telephone":"18392120357"}
+2019-08-02 10:35:13,846 [11] INFO  PubgServerA - Session: 8f7be7a4-fbdf-4e7d-af9a-3e34402535f1/192.168.100.110:49390
+The session will be closed for 87.3912684 timeout, the session start time: 2019/8/2 星期五 10:33:46, last active time: 2019/8/2 星期五 10:33:46!
+2019-08-02 10:35:13,847 [11] INFO  PubgServerA - Session: 8f7be7a4-fbdf-4e7d-af9a-3e34402535f1/192.168.100.110:49390
+This session was closed for TimeOut!
+2019-08-02 10:37:40,596 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-08-02 10:37:45,544 [5] INFO  PubgServerA - Session: ef6c1081-06be-47ce-ae86-17dcf1fc6784/192.168.100.110:49480
+A new session connected!
+2019-08-02 10:37:45,563 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49480
+2019-08-02 10:37:47,962 [8] INFO  PubgServerA - Session: ef6c1081-06be-47ce-ae86-17dcf1fc6784/192.168.100.110:49480
+This session was closed for ClientClosing!
+2019-08-02 10:37:47,967 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49480
+2019-08-02 10:38:03,718 [5] INFO  PubgServerA - Session: d3a410c1-22a2-4fff-b1ff-12c128bbfbb0/192.168.100.110:49492
+A new session connected!
+2019-08-02 10:38:03,720 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49492
+2019-08-02 10:38:08,336 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Login@CheckLogin#18392120357#123
+2019-08-02 10:38:08,352 [8] INFO  server.Login - 用户登陆验证：18392120357
+2019-08-02 10:38:08,781 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:38:08,836 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Code@CheckCode#00003#9150917497e113d324b8e65b08ea4792#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20190620.170734)
+2019-08-02 10:38:09,660 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480366,"lat":34.1995696659956,"telephone":"18392120357"}
+2019-08-02 10:38:13,775 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:38:14,650 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480366,"lat":34.1995696659956,"telephone":"18392120357"}
+2019-08-02 10:38:21,045 [8] INFO  PubgServerA - Session: d3a410c1-22a2-4fff-b1ff-12c128bbfbb0/192.168.100.110:49492
+This session was closed for SocketError!
+2019-08-02 10:38:21,045 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49492
+2019-08-02 10:38:28,799 [5] INFO  PubgServerA - Session: 7ce98a37-d73f-41ff-a192-8307ecc18065/192.168.100.110:49536
+A new session connected!
+2019-08-02 10:38:28,801 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49536
+2019-08-02 10:38:29,650 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480366,"lat":34.1995696659956,"telephone":"18392120357"}
+2019-08-02 10:38:36,036 [8] INFO  PubgServerA - Session: 7ce98a37-d73f-41ff-a192-8307ecc18065/192.168.100.110:49536
+This session was closed for SocketError!
+2019-08-02 10:38:36,037 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49536
+2019-08-02 10:38:38,787 [5] INFO  PubgServerA - Session: ff7daa85-3782-4395-a08b-22ab4855c84b/192.168.100.110:49566
+A new session connected!
+2019-08-02 10:38:38,789 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49566
+2019-08-02 10:38:39,664 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480366,"lat":34.1995696659956,"telephone":"18392120357"}
+2019-08-02 10:38:43,763 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:38:51,823 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:38:56,850 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:39:01,665 [8] INFO  PubgServerA - Session: ff7daa85-3782-4395-a08b-22ab4855c84b/192.168.100.110:49566
+This session was closed for SocketError!
+2019-08-02 10:39:01,667 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49566
+2019-08-02 10:39:01,842 [5] INFO  PubgServerA - Session: fc66d745-5686-4719-b8ff-a1e9c07aecb4/192.168.100.110:49582
+A new session connected!
+2019-08-02 10:39:01,846 [11] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49582
+2019-08-02 10:39:02,133 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830075,"lat":34.1995887313121,"telephone":"18392120357"}
+2019-08-02 10:39:15,255 [8] INFO  PubgServerA - Session: fc66d745-5686-4719-b8ff-a1e9c07aecb4/192.168.100.110:49582
+This session was closed for SocketError!
+2019-08-02 10:39:15,258 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49582
+2019-08-02 10:39:16,874 [5] INFO  PubgServerA - Session: 98515810-eb86-4385-9545-ce21dcd12204/192.168.100.110:49628
+A new session connected!
+2019-08-02 10:39:16,876 [8] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49628
+2019-08-02 10:39:17,138 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830075,"lat":34.1995887313121,"telephone":"18392120357"}
+2019-08-02 10:39:25,772 [12] INFO  PubgServerA - Session: 98515810-eb86-4385-9545-ce21dcd12204/192.168.100.110:49628
+This session was closed for SocketError!
+2019-08-02 10:39:25,776 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49628
+2019-08-02 10:39:26,885 [5] INFO  PubgServerA - Session: c84d6b3c-c14a-49b8-9cf6-46d66b443b65/192.168.100.110:49660
+A new session connected!
+2019-08-02 10:39:26,887 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49660
+2019-08-02 10:39:27,151 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830075,"lat":34.1995887313121,"telephone":"18392120357"}
+2019-08-02 10:39:45,091 [10] INFO  PubgServerA - Session: c84d6b3c-c14a-49b8-9cf6-46d66b443b65/192.168.100.110:49660
+This session was closed for SocketError!
+2019-08-02 10:39:45,093 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49660
+2019-08-02 10:39:46,894 [5] INFO  PubgServerA - Session: e2d15e31-69ab-460d-b7ec-b8d7e1d1f67a/192.168.100.110:49692
+A new session connected!
+2019-08-02 10:39:46,898 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49692
+2019-08-02 10:39:49,963 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483766,"lat":34.1996116418885,"telephone":"18392120357"}
+2019-08-02 10:39:51,861 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:39:56,707 [12] INFO  PubgServerA - Session: e2d15e31-69ab-460d-b7ec-b8d7e1d1f67a/192.168.100.110:49692
+This session was closed for SocketError!
+2019-08-02 10:39:56,710 [12] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49692
+2019-08-02 10:39:56,899 [5] INFO  PubgServerA - Session: 7da829b8-a199-4fd1-ae28-3bfe367ab201/192.168.100.110:49696
+A new session connected!
+2019-08-02 10:39:56,900 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49696
+2019-08-02 10:39:59,967 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483766,"lat":34.1996116418885,"telephone":"18392120357"}
+2019-08-02 10:40:02,917 [10] INFO  PubgServerA - Session: 7da829b8-a199-4fd1-ae28-3bfe367ab201/192.168.100.110:49696
+This session was closed for SocketError!
+2019-08-02 10:40:02,919 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49696
+2019-08-02 10:40:06,920 [5] INFO  PubgServerA - Session: 53dcbcc5-929b-4c77-8171-b27c66e1c1e6/192.168.100.110:49746
+A new session connected!
+2019-08-02 10:40:06,923 [12] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49746
+2019-08-02 10:40:21,911 [5] INFO  PubgServerA - Session: c8734da4-12e5-45b2-a15d-64043127e73e/192.168.100.110:49772
+A new session connected!
+2019-08-02 10:40:21,913 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49772
+2019-08-02 10:40:25,005 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483766,"lat":34.1996116418885,"telephone":"18392120357"}
+2019-08-02 10:40:26,865 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:40:29,990 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483766,"lat":34.1996116418885,"telephone":"18392120357"}
+2019-08-02 10:40:31,866 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:40:36,864 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:40:43,317 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:40:46,689 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:40:55,352 [10] INFO  PubgServerA - Session: c8734da4-12e5-45b2-a15d-64043127e73e/192.168.100.110:49772
+This session was closed for SocketError!
+2019-08-02 10:40:55,354 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49772
+2019-08-02 10:40:58,368 [5] INFO  PubgServerA - Session: b064c2ca-40b3-441c-ab35-8eaf16faca52/192.168.100.110:49810
+A new session connected!
+2019-08-02 10:40:58,371 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49810
+2019-08-02 10:41:01,731 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:41:03,319 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:41:24,785 [10] INFO  PubgServerA - Session: b064c2ca-40b3-441c-ab35-8eaf16faca52/192.168.100.110:49810
+This session was closed for SocketError!
+2019-08-02 10:41:24,791 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49810
+2019-08-02 10:41:40,627 [11] INFO  PubgServerA - Session: 53dcbcc5-929b-4c77-8171-b27c66e1c1e6/192.168.100.110:49746
+The session will be closed for 93.7053919 timeout, the session start time: 2019/8/2 星期五 10:40:06, last active time: 2019/8/2 星期五 10:40:06!
+2019-08-02 10:41:40,630 [11] INFO  PubgServerA - Session: 53dcbcc5-929b-4c77-8171-b27c66e1c1e6/192.168.100.110:49746
+This session was closed for TimeOut!
+2019-08-02 10:41:40,632 [11] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49746
+2019-08-02 10:42:27,908 [19] INFO  PubgServerA - Session: cc3b7166-bdd2-46e5-bd50-b0b4ec897cb6/192.168.100.110:49846
+A new session connected!
+2019-08-02 10:42:27,911 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49846
+2019-08-02 10:42:32,627 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:42:32,895 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:42:35,979 [10] INFO  PubgServerA - Session: cc3b7166-bdd2-46e5-bd50-b0b4ec897cb6/192.168.100.110:49846
+This session was closed for SocketError!
+2019-08-02 10:42:35,980 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49846
+2019-08-02 10:42:37,902 [19] INFO  PubgServerA - Session: e4500c35-388a-4879-a1a0-b3fca759de31/192.168.100.110:49870
+A new session connected!
+2019-08-02 10:42:37,905 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49870
+2019-08-02 10:42:42,669 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:42:42,896 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:42:52,908 [19] INFO  PubgServerA - Session: 16e7c8aa-26d6-4101-9337-4e4c7f1251bc/192.168.100.110:49890
+A new session connected!
+2019-08-02 10:42:52,913 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49890
+2019-08-02 10:42:55,274 [10] INFO  PubgServerA - Session: e4500c35-388a-4879-a1a0-b3fca759de31/192.168.100.110:49870
+This session was closed for SocketError!
+2019-08-02 10:42:55,275 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49870
+2019-08-02 10:42:57,667 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:42:57,901 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:02,686 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:43:02,898 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:11,016 [21] INFO  PubgServerA - Session: 16e7c8aa-26d6-4101-9337-4e4c7f1251bc/192.168.100.110:49890
+This session was closed for SocketError!
+2019-08-02 10:43:11,019 [21] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49890
+2019-08-02 10:43:12,910 [19] INFO  PubgServerA - Session: c08d9e75-30fd-4854-961b-42611469efcf/192.168.100.110:49928
+A new session connected!
+2019-08-02 10:43:12,913 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49928
+2019-08-02 10:43:27,922 [19] INFO  PubgServerA - Session: a1fb149c-1284-49da-94f7-61dea5278050/192.168.100.110:49966
+A new session connected!
+2019-08-02 10:43:27,927 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:49966
+2019-08-02 10:43:32,692 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:43:32,908 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:37,706 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:43:37,905 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:42,709 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:43:42,905 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:47,712 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622480984,"lat":34.199577297976,"telephone":"18392120357"}
+2019-08-02 10:43:47,909 [26] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:52,919 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:57,923 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:43:59,273 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:02,921 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:04,286 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:15,600 [10] INFO  PubgServerA - Session: a1fb149c-1284-49da-94f7-61dea5278050/192.168.100.110:49966
+This session was closed for SocketError!
+2019-08-02 10:44:15,601 [10] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49966
+2019-08-02 10:44:17,933 [14] INFO  PubgServerA - Session: 7a99311f-b915-496e-8f03-f1046929b9d2/192.168.100.110:37002
+A new session connected!
+2019-08-02 10:44:17,935 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:37002
+2019-08-02 10:44:27,941 [14] INFO  PubgServerA - Session: 50cb06d2-cff9-4e24-a010-a6bad1f938cf/192.168.100.110:37026
+A new session connected!
+2019-08-02 10:44:27,944 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:37026
+2019-08-02 10:44:29,340 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:32,919 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:34,341 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:37,920 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:39,330 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:40,630 [11] INFO  PubgServerA - Session: c08d9e75-30fd-4854-961b-42611469efcf/192.168.100.110:49928
+The session will be closed for 87.7186702 timeout, the session start time: 2019/8/2 星期五 10:43:12, last active time: 2019/8/2 星期五 10:43:12!
+2019-08-02 10:44:40,631 [11] INFO  PubgServerA - Session: c08d9e75-30fd-4854-961b-42611469efcf/192.168.100.110:49928
+This session was closed for TimeOut!
+2019-08-02 10:44:40,635 [11] INFO  PubgServerA - 新的客户端断开：192.168.100.110:49928
+2019-08-02 10:44:42,935 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:44,337 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:47,925 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:49,352 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:52,936 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:44:54,355 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950614830693,"lat":34.1995963632926,"telephone":"18392120357"}
+2019-08-02 10:44:57,936 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:45:06,796 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:45:18,853 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:45:23,852 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:45:37,676 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:45:40,640 [11] INFO  PubgServerA - Session: 7a99311f-b915-496e-8f03-f1046929b9d2/192.168.100.110:37002
+The session will be closed for 82.7065936 timeout, the session start time: 2019/8/2 星期五 10:44:17, last active time: 2019/8/2 星期五 10:44:17!
+2019-08-02 10:45:40,641 [11] INFO  PubgServerA - Session: 7a99311f-b915-496e-8f03-f1046929b9d2/192.168.100.110:37002
+This session was closed for TimeOut!
+2019-08-02 10:45:40,642 [11] INFO  PubgServerA - 新的客户端断开：192.168.100.110:37002
+2019-08-02 10:45:51,818 [8] INFO  PubgServerA - Session: 50cb06d2-cff9-4e24-a010-a6bad1f938cf/192.168.100.110:37026
+This session was closed for SocketError!
+2019-08-02 10:45:51,818 [8] INFO  PubgServerA - 新的客户端断开：192.168.100.110:37026
+2019-08-02 10:45:52,700 [14] INFO  PubgServerA - Session: 505bf7b3-0926-479b-9039-33e5cb4bfee2/192.168.100.110:37072
+A new session connected!
+2019-08-02 10:45:52,702 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:37072
+2019-08-02 10:46:02,704 [14] INFO  PubgServerA - Session: 20be8d68-a54f-4abf-9496-4640b913156c/192.168.100.110:37116
+A new session connected!
+2019-08-02 10:46:02,706 [10] INFO  PubgServerA - 新的客户端连接：192.168.100.110:37116
+2019-08-02 10:46:07,390 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483148,"lat":34.1996040099079,"telephone":"18392120357"}
+2019-08-02 10:46:07,678 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:46:12,391 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483148,"lat":34.1996040099079,"telephone":"18392120357"}
+2019-08-02 10:46:12,683 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:46:17,409 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483148,"lat":34.1996040099079,"telephone":"18392120357"}
+2019-08-02 10:46:17,679 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:46:22,413 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userName":"\u5929\u6DAF","lon":108.950622483148,"lat":34.1996040099079,"telephone":"18392120357"}
+2019-08-02 10:46:22,687 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:46:27,680 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:46:32,787 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-08-02 10:50:48,570 [1] INFO  PubgServerA - The server instance PubgServerA has been started!

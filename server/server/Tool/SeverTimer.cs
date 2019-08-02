@@ -1,4 +1,5 @@
-﻿using server.Model;
+﻿using log4net;
+using server.Model;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -12,6 +13,8 @@ namespace server.Tool
    
     public class SeverTimer
     {
+
+        ILog Logger = log4net.LogManager.GetLogger("server.Tool.SeverTimer");
         private int IntervalSendPostion = 1000 * 5;
         private System.Threading.Timer tmrsendPostion = null;
 
@@ -68,6 +71,13 @@ namespace server.Tool
                 }
               
             }
+            catch(Exception e)
+            {
+                Logger.InfoFormat("更新位置异常：：{0}", e.Message);
+                tmrsendPostion.Dispose();
+                tmrsendPostion = new System.Threading.Timer(SendPositionCallBack, null, IntervalSendPostion, IntervalSendPostion);
+                Console.WriteLine("位置更新异常信息：" + e.Message);
+            }
             finally
             {
                 tmrsendPostion.Change(IntervalSendPostion, IntervalSendPostion);
@@ -98,22 +108,27 @@ namespace server.Tool
                     dic.TryGetValue(session, out sessionItem);
                     long currentTime = TimeUtils.GetCurrentTimestamp();
 
-                    if (sessionItem!=null && (sessionItem.heartTimeStamp>0 && (currentTime- sessionItem.heartTimeStamp > connectTime)))
+                    if (sessionItem!=null)
                     {
-                        dic.TryRemove(session, out sessionItem);
-                        Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");
-                    }
-
-                    if(sessionItem!=null && sessionItem.heartTimeStamp == -1 && (currentTime - sessionItem.createTimeStamp > connectTime))
-                    {
-                        dic.TryRemove(session, out sessionItem);
-                        Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，被强制中断。");
-                    }
+                        if ((sessionItem.heartTimeStamp > 0 && (currentTime - sessionItem.heartTimeStamp > connectTime) ||
+                            sessionItem.heartTimeStamp == -1 && (currentTime - sessionItem.createTimeStamp > connectTime)))
+                        {
+                            dic.TryRemove(session, out sessionItem);
+                            Console.WriteLine(sessionItem.gpsItem.userName + ":" + "连接超时，客户端被强制中断。");
+                        }
                         
-                    
+                    }
                 }
 
                 Console.WriteLine("当前服务器连接数量：" + dic.Count);
+            }
+            catch(Exception e)
+            {
+                Logger.InfoFormat("连接异常：：{0}", e.Message);
+                tmrCheckConnect.Dispose();
+                tmrCheckConnect = new System.Threading.Timer(CheckConnectCallBack, null, IntervalCheckConnect, IntervalCheckConnect);
+               
+                Console.WriteLine("连接异常信息：" +  e.Message);
             }
             finally
             {

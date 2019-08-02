@@ -25,6 +25,7 @@ namespace server.command
                 GPSItem gpsItem = Utils.CollectionsConvert.ToObject<GPSItem>( requestInfo.Body.ToString());
                 sessionItem.gpsItem = gpsItem;
             }
+            Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
 
 
         }

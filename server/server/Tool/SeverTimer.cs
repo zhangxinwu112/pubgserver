@@ -86,6 +86,12 @@ namespace server.Tool
                 tmrCheckConnect.Change(Timeout.Infinite, Timeout.Infinite);
 
                 ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
+                if(dic==null || dic.Count==0)
+                {
+                    Console.WriteLine("当前服务器连接数量：" + dic.Count);
+                    tmrCheckConnect.Change(IntervalCheckConnect, IntervalCheckConnect);
+                    return;
+                }
                 foreach(PubgSession session in dic.Keys)
                 {
                     SessionItem sessionItem = null;

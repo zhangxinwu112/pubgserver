@@ -60,12 +60,13 @@ namespace server.Tool
             {
                 if(reader!=null)
                 {
-                    reader.close();
+                    reader.Close();
                 }
-                return result;
+               
             }
-          
-            
+            return result;
+
+
         }
 
 
@@ -121,10 +122,11 @@ namespace server.Tool
                 if(reader!=null)
                 {
                     reader.Close();
-                    return result;
+                    
                 }
             }
-           
+            return result;
+
         }
 
 
@@ -144,9 +146,11 @@ namespace server.Tool
             }
             finally
             {
-                return result;
+               
             }
-          
+
+            return result;
+
         }
 
 

@@ -61,3 +61,7 @@ C:\Users\Administrator\Desktop\code\server\server\bin\Debug\SuperSocket.SocketEn
 C:\Users\Administrator\Desktop\code\server\server\obj\Debug\server.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\code\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\code\server\server\obj\Debug\server.csproj.CopyComplete
+D:\svn\pubg\sever\server1\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache
+D:\svn\pubg\sever\server1\pubgserver\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\svn\pubg\sever\server1\pubgserver\server\server\obj\Debug\server.exe
+D:\svn\pubg\sever\server1\pubgserver\server\server\obj\Debug\server.pdb

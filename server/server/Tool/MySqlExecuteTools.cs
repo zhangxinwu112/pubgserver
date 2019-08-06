@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using log4net;
 
 namespace server.Tool
 {
@@ -16,7 +17,8 @@ namespace server.Tool
     /// </summary>
     public static  class MySqlExecuteTools
     {
-       
+
+       private static  ILog Logger = log4net.LogManager.GetLogger("server.Tool.MySqlExecuteTools");
         /// <summary>
         /// 获取查询的结果数量
         /// </summary>
@@ -25,77 +27,126 @@ namespace server.Tool
         /// <returns></returns>
         public static int  GetCountResult(string sql, params MySqlParameter[] commandParameters)
         {
-            MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-           
-            if(commandParameters!=null)
-            {
-                foreach (MySqlParameter parm in commandParameters)
-                    cmd.Parameters.Add(parm);
-            }
-           
-            MySqlDataReader reader = cmd.ExecuteReader();
+            MySqlDataReader reader = null;
             int result = 0;
-            while (reader.Read())
+            try
             {
-                if (reader.HasRows)
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                cmd.CommandTimeout = 10;
+                if (commandParameters != null)
                 {
-                    result = result + 1;
-                    
+                    foreach (MySqlParameter parm in commandParameters)
+                        cmd.Parameters.Add(parm);
                 }
-                
+
+                reader = cmd.ExecuteReader();
+
+
+                while (reader.Read())
+                {
+                    if (reader.HasRows)
+                    {
+                        result = result + 1;
+
+                    }
+
+                }
             }
-            reader.Close();
-            return result;
+            catch(Exception e)
+            {
+                Logger.InfoFormat("excepstion：{0}", e.Message);
+            }
+            finally
+            {
+                if(reader!=null)
+                {
+                    reader.close();
+                }
+                return result;
+            }
+          
+            
         }
 
 
         public static List<T> GetObjectResult<T>(string sql, params MySqlParameter[] commandParameters) where T:new()
         {
-            MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-
             List<T> result = new List<T>();
-            if(commandParameters!=null)
+            MySqlDataReader reader = null;
+            try
             {
-                foreach (MySqlParameter parm in commandParameters)
-                    cmd.Parameters.Add(parm);
-            }
-           
-            MySqlDataReader reader = cmd.ExecuteReader();
-            int filedCount  =reader.FieldCount;
-           
-           
-            while (reader.Read())
-            {
-                if (reader.HasRows)
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                cmd.CommandTimeout = 10;
+                
+                if (commandParameters != null)
                 {
-
-                    T t = new T();
-                    
-                    for(int i=0;i< filedCount;i++)
-                    {
-                        string propertyName = reader.GetName(i);
-                        FieldInfo info = t.GetType().GetField(propertyName);
-                        if(info!=null&&reader.GetValue(i)!=null)
-                        {
-                            info.SetValue(t, reader.GetValue(i));
-                        }
-                        
-                    }
-                    result.Add(t);
-
+                    foreach (MySqlParameter parm in commandParameters)
+                        cmd.Parameters.Add(parm);
                 }
 
+                reader = cmd.ExecuteReader();
+                int filedCount = reader.FieldCount;
+
+
+                while (reader.Read())
+                {
+                    if (reader.HasRows)
+                    {
+
+                        T t = new T();
+
+                        for (int i = 0; i < filedCount; i++)
+                        {
+                            string propertyName = reader.GetName(i);
+                            FieldInfo info = t.GetType().GetField(propertyName);
+                            if (info != null && reader.GetValue(i) != null)
+                            {
+                                info.SetValue(t, reader.GetValue(i));
+                            }
+
+                        }
+                        result.Add(t);
+
+                    }
+
+                }
             }
-            reader.Close();
-            return result;
+            catch (Exception e)
+            {
+                Logger.InfoFormat("excepstion：{0}", e.Message);
+            }
+            finally
+            { 
+            
+                if(reader!=null)
+                {
+                    reader.Close();
+                    return result;
+                }
+            }
+           
         }
 
 
         public static int AddOrUpdate(string sql)
         {
-            MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-            int result = cmd.ExecuteNonQuery();
-            return result;
+            int result = 0;
+            try
+            {
+
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                cmd.CommandTimeout = 10;
+                result = cmd.ExecuteNonQuery();
+            }
+            catch(Exception e)
+            {
+                Logger.InfoFormat("excepstion：{0}", e.Message);
+            }
+            finally
+            {
+                return result;
+            }
+          
         }
 
 

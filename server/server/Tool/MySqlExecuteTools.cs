@@ -32,7 +32,7 @@ namespace server.Tool
             try
             {
                 MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-                cmd.CommandTimeout = 10;
+              // cmd.CommandTimeout = 10;
                 if (commandParameters != null)
                 {
                     foreach (MySqlParameter parm in commandParameters)
@@ -77,7 +77,7 @@ namespace server.Tool
             try
             {
                 MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-                cmd.CommandTimeout = 10;
+               // cmd.CommandTimeout = 10;
                 
                 if (commandParameters != null)
                 {
@@ -137,7 +137,7 @@ namespace server.Tool
             {
 
                 MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-                cmd.CommandTimeout = 10;
+               // cmd.CommandTimeout = 10;
                 result = cmd.ExecuteNonQuery();
             }
             catch(Exception e)

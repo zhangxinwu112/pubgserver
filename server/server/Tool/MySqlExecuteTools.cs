@@ -54,6 +54,7 @@ namespace server.Tool
             }
             catch(Exception e)
             {
+                ReConnect();
                 Logger.InfoFormat("excepstion：{0}", e.Message);
             }
             finally
@@ -66,6 +67,13 @@ namespace server.Tool
             }
             return result;
 
+
+        }
+
+        private static void ReConnect()
+        {
+            MySQLHelp.Instance.CloseConnection();
+            MySQLHelp.Instance.Connect();
 
         }
 
@@ -114,6 +122,7 @@ namespace server.Tool
             }
             catch (Exception e)
             {
+                ReConnect();
                 Logger.InfoFormat("excepstion：{0}", e.Message);
             }
             finally
@@ -142,6 +151,7 @@ namespace server.Tool
             }
             catch(Exception e)
             {
+                ReConnect();
                 Logger.InfoFormat("excepstion：{0}", e.Message);
             }
             finally

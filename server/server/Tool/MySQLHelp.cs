@@ -34,15 +34,20 @@ namespace mysql
                 SqlConn.Open();
                 Console.WriteLine("数据库已接成功" );
                 this.SqlConn = SqlConn;
+               
             }
             catch(Exception e)
             {
                 Console.WriteLine("数据库异常：" + e.Message);
+                if(SqlConn!=null)
+                {
+                    SqlConn.Close();
+                }
                 SqlConn = null;
             }
         }
         //关闭数据库连接
-        public void CloseConnection(MySqlConnection SqlConn)
+        public void CloseConnection()
         {
             if (SqlConn != null)
                 SqlConn.Close();

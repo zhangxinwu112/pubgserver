@@ -91,8 +91,7 @@ namespace server.DAO
         public void Update(PubgSession session, string body, Room room)
         {
             string sql = "update room set name = '" + room.name + "', area = '" + room.area + "' where id = @id;";
-            int result = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@name", room.name),
-                new MySqlParameter("@area", room.area),new MySqlParameter("@id", room.id) });
+            int result = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", room.id) });
             DataResult dataResult = new DataResult();
             if (result>0)
             {

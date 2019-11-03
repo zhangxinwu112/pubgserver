@@ -27,7 +27,6 @@ namespace server.DAO
             }
             else
             {
-                
                 //创建房间
                 sql = "insert into room(name,area,userId) " +
                     "values('" + room.name + "','" + room.area + "','" + room.userId + "')";
@@ -57,7 +56,7 @@ namespace server.DAO
         /// <param name="body"></param>
         /// <param name="id">roomid</param>
         /// <param name="userId">用户id</param>
-        public void DeleteRoom(PubgSession session, string body, int  id,int userId)
+        public void Delete(PubgSession session, string body, int  id,int userId)
         {
             string sql = "delete  from room where id = @id";
 
@@ -84,10 +83,37 @@ namespace server.DAO
         }
 
         /// <summary>
+        /// 更新房间
+        /// </summary>
+        /// <param name="session"></param>
+        /// <param name="body"></param>
+        /// <param name="room"></param>
+        public void Update(PubgSession session, string body, Room room)
+        {
+            string sql = "update room set name = '" + room.name + "', area = '" + room.area + "' where id = @id;";
+            int result = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@name", room.name),
+                new MySqlParameter("@area", room.area),new MySqlParameter("@id", room.id) });
+            DataResult dataResult = new DataResult();
+            if (result>0)
+            {
+                dataResult.result = 1;
+                dataResult.data = GetAllRoom(room.userId);
+            }
+            else
+            {
+                dataResult.result = 1;
+                dataResult.resean = "更新失败";
+            }
+            session.Send(GetSendData(dataResult, body));
+
+        }
+
+
+        /// <summary>
         /// 查询所有的房间
         /// </summary>
         /// <returns></returns>
-        private List<Room> GetAllRoom(int userId)
+            private List<Room> GetAllRoom(int userId)
         {
             string sql = "select * from room where userId = @userId";
             List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql, 
@@ -126,9 +152,6 @@ namespace server.DAO
                 //删除队和用户的关联表
                 string delete_grounp_userSql = "delete  from  grounp_user  where grounp_id = @grounp_id";
                 MySqlExecuteTools.GetCountResult(delete_grounp_userSql, new MySqlParameter[] { new MySqlParameter("@grounp_id", grounid) });
-
-
-
             });
         }
     }

@@ -15,5 +15,11 @@ namespace server.Model
         public string nick;
 
         public string image;
+
+       // 0 超级管理员
+       //1 普通管理员
+      // 2 道具
+      // 3 普通玩家
+        public int type;
     }
 }

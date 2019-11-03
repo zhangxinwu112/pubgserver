@@ -148,6 +148,7 @@ namespace server.Tool
                 MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
                // cmd.CommandTimeout = 10;
                 result = cmd.ExecuteNonQuery();
+              
             }
             catch(Exception e)
             {
@@ -162,6 +163,43 @@ namespace server.Tool
             return result;
 
         }
+
+        /// <summary>
+        /// 插入数据库并获取新增的数据id
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static int GetAddID(string sql)
+        {
+            int result = -1;
+            try
+            {
+
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (reader.HasRows)
+                    {
+                        return  reader.GetInt32(0);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                ReConnect();
+                Logger.InfoFormat("excepstion：{0}", e.Message);
+            }
+            finally
+            {
+
+            }
+
+            return result;
+
+        }
+
+
 
 
 

@@ -29,8 +29,8 @@ namespace server.DAO
             {
                 
                 //创建房间
-                sql = "insert into room(name,area,createUser) " +
-                    "values('" + room.name + "','" + room.area + "','" + room.createUser + "')";
+                sql = "insert into room(name,area,userId) " +
+                    "values('" + room.name + "','" + room.area + "','" + room.userId + "')";
                 int roomid = MySqlExecuteTools.GetAddID(sql);
                 if(roomid!=-1)
                 {
@@ -38,7 +38,7 @@ namespace server.DAO
                     CreateGrounp(5, roomid);
 
                     dataResult.result = 0;
-                    dataResult.data = GetAllRoom(room.createUser);
+                    dataResult.data = GetAllRoom(room.userId);
                 }
                 else
                 {
@@ -50,25 +50,48 @@ namespace server.DAO
             session.Send(GetSendData(dataResult, body));
         }
 
-        void Update()
+        /// <summary>
+        /// Delete
+        /// </summary>
+        /// <param name="session"></param>
+        /// <param name="body"></param>
+        /// <param name="id">roomid</param>
+        /// <param name="userId">用户id</param>
+        public void DeleteRoom(PubgSession session, string body, int  id,int userId)
         {
+            string sql = "delete  from room where id = @id";
 
-        }
+             int result = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", id) });
 
-        public void Delete(PubgSession session, string body, int  id)
-        {
+            DataResult dataResult = new DataResult();
+            if(result>0)
+            {
+              
+                dataResult.result = 0;
+                //删除队友的信息
+                DeleteGrounp(id);
 
+
+                dataResult.data = GetAllRoom(userId);
+            }
+            else
+            {
+                dataResult.result = 0;
+                dataResult.data = "删除失败";
+            }
+
+            session.Send(GetSendData(dataResult, body));
         }
 
         /// <summary>
         /// 查询所有的房间
         /// </summary>
         /// <returns></returns>
-        private List<Room> GetAllRoom(int createUser)
+        private List<Room> GetAllRoom(int userId)
         {
-            string sql = "select * from room where createUser = @createUser";
+            string sql = "select * from room where userId = @userId";
             List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql, 
-                new MySqlParameter[] { new MySqlParameter("@createUser", createUser) });
+                new MySqlParameter[] { new MySqlParameter("@userId", userId) });
             return result;
         }
 
@@ -79,13 +102,34 @@ namespace server.DAO
         /// <param name="roomid">房间id</param>
         private void CreateGrounp(int num,int roomid,string defaultCheckCode="123456")
         {
-   
             for(int i=0;i<num;i++)
             {
                string  sql = "insert into grounp(roomId,code,name,checkCode) " +
                    "values('" + roomid + "','" + (num+1) + "','" + "房间"+ (num+1) + "','" + defaultCheckCode + "')";
                 MySqlExecuteTools.AddOrUpdate(sql);
             }
+        }
+
+        private  void DeleteGrounp(int roomId)
+        {
+            string sql = "select * from grounp where roomId = @roomId";
+            List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
+                new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+
+            result.ForEach((item) => {
+
+                int grounid = item.id;
+                // 删除队信息
+                string deleteGronpSql = "delete  from grounp  where id = @id";
+                MySqlExecuteTools.GetCountResult(deleteGronpSql, new MySqlParameter[] { new MySqlParameter("@id", grounid) });
+
+                //删除队和用户的关联表
+                string delete_grounp_userSql = "delete  from  grounp_user  where grounp_id = @grounp_id";
+                MySqlExecuteTools.GetCountResult(delete_grounp_userSql, new MySqlParameter[] { new MySqlParameter("@grounp_id", grounid) });
+
+
+
+            });
         }
     }
 }

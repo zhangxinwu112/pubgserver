@@ -12,7 +12,7 @@ namespace  server.DAO
 {
    public  class RegisterDao: CommonDao
     {
-        public void RegisterUser(PubgSession session, string body, string telephone, string password, string nick, string icon, string checkCode,string userType)
+        public void RegisterUser(PubgSession session, string body, string telephone, string password, string name, string icon, string checkCode,string userType)
         {
            // Logger.InfoFormat("新的客户端断开：{0}", session.RemoteEndPoint);
 
@@ -31,8 +31,8 @@ namespace  server.DAO
             {
                 int type = Convert.ToInt32(userType);
                 dataResult.result = 0;
-                sql = "insert into user(password,nick ,telephone,image,type) " +
-                    "values('" + password + "','" + nick + "','" + telephone + "','" + icon + "','"+ type + "')";
+                sql = "insert into user(password,name ,telephone,image,type) " +
+                    "values('" + password + "','" + name + "','" + telephone + "','" + icon + "','"+ type + "')";
                 MySqlExecuteTools.AddOrUpdate(sql);
             }
 

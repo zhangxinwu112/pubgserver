@@ -12,7 +12,7 @@ namespace server.Model
 
         public string telephone;
 
-        public string nick;
+        public string name;
 
         public string image;
 

@@ -17,7 +17,6 @@ namespace server.Model
 
         public string  name;
 
-
         public string checkCode;
     }
 }

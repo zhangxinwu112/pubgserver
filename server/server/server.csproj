@@ -89,6 +89,7 @@
     <Compile Include="Model\DataResult.cs" />
     <Compile Include="Model\GPSItem.cs" />
     <Compile Include="Model\Grounp.cs" />
+    <Compile Include="Model\Grounp_User.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\SessionItem.cs" />
     <Compile Include="Model\UserName.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="Tool\Singleton\Singleton.cs" />
     <Compile Include="Tool\Singleton\SingletonCreator.cs" />
     <Compile Include="Tool\Singleton\SingletonProperty.cs" />
+    <Compile Include="Tool\StrUtil.cs" />
     <Compile Include="Tool\Sys.cs" />
     <Compile Include="Tool\TimeUtils.cs" />
   </ItemGroup>

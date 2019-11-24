@@ -83,10 +83,12 @@
     <Compile Include="DAO\CommonDao.cs" />
     <Compile Include="DAO\LoginDao.cs" />
     <Compile Include="DAO\RegisterDao.cs" />
-    <Compile Include="DAO\RoomDao.cs" />
+    <Compile Include="DAO\Room\SearchRoomDao.cs" />
+    <Compile Include="DAO\Room\RoomDao.cs" />
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
     <Compile Include="Model\GPSItem.cs" />
+    <Compile Include="Model\Grounp.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\SessionItem.cs" />
     <Compile Include="Model\UserName.cs" />
@@ -112,7 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Config\log4net.config" />
+    <None Include="Config\log4net.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Config\log4net.unix.config" />
     <None Include="packages.config" />
     <None Include="supersocket.cmd" />

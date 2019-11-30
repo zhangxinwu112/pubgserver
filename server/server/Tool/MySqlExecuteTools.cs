@@ -141,11 +141,12 @@ namespace server.Tool
 
         public static int AddOrUpdate(string sql)
         {
+            MySqlCommand cmd = null;
             int result = 0;
             try
             {
 
-                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
                // cmd.CommandTimeout = 10;
                 result = cmd.ExecuteNonQuery();
               
@@ -159,7 +160,6 @@ namespace server.Tool
             {
                
             }
-
             return result;
 
         }
@@ -206,10 +206,6 @@ namespace server.Tool
             return result;
 
         }
-
-
-
-
 
     }
 }

@@ -15,7 +15,7 @@ namespace server.DAO
     /// </summary>
     public class EditRoomDao : RoomDao
     {
-        ILog Logger = log4net.LogManager.GetLogger("server.DAO.RoomDao");
+        ILog Logger = log4net.LogManager.GetLogger("server.DAO.EditRoomDao");
         public void AddRoom(PubgSession session, string body, string roomName,string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建房间：{0}", roomName);

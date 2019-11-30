@@ -14,7 +14,7 @@ namespace server.DAO
     /// <summary>
     ///查询房间的关联数据
     /// </summary>
-    public class SearchRoomDao : CommonDao
+    public class SearchRoomDao : RoomDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.SearchRoomDao");
         public void SearchAllRoom(PubgSession session, string body, string  userId)
@@ -32,24 +32,19 @@ namespace server.DAO
         public void SearchSingleRoom(PubgSession session, string body, string roomId)
         {
             Logger.InfoFormat("查询单房间下的对：{0}", roomId);
-            string sql = "select * from grounp where roomId = @roomId";
-            List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
-                new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+           
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
-            dataResult.data = result;
+            dataResult.data = SearchSingleRoomCommon(roomId);
             session.Send(GetSendData(dataResult, body));
         }
 
         public void SearchSingleGrounp(PubgSession session, string body, string grounpId)
         {
             Logger.InfoFormat("查询group下的user：{0}", grounpId);
-            string sql = "select * from grounp_user where grounp_id = @grounp_id";
-            List<Grounp_User> result = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
-                new MySqlParameter[] { new MySqlParameter("@grounp_id", grounpId) });
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
-            dataResult.data = GetUserList(result);
+            dataResult.data = GetUserList(SearchSingleGrounpCommon(grounpId));
             session.Send(GetSendData(dataResult, body));
         }
 

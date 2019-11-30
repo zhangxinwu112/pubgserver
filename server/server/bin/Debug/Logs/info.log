@@ -1208,3 +1208,583 @@ A new session connected!
 2019-11-30 11:34:22,205 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
 2019-11-30 11:34:26,069 [8] INFO  PubgServerA - Session: aec69ccb-5135-4db9-98de-717cd78491b4/192.168.1.6:50417
 This session was closed for ClientClosing!
+2019-11-30 15:08:18,697 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 15:08:39,141 [5] INFO  PubgServerA - Session: 1bd295e5-29b3-4eea-b098-e87e3f71ae62/192.168.1.6:49390
+A new session connected!
+2019-11-30 15:08:39,148 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49390
+2019-11-30 15:08:44,159 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:08:48,180 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:08:48,182 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:08:48,293 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:08:48,395 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:08:48,396 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:08:48,473 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
+2019-11-30 15:08:48,473 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
+2019-11-30 15:08:48,484 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
+2019-11-30 15:08:48,485 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
+2019-11-30 15:08:49,148 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:08:54,148 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:08:59,149 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:08:59,478 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
+2019-11-30 15:08:59,478 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
+2019-11-30 15:08:59,496 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
+2019-11-30 15:08:59,496 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
+2019-11-30 15:09:00,488 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#1
+2019-11-30 15:09:04,149 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:06,999 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#123#16#shanxi
+2019-11-30 15:09:06,999 [6] INFO  server.DAO.RoomDao - 创建房间：123
+2019-11-30 15:09:07,016 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:09:07,016 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:09:07,033 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#23
+2019-11-30 15:09:07,033 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：23
+2019-11-30 15:09:07,050 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#59
+2019-11-30 15:09:07,050 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：59
+2019-11-30 15:09:07,179 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:09:09,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:14,149 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:19,150 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:24,158 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:29,152 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:34,151 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:39,151 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:44,151 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:49,151 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:54,153 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:09:54,397 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#团队创建#16#shanxi
+2019-11-30 15:09:54,397 [11] INFO  server.DAO.RoomDao - 创建房间：团队创建
+2019-11-30 15:09:54,412 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:09:54,413 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:09:54,431 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#24
+2019-11-30 15:09:54,431 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：24
+2019-11-30 15:09:54,447 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#66
+2019-11-30 15:09:54,448 [6] INFO  server.DAO.SearchRoomDao - 查询group下的user：66
+2019-11-30 15:09:54,466 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:09:59,152 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:01,223 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#45555#16#shanxi
+2019-11-30 15:10:01,223 [12] INFO  server.DAO.RoomDao - 创建房间：45555
+2019-11-30 15:10:01,240 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:01,240 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:01,257 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#25
+2019-11-30 15:10:01,258 [6] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：25
+2019-11-30 15:10:01,274 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#71
+2019-11-30 15:10:01,274 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：71
+2019-11-30 15:10:01,286 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:04,152 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:04,952 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#5666#16#shanxi
+2019-11-30 15:10:04,952 [12] INFO  server.DAO.RoomDao - 创建房间：5666
+2019-11-30 15:10:04,969 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:04,970 [6] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:04,987 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#26
+2019-11-30 15:10:04,988 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：26
+2019-11-30 15:10:05,004 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#75
+2019-11-30 15:10:05,004 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：75
+2019-11-30 15:10:05,020 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:07,513 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#25
+2019-11-30 15:10:07,514 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：25
+2019-11-30 15:10:07,531 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#71
+2019-11-30 15:10:07,532 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：71
+2019-11-30 15:10:07,547 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:08,192 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#24
+2019-11-30 15:10:08,192 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：24
+2019-11-30 15:10:08,211 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#66
+2019-11-30 15:10:08,211 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：66
+2019-11-30 15:10:08,227 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:08,689 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#23
+2019-11-30 15:10:08,689 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：23
+2019-11-30 15:10:08,707 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#59
+2019-11-30 15:10:08,708 [6] INFO  server.DAO.SearchRoomDao - 查询group下的user：59
+2019-11-30 15:10:08,723 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:09,053 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#24
+2019-11-30 15:10:09,053 [6] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：24
+2019-11-30 15:10:09,072 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#66
+2019-11-30 15:10:09,072 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：66
+2019-11-30 15:10:09,088 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:09,153 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:09,301 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#25
+2019-11-30 15:10:09,301 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：25
+2019-11-30 15:10:09,320 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#71
+2019-11-30 15:10:09,320 [6] INFO  server.DAO.SearchRoomDao - 查询group下的user：71
+2019-11-30 15:10:09,332 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:10,262 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#25
+2019-11-30 15:10:10,263 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：25
+2019-11-30 15:10:10,282 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#71
+2019-11-30 15:10:10,282 [6] INFO  server.DAO.SearchRoomDao - 查询group下的user：71
+2019-11-30 15:10:10,300 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:10,587 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#24
+2019-11-30 15:10:10,587 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：24
+2019-11-30 15:10:10,605 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#66
+2019-11-30 15:10:10,605 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：66
+2019-11-30 15:10:10,619 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:11,349 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#65
+2019-11-30 15:10:11,349 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：65
+2019-11-30 15:10:11,362 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:11,796 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#63
+2019-11-30 15:10:11,796 [6] INFO  server.DAO.SearchRoomDao - 查询group下的user：63
+2019-11-30 15:10:11,808 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:14,153 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:18,307 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#24
+2019-11-30 15:10:18,325 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:18,325 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:18,343 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#26
+2019-11-30 15:10:18,343 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：26
+2019-11-30 15:10:18,358 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#75
+2019-11-30 15:10:18,358 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：75
+2019-11-30 15:10:18,370 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:19,153 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:20,112 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#26
+2019-11-30 15:10:20,130 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:20,130 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:20,148 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#25
+2019-11-30 15:10:20,148 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：25
+2019-11-30 15:10:20,164 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#71
+2019-11-30 15:10:20,165 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：71
+2019-11-30 15:10:20,180 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:21,173 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#25
+2019-11-30 15:10:21,191 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:21,191 [6] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:21,207 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#23
+2019-11-30 15:10:21,208 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：23
+2019-11-30 15:10:21,224 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#59
+2019-11-30 15:10:21,224 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：59
+2019-11-30 15:10:21,237 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:10:21,686 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#23
+2019-11-30 15:10:21,704 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:10:21,704 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:10:24,153 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:29,154 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:34,154 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:39,154 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:10:40,602 [11] INFO  PubgServerA - Session: 1bd295e5-29b3-4eea-b098-e87e3f71ae62/192.168.1.6:49390
+This session was closed for ClientClosing!
+2019-11-30 15:17:01,057 [15] INFO  PubgServerA - Session: 55630e9d-cfa1-4ffd-999e-1d74f270570d/192.168.1.6:49436
+A new session connected!
+2019-11-30 15:17:01,057 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49436
+2019-11-30 15:17:06,069 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:17:06,815 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:17:06,815 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:17:06,884 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:17:06,976 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:17:06,977 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:17:11,069 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:17:11,084 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#123#16#shanxi
+2019-11-30 15:17:11,084 [12] INFO  server.DAO.RoomDao - 创建房间：123
+2019-11-30 15:17:11,106 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:17:11,106 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:17:11,125 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#27
+2019-11-30 15:17:11,126 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：27
+2019-11-30 15:17:11,140 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#77
+2019-11-30 15:17:11,140 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：77
+2019-11-30 15:17:11,152 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:17:16,069 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:17:16,207 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#4566#16#shanxi
+2019-11-30 15:17:16,207 [11] INFO  server.DAO.RoomDao - 创建房间：4566
+2019-11-30 15:17:16,225 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:17:16,225 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:17:16,243 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#28
+2019-11-30 15:17:16,243 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：28
+2019-11-30 15:17:16,259 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#83
+2019-11-30 15:17:16,259 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：83
+2019-11-30 15:17:16,272 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:17:19,902 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#28
+2019-11-30 15:17:19,902 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：28
+2019-11-30 15:17:19,921 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#83
+2019-11-30 15:17:19,921 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：83
+2019-11-30 15:17:19,938 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:17:20,747 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#28
+2019-11-30 15:17:20,764 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:17:20,765 [13] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:17:20,782 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#27
+2019-11-30 15:17:20,782 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：27
+2019-11-30 15:17:20,799 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#77
+2019-11-30 15:17:20,799 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：77
+2019-11-30 15:17:20,816 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:17:21,069 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:17:25,800 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@DeleteRoom#27
+2019-11-30 15:17:25,818 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:17:25,819 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:17:26,070 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:17:30,677 [11] INFO  PubgServerA - Session: 55630e9d-cfa1-4ffd-999e-1d74f270570d/192.168.1.6:49436
+This session was closed for ClientClosing!
+2019-11-30 15:18:26,417 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 15:18:30,012 [6] INFO  PubgServerA - Session: d9c61d57-c9b1-4122-9b25-e5c1c97885f4/192.168.1.6:49442
+A new session connected!
+2019-11-30 15:18:30,020 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49442
+2019-11-30 15:18:34,958 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:18:34,962 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:18:35,009 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:18:35,054 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:18:35,148 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:18:35,149 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:18:40,008 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:18:40,934 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#新房间#16#shanxi
+2019-11-30 15:18:40,935 [11] INFO  server.DAO.RoomDao - 创建房间：新房间
+2019-11-30 15:18:40,956 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:18:40,956 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:18:40,975 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#29
+2019-11-30 15:18:40,976 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：29
+2019-11-30 15:18:40,990 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#91
+2019-11-30 15:18:40,991 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：91
+2019-11-30 15:18:41,015 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:18:45,009 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:18:50,011 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:19:02,810 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 15:19:05,023 [5] INFO  PubgServerA - Session: a5ee85e8-7394-4ec9-8751-de96ef2235f6/192.168.1.6:49446
+A new session connected!
+2019-11-30 15:19:05,031 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49446
+2019-11-30 15:19:08,226 [10] INFO  PubgServerA - Session: a5ee85e8-7394-4ec9-8751-de96ef2235f6/192.168.1.6:49446
+This session was closed for ClientClosing!
+2019-11-30 15:19:10,508 [5] INFO  PubgServerA - Session: 7f9d7460-98e1-42c2-a31a-882a56cc8d24/192.168.1.6:49448
+A new session connected!
+2019-11-30 15:19:10,508 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49448
+2019-11-30 15:19:15,531 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:19:16,157 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:19:16,158 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:19:16,259 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:19:16,363 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:19:16,363 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:19:16,439 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#29
+2019-11-30 15:19:16,439 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：29
+2019-11-30 15:19:16,452 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#87
+2019-11-30 15:19:16,453 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：87
+2019-11-30 15:19:16,478 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:19:20,521 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:19:25,176 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#语句#16#shanxi
+2019-11-30 15:19:25,177 [11] INFO  server.DAO.RoomDao - 创建房间：语句
+2019-11-30 15:19:25,200 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:19:25,200 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:19:25,212 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#30
+2019-11-30 15:19:25,212 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：30
+2019-11-30 15:19:25,230 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#92
+2019-11-30 15:19:25,230 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：92
+2019-11-30 15:19:25,247 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:19:25,521 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:19:27,610 [11] INFO  PubgServerA - Session: 7f9d7460-98e1-42c2-a31a-882a56cc8d24/192.168.1.6:49448
+This session was closed for ClientClosing!
+2019-11-30 15:39:50,117 [6] INFO  PubgServerA - Session: 7dd32d98-0a8a-42e6-8c18-39040e92474c/192.168.1.6:49583
+A new session connected!
+2019-11-30 15:39:50,118 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49583
+2019-11-30 15:39:54,474 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:39:54,474 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:39:54,548 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:39:54,657 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:39:54,657 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:39:55,126 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:00,128 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:01,661 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#房间#16#shanxi
+2019-11-30 15:40:01,662 [9] INFO  server.DAO.RoomDao - 创建房间：房间
+2019-11-30 15:40:01,685 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:40:01,685 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:40:01,706 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 15:40:01,706 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 15:40:01,729 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:40:01,729 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:40:01,742 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:05,126 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:10,127 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:15,127 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:16,619 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#98
+2019-11-30 15:40:16,619 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：98
+2019-11-30 15:40:16,636 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:17,265 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#99
+2019-11-30 15:40:17,265 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：99
+2019-11-30 15:40:17,281 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:17,729 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#100
+2019-11-30 15:40:17,729 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：100
+2019-11-30 15:40:17,745 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:18,110 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#101
+2019-11-30 15:40:18,110 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：101
+2019-11-30 15:40:18,126 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:18,524 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#100
+2019-11-30 15:40:18,524 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：100
+2019-11-30 15:40:18,537 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:18,822 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#99
+2019-11-30 15:40:18,822 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：99
+2019-11-30 15:40:18,835 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:19,070 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#98
+2019-11-30 15:40:19,070 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：98
+2019-11-30 15:40:19,083 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:19,319 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:40:19,319 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:40:19,336 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:19,617 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:40:19,617 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:40:19,633 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:40:20,127 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:25,127 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:30,128 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:35,128 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:40,128 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:45,129 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:50,129 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:40:55,129 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:41:00,129 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:41:05,132 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:41:07,115 [8] INFO  PubgServerA - Session: 7dd32d98-0a8a-42e6-8c18-39040e92474c/192.168.1.6:49583
+This session was closed for ClientClosing!
+2019-11-30 15:42:38,239 [14] INFO  PubgServerA - Session: f3262f34-959e-4a1b-8724-dbedde1766da/192.168.1.6:49596
+A new session connected!
+2019-11-30 15:42:38,239 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49596
+2019-11-30 15:42:43,254 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:42:43,945 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:42:43,946 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:42:44,015 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:42:44,133 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:42:44,133 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:42:52,130 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 15:42:52,130 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 15:42:52,131 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:42:57,190 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:43:11,419 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:43:14,397 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:43:14,398 [5] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:43:14,420 [5] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:43:42,454 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:43:47,455 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:43:48,166 [5] INFO  PubgServerA - Session: f3262f34-959e-4a1b-8724-dbedde1766da/192.168.1.6:49596
+This session was closed for ClientClosing!
+2019-11-30 15:43:52,760 [18] INFO  PubgServerA - Session: 2c886fa7-fc4e-46b4-8047-93b6f474eb63/192.168.1.6:49600
+A new session connected!
+2019-11-30 15:43:52,761 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49600
+2019-11-30 15:43:57,577 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:43:57,578 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:43:57,648 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:43:57,756 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:43:57,756 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:43:57,770 [5] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:43:57,833 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 15:43:57,833 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 15:45:03,159 [16] INFO  PubgServerA - Session: 2c886fa7-fc4e-46b4-8047-93b6f474eb63/192.168.1.6:49600
+The session will be closed for 65.3207362 timeout, the session start time: 2019/11/30 星期六 15:43:52, last active time: 2019/11/30 星期六 15:43:57!
+2019-11-30 15:45:03,164 [14] INFO  PubgServerA - Session: 2c886fa7-fc4e-46b4-8047-93b6f474eb63/192.168.1.6:49600
+This session was closed for TimeOut!
+2019-11-30 15:48:24,249 [10] INFO  PubgServerA - Session: 1f1b0e8a-2043-4852-95ad-5861ea3902cd/192.168.1.6:49605
+A new session connected!
+2019-11-30 15:48:24,252 [19] INFO  PubgServerA - Session: ce297232-13f9-4d91-851c-89eba6f581f6/192.168.1.6:49606
+A new session connected!
+2019-11-30 15:48:24,252 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49605
+2019-11-30 15:48:24,253 [15] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49606
+2019-11-30 15:48:47,404 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:48:52,400 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:48:57,403 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:49:02,401 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:49:02,552 [16] INFO  PubgServerA - Session: 1f1b0e8a-2043-4852-95ad-5861ea3902cd/192.168.1.6:49605
+This session was closed for ClientClosing!
+2019-11-30 15:49:03,771 [15] INFO  PubgServerA - Session: ce297232-13f9-4d91-851c-89eba6f581f6/192.168.1.6:49606
+This session was closed for ClientClosing!
+2019-11-30 15:49:11,624 [20] INFO  PubgServerA - Session: 48b0dbec-a14c-4638-a7c6-7d35521130cf/192.168.1.6:49617
+A new session connected!
+2019-11-30 15:49:11,625 [14] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49617
+2019-11-30 15:49:16,189 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:49:16,189 [16] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:49:16,254 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:49:16,359 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:49:16,359 [15] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:49:16,436 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 15:49:16,436 [14] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 15:49:16,448 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:49:16,448 [15] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:49:16,461 [15] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:49:16,633 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:49:21,633 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:49:26,633 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:49:29,251 [16] INFO  PubgServerA - Session: 48b0dbec-a14c-4638-a7c6-7d35521130cf/192.168.1.6:49617
+This session was closed for ClientClosing!
+2019-11-30 15:49:58,022 [20] INFO  PubgServerA - Session: 80697290-6a70-4684-aa05-cb69e0ee028c/192.168.1.6:49619
+A new session connected!
+2019-11-30 15:49:58,022 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49619
+2019-11-30 15:50:03,035 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:50:03,190 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 15:50:03,190 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 15:50:03,259 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 15:50:03,352 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:50:03,353 [15] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:50:03,421 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 15:50:03,421 [16] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 15:50:03,432 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:50:03,432 [15] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:50:03,445 [15] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:05,086 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#98
+2019-11-30 15:50:05,086 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：98
+2019-11-30 15:50:05,110 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:05,846 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#99
+2019-11-30 15:50:05,847 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：99
+2019-11-30 15:50:05,865 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:06,310 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#100
+2019-11-30 15:50:06,310 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：100
+2019-11-30 15:50:06,325 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:06,675 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#101
+2019-11-30 15:50:06,675 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：101
+2019-11-30 15:50:06,698 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:07,089 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#100
+2019-11-30 15:50:07,089 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：100
+2019-11-30 15:50:07,108 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:07,453 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#99
+2019-11-30 15:50:07,453 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：99
+2019-11-30 15:50:07,465 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:07,801 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#98
+2019-11-30 15:50:07,801 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：98
+2019-11-30 15:50:07,812 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:08,034 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:50:08,116 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#98
+2019-11-30 15:50:08,116 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：98
+2019-11-30 15:50:08,131 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:08,447 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 15:50:08,447 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 15:50:08,461 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:12,456 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#566#16#shanxi
+2019-11-30 15:50:12,456 [16] INFO  server.DAO.RoomDao - 创建房间：566
+2019-11-30 15:50:12,478 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 15:50:12,478 [15] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 15:50:12,491 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 15:50:12,491 [16] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 15:50:12,507 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 15:50:12,507 [15] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 15:50:12,520 [15] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:13,034 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:50:14,096 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 15:50:14,096 [15] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 15:50:14,108 [15] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:14,445 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#104
+2019-11-30 15:50:14,445 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：104
+2019-11-30 15:50:14,459 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:14,759 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#105
+2019-11-30 15:50:14,759 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：105
+2019-11-30 15:50:14,776 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:15,106 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#106
+2019-11-30 15:50:15,107 [15] INFO  server.DAO.SearchRoomDao - 查询group下的user：106
+2019-11-30 15:50:15,118 [15] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:15,753 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#105
+2019-11-30 15:50:15,753 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：105
+2019-11-30 15:50:15,770 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:16,018 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#104
+2019-11-30 15:50:16,018 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：104
+2019-11-30 15:50:16,035 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:16,250 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 15:50:16,250 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 15:50:16,266 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:16,515 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 15:50:16,515 [16] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 15:50:16,531 [16] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:16,813 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 15:50:16,813 [14] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 15:50:16,829 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 15:50:18,034 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 15:50:18,328 [15] INFO  PubgServerA - Session: 80697290-6a70-4684-aa05-cb69e0ee028c/192.168.1.6:49619
+This session was closed for ClientClosing!
+2019-11-30 16:07:51,022 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 16:08:05,953 [6] INFO  PubgServerA - Session: c1325b60-848d-4f5f-9057-acd6a797049e/192.168.1.6:49650
+A new session connected!
+2019-11-30 16:08:05,961 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49650
+2019-11-30 16:08:10,701 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 16:08:10,706 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 16:08:10,811 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 16:08:10,922 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:08:10,923 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:08:10,950 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:11,008 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:08:11,009 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:08:11,024 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:08:11,025 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:08:11,051 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:08:15,950 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:20,950 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:24,923 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@UpdateRoom#我的新房间#房间11#1#32#102
+2019-11-30 16:08:24,937 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name = '房间11', checkCode = '1' where id = '102'' at line 1
+2019-11-30 16:08:24,944 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:08:24,944 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:08:24,957 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:08:24,958 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:08:24,973 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:08:24,974 [12] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:08:24,986 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:08:25,951 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:30,951 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:35,951 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:40,951 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:45,952 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:50,952 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:08:55,951 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:00,953 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:05,953 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:10,953 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:15,953 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:20,954 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:25,953 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:30,954 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:32,345 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@UpdateRoom#我的新房间#房间11#1111111111#32#102
+2019-11-30 16:09:32,360 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name = '房间11', checkCode = '1111111111' where id = '102'' at line 1
+2019-11-30 16:09:32,363 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:09:32,363 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:09:32,381 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:09:32,381 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:09:32,398 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:09:32,398 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:09:32,413 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:09:35,955 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:40,955 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:45,955 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:50,955 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:09:55,956 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:17,441 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 16:10:24,937 [5] INFO  PubgServerA - Session: d2762efa-193f-4a16-9dfc-566b75be522d/192.168.1.6:49664
+A new session connected!
+2019-11-30 16:10:24,944 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49664
+2019-11-30 16:10:29,946 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:30,660 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 16:10:30,662 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 16:10:30,766 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 16:10:30,858 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:10:30,859 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:10:30,924 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:10:30,925 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:10:30,936 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:30,937 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:30,961 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:34,939 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:39,939 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:42,198 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@UpdateRoom#我的新房间1#房间11#1234561#32#102
+2019-11-30 16:10:42,220 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:10:42,220 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:10:42,232 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:10:42,232 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:10:42,249 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:42,249 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:42,261 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:44,940 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:45,314 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 16:10:45,314 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 16:10:45,330 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:46,705 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:46,705 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:46,727 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:48,361 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#31
+2019-11-30 16:10:48,362 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：31
+2019-11-30 16:10:48,382 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#97
+2019-11-30 16:10:48,382 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：97
+2019-11-30 16:10:48,405 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:49,623 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:10:49,624 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:10:49,643 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:49,643 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:49,659 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:49,940 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:50,816 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 16:10:50,816 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 16:10:50,829 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:51,147 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#103
+2019-11-30 16:10:51,148 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：103
+2019-11-30 16:10:51,161 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:52,291 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:52,291 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:52,307 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:54,940 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 16:10:56,498 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@UpdateRoom#我的新房间1#房间11#1234561#32#102
+2019-11-30 16:10:56,516 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 16:10:56,516 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 16:10:56,533 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#32
+2019-11-30 16:10:56,534 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：32
+2019-11-30 16:10:56,550 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#102
+2019-11-30 16:10:56,550 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：102
+2019-11-30 16:10:56,563 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2019-11-30 16:10:57,944 [8] INFO  PubgServerA - Session: d2762efa-193f-4a16-9dfc-566b75be522d/192.168.1.6:49664
+This session was closed for ClientClosing!

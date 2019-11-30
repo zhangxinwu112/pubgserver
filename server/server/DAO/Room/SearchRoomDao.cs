@@ -20,7 +20,7 @@ namespace server.DAO
         public void SearchAllRoom(PubgSession session, string body, string  userId)
         {
             Logger.InfoFormat("查询用户下的所有房间：{0}", userId);
-            string sql = "select * from room where userId = @userId";
+            string sql = "select * from room where userId = @userId ORDER BY id DESC";
             List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql,
                 new MySqlParameter[] { new MySqlParameter("@userId", userId)});
             DataResult dataResult = new DataResult();

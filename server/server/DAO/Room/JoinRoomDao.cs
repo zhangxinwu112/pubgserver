@@ -75,5 +75,44 @@ namespace server.DAO
             //查询能否删除
             session.Send(GetSendData(dataResult, body));
         }
+
+        /// <summary>
+        /// 查询grounp is full
+        /// </summary>
+        public void QueryGrounpIsFull(PubgSession session, string body, string userId)
+        {
+            DataResult dataResult = new DataResult();
+
+            string sql = "select * from grounp_user where user_id = @user_id";
+            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+               new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
+
+            dataResult.result = 0;
+            //没有加入房间
+            if (grounp_UserList.Count==0)
+            {
+                dataResult.data = false;
+            }
+
+            if(grounp_UserList.Count==1)
+            {
+                int grounp_id = grounp_UserList[0].grounp_id;
+
+                sql = "select * from grounp_user where grounp_id = @grounp_id";
+                List<Grounp_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+                   new MySqlParameter[] { new MySqlParameter("@grounp_id", grounp_id) });
+                if(_grounp_UserList.Count< maxNum)
+                {
+                    dataResult.data = false;
+                }
+            }
+
+          
+            session.Send(GetSendData(dataResult, body));
+        }
     }
+
+    
+
+
 }

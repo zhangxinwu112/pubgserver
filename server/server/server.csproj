@@ -84,7 +84,7 @@
     <Compile Include="DAO\LoginDao.cs" />
     <Compile Include="DAO\RegisterDao.cs" />
     <Compile Include="DAO\Room\SearchRoomDao.cs" />
-    <Compile Include="DAO\Room\RoomDao.cs" />
+    <Compile Include="DAO\Room\EditRoomDao.cs" />
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
     <Compile Include="Model\GPSItem.cs" />

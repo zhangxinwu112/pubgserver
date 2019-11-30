@@ -1,650 +1,476 @@
-﻿2019-11-24 11:06:26,466 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:07:33,968 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:13:16,655 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:13:30,787 [5] INFO  PubgServerA - Session: 2f0dd41b-c28a-4c10-9d21-4c3400c50d0d/192.168.1.6:49865
+﻿2019-11-30 08:40:59,653 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 08:41:29,438 [5] INFO  PubgServerA - Session: 1cfc91b1-eb76-4cf5-a940-2d754dff91fb/192.168.1.6:49362
 A new session connected!
-2019-11-24 11:13:30,794 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49865
-2019-11-24 11:13:35,800 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:13:40,792 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:13:45,792 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:13:50,794 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:13:55,792 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:00,792 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:05,792 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:10,794 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:15,795 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:20,793 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:25,793 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:30,795 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:35,796 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:40,794 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:45,795 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:50,795 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:14:55,795 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:15:00,795 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:15:05,797 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:15:10,603 [13] INFO  PubgServerA - Session: 2f0dd41b-c28a-4c10-9d21-4c3400c50d0d/192.168.1.6:49865
+2019-11-30 08:41:29,446 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49362
+2019-11-30 08:41:34,454 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:41:37,823 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#hjjjjj
+2019-11-30 08:41:37,825 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 08:41:39,446 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:41:44,446 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:41:49,447 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:41:50,863 [9] INFO  PubgServerA - Session: 1cfc91b1-eb76-4cf5-a940-2d754dff91fb/192.168.1.6:49362
 This session was closed for ClientClosing!
-2019-11-24 11:16:55,665 [15] INFO  PubgServerA - Session: 8b6fac47-e745-4eaa-bee3-b9223e2b33e0/192.168.1.6:49875
+2019-11-30 08:42:04,411 [5] INFO  PubgServerA - Session: ad260f9e-24ab-4bdb-8424-f9a2b4e06cec/192.168.1.6:49368
 A new session connected!
-2019-11-24 11:16:55,666 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49875
-2019-11-24 11:17:00,679 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:05,678 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:10,678 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:15,678 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:20,678 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:25,682 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:30,684 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:35,679 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:40,680 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:45,680 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:50,680 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:17:55,680 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:00,682 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:05,681 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:10,684 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:15,683 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:20,683 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:25,682 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:59,958 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:18:59,963 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.Register@RegisterUser#17391767977#123456#测试正好#image1#123456#0
-2019-11-24 11:19:04,954 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:09,955 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:14,955 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:19,955 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:24,957 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:29,956 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:19:30,107 [13] INFO  PubgServerA - Session: 8b6fac47-e745-4eaa-bee3-b9223e2b33e0/192.168.1.6:49875
+2019-11-30 08:42:04,411 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49368
+2019-11-30 08:42:09,223 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 08:42:09,223 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 08:42:09,322 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 08:42:09,420 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:42:09,456 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 08:42:09,457 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 08:42:09,606 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
+2019-11-30 08:42:09,606 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
+2019-11-30 08:42:09,622 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
+2019-11-30 08:42:09,622 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
+2019-11-30 08:42:14,420 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 08:42:17,686 [13] INFO  PubgServerA - Session: ad260f9e-24ab-4bdb-8424-f9a2b4e06cec/192.168.1.6:49368
 This session was closed for ClientClosing!
-2019-11-24 11:22:23,638 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:22:34,358 [5] INFO  PubgServerA - Session: e646fa05-f7ae-43a0-aa5d-a376f7b99cbc/192.168.1.6:49921
+2019-11-30 09:28:50,499 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 09:32:41,033 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 09:33:00,697 [6] INFO  PubgServerA - Session: 10606ece-9a4e-4965-8e64-8941c63e611b/192.168.1.6:49528
 A new session connected!
-2019-11-24 11:22:34,365 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49921
-2019-11-24 11:22:39,368 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:22:44,364 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:22:49,361 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:22:54,362 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:22:59,362 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:23:01,470 [8] INFO  PubgServerA - Session: e646fa05-f7ae-43a0-aa5d-a376f7b99cbc/192.168.1.6:49921
+2019-11-30 09:33:00,704 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49528
+2019-11-30 09:33:05,716 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:06,761 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 09:33:06,763 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:33:06,875 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 09:33:06,991 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 09:33:06,991 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 09:33:10,710 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:15,710 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:20,710 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:25,710 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:30,711 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:35,711 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:33:40,711 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:00,729 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#我的测试房间#16#shanxi
+2019-11-30 09:34:12,646 [13] INFO  server.DAO.RoomDao - 创建房间：我的测试房间
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,484 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,485 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,485 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,485 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:51,485 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:34:55,736 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:35:00,733 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:35:05,733 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:35:08,958 [19] INFO  PubgServerA - Session: 10606ece-9a4e-4965-8e64-8941c63e611b/192.168.1.6:49528
 This session was closed for ClientClosing!
-2019-11-24 11:24:12,134 [5] INFO  PubgServerA - Session: 5e0a03ab-8242-47b3-8b5a-ee65fc359950/192.168.1.6:49923
+2019-11-30 09:38:48,419 [14] INFO  PubgServerA - Session: de8bd729-43a0-4d6a-946e-f98144e0694a/192.168.1.6:49552
 A new session connected!
-2019-11-24 11:24:12,134 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49923
-2019-11-24 11:24:17,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:22,147 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:27,148 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:32,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:37,147 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:42,148 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:47,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:52,150 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:24:57,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:02,149 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:07,149 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:12,149 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:17,152 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:22,150 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:27,150 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:32,151 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:37,152 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:42,153 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:47,151 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:52,152 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:25:57,152 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:26:02,152 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:26:07,153 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:26:09,106 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.RegisterDao@RegisterUser#17391777972#123456#1233#image1#123456#0
-2019-11-24 11:28:36,642 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:28:39,729 [5] INFO  PubgServerA - Session: 32aa52d2-31f5-4e95-93c7-630ce08fd198/192.168.1.6:49964
-A new session connected!
-2019-11-24 11:28:39,738 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49964
-2019-11-24 11:28:42,442 [11] INFO  PubgServerA - Session: 32aa52d2-31f5-4e95-93c7-630ce08fd198/192.168.1.6:49964
+2019-11-30 09:38:48,420 [21] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49552
+2019-11-30 09:38:52,544 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 09:38:52,544 [20] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:38:52,589 [20] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 09:38:53,429 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:38:58,429 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:39:03,429 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:39:08,430 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:39:09,978 [21] INFO  PubgServerA - Session: de8bd729-43a0-4d6a-946e-f98144e0694a/192.168.1.6:49552
 This session was closed for ClientClosing!
-2019-11-24 11:28:54,572 [5] INFO  PubgServerA - Session: 11c4adc5-75de-4aae-b21d-1f07abc3f2eb/192.168.1.6:49966
+2019-11-30 09:39:12,683 [23] INFO  PubgServerA - Session: 7bcbd51d-a687-4eca-b641-6d5d84401f62/192.168.1.6:49555
 A new session connected!
-2019-11-24 11:28:54,572 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49966
-2019-11-24 11:28:59,590 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:29:04,435 [11] INFO  PubgServerA - Session: 11c4adc5-75de-4aae-b21d-1f07abc3f2eb/192.168.1.6:49966
+2019-11-30 09:39:12,683 [21] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49555
+2019-11-30 09:39:15,962 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#淡淡的
+2019-11-30 09:39:15,963 [21] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:39:17,692 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:39:22,692 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:39:23,205 [17] INFO  PubgServerA - Session: 7bcbd51d-a687-4eca-b641-6d5d84401f62/192.168.1.6:49555
 This session was closed for ClientClosing!
-2019-11-24 11:30:38,778 [9] INFO  PubgServerA - Session: 2c164292-8788-40e9-89f7-3cb2cace3687/192.168.1.6:49968
+2019-11-30 09:40:35,628 [22] INFO  PubgServerA - Session: eb260d18-14cd-4d79-877d-03a5997abe49/192.168.1.6:49563
 A new session connected!
-2019-11-24 11:30:38,779 [13] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49968
-2019-11-24 11:30:43,792 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:30:48,791 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:30:53,792 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:30:58,793 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:03,792 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:08,792 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:13,792 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:18,793 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:23,793 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:31:27,653 [12] INFO  PubgServerA - Session: 2c164292-8788-40e9-89f7-3cb2cace3687/192.168.1.6:49968
+2019-11-30 09:40:35,629 [20] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49563
+2019-11-30 09:40:39,953 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123
+2019-11-30 09:40:39,954 [21] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:40:40,637 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:40:45,637 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:40:50,638 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:40:55,640 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:40:55,959 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2019-11-30 09:40:55,959 [17] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2019-11-30 09:40:56,030 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 09:41:00,638 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:41:02,379 [17] INFO  PubgServerA - Session: eb260d18-14cd-4d79-877d-03a5997abe49/192.168.1.6:49563
 This session was closed for ClientClosing!
-2019-11-24 11:31:58,129 [15] INFO  PubgServerA - Session: 4a25a745-49ce-44f6-af62-d876c17e1a0e/192.168.1.6:49971
+2019-11-30 09:41:43,627 [23] INFO  PubgServerA - Session: 793a3aec-02f3-4c5e-b770-84eac5a1971e/192.168.1.6:49592
 A new session connected!
-2019-11-24 11:31:58,130 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49971
-2019-11-24 11:32:03,143 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:08,140 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:13,141 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:18,141 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:23,142 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:28,141 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:33,142 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:38,142 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:43,143 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:48,143 [18] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:53,143 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:32:54,570 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.RegisterDao@RegisterUser#17391767972#123456#天涯#image1#123456#0
-2019-11-24 11:33:07,847 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:07,847 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:08,144 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:13,145 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:18,146 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:23,145 [18] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:28,145 [18] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:33,145 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:33:37,779 [11] INFO  PubgServerA - Session: 4a25a745-49ce-44f6-af62-d876c17e1a0e/192.168.1.6:49971
+2019-11-30 09:41:43,627 [20] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49592
+2019-11-30 09:41:48,641 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:41:53,640 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:41:58,639 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:03,640 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:05,396 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 09:42:05,396 [21] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:42:05,467 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 09:42:05,573 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 09:42:05,573 [21] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 09:42:08,640 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:13,640 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:18,641 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:19,827 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#344455#16#shanxi
+2019-11-30 09:42:23,590 [20] INFO  server.DAO.RoomDao - 创建房间：344455
+2019-11-30 09:42:23,641 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:28,643 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:33,641 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:38,642 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:43,644 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:48,642 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:42:50,577 [15] INFO  PubgServerA - Session: 793a3aec-02f3-4c5e-b770-84eac5a1971e/192.168.1.6:49592
 This session was closed for ClientClosing!
-2019-11-24 11:35:44,204 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:35:47,778 [6] INFO  PubgServerA - Session: cd8a1740-cb41-48ce-848d-e9ff1ae13eb4/192.168.1.6:49990
+2019-11-30 09:44:42,824 [23] INFO  PubgServerA - Session: 9d92813d-bbbd-43d2-9b29-ac46d742e539/192.168.1.6:49659
 A new session connected!
-2019-11-24 11:35:47,787 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49990
-2019-11-24 11:35:49,875 [10] INFO  PubgServerA - Session: cd8a1740-cb41-48ce-848d-e9ff1ae13eb4/192.168.1.6:49990
+2019-11-30 09:44:42,824 [15] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49659
+2019-11-30 09:44:47,285 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 09:44:47,285 [21] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:44:47,301 [21] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 09:44:47,834 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:44:52,832 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:44:55,974 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 09:44:55,974 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 09:44:56,044 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 09:44:56,153 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 09:44:56,153 [9] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 09:44:57,833 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:02,833 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:05,717 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#13344#16#shanxi
+2019-11-30 09:45:05,717 [15] INFO  server.DAO.RoomDao - 创建房间：13344
+2019-11-30 09:45:24,219 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:24,219 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:24,219 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:24,219 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:27,837 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:32,835 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:37,835 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:42,836 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:47,836 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:52,837 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:45:57,837 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:02,837 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:07,838 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:12,838 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:17,840 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:22,837 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:27,839 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:32,838 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:37,838 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:42,839 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:47,839 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:52,839 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:46:57,840 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:02,843 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:07,840 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:12,840 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:17,841 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:22,841 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:27,841 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:32,841 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:37,842 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:42,843 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:47,845 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:52,843 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:47:57,843 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:02,843 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:07,843 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:12,846 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:17,844 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:22,844 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:27,845 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:32,845 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:37,845 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:42,855 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:47,849 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:52,846 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:48:57,846 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:02,847 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:07,849 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:12,847 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:17,847 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:22,850 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:27,848 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:32,848 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:37,849 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:42,849 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:47,851 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:52,849 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:49:57,901 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:02,852 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:07,850 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:12,851 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:17,851 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:22,852 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:27,851 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:32,852 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:37,855 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:42,852 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:47,854 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:52,855 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:50:57,853 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:51:02,853 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:51:07,854 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:51:07,961 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#133yyyy#16#shanxi
+2019-11-30 09:51:07,961 [8] INFO  server.DAO.RoomDao - 创建房间：133yyyy
+2019-11-30 09:51:07,977 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 09:56:46,280 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 09:56:47,885 [6] INFO  PubgServerA - Session: 111779fa-2b73-48bd-b696-ab6f52398ee8/192.168.1.6:49896
+A new session connected!
+2019-11-30 09:56:47,892 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49896
+2019-11-30 09:56:52,876 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:56:57,870 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:57:00,428 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#133yyyy#16#shanxi
+2019-11-30 09:57:00,429 [10] INFO  server.DAO.RoomDao - 创建房间：133yyyy
+2019-11-30 09:58:45,596 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 09:58:47,896 [6] INFO  PubgServerA - Session: b4077066-c24e-459b-8d44-d57abf2fd0fb/192.168.1.6:49917
+A new session connected!
+2019-11-30 09:58:47,903 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49917
+2019-11-30 09:58:52,884 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:58:57,875 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:02,876 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:07,877 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:12,876 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:17,876 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:22,876 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:27,876 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 09:59:30,053 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#133yyyy#16#shanxi
+2019-11-30 09:59:30,055 [12] INFO  server.DAO.RoomDao - 创建房间：133yyyy
+2019-11-30 10:01:03,511 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 10:01:03,912 [5] INFO  PubgServerA - Session: 6a6187be-c64e-4ce3-a7e0-3abe2890b8f3/192.168.1.6:49934
+A new session connected!
+2019-11-30 10:01:03,925 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49934
+2019-11-30 10:01:07,890 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:01:12,881 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:01:16,079 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#133yyyy#16#shanxi
+2019-11-30 10:01:16,081 [10] INFO  server.DAO.RoomDao - 创建房间：133yyyy
+2019-11-30 10:02:06,786 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:02:06,804 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:06,805 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:07,888 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:12,885 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:17,885 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:22,885 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:27,886 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:32,886 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:37,886 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:42,888 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:47,890 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:52,888 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:02:57,889 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:02,892 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:07,889 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:12,889 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:17,890 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:22,890 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:27,890 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:03:32,891 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:21,684 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 10:04:22,913 [6] INFO  PubgServerA - Session: 205de695-9577-41bd-b107-3fee6d937fd2/192.168.1.6:49948
+A new session connected!
+2019-11-30 10:04:22,920 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49948
+2019-11-30 10:04:24,555 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#133yyyy#16#shanxi
+2019-11-30 10:04:24,559 [11] INFO  server.DAO.RoomDao - 创建房间：133yyyy
+2019-11-30 10:04:24,592 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:04:27,893 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:32,893 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:37,893 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:42,893 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:47,894 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:52,894 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:04:57,894 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:02,897 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:07,895 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:12,895 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:17,895 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:22,899 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:27,897 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:32,896 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:37,899 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:42,897 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:47,897 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:52,897 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:05:57,899 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:06:34,636 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 10:07:11,581 [5] INFO  PubgServerA - Session: 4f64bcf7-a21f-4b8e-9b31-c34ac4a1db5b/192.168.1.6:49963
+A new session connected!
+2019-11-30 10:07:11,588 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49963
+2019-11-30 10:07:15,937 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 10:07:15,941 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 10:07:16,042 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 10:07:16,152 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 10:07:16,152 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 10:07:16,579 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:07:20,039 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#45555#16#shanxi
+2019-11-30 10:07:20,040 [11] INFO  server.DAO.RoomDao - 创建房间：45555
+2019-11-30 10:07:31,245 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:08:12,140 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:12,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:16,583 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:21,585 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:26,583 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:31,583 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:36,584 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:41,584 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:46,586 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:51,585 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:08:52,309 [11] INFO  PubgServerA - Session: 4f64bcf7-a21f-4b8e-9b31-c34ac4a1db5b/192.168.1.6:49963
 This session was closed for ClientClosing!
-2019-11-24 11:35:54,291 [6] INFO  PubgServerA - Session: a3effe2c-b54a-4871-b60f-3b374ea693c0/192.168.1.6:49992
+2019-11-30 10:09:00,501 [9] INFO  PubgServerA - Session: 67e582cf-e2b2-4ed9-84c4-3b84d9ad2c64/192.168.1.6:49972
 A new session connected!
-2019-11-24 11:35:54,291 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49992
-2019-11-24 11:35:59,312 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:36:03,968 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
-2019-11-24 11:36:03,969 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
-2019-11-24 11:36:04,306 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:36:09,306 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:36:14,307 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:36:15,438 [10] INFO  PubgServerA - Session: a3effe2c-b54a-4871-b60f-3b374ea693c0/192.168.1.6:49992
+2019-11-30 10:09:00,502 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49972
+2019-11-30 10:09:05,518 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:10,518 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:15,521 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:19,744 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 10:09:19,744 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 10:09:19,823 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 10:09:19,926 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 10:09:19,926 [13] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 10:09:20,518 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:25,519 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:30,519 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:35,519 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:36,958 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#77922#16#shanxi
+2019-11-30 10:09:36,958 [11] INFO  server.DAO.RoomDao - 创建房间：77922
+2019-11-30 10:09:36,975 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:09:40,519 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:45,520 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:50,520 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:09:55,520 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:00,523 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:05,521 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:10,521 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:15,520 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:20,521 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:25,522 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:30,524 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:42,488 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 10:10:45,539 [5] INFO  PubgServerA - Session: 16a08e11-d588-4897-a182-e5fde3003424/192.168.1.6:49983
+A new session connected!
+2019-11-30 10:10:45,547 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:45,547 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49983
+2019-11-30 10:10:48,749 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#77922#16#shanxi
+2019-11-30 10:10:48,751 [8] INFO  server.DAO.RoomDao - 创建房间：77922
+2019-11-30 10:10:48,790 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:10:50,522 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:10:55,523 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:00,523 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:05,526 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:10,524 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:15,526 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:20,526 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:25,524 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:11:26,360 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#6777777#16#shanxi
+2019-11-30 10:11:26,360 [11] INFO  server.DAO.RoomDao - 创建房间：6777777
+2019-11-30 10:13:02,849 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：There is already an open DataReader associated with this Connection which must be closed first.
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,854 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:02,855 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:05,530 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:10,529 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:15,530 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:20,531 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:25,530 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:30,531 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:35,531 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:40,532 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:45,531 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:50,532 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:13:55,532 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:14:00,532 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:14:05,533 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:14:10,533 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:14:15,533 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:14:19,191 [15] INFO  PubgServerA - Session: 16a08e11-d588-4897-a182-e5fde3003424/192.168.1.6:49983
 This session was closed for ClientClosing!
-2019-11-24 11:48:15,477 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 11:48:16,197 [5] INFO  PubgServerA - Session: 7c4b908b-a9a9-4d96-9657-032e44000058/192.168.1.6:50178
+2019-11-30 10:15:21,981 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-11-30 10:15:34,745 [6] INFO  PubgServerA - Session: dee1eebc-9463-41e6-805d-a64025b88eac/192.168.1.6:50001
 A new session connected!
-2019-11-24 11:48:16,206 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50178
-2019-11-24 11:48:21,201 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:48:22,777 [10] INFO  PubgServerA - Session: 7c4b908b-a9a9-4d96-9657-032e44000058/192.168.1.6:50178
+2019-11-30 10:15:34,752 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50001
+2019-11-30 10:15:39,206 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 10:15:39,210 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 10:15:39,328 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 10:15:39,434 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 10:15:39,434 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 10:15:39,741 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:15:44,744 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:15:49,742 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:15:50,238 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#我的测试房间#16#shanxi
+2019-11-30 10:15:50,238 [8] INFO  server.DAO.RoomDao - 创建房间：我的测试房间
+2019-11-30 10:15:54,742 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:15:59,742 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:04,742 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:09,743 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:14,743 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:19,743 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:24,744 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:16:28,690 [11] INFO  PubgServerA - Session: dee1eebc-9463-41e6-805d-a64025b88eac/192.168.1.6:50001
 This session was closed for ClientClosing!
-2019-11-24 11:48:27,459 [5] INFO  PubgServerA - Session: 7267a1d7-37b1-49cd-8dea-3047addce66d/192.168.1.6:50187
+2019-11-30 10:17:36,243 [12] INFO  PubgServerA - Session: a2c7d495-0f87-452b-be26-ba9cf8b7f227/192.168.1.6:50013
 A new session connected!
-2019-11-24 11:48:27,459 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50187
-2019-11-24 11:48:32,472 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:48:33,178 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
-2019-11-24 11:48:33,179 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
-2019-11-24 11:48:37,471 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:48:38,771 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 11:48:42,471 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:48:43,559 [11] INFO  PubgServerA - Session: 7267a1d7-37b1-49cd-8dea-3047addce66d/192.168.1.6:50187
-This session was closed for ClientClosing!
-2019-11-24 11:49:04,568 [6] INFO  PubgServerA - Session: 586b1286-5528-423b-a352-d45bb95dda37/192.168.1.6:50209
-A new session connected!
-2019-11-24 11:49:04,568 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50209
-2019-11-24 11:49:08,896 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
-2019-11-24 11:49:08,896 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
-2019-11-24 11:49:08,970 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 11:49:09,577 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:11,254 [10] INFO  PubgServerA - Session: 586b1286-5528-423b-a352-d45bb95dda37/192.168.1.6:50209
-This session was closed for ClientClosing!
-2019-11-24 11:49:17,543 [6] INFO  PubgServerA - Session: ef3d877d-3ab7-4571-aca1-7ad32c756de3/192.168.1.6:50225
-A new session connected!
-2019-11-24 11:49:17,544 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50225
-2019-11-24 11:49:22,556 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:27,556 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:32,556 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:37,556 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:42,558 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:46,873 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.RegisterDao@RegisterUser#17391767973#123456#管理员#image1#123456#1
-2019-11-24 11:49:47,557 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:52,557 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:49:57,557 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:02,558 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:07,561 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:12,559 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:17,560 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:20,961 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 11:50:20,961 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 11:50:21,027 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 11:50:22,559 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 11:50:23,069 [10] INFO  PubgServerA - Session: ef3d877d-3ab7-4571-aca1-7ad32c756de3/192.168.1.6:50225
-This session was closed for ClientClosing!
-2019-11-24 19:32:11,488 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 19:32:44,702 [5] INFO  PubgServerA - Session: 41592c17-29c9-46f0-837e-4fc487e18bb9/192.168.1.6:49645
-A new session connected!
-2019-11-24 19:32:44,710 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49645
-2019-11-24 19:32:49,709 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:32:54,707 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:32:59,605 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 19:32:59,606 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 19:32:59,704 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:32:59,741 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 19:33:04,704 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:33:06,874 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 19:33:09,704 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:33:14,705 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:33:19,705 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:33:21,921 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 19:33:24,705 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:33:29,003 [12] INFO  PubgServerA - Session: 41592c17-29c9-46f0-837e-4fc487e18bb9/192.168.1.6:49645
-This session was closed for ClientClosing!
-2019-11-24 19:33:54,497 [5] INFO  PubgServerA - Session: ae836963-a026-4aca-8843-9e6d2498f549/192.168.1.6:49725
-A new session connected!
-2019-11-24 19:33:54,497 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49725
-2019-11-24 19:33:58,148 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 19:33:58,148 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 19:33:58,214 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 19:33:58,310 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 19:34:27,392 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 19:34:29,521 [5] INFO  PubgServerA - Session: a5f83510-a6a7-4b33-9491-e47bca88cac9/192.168.1.6:49732
-A new session connected!
-2019-11-24 19:34:29,529 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49732
-2019-11-24 19:34:34,118 [8] INFO  PubgServerA - Session: a5f83510-a6a7-4b33-9491-e47bca88cac9/192.168.1.6:49732
-This session was closed for ClientClosing!
-2019-11-24 19:34:38,401 [5] INFO  PubgServerA - Session: 3853be5d-9109-4c11-a6b8-1d2afbe23f79/192.168.1.6:49734
-A new session connected!
-2019-11-24 19:34:38,401 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49734
-2019-11-24 19:34:42,246 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 19:34:42,251 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 19:34:42,356 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 19:34:42,448 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 19:34:42,449 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 19:34:43,410 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:34:48,410 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:34:53,411 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:34:58,412 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 19:35:01,056 [10] INFO  PubgServerA - Session: 3853be5d-9109-4c11-a6b8-1d2afbe23f79/192.168.1.6:49734
-This session was closed for ClientClosing!
-2019-11-24 20:02:17,753 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 20:03:23,199 [5] INFO  PubgServerA - Session: 8f6b39e1-aa9a-4077-bca5-10dc0567928d/192.168.1.6:49798
-A new session connected!
-2019-11-24 20:03:23,206 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49798
-2019-11-24 20:03:27,657 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:03:27,662 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:03:27,766 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:03:27,862 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:03:27,862 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:03:28,198 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:03:33,199 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:03:38,199 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:03:43,199 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:03:48,124 [6] INFO  PubgServerA - Session: 8f6b39e1-aa9a-4077-bca5-10dc0567928d/192.168.1.6:49798
-This session was closed for ClientClosing!
-2019-11-24 20:06:36,457 [12] INFO  PubgServerA - Session: e1cd0e58-bc4f-488b-b6d8-ce3ffc2feae0/192.168.1.6:49802
-A new session connected!
-2019-11-24 20:06:36,458 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49802
-2019-11-24 20:06:39,985 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:06:39,985 [6] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:06:40,069 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:06:40,168 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:06:40,168 [6] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:06:41,466 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:06:43,700 [9] INFO  PubgServerA - Session: e1cd0e58-bc4f-488b-b6d8-ce3ffc2feae0/192.168.1.6:49802
-This session was closed for ClientClosing!
-2019-11-24 20:14:00,556 [13] INFO  PubgServerA - Session: 6cec92f0-94c3-45b2-86aa-4665b283bfbd/192.168.1.6:49809
-A new session connected!
-2019-11-24 20:14:00,556 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49809
-2019-11-24 20:14:04,233 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:14:04,233 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:14:04,307 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:14:04,403 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:14:04,403 [9] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:14:05,564 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:10,564 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:15,565 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:20,565 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:25,565 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:30,566 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:35,567 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:40,567 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:45,569 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:50,567 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:14:55,568 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:00,568 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:05,568 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:10,570 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:12,283 [6] INFO  PubgServerA - Session: 6cec92f0-94c3-45b2-86aa-4665b283bfbd/192.168.1.6:49809
-This session was closed for ClientClosing!
-2019-11-24 20:15:18,968 [10] INFO  PubgServerA - Session: f19cb0c0-e119-4ec1-befb-db655ad3935b/192.168.1.6:49812
-A new session connected!
-2019-11-24 20:15:18,969 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49812
-2019-11-24 20:15:22,271 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:15:22,271 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:15:22,343 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:15:22,443 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:15:22,443 [9] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:15:23,976 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:28,977 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:33,977 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:38,979 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:43,408 [14] INFO  PubgServerA - Session: f19cb0c0-e119-4ec1-befb-db655ad3935b/192.168.1.6:49812
-This session was closed for ClientClosing!
-2019-11-24 20:15:48,947 [8] INFO  PubgServerA - Session: 219dd442-9c84-4313-9254-ed71eae75b7c/192.168.1.6:49814
-A new session connected!
-2019-11-24 20:15:48,947 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49814
-2019-11-24 20:15:53,295 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:15:53,296 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:15:53,361 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:15:53,462 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:15:53,462 [6] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:15:53,955 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:15:58,956 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:03,956 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:08,959 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:13,957 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:18,957 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:23,958 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:28,958 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:33,958 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:38,959 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:43,959 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:48,960 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:53,961 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:16:58,960 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:17:03,960 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:17:08,869 [14] INFO  PubgServerA - Session: 219dd442-9c84-4313-9254-ed71eae75b7c/192.168.1.6:49814
-This session was closed for ClientClosing!
-2019-11-24 20:17:15,856 [16] INFO  PubgServerA - Session: cfc3946b-ed9a-4db7-9835-d43eb1b24419/192.168.1.6:49818
-A new session connected!
-2019-11-24 20:17:15,856 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49818
-2019-11-24 20:17:20,025 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:17:20,025 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:17:20,097 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:17:20,198 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:17:20,198 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:17:20,863 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:17:25,863 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:17:29,014 [14] INFO  PubgServerA - Session: cfc3946b-ed9a-4db7-9835-d43eb1b24419/192.168.1.6:49818
-This session was closed for ClientClosing!
-2019-11-24 20:53:55,909 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 20:54:15,054 [5] INFO  PubgServerA - Session: d31a2e4c-8037-4722-b530-418f976010b9/192.168.1.6:50070
-A new session connected!
-2019-11-24 20:54:15,061 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50070
-2019-11-24 20:54:20,070 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:20,409 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:54:20,411 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:54:20,514 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:54:20,601 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:54:20,601 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:54:25,059 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:30,061 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:35,060 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:40,060 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:45,060 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:54:46,855 [9] INFO  PubgServerA - Session: d31a2e4c-8037-4722-b530-418f976010b9/192.168.1.6:50070
-This session was closed for ClientClosing!
-2019-11-24 20:55:17,761 [5] INFO  PubgServerA - Session: deb1b47e-acf4-405f-a568-86c98397c437/192.168.1.6:50072
-A new session connected!
-2019-11-24 20:55:17,762 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50072
-2019-11-24 20:55:22,269 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:55:22,269 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:55:22,342 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:55:22,440 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:55:22,440 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:55:22,771 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:27,771 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:32,771 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:37,773 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:42,772 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:47,772 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:52,772 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:55:57,773 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:02,773 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:07,773 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:12,773 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:17,775 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:22,774 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:27,774 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:56:29,691 [11] INFO  PubgServerA - Session: deb1b47e-acf4-405f-a568-86c98397c437/192.168.1.6:50072
-This session was closed for ClientClosing!
-2019-11-24 20:56:34,549 [5] INFO  PubgServerA - Session: c635d1cd-2ad2-4f0c-ad9f-65947c26fb4f/192.168.1.6:50077
-A new session connected!
-2019-11-24 20:56:34,549 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50077
-2019-11-24 20:56:38,249 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 20:56:38,249 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 20:56:38,322 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 20:56:54,131 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 20:56:54,131 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 20:56:54,136 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:08,132 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:13,131 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:18,131 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:23,131 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:28,132 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:33,132 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:38,132 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:43,134 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:48,133 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:53,133 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:57:58,134 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:03,135 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:08,135 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:13,134 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:18,136 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:23,136 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:28,136 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:33,137 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:38,137 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:43,137 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:48,137 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:53,138 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:58:58,138 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:03,138 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:08,139 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:13,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:18,139 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:23,139 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:28,140 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:33,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:38,140 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:43,140 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:48,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:53,141 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 20:59:58,142 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:03,143 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:08,143 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:13,143 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:18,144 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:23,144 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:28,144 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:33,144 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:38,145 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:43,145 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:48,145 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:00:52,218 [10] INFO  PubgServerA - Session: c635d1cd-2ad2-4f0c-ad9f-65947c26fb4f/192.168.1.6:50077
-This session was closed for ClientClosing!
-2019-11-24 21:01:12,084 [14] INFO  PubgServerA - Session: 93ee8e88-2d23-46f8-8b1b-fc3fad9c77aa/192.168.1.6:50175
-A new session connected!
-2019-11-24 21:01:12,085 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50175
-2019-11-24 21:01:17,101 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:01:18,941 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:01:18,942 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:01:19,017 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:01:19,115 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:01:19,115 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:01:22,098 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:01:23,111 [12] INFO  PubgServerA - Session: 93ee8e88-2d23-46f8-8b1b-fc3fad9c77aa/192.168.1.6:50175
-This session was closed for ClientClosing!
-2019-11-24 21:01:47,632 [13] INFO  PubgServerA - Session: 828e7a48-35f7-41f6-ba7b-359d9cf0c5a4/192.168.1.6:50179
-A new session connected!
-2019-11-24 21:01:47,632 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50179
-2019-11-24 21:01:51,451 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:01:51,452 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:01:51,518 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:01:51,614 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:01:51,614 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:01:51,690 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:01:51,690 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:01:51,706 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:01:51,706 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:01:52,640 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:01:57,640 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:02:02,640 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:02:05,339 [12] INFO  PubgServerA - Session: 828e7a48-35f7-41f6-ba7b-359d9cf0c5a4/192.168.1.6:50179
-This session was closed for ClientClosing!
-2019-11-24 21:05:42,943 [6] INFO  PubgServerA - Session: 8edaf3ba-827a-4ec1-846c-97de09a9af58/192.168.1.6:50185
-A new session connected!
-2019-11-24 21:05:42,944 [17] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50185
-2019-11-24 21:05:47,804 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:05:47,804 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:05:47,868 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:05:47,954 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:05:47,955 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:05:47,955 [12] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:05:48,021 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:05:48,021 [15] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:05:52,955 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:05:54,563 [15] INFO  PubgServerA - Session: 8edaf3ba-827a-4ec1-846c-97de09a9af58/192.168.1.6:50185
-This session was closed for ClientClosing!
-2019-11-24 21:13:59,811 [18] INFO  PubgServerA - Session: c4fcee4e-9399-4ac2-ab4f-ec0c89a4430b/192.168.1.6:50192
-A new session connected!
-2019-11-24 21:13:59,811 [21] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50192
-2019-11-24 21:14:04,693 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:14:04,694 [20] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:14:04,767 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:14:04,820 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:14:04,867 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:14:04,867 [16] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:14:04,943 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:14:04,943 [21] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:14:09,820 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:14:10,518 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#3
-2019-11-24 21:14:10,518 [20] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：3
-2019-11-24 21:14:14,213 [21] INFO  PubgServerA - Session: c4fcee4e-9399-4ac2-ab4f-ec0c89a4430b/192.168.1.6:50192
-This session was closed for ClientClosing!
-2019-11-24 21:16:22,346 [18] INFO  PubgServerA - Session: 411a991b-b8d1-4c21-9ef8-27282e03dddb/192.168.1.6:50203
-A new session connected!
-2019-11-24 21:16:22,347 [17] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50203
-2019-11-24 21:16:25,942 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:16:25,942 [17] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:16:26,012 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:16:26,108 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:16:26,108 [20] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:16:26,183 [19] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:16:26,183 [19] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:16:27,355 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:16:29,196 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#3
-2019-11-24 21:16:29,196 [23] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：3
-2019-11-24 21:16:30,553 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:16:30,553 [17] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:16:31,597 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#3
-2019-11-24 21:16:31,597 [17] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：3
-2019-11-24 21:16:32,355 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:16:33,071 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:16:33,071 [20] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:16:34,548 [20] INFO  PubgServerA - Session: 411a991b-b8d1-4c21-9ef8-27282e03dddb/192.168.1.6:50203
-This session was closed for ClientClosing!
-2019-11-24 21:57:33,494 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 21:57:35,196 [5] INFO  PubgServerA - Session: abe1c190-6934-4825-b878-b46d332fbd44/192.168.1.6:50329
-A new session connected!
-2019-11-24 21:57:35,208 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50329
-2019-11-24 21:57:35,688 [8] INFO  PubgServerA - Session: abe1c190-6934-4825-b878-b46d332fbd44/192.168.1.6:50329
-This session was closed for ClientClosing!
-2019-11-24 21:57:48,459 [5] INFO  PubgServerA - Session: 9900da0a-cf05-4d53-92ee-2e0c128e8571/192.168.1.6:50331
-A new session connected!
-2019-11-24 21:57:48,459 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50331
-2019-11-24 21:57:52,975 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:57:52,979 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:57:53,087 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:57:53,184 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:57:53,185 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:57:53,261 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:57:53,261 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:57:53,467 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:57:58,467 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:58:03,468 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:58:08,469 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:58:11,790 [11] INFO  PubgServerA - Session: 9900da0a-cf05-4d53-92ee-2e0c128e8571/192.168.1.6:50331
-This session was closed for ClientClosing!
-2019-11-24 21:59:20,746 [9] INFO  PubgServerA - Session: fb0bad70-5e26-45a0-b3cb-78d6761b1575/192.168.1.6:50336
-A new session connected!
-2019-11-24 21:59:20,746 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50336
-2019-11-24 21:59:25,762 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:26,345 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:59:26,346 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:59:26,415 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:59:26,503 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:59:26,503 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:59:26,567 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:59:26,567 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 21:59:26,580 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
-2019-11-24 21:59:26,581 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
-2019-11-24 21:59:30,762 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:35,762 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:40,762 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:45,763 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:50,763 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 21:59:52,516 [15] INFO  PubgServerA - Session: fb0bad70-5e26-45a0-b3cb-78d6761b1575/192.168.1.6:50336
-This session was closed for ClientClosing!
-2019-11-24 21:59:55,102 [9] INFO  PubgServerA - Session: 40e910a3-c80b-4921-9855-e6528528ccc5/192.168.1.6:50338
-A new session connected!
-2019-11-24 21:59:55,103 [13] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50338
-2019-11-24 21:59:59,746 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 21:59:59,747 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 21:59:59,819 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 21:59:59,915 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 21:59:59,915 [15] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 21:59:59,988 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 21:59:59,988 [12] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 22:00:00,001 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
-2019-11-24 22:00:32,894 [13] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
-2019-11-24 22:01:17,334 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 22:01:20,128 [5] INFO  PubgServerA - Session: f57de56d-81a5-4543-a314-cb041b47bc6b/192.168.1.6:50350
-A new session connected!
-2019-11-24 22:01:20,136 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50350
-2019-11-24 22:01:21,858 [11] INFO  PubgServerA - Session: f57de56d-81a5-4543-a314-cb041b47bc6b/192.168.1.6:50350
-This session was closed for ClientClosing!
-2019-11-24 22:01:26,306 [5] INFO  PubgServerA - Session: a0e25e27-cf51-4e6a-bf2f-78c67e74de5b/192.168.1.6:50352
-A new session connected!
-2019-11-24 22:01:26,306 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50352
-2019-11-24 22:01:30,571 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 22:01:30,576 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 22:01:30,683 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 22:01:30,778 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 22:01:30,779 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 22:01:30,852 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 22:01:30,852 [10] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 22:01:30,866 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
-2019-11-24 22:01:30,867 [8] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
-2019-11-24 22:01:31,315 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:01:34,310 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#2
-2019-11-24 22:01:34,310 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：2
-2019-11-24 22:01:34,341 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
-2019-11-24 22:01:35,286 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#3
-2019-11-24 22:01:35,287 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：3
-2019-11-24 22:01:35,301 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
-2019-11-24 22:01:35,883 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#2
-2019-11-24 22:01:35,883 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：2
-2019-11-24 22:01:35,901 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
-2019-11-24 22:01:36,316 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:01:36,429 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
-2019-11-24 22:01:36,430 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
-2019-11-24 22:01:37,523 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#3
-2019-11-24 22:01:37,523 [11] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：3
-2019-11-24 22:01:41,316 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:01:43,486 [10] INFO  PubgServerA - Session: a0e25e27-cf51-4e6a-bf2f-78c67e74de5b/192.168.1.6:50352
-This session was closed for ClientClosing!
-2019-11-24 22:06:55,555 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
-2019-11-24 22:07:10,559 [5] INFO  PubgServerA - Session: 49342ef9-f158-47ca-9819-c6c5d4d92f56/192.168.1.6:50357
-A new session connected!
-2019-11-24 22:07:10,566 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50357
-2019-11-24 22:07:14,682 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
-2019-11-24 22:07:14,688 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
-2019-11-24 22:07:14,785 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
-2019-11-24 22:07:14,883 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
-2019-11-24 22:07:14,883 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
-2019-11-24 22:07:14,958 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#1
-2019-11-24 22:07:14,958 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：1
-2019-11-24 22:07:14,970 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#1
-2019-11-24 22:07:14,971 [10] INFO  server.DAO.SearchRoomDao - 查询group下的user：1
-2019-11-24 22:07:15,558 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:07:16,855 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#3
-2019-11-24 22:07:16,856 [8] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：3
-2019-11-24 22:07:20,558 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:07:25,559 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:07:30,559 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:07:35,566 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
-2019-11-24 22:07:40,038 [10] INFO  PubgServerA - Session: 49342ef9-f158-47ca-9819-c6c5d4d92f56/192.168.1.6:50357
+2019-11-30 10:17:36,243 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:50013
+2019-11-30 10:17:40,821 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2019-11-30 10:17:40,821 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2019-11-30 10:17:40,904 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-11-30 10:17:41,009 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 10:17:41,009 [10] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 10:17:41,251 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:17:46,251 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:17:49,787 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditRoomDao@AddRoom#房间创建测试#16#shanxi
+2019-11-30 10:17:49,787 [13] INFO  server.DAO.RoomDao - 创建房间：房间创建测试
+2019-11-30 10:17:49,808 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#16
+2019-11-30 10:17:49,809 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：16
+2019-11-30 10:17:51,251 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:17:56,252 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:01,252 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:06,252 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:11,289 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:16,257 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:21,256 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:26,257 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:31,257 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:36,257 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:41,257 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:46,259 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:51,260 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:18:56,258 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:19:01,258 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:19:06,259 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-11-30 10:19:06,783 [10] INFO  PubgServerA - Session: a2c7d495-0f87-452b-be26-ba9cf8b7f227/192.168.1.6:50013
 This session was closed for ClientClosing!

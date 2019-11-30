@@ -169,21 +169,25 @@ namespace server.Tool
         /// </summary>
         /// <param name="sql"></param>
         /// <returns></returns>
-        public static int GetAddID(string sql)
+        public static long GetAddID(string sql)
         {
-            int result = -1;
+            long result = -1;
+            MySqlDataReader reader = null;
             try
             {
 
                 MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-                MySqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    if (reader.HasRows)
-                    {
-                        return  reader.GetInt32(0);
-                    }
-                }
+                reader = cmd.ExecuteReader();
+
+                result = cmd.LastInsertedId;
+   
+                //while (reader.Read())
+                //{
+                //    if (reader.HasRows)
+                //    {
+                //        return reader.GetInt32(0);
+                //    }
+                //}
             }
             catch (Exception e)
             {
@@ -192,7 +196,11 @@ namespace server.Tool
             }
             finally
             {
+                if (reader != null)
+                {
+                    reader.Close();
 
+                }
             }
 
             return result;

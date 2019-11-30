@@ -105,9 +105,11 @@ namespace server.DAO
                 {
                     dataResult.data = false;
                 }
+                else
+                {
+                    dataResult.data = true;
+                }
             }
-
-          
             session.Send(GetSendData(dataResult, body));
         }
     }

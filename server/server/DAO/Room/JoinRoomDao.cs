@@ -113,9 +113,30 @@ namespace server.DAO
 
             session.Send(GetSendData(dataResult, body));
         }
-    }
 
-    
+        public void CheckEnterButton(PubgSession session, string body, string checkCode, string userId)
+        {
+            DataResult dataResult = new DataResult();
+            string sql = "select * from grounp_user where user_id = @user_id";
+            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+              new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
+
+            if(grounp_UserList.Count==1)
+            {
+                sql = "select * from grounp where id = @id  and checkCode = @checkCode";
+                List<Grounp> grounps = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
+                    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].grounp_id), new MySqlParameter("@checkCode", checkCode) });
+                if(grounps.Count==1)
+                {
+                    dataResult.result = 0;
+                    session.Send(GetSendData(dataResult, body));
+                    return;
+                }
+            }
+            dataResult.result = 1;
+            session.Send(GetSendData(dataResult, body));
+        }
+    }
 
 
 }

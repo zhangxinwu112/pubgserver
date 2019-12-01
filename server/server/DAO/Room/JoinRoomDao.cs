@@ -18,7 +18,7 @@ namespace server.DAO
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
 
         private readonly int maxNum = 2;
-        public void JoinRoom(PubgSession session, string body, string grounpId,string userId)
+        public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,string userId)
         {
             Logger.InfoFormat("加入房间：{0},{1}", grounpId, userId);
             string sql = "select * from grounp_user where user_id = @user_id";
@@ -29,6 +29,21 @@ namespace server.DAO
             {
                 dataResult.result = 1;
                 dataResult.resean = "您已经加入分队，不能重复。";
+                session.Send(GetSendData(dataResult, body));
+                return;
+            }
+
+
+            //校验checkcode是否正确
+
+             sql = "select * from grounp where id = @grounpId and checkCode = @checkCode";
+
+           int countResult =  MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId), new MySqlParameter("@checkCode", checkCode) });
+
+            if(countResult==0)
+            {
+                dataResult.result = 1;
+                dataResult.resean = "进入分队的密码不正确，请重试。";
                 session.Send(GetSendData(dataResult, body));
                 return;
             }

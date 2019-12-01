@@ -986,3 +986,93 @@ A new session connected!
 2019-12-01 10:52:46,115 [10] INFO  PubgServerA - Session: c16778da-a8d3-40f2-8dfc-a0452c8d9018/192.168.1.4:41912
 This session was closed for ClientClosing!
 2019-12-01 10:52:46,118 [10] INFO  PubgServerA - 客户端主动断开：192.168.1.4:41912
+2019-12-01 16:55:44,081 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2019-12-01 16:57:01,605 [5] INFO  PubgServerA - Session: d7fc74e7-bc85-4c3d-b629-177daab26353/192.168.1.6:49825
+A new session connected!
+2019-12-01 16:57:01,612 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49825
+2019-12-01 16:57:06,614 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:11,608 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:16,608 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:17,475 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767979#123456
+2019-12-01 16:57:17,477 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767979
+2019-12-01 16:57:17,579 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-12-01 16:57:17,719 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#0
+2019-12-01 16:57:17,720 [11] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：0
+2019-12-01 16:57:17,722 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:17,842 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#33
+2019-12-01 16:57:17,842 [6] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：33
+2019-12-01 16:57:17,866 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#107
+2019-12-01 16:57:17,866 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：107
+2019-12-01 16:57:19,849 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:21,609 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:21,855 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:23,859 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:25,864 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:26,609 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:27,868 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:29,873 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:31,609 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:31,884 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:33,899 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:35,902 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:36,609 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:57:37,906 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:39,919 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:57:41,186 [9] INFO  PubgServerA - Session: d7fc74e7-bc85-4c3d-b629-177daab26353/192.168.1.6:49825
+This session was closed for ClientClosing!
+2019-12-01 16:58:20,530 [5] INFO  PubgServerA - Session: f957991e-b625-463c-8ba8-9f317d34b89c/192.168.1.6:49835
+A new session connected!
+2019-12-01 16:58:20,531 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.6:49835
+2019-12-01 16:58:25,034 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767979#123456
+2019-12-01 16:58:25,034 [6] INFO  server.DAO.LoginDao - 用户登陆验证：17391767979
+2019-12-01 16:58:25,097 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2019-12-01 16:58:25,248 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#0
+2019-12-01 16:58:25,248 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：0
+2019-12-01 16:58:25,249 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:25,262 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#33
+2019-12-01 16:58:25,262 [6] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：33
+2019-12-01 16:58:25,337 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#107
+2019-12-01 16:58:25,337 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：107
+2019-12-01 16:58:25,539 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:27,336 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:29,342 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:30,539 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:31,348 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:33,204 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#13333#107#18
+2019-12-01 16:58:33,205 [8] INFO  server.DAO.JoinRoomDao - 加入房间：107,18
+2019-12-01 16:58:33,352 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:35,357 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:35,540 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:37,365 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:38,472 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@ExitRoom#107#18
+2019-12-01 16:58:38,489 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#0
+2019-12-01 16:58:38,489 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：0
+2019-12-01 16:58:38,507 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#33
+2019-12-01 16:58:38,507 [9] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：33
+2019-12-01 16:58:38,523 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#107
+2019-12-01 16:58:38,523 [11] INFO  server.DAO.SearchRoomDao - 查询group下的user：107
+2019-12-01 16:58:39,366 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:40,540 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:41,370 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:43,375 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:45,379 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:45,540 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:46,788 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#13333#107#18
+2019-12-01 16:58:46,788 [8] INFO  server.DAO.JoinRoomDao - 加入房间：107,18
+2019-12-01 16:58:47,384 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:49,389 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:50,541 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:51,395 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:52,920 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#123456#107#18
+2019-12-01 16:58:52,920 [11] INFO  server.DAO.JoinRoomDao - 加入房间：107,18
+2019-12-01 16:58:52,937 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchAllRoom#0
+2019-12-01 16:58:52,937 [8] INFO  server.DAO.SearchRoomDao - 查询用户下的所有房间：0
+2019-12-01 16:58:52,955 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleRoom#33
+2019-12-01 16:58:52,955 [6] INFO  server.DAO.SearchRoomDao - 查询单房间下的对：33
+2019-12-01 16:58:52,971 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchRoomDao@SearchSingleGrounp#107
+2019-12-01 16:58:52,971 [9] INFO  server.DAO.SearchRoomDao - 查询group下的user：107
+2019-12-01 16:58:53,399 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:55,404 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterButtonState#18
+2019-12-01 16:58:55,541 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2019-12-01 16:58:56,571 [9] INFO  PubgServerA - Session: f957991e-b625-463c-8ba8-9f317d34b89c/192.168.1.6:49835
+This session was closed for ClientClosing!

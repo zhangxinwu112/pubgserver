@@ -107,3 +107,7 @@ D:\svn\pubg\server\pubgserver\server\server\bin\Debug\SuperSocket.Facility.xml
 D:\svn\pubg\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.xml
 D:\svn\pubg\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketEngine.xml
 D:\svn\pubg\server\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
+D:\svn\pubg\server\pubgserver\server\server\bin\Debug\server.exe.manifest
+D:\svn\pubg\server\pubgserver\server\server\bin\Debug\server.application
+D:\svn\pubg\server\pubgserver\server\server\obj\Debug\server.exe.manifest
+D:\svn\pubg\server\pubgserver\server\server\obj\Debug\server.application

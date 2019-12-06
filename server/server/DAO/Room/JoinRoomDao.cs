@@ -17,7 +17,7 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
 
-        private readonly int maxNum = 2;
+        private readonly int maxNum = 5;
         public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,string userId)
         {
             Logger.InfoFormat("加入房间：{0},{1}", grounpId, userId);

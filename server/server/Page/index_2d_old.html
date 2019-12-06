@@ -15,8 +15,6 @@
     <div id="container"></div>
 
     <input id="setFitView" type="button" class="btn" style="width: 60px;position: absolute;bottom:0;left: 0;" value="视角定位"  />
-	<input id="exitButton" type="button" class="btn" style="width: 60px;position: absolute;top:0;right: 0;" value="退出" onclick="Exit()" />
-<!--
     <div class="info">
         <div id="centerCoord"></div>
         <div id="tips"></div>
@@ -31,7 +29,7 @@
             <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='wine'><span>酱籽</span></div>
   
 
--->
+    </div>
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b">
     </script>
 
@@ -66,7 +64,7 @@ color:'red'
     
         var map;
         var markArray = new Array(); 
-        // CreateMarker(_data);
+         //CreateMarker(_data);
         function CreateMarker(data)
         {
            // console.log(data);
@@ -141,20 +139,9 @@ color:'red'
                     //document.getElementById('tips').innerHTML = '通过setFitView，地图自适应显示到合适的范围内,点标记已全部显示在视野中！';
                 });
         }
-		
-		
 
         
     </script>
-	<script type="text/javascript">
-		function Exit() {
-		//alert("122");
-		var num1 = 1;
-		//var num2 = 2;
-		window.location.href = "uniwebview://Exit?num1=" + num1;
-	}
-</script>
-
 </body>
 
 </html>

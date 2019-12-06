@@ -16,6 +16,8 @@ namespace server.DAO
     public class EditRoomDao : RoomDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.EditRoomDao");
+
+        private readonly int gounpCount = 10;
         public void AddRoom(PubgSession session, string body, string roomName,string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建房间：{0}", roomName);
@@ -38,7 +40,7 @@ namespace server.DAO
                 if(roomid!=-1)
                 {
                     //创建分队
-                    CreateGrounp(5, roomid);
+                    CreateGrounp(gounpCount, roomid);
 
                     dataResult.result = 0;
                     dataResult.data = null;
@@ -158,6 +160,8 @@ namespace server.DAO
                 MySqlExecuteTools.GetCountResult(delete_grounp_userSql, new MySqlParameter[] { new MySqlParameter("@grounp_id", grounid) });
             });
         }
+
+       
 
 
     }

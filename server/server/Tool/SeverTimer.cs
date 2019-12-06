@@ -1,4 +1,5 @@
 ﻿using log4net;
+using server.DAO;
 using server.Model;
 using System;
 using System.Collections.Concurrent;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 namespace server.Tool
 {
    
-    public class SeverTimer
+    public class SeverTimer:IEventListener
     {
 
         ILog Logger = log4net.LogManager.GetLogger("server.Tool.SeverTimer");
@@ -29,6 +30,11 @@ namespace server.Tool
 
             tmrCheckConnect = new System.Threading.Timer(CheckConnectCallBack, null, IntervalCheckConnect, IntervalCheckConnect);
 
+            EventMgr.Instance.AddListener(this, EventName.UPATE_GROUNP_USER);
+            //获取
+            JoinRoomDao joinRoomDao = new JoinRoomDao();
+            joinRoomDao.SendUpdateGrounData();
+
 
         }
 
@@ -42,33 +48,42 @@ namespace server.Tool
             {
                 tmrsendPostion.Change(Timeout.Infinite, Timeout.Infinite);
                 ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
-                List<GPSItem> list = new List<GPSItem>();
+                //List<GPSItem> list = new List<GPSItem>();
+                //foreach (PubgSession session in dic.Keys)
+                //{
+                //    SessionItem sessionItem = null;
+                //    dic.TryGetValue(session, out sessionItem);
+                //    if(sessionItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
+                //    {
+                //        list.Add(sessionItem.gpsItem);
+                //    }
+                //}
+                //if(list.Count>0)
+                //{
+                //
+
+                SetGrounpDic();
                 foreach (PubgSession session in dic.Keys)
                 {
-
                     SessionItem sessionItem = null;
                     dic.TryGetValue(session, out sessionItem);
-                    if(sessionItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
+                    if (sessionItem != null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
                     {
-                        list.Add(sessionItem.gpsItem);
-                    }
-                }
-                if(list.Count>0)
-                {
-                    string resultJson = Utils.CollectionsConvert.ToJSON(list);
-                    foreach (PubgSession session in dic.Keys)
-                    {
-                        SessionItem sessionItem = null;
-                        dic.TryGetValue(session, out sessionItem);
-                        if (sessionItem != null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
+                       int grounpid =  GetGrounpByUser(sessionItem.gpsItem.userId);
+                        List<GPSItem> list = null;
+                        gpsDic.TryGetValue(grounpid.ToString(), out list);
+                        if(list!=null && list.Count>0)
                         {
+                            string resultJson = Utils.CollectionsConvert.ToJSON(list);
 
-                            string data = "ShowPostion" + Constant.START_SPLIT + resultJson + "\r\n";
+                            string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
                             session.Send(data);
                         }
+                       
                     }
-                
                 }
+                
+                //}
               
             }
             catch(Exception e)
@@ -154,6 +169,100 @@ namespace server.Tool
                 tmrCheckConnect.Dispose();
             }
         }
+
+        public bool HandleEvent(string eventName, IDictionary<string, object> dictionary)
+        {
+
+            List<Grounp_User> list = dictionary["data"] as List<Grounp_User>;
+            DoGroundData(list);
+            return true;
+        }
+
+        //key:grounpID  value:userList
+        private Dictionary<string, List<int>> grounpUserDic = new Dictionary<string, List<int>>();
+        private void DoGroundData(List<Grounp_User> grounp_User_list)
+        {
+            grounpUserDic.Clear();
+            //去除重复的
+            var resultlist = grounp_User_list.GroupBy(p => p.grounp_id).Select(g => g.First()).ToList();
+
+            resultlist.ForEach((item) => {
+
+                int grounpId = item.grounp_id;
+
+                var query = from s in grounp_User_list
+                            where s.grounp_id == grounpId
+                            select s.user_id;
+                grounpUserDic.Add(grounpId.ToString(), query.ToList<int>());
+
+            });
+        }
+
+
+        private Dictionary<string, List<GPSItem>> gpsDic = new Dictionary<string, List<GPSItem>>();
+        /// <summary>
+        /// set grounpid,
+        /// </summary>
+        private void SetGrounpDic()
+        {
+            gpsDic.Clear();
+            foreach (string gronpId in grounpUserDic.Keys)
+            {
+                List<int> userids = grounpUserDic[gronpId];
+                List<GPSItem> gpsList = GetSingleGPSByUser(userids);
+                if(gpsList.Count>0)
+                {
+                    gpsDic.Add(gronpId, gpsList);
+                }
+            }
+
+
+        }
+
+        /// <summary>
+        /// 获取同一grounp的用户的gpsList数据
+        /// </summary>
+        /// <param name="userids"></param>
+        /// <returns></returns>
+        private List<GPSItem> GetSingleGPSByUser(List<int> userids)
+        {
+            List<GPSItem> gpsList = new List<GPSItem>();
+            userids.ForEach((item) => {
+
+                ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
+                foreach (SessionItem sessionItem in dic.Values)
+                {
+                    if(sessionItem.gpsItem!=null && sessionItem.gpsItem.userId== item)
+                    {
+                        gpsList.Add(sessionItem.gpsItem);
+                    }
+                }
+
+            });
+            return gpsList;
+        }
+
+        /// <summary>
+        /// 通过userid查询所在的grounp
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        private int GetGrounpByUser(int userId)
+        {
+            foreach(string grounpid in grounpUserDic.Keys)
+            {
+                List<int> list = grounpUserDic[grounpid];
+               if (list.Contains(userId))
+                {
+                    return Convert.ToInt16(grounpid);
+                }
+            }
+
+            return -1;
+        }
+
     }
+
+    
    
 }

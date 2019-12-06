@@ -41,5 +41,13 @@ namespace server.DAO
                 new MySqlParameter[] { new MySqlParameter("@grounp_id", grounpId) });
             return result;
         }
+
+
+        protected List<Grounp_User> SearAllGrounpUser()
+        {
+            string sql = "select * from grounp_user";
+            List<Grounp_User> result = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,null);
+            return result;
+        }
     }
 }

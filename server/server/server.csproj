@@ -104,6 +104,8 @@
     <Compile Include="Test\TestSql.cs" />
     <Compile Include="Tool\CollectionsConvert.cs" />
     <Compile Include="Tool\Constant.cs" />
+    <Compile Include="Tool\EventMgr.cs" />
+    <Compile Include="Tool\EventName.cs" />
     <Compile Include="Tool\MySqlExecuteTools.cs" />
     <Compile Include="Tool\MySQLHelp.cs" />
     <Compile Include="Tool\MySqlExecute.cs" />

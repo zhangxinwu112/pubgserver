@@ -196,6 +196,11 @@ namespace server.Tool
                 grounpUserDic.Add(grounpId.ToString(), query.ToList<int>());
 
             });
+            if(grounpUserDic.Count>0)
+            {
+                Console.WriteLine(Utils.CollectionsConvert.ToJSON(grounpUserDic));
+            }
+           
         }
 
 

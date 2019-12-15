@@ -1,4 +1,4 @@
-
+﻿
 <!doctype html>
 <html>
 
@@ -14,7 +14,7 @@
 <body>
     <div id="container"></div>
 
-    <input id="setFitView" type="button" class="btn" style="width: 60px;position: absolute;bottom:0;left: 0;" value="视角定位"  />
+    <input id="setFitView" type="button" class="btn" style="width: 60px;position: absolute;top:0;left: 0;" value="视角定位"  />
 	<input id="exitButton" type="button" class="btn" style="width: 60px;position: absolute;top:0;right: 0;" value="退出" onclick="Exit()" />
 <!--
     <div class="info">
@@ -66,7 +66,7 @@ color:'red'
     
         var map;
         var markArray = new Array(); 
-        // CreateMarker(_data);
+       // CreateMarker(_data);
         function CreateMarker(data)
         {
            // console.log(data);
@@ -94,6 +94,12 @@ color:'red'
             mapStyle: "amap://styles/whitesmoke",
             zoom: 13
             });
+             // 构造官方卫星、路网图层
+   		    var satelliteLayer = new AMap.TileLayer.Satellite();
+    		var roadNetLayer =  new AMap.TileLayer.RoadNet();
+
+    		//批量添加图层
+   		    map.add([satelliteLayer, roadNetLayer]);
         }
 
         function AddMarker(data)

@@ -20,7 +20,7 @@ namespace server.DAO
         private readonly int gounpCount = 10;
         public void AddRoom(PubgSession session, string body, string roomName,string userId,string area="shanxi")
         {
-            Logger.InfoFormat("创建房间：{0}", roomName);
+            Logger.InfoFormat("创建队：{0}", roomName);
             string sql = "select * from room where name = @name and userId = @userId";
             List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql,
                // new MySqlParameter[] { new MySqlParameter("@name", roomName), new MySqlParameter("@area", room.area.Trim())});
@@ -29,7 +29,7 @@ namespace server.DAO
             if (result.Count >0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "房间名称已存在，请检查后重试。";
+                dataResult.resean = "队名称已存在，请检查后重试。";
             }
             else
             {
@@ -48,7 +48,7 @@ namespace server.DAO
                 else
                 {
                     dataResult.result = 1;
-                    dataResult.data ="房间创建失败，请重试！";
+                    dataResult.data ="房间队失败，请重试！";
                 }
               
             }

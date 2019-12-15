@@ -12,7 +12,8 @@ namespace  server.DAO
 {
    public  class RegisterDao: CommonDao
     {
-        public void RegisterUser(PubgSession session, string body, string telephone, string password, string name, string icon, string checkCode,string userType)
+        public void RegisterUser(PubgSession session, string body, string telephone, string password, 
+            string name, string icon, string checkCode,string userType)
         {
            // Logger.InfoFormat("新的客户端断开：{0}", session.RemoteEndPoint);
 

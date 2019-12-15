@@ -16,8 +16,8 @@ namespace server.DAO
     public class JoinRoomDao : RoomDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
-
-        private readonly int maxNum = 5;
+        //
+        private readonly int maxNum = 1;
         public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,string userId)
         {
             Logger.InfoFormat("加入房间：{0},{1}", grounpId, userId);
@@ -28,7 +28,7 @@ namespace server.DAO
             if (grounp_UserList.Count>0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "您已经加入分队，不能重复。";
+                dataResult.resean = "您已经加入房间，不能重复。";
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
@@ -43,7 +43,7 @@ namespace server.DAO
             if(countResult==0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "进入分队的密码不正确，请重试。";
+                dataResult.resean = "进入房间的密码不正确，请重试。";
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
@@ -53,7 +53,7 @@ namespace server.DAO
             if (grounp_UserList.Count> maxNum)
             {
                 dataResult.result = 1;
-                dataResult.resean = "分队人数加入已满，请重试。";
+                dataResult.resean = "房间人数加入已满，请重试。";
             }
             else
             {
@@ -94,9 +94,9 @@ namespace server.DAO
         }
 
         /// <summary>
-        /// 查询grounp is full
+        /// 查询能否进入房间
         /// </summary>
-        public void SearchEnterButtonState(PubgSession session, string body, string userId)
+        public void SearchEnterRoomState(PubgSession session, string body, string userId)
         {
             DataResult dataResult = new DataResult();
 

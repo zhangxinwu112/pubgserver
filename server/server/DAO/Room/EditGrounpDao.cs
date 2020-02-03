@@ -18,14 +18,30 @@ namespace server.DAO
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.EditGrounpDao");
 
         private readonly int roomCount = 5;
+
+        private readonly int createGrounpCount = 2;
         public void AddGrounp(PubgSession session, string body, string grounpName,string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建队：{0}", grounpName);
-            string sql = "select * from grounp where name = @name and userId = @userId";
+            DataResult dataResult = new DataResult();
+            string sql = "select * from grounp where userId = @userId";
             List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
+              new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+
+            if(result.Count>= createGrounpCount)
+            {
+                dataResult.result = 1;
+                dataResult.resean = "您的权限最多创建"+ createGrounpCount + "个分队，请检查后重试。";
+                session.Send(GetSendData(dataResult, body));
+
+                return;
+            }
+
+            sql = "select * from grounp where name = @name and userId = @userId";
+             result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
                // new MySqlParameter[] { new MySqlParameter("@name", roomName), new MySqlParameter("@area", room.area.Trim())});
                new MySqlParameter[] { new MySqlParameter("@name", grounpName), new MySqlParameter("@userId", userId) });
-            DataResult dataResult = new DataResult();
+          
             if (result.Count >0)
             {
                 dataResult.result = 1;

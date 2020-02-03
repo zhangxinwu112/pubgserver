@@ -1523,3 +1523,1513 @@ A new session connected!
 2020-02-03 21:07:08,945 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
 2020-02-03 21:07:10,578 [8] INFO  PubgServerA - Session: 5bd43dc3-8c68-4c05-a4fb-51d07cce0038/192.168.1.2:49754
 This session was closed for ClientClosing!
+2020-02-03 21:12:02,996 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:12:16,446 [5] INFO  PubgServerA - Session: 1cb69330-8c69-433e-9b68-0f2baea90f53/192.168.1.2:49779
+A new session connected!
+2020-02-03 21:12:16,453 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49779
+2020-02-03 21:12:21,455 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:12:25,735 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 21:12:25,737 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 21:12:25,833 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:12:25,920 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:12:25,920 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:12:25,922 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:12:25,988 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#54
+2020-02-03 21:12:25,988 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：54
+2020-02-03 21:12:25,997 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#207
+2020-02-03 21:12:25,997 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：207
+2020-02-03 21:12:26,448 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:12:27,982 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:12:28,859 [12] INFO  PubgServerA - Session: 1cb69330-8c69-433e-9b68-0f2baea90f53/192.168.1.2:49779
+This session was closed for ClientClosing!
+2020-02-03 21:12:31,271 [5] INFO  PubgServerA - Session: 24f5e9ba-8ed6-4166-963c-7d9d1eeb59e6/192.168.1.2:49784
+A new session connected!
+2020-02-03 21:12:31,272 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49784
+2020-02-03 21:12:34,965 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 21:12:34,965 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 21:12:35,064 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:12:35,171 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:12:35,172 [11] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:12:35,172 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:12:35,185 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#54
+2020-02-03 21:12:35,185 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：54
+2020-02-03 21:12:35,257 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#207
+2020-02-03 21:12:35,257 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：207
+2020-02-03 21:12:36,281 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:12:37,254 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:12:38,466 [11] INFO  PubgServerA - Session: 24f5e9ba-8ed6-4166-963c-7d9d1eeb59e6/192.168.1.2:49784
+This session was closed for ClientClosing!
+2020-02-03 21:12:40,868 [5] INFO  PubgServerA - Session: fd8caf9c-b3f5-4045-b8aa-30b6677fddb5/192.168.1.2:49786
+A new session connected!
+2020-02-03 21:12:40,868 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49786
+2020-02-03 21:12:45,885 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:12:46,396 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:12:46,396 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:12:46,488 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:12:46,593 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:12:46,593 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:12:46,675 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#54
+2020-02-03 21:12:46,675 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：54
+2020-02-03 21:12:46,689 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#207
+2020-02-03 21:12:46,689 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：207
+2020-02-03 21:12:49,436 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#54
+2020-02-03 21:12:50,884 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:12:55,885 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:00,885 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:05,885 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:10,885 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:15,886 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:20,886 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:25,888 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:30,887 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:35,888 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:40,888 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:45,888 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:50,889 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:13:55,892 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:14:00,889 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:14:01,096 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#53
+2020-02-03 21:14:01,097 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：53
+2020-02-03 21:14:01,115 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#202
+2020-02-03 21:14:01,115 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：202
+2020-02-03 21:14:01,157 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:14:05,890 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:14:10,890 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:14:14,932 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#53
+2020-02-03 21:15:17,900 [15] INFO  PubgServerA - Session: fd8caf9c-b3f5-4045-b8aa-30b6677fddb5/192.168.1.2:49786
+The session will be closed for 67.0088327 timeout, the session start time: 2020/2/3 星期一 21:12:40, last active time: 2020/2/3 星期一 21:14:10!
+2020-02-03 21:15:17,901 [15] INFO  PubgServerA - Session: fd8caf9c-b3f5-4045-b8aa-30b6677fddb5/192.168.1.2:49786
+This session was closed for TimeOut!
+2020-02-03 21:15:20,887 [13] INFO  PubgServerA - Session: ba1c474c-3f5f-47b8-b0b6-170590d4bf50/192.168.1.2:49843
+A new session connected!
+2020-02-03 21:15:20,895 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49843
+2020-02-03 21:15:20,909 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:25,912 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:30,909 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:35,910 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:40,910 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:45,911 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:50,914 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:15:55,911 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:00,911 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:05,911 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:10,912 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:15,912 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:20,914 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:25,914 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:30,266 [15] INFO  PubgServerA - Session: ba1c474c-3f5f-47b8-b0b6-170590d4bf50/192.168.1.2:49843
+This session was closed for ClientClosing!
+2020-02-03 21:16:32,922 [17] INFO  PubgServerA - Session: b76860c8-7bb2-43d9-8e2f-a0548c3abc73/192.168.1.2:49849
+A new session connected!
+2020-02-03 21:16:32,924 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49849
+2020-02-03 21:16:36,859 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:16:36,860 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:16:36,933 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:16:37,039 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:16:37,039 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:16:37,933 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:39,572 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#123#16#cs
+2020-02-03 21:16:39,573 [16] INFO  server.DAO.EditGrounpDao - 创建队：123
+2020-02-03 21:16:39,597 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:16:39,597 [15] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:16:39,621 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#55
+2020-02-03 21:16:39,622 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：55
+2020-02-03 21:16:39,642 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#212
+2020-02-03 21:16:39,642 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：212
+2020-02-03 21:16:39,657 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:16:42,502 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#456#16#cs
+2020-02-03 21:16:42,502 [8] INFO  server.DAO.EditGrounpDao - 创建队：456
+2020-02-03 21:16:42,518 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:16:42,518 [15] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:16:42,538 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#56
+2020-02-03 21:16:42,538 [16] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：56
+2020-02-03 21:16:42,553 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#217
+2020-02-03 21:16:42,553 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：217
+2020-02-03 21:16:42,566 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:16:42,934 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:47,934 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:50,223 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@UpdateGrounp#456#房间1677#123456#56#217
+2020-02-03 21:16:50,238 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:16:50,238 [15] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:16:50,257 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#56
+2020-02-03 21:16:50,258 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：56
+2020-02-03 21:16:50,274 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#217
+2020-02-03 21:16:50,274 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：217
+2020-02-03 21:16:50,294 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:16:52,934 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:16:53,629 [8] INFO  PubgServerA - Session: b76860c8-7bb2-43d9-8e2f-a0548c3abc73/192.168.1.2:49849
+This session was closed for ClientClosing!
+2020-02-03 21:16:55,937 [17] INFO  PubgServerA - Session: 48134c0a-a183-4809-8dbd-19dcc9855d2e/192.168.1.2:49852
+A new session connected!
+2020-02-03 21:16:55,938 [15] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49852
+2020-02-03 21:17:00,956 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:02,111 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 21:17:02,112 [15] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 21:17:02,189 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:17:02,286 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:17:02,287 [16] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:17:02,287 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:02,301 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#56
+2020-02-03 21:17:02,301 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：56
+2020-02-03 21:17:02,377 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#217
+2020-02-03 21:17:02,377 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：217
+2020-02-03 21:17:02,390 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:17:04,376 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:05,955 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:06,380 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:07,574 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#123456#217#15
+2020-02-03 21:17:07,576 [15] INFO  server.DAO.JoinRoomDao - 加入房间：217,15
+2020-02-03 21:17:07,598 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:17:07,599 [16] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:17:07,610 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#56
+2020-02-03 21:17:07,610 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：56
+2020-02-03 21:17:07,628 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#217
+2020-02-03 21:17:07,628 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：217
+2020-02-03 21:17:08,387 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:10,392 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:10,955 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:12,396 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:17:14,223 [16] INFO  PubgServerA - Session: 48134c0a-a183-4809-8dbd-19dcc9855d2e/192.168.1.2:49852
+This session was closed for ClientClosing!
+2020-02-03 21:17:16,486 [17] INFO  PubgServerA - Session: 51154e9a-72f0-477c-ac1f-ab7d5bfcf99d/192.168.1.2:49854
+A new session connected!
+2020-02-03 21:17:16,486 [16] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49854
+2020-02-03 21:17:21,503 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:22,519 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:17:22,519 [16] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:17:22,623 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:17:22,730 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:17:22,731 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:17:22,812 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#56
+2020-02-03 21:17:22,812 [15] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：56
+2020-02-03 21:17:22,825 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#217
+2020-02-03 21:17:22,825 [16] INFO  server.DAO.SearchGrounpDao - 查询room下的user：217
+2020-02-03 21:17:26,502 [16] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:31,502 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:17:33,522 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#56
+2020-02-03 21:18:14,785 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:14,786 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:16,505 [22] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:21,505 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:26,506 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:30,128 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#55
+2020-02-03 21:18:30,128 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：55
+2020-02-03 21:18:30,149 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#212
+2020-02-03 21:18:30,149 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：212
+2020-02-03 21:18:30,168 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:18:31,507 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:36,507 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:18:38,730 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#55
+2020-02-03 21:20:36,154 [8] INFO  PubgServerA - Session: 51154e9a-72f0-477c-ac1f-ab7d5bfcf99d/192.168.1.2:49854
+The session will be closed for 119.6468434 timeout, the session start time: 2020/2/3 星期一 21:17:16, last active time: 2020/2/3 星期一 21:18:36!
+2020-02-03 21:20:36,154 [8] INFO  PubgServerA - Session: 51154e9a-72f0-477c-ac1f-ab7d5bfcf99d/192.168.1.2:49854
+This session was closed for TimeOut!
+2020-02-03 21:20:37,944 [17] INFO  PubgServerA - Session: aabd222c-ac3b-4a2f-8f26-e4e072d698c0/192.168.1.2:49858
+A new session connected!
+2020-02-03 21:20:39,141 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49858
+2020-02-03 21:20:39,146 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:20:57,640 [28] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:11,329 [28] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:11,330 [28] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:11,330 [28] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:11,333 [33] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:11,333 [33] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:12,391 [33] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:18,409 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:21,722 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:26,598 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:41,393 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:41,394 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:41,524 [33] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:46,524 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:51,524 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:21:56,525 [33] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:01,525 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:06,525 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:07,937 [8] INFO  PubgServerA - Session: aabd222c-ac3b-4a2f-8f26-e4e072d698c0/192.168.1.2:49858
+This session was closed for ClientClosing!
+2020-02-03 21:22:19,256 [26] INFO  PubgServerA - Session: aafd93b5-ea01-43c6-8fcd-c7f84de45a0e/192.168.1.2:49866
+A new session connected!
+2020-02-03 21:22:19,257 [20] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49866
+2020-02-03 21:22:24,276 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:24,928 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 21:22:24,929 [34] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 21:22:25,014 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:22:25,112 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:22:25,112 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:22:25,113 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:22:27,180 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:22:27,469 [32] INFO  PubgServerA - Session: aafd93b5-ea01-43c6-8fcd-c7f84de45a0e/192.168.1.2:49866
+This session was closed for ClientClosing!
+2020-02-03 21:22:29,746 [26] INFO  PubgServerA - Session: c7bcef8c-24fa-4ab3-8981-d01859612dbb/192.168.1.2:49868
+A new session connected!
+2020-02-03 21:22:29,747 [20] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49868
+2020-02-03 21:22:34,764 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:34,992 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:22:34,993 [32] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:22:35,069 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:22:35,174 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:22:35,174 [34] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:22:38,005 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#123#16#cs
+2020-02-03 21:22:38,005 [34] INFO  server.DAO.EditGrounpDao - 创建队：123
+2020-02-03 21:22:38,030 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:22:38,031 [32] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:22:38,053 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:22:38,053 [27] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:22:38,065 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:22:38,066 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:22:38,078 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:22:39,763 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:41,046 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#456#16#cs
+2020-02-03 21:22:41,046 [32] INFO  server.DAO.EditGrounpDao - 创建队：456
+2020-02-03 21:22:41,060 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:22:41,060 [27] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:22:41,079 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:22:41,079 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:22:41,095 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:22:41,095 [34] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:22:41,115 [34] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:22:44,029 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@UpdateGrounp#456#房间14#123456#58#227
+2020-02-03 21:22:44,045 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:22:44,045 [34] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:22:44,063 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:22:44,063 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:22:44,079 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:22:44,080 [27] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:22:44,095 [27] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:22:44,762 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:45,109 [34] INFO  PubgServerA - Session: c7bcef8c-24fa-4ab3-8981-d01859612dbb/192.168.1.2:49868
+This session was closed for ClientClosing!
+2020-02-03 21:22:47,858 [26] INFO  PubgServerA - Session: ac403de2-34c8-4cd9-8996-a3957b31be74/192.168.1.2:49870
+A new session connected!
+2020-02-03 21:22:47,858 [34] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49870
+2020-02-03 21:22:52,876 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:57,272 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 21:22:57,272 [27] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 21:22:57,355 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:22:57,456 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:22:57,456 [34] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:22:57,456 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:22:57,470 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:22:57,470 [32] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:22:57,547 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:22:57,548 [34] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:22:57,561 [34] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:22:57,875 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:22:59,546 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:01,551 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:02,480 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#123456#227#15
+2020-02-03 21:23:02,481 [27] INFO  server.DAO.JoinRoomDao - 加入房间：227,15
+2020-02-03 21:23:02,504 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 21:23:02,504 [32] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 21:23:02,515 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:23:02,515 [34] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:23:02,531 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:23:02,531 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:23:02,875 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:03,556 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:05,565 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:07,569 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:07,876 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:09,573 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:11,578 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:12,876 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:13,582 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:15,587 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:17,599 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:17,876 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:19,617 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:21,633 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 21:23:21,752 [27] INFO  PubgServerA - Session: ac403de2-34c8-4cd9-8996-a3957b31be74/192.168.1.2:49870
+This session was closed for ClientClosing!
+2020-02-03 21:23:28,212 [26] INFO  PubgServerA - Session: 8b2ce2cf-650e-4c28-8fb9-59b51ff0832d/192.168.1.2:49874
+A new session connected!
+2020-02-03 21:23:28,212 [34] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49874
+2020-02-03 21:23:33,229 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:33,621 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:23:33,621 [34] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:23:33,707 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:23:33,809 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:23:33,810 [27] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:23:33,889 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:23:33,889 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:23:33,903 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:23:33,903 [34] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:23:38,229 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:43,229 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:48,232 [29] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:53,229 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:23:58,229 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:03,230 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:08,231 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:13,230 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:18,231 [29] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:23,235 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:28,231 [34] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:33,232 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:38,233 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:43,233 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:48,233 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:24:53,237 [32] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:07,007 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:25:08,251 [5] INFO  PubgServerA - Session: 9b928d67-e564-4c4f-86ec-ad8ccdd89a0e/192.168.1.2:49883
+A new session connected!
+2020-02-03 21:25:08,266 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:08,266 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49883
+2020-02-03 21:25:13,235 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:18,238 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:19,845 [11] INFO  PubgServerA - Session: 9b928d67-e564-4c4f-86ec-ad8ccdd89a0e/192.168.1.2:49883
+This session was closed for ClientClosing!
+2020-02-03 21:25:28,147 [5] INFO  PubgServerA - Session: cd648442-369d-4371-a932-f388293f07d0/192.168.1.2:49885
+A new session connected!
+2020-02-03 21:25:28,148 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49885
+2020-02-03 21:25:33,166 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:33,169 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:25:33,171 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:25:33,266 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:25:33,359 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:25:33,359 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:25:33,425 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:25:33,426 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:25:33,435 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:25:33,436 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:25:35,686 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:25:35,686 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:25:35,705 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:25:35,705 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:25:35,734 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:25:38,164 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:39,811 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#57
+2020-02-03 21:25:39,836 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:25:39,836 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:25:39,847 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:25:39,847 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:25:39,865 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:25:39,865 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:25:43,164 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:44,170 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:25:48,165 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:53,165 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:25:58,165 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:03,166 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:08,167 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:13,167 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:14,323 [9] INFO  PubgServerA - Session: cd648442-369d-4371-a932-f388293f07d0/192.168.1.2:49885
+This session was closed for ClientClosing!
+2020-02-03 21:26:16,777 [5] INFO  PubgServerA - Session: b8fc74c1-0e4c-4e8d-b1c7-ca09f1ebfbdd/192.168.1.2:49890
+A new session connected!
+2020-02-03 21:26:16,777 [13] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49890
+2020-02-03 21:26:20,836 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:26:20,836 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:26:20,915 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:26:21,024 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:26:21,024 [13] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:26:21,787 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:26,787 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:31,787 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:33,634 [9] INFO  PubgServerA - Session: b8fc74c1-0e4c-4e8d-b1c7-ca09f1ebfbdd/192.168.1.2:49890
+This session was closed for ClientClosing!
+2020-02-03 21:26:36,033 [5] INFO  PubgServerA - Session: f5220a87-d9d7-4016-b901-82e112210832/192.168.1.2:49892
+A new session connected!
+2020-02-03 21:26:36,033 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49892
+2020-02-03 21:26:39,412 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:26:39,413 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:26:39,486 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:26:39,597 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:26:39,597 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:26:39,677 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:26:39,677 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:26:39,690 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:26:39,690 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:26:41,042 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:46,042 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:51,042 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:26:55,018 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:27:03,474 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:03,474 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:06,044 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:11,044 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:16,047 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:21,044 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:26,045 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:31,045 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:36,045 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:41,045 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:42,986 [11] INFO  PubgServerA - Session: f5220a87-d9d7-4016-b901-82e112210832/192.168.1.2:49892
+This session was closed for ClientClosing!
+2020-02-03 21:27:45,311 [16] INFO  PubgServerA - Session: 87fb1182-e1d1-40e1-af24-8588182539ea/192.168.1.2:49901
+A new session connected!
+2020-02-03 21:27:45,312 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49901
+2020-02-03 21:27:48,987 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:27:48,987 [9] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:27:49,069 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:27:49,174 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:27:49,175 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:27:49,253 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:27:49,253 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:27:49,264 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:27:49,264 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:27:49,277 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:50,319 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:55,319 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:27:56,636 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#223
+2020-02-03 21:27:56,637 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：223
+2020-02-03 21:27:56,657 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:57,116 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#224
+2020-02-03 21:27:57,116 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：224
+2020-02-03 21:27:57,137 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:57,431 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#224
+2020-02-03 21:27:57,431 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：224
+2020-02-03 21:27:57,450 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:57,779 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#225
+2020-02-03 21:27:57,779 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：225
+2020-02-03 21:27:57,801 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:58,093 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#226
+2020-02-03 21:27:58,093 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：226
+2020-02-03 21:27:58,112 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:58,425 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#225
+2020-02-03 21:27:58,425 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：225
+2020-02-03 21:27:58,443 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:58,706 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#224
+2020-02-03 21:27:58,706 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：224
+2020-02-03 21:27:58,726 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:58,987 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#223
+2020-02-03 21:27:58,988 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：223
+2020-02-03 21:27:59,001 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:59,270 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#223
+2020-02-03 21:27:59,270 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：223
+2020-02-03 21:27:59,292 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:27:59,584 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:27:59,584 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:27:59,607 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:28:00,319 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:28:05,320 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:28:10,320 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:28:12,469 [9] INFO  PubgServerA - Session: 87fb1182-e1d1-40e1-af24-8588182539ea/192.168.1.2:49901
+This session was closed for ClientClosing!
+2020-02-03 21:28:14,898 [17] INFO  PubgServerA - Session: f7cb1783-7d51-4ec4-b31a-0274400e5c79/192.168.1.2:49904
+A new session connected!
+2020-02-03 21:28:14,898 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49904
+2020-02-03 21:28:19,908 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:28:19,947 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:28:19,947 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:28:20,019 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:28:20,123 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:28:20,123 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:28:20,201 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:28:20,201 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:28:20,214 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:28:20,214 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:28:23,127 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:31:10,250 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:31:14,887 [5] INFO  PubgServerA - Session: f8180818-8fa3-40f6-b5e5-af03805433b5/192.168.1.2:49966
+A new session connected!
+2020-02-03 21:31:14,895 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:49966
+2020-02-03 21:31:18,477 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:31:18,485 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:31:18,562 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:31:18,670 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:31:18,670 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:31:18,750 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:31:18,751 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:31:18,763 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:31:18,764 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:31:19,885 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:24,885 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:29,888 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:34,886 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:39,886 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:44,886 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:49,887 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:31:53,555 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:37:06,141 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:39:07,573 [5] INFO  PubgServerA - Session: d9a93ee7-95cd-4179-bf97-c16fbe2733dd/192.168.1.2:50049
+A new session connected!
+2020-02-03 21:39:07,581 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50049
+2020-02-03 21:39:12,591 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:14,705 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:39:14,707 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:39:14,808 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:39:14,911 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:39:14,912 [11] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:39:14,991 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:39:14,992 [6] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:39:15,003 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:39:15,004 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:39:17,581 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:22,581 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:26,614 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:39:37,551 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:37,552 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:37,582 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:42,582 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:39:42,952 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:39:42,952 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:39:42,968 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:39:42,968 [6] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:39:42,986 [6] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:39:44,274 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#57
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,268 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:28,272 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:40:28,272 [6] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:40:28,287 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:40:28,287 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:40:28,304 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:40:28,304 [15] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:40:32,585 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:37,586 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:40,804 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:40:49,096 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:49,096 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:52,588 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:40:57,587 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:02,587 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:07,587 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:12,589 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:17,588 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:22,594 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:27,589 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:30,825 [14] INFO  PubgServerA - Session: d9a93ee7-95cd-4179-bf97-c16fbe2733dd/192.168.1.2:50049
+This session was closed for ClientClosing!
+2020-02-03 21:41:33,442 [5] INFO  PubgServerA - Session: 0086faa8-bf68-4769-9ec6-487bdf8ed978/192.168.1.2:50080
+A new session connected!
+2020-02-03 21:41:33,443 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50080
+2020-02-03 21:41:38,460 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:41,615 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:41:41,616 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:41:41,699 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:41:41,813 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:41:41,813 [15] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:41:41,890 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:41:41,890 [17] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:41:41,902 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:41:41,902 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:41:43,459 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:48,460 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:53,460 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:41:58,460 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:02,218 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:42:27,470 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:27,470 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:27,470 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:27,470 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:27,470 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:28,462 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:33,465 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:38,463 [22] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:42,279 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:42:51,779 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:51,779 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:53,465 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:42:58,464 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:03,465 [22] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:07,242 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:43:13,926 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:13,926 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:18,192 [6] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:43:18,468 [22] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:23,466 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:23,561 [17] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#123#16#cs
+2020-02-03 21:43:23,562 [17] INFO  server.DAO.EditGrounpDao - 创建队：123
+2020-02-03 21:43:23,576 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:43:23,577 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:43:23,596 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#59
+2020-02-03 21:43:23,596 [21] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：59
+2020-02-03 21:43:23,612 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#232
+2020-02-03 21:43:23,612 [20] INFO  server.DAO.SearchGrounpDao - 查询room下的user：232
+2020-02-03 21:43:23,630 [20] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:43:25,547 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#59
+2020-02-03 21:43:30,842 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:30,846 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:43:30,846 [21] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:43:30,866 [27] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:43:30,866 [27] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:43:30,880 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:43:30,880 [21] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:43:33,467 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:43:37,553 [26] INFO  PubgServerA - Session: 0086faa8-bf68-4769-9ec6-487bdf8ed978/192.168.1.2:50080
+This session was closed for ClientClosing!
+2020-02-03 21:45:01,422 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:45:08,956 [5] INFO  PubgServerA - Session: 59587a34-c3e3-4ef5-8ef8-31cea7fe1105/192.168.1.2:50093
+A new session connected!
+2020-02-03 21:45:08,963 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50093
+2020-02-03 21:45:13,963 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:18,958 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:20,407 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:45:20,409 [10] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:45:20,491 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:45:20,593 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:45:20,593 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:45:20,671 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:45:20,672 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:45:20,685 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:45:20,685 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:45:23,957 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:28,957 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:31,747 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:45:33,959 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:35,974 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:45:35,974 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:45:35,992 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:45:35,993 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:45:36,045 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:45:36,852 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#57
+2020-02-03 21:45:36,869 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:45:36,869 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:45:36,887 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:45:36,888 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:45:36,904 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:45:36,904 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:45:38,959 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:43,959 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:48,959 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:53,960 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:45:58,961 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:03,960 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:08,961 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:13,961 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:18,961 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:23,961 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:28,962 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:33,962 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:38,962 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:43,965 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:48,965 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:53,963 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:46:58,963 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:47:03,964 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:47:08,964 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:47:13,977 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:50:44,769 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:50:44,785 [5] INFO  PubgServerA - Session: 97b0f60a-4be8-4af9-aea3-0dc69d0baf9e/192.168.1.2:50163
+A new session connected!
+2020-02-03 21:50:44,799 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50163
+2020-02-03 21:50:49,796 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:50:52,257 [11] INFO  PubgServerA - Session: 97b0f60a-4be8-4af9-aea3-0dc69d0baf9e/192.168.1.2:50163
+This session was closed for ClientClosing!
+2020-02-03 21:50:58,826 [5] INFO  PubgServerA - Session: b8b68f82-8f48-4bf3-ab57-ed9709fa0433/192.168.1.2:50165
+A new session connected!
+2020-02-03 21:50:58,827 [11] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50165
+2020-02-03 21:51:03,786 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:51:03,789 [12] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:51:03,836 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:03,869 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:51:03,975 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:51:03,976 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:51:04,052 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:51:04,053 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:51:04,063 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:51:04,063 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:51:06,331 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:51:08,837 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:13,837 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:18,838 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:23,842 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:27,499 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#228
+2020-02-03 21:51:27,500 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：228
+2020-02-03 21:51:27,536 [10] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:51:28,839 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:29,949 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#57
+2020-02-03 21:51:29,949 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：57
+2020-02-03 21:51:29,968 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#222
+2020-02-03 21:51:29,968 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：222
+2020-02-03 21:51:29,992 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:51:31,937 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#57
+2020-02-03 21:51:31,953 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:51:31,953 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:51:31,971 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:51:31,971 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:51:31,988 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:51:31,988 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:51:33,839 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:38,052 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:51:38,839 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:41,186 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#228
+2020-02-03 21:51:41,186 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：228
+2020-02-03 21:51:41,206 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:51:42,080 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#229
+2020-02-03 21:51:42,080 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：229
+2020-02-03 21:51:42,103 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:51:42,974 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:51:42,974 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:51:42,992 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:51:42,992 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:51:43,840 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:48,840 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:53,840 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:51:58,841 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:03,841 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:08,843 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:10,517 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#566677#16#cs
+2020-02-03 21:52:10,518 [10] INFO  server.DAO.EditGrounpDao - 创建队：566677
+2020-02-03 21:52:10,532 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:52:10,532 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:52:10,552 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#59
+2020-02-03 21:52:10,552 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：59
+2020-02-03 21:52:10,568 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#232
+2020-02-03 21:52:10,569 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：232
+2020-02-03 21:52:10,592 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:52:13,841 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:18,707 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#59
+2020-02-03 21:52:18,724 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:52:18,724 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:52:18,742 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:52:18,742 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:52:18,758 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:52:18,758 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:52:18,842 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:22,518 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:52:23,845 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:28,235 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#fffggg#16#cs
+2020-02-03 21:52:28,236 [10] INFO  server.DAO.EditGrounpDao - 创建队：fffggg
+2020-02-03 21:52:28,252 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:52:28,252 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:52:28,271 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#60
+2020-02-03 21:52:28,271 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：60
+2020-02-03 21:52:28,287 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#237
+2020-02-03 21:52:28,287 [9] INFO  server.DAO.SearchGrounpDao - 查询room下的user：237
+2020-02-03 21:52:28,313 [9] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:52:28,842 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:52:30,058 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#60
+2020-02-03 21:52:30,074 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:52:30,074 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:52:30,093 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:52:30,093 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:52:30,110 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:52:30,110 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:52:32,712 [12] INFO  PubgServerA - Session: b8b68f82-8f48-4bf3-ab57-ed9709fa0433/192.168.1.2:50165
+This session was closed for ClientClosing!
+2020-02-03 21:56:58,233 [6] INFO  PubgServerA - Session: bb302cfd-8d33-4ebf-a443-da3881965518/192.168.1.2:50186
+A new session connected!
+2020-02-03 21:56:58,234 [15] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50186
+2020-02-03 21:57:03,251 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:08,250 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:13,251 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:18,254 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:23,251 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:28,253 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:33,255 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:38,252 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:43,252 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:48,253 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:53,253 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:57:58,253 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:03,255 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:08,257 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:13,254 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:18,255 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:23,256 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:28,256 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:33,256 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:38,257 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:43,257 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:48,257 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:53,260 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:58:58,258 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:59:00,329 [11] INFO  PubgServerA - Session: bb302cfd-8d33-4ebf-a443-da3881965518/192.168.1.2:50186
+This session was closed for ClientClosing!
+2020-02-03 21:59:28,417 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-03 21:59:33,601 [6] INFO  PubgServerA - Session: 218952c1-e63c-43f8-b9bf-ee25003dc27b/192.168.1.2:50189
+A new session connected!
+2020-02-03 21:59:33,609 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50189
+2020-02-03 21:59:37,345 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 21:59:37,349 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 21:59:37,422 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 21:59:37,524 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:59:37,524 [11] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:59:37,600 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:59:37,601 [9] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:59:37,612 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:59:37,613 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:59:38,596 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:59:43,599 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:59:43,855 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 21:59:48,596 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:59:49,109 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#123#16#cs
+2020-02-03 21:59:49,110 [9] INFO  server.DAO.EditGrounpDao - 创建队：123
+2020-02-03 21:59:49,126 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:59:49,126 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:59:49,144 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#61
+2020-02-03 21:59:49,145 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：61
+2020-02-03 21:59:49,161 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#242
+2020-02-03 21:59:49,161 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：242
+2020-02-03 21:59:49,196 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 21:59:51,428 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#61
+2020-02-03 21:59:51,445 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 21:59:51,445 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 21:59:51,463 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 21:59:51,463 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 21:59:51,480 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 21:59:51,480 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 21:59:53,598 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 21:59:56,385 [11] INFO  PubgServerA - Session: 218952c1-e63c-43f8-b9bf-ee25003dc27b/192.168.1.2:50189
+This session was closed for ClientClosing!
+2020-02-03 21:59:58,811 [6] INFO  PubgServerA - Session: af086461-4308-4913-a273-c06e91fc077b/192.168.1.2:50191
+A new session connected!
+2020-02-03 21:59:58,811 [10] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50191
+2020-02-03 22:00:03,828 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:00:04,766 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 22:00:04,766 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 22:00:04,839 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 22:00:04,936 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:00:04,936 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:00:04,937 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:00:04,949 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 22:00:04,950 [11] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 22:00:05,019 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 22:00:05,019 [10] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 22:00:06,321 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@ExitRoom#227#15
+2020-02-03 22:00:06,342 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:00:06,343 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:00:06,355 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 22:00:06,355 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 22:00:06,371 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 22:00:06,371 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 22:00:06,385 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:00:07,017 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:00:08,301 [12] INFO  PubgServerA - Session: af086461-4308-4913-a273-c06e91fc077b/192.168.1.2:50191
+This session was closed for ClientClosing!
+2020-02-03 22:00:10,666 [6] INFO  PubgServerA - Session: 87546662-8116-4f90-9292-c88374ecbc4b/192.168.1.2:50193
+A new session connected!
+2020-02-03 22:00:10,666 [12] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50193
+2020-02-03 22:00:15,675 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 22:00:15,675 [11] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 22:00:15,676 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:00:15,748 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 22:00:15,861 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:00:15,862 [9] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:00:15,939 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#58
+2020-02-03 22:00:15,939 [10] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：58
+2020-02-03 22:00:15,951 [11] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#227
+2020-02-03 22:00:15,951 [11] INFO  server.DAO.SearchGrounpDao - 查询room下的user：227
+2020-02-03 22:00:15,963 [11] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:00:17,654 [9] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#58
+2020-02-03 22:00:17,679 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:00:17,679 [10] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:00:20,674 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:00:25,675 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:00:30,675 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:00:31,207 [11] INFO  PubgServerA - Session: 87546662-8116-4f90-9292-c88374ecbc4b/192.168.1.2:50193
+This session was closed for ClientClosing!
+2020-02-03 22:01:09,657 [6] INFO  PubgServerA - Session: b9bcde5e-bf9f-4dba-a4df-92479ec13c3e/192.168.1.2:50199
+A new session connected!
+2020-02-03 22:01:09,657 [9] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50199
+2020-02-03 22:01:12,999 [12] INFO  PubgServerA - Session: b9bcde5e-bf9f-4dba-a4df-92479ec13c3e/192.168.1.2:50199
+This session was closed for ClientClosing!
+2020-02-03 22:14:03,042 [6] INFO  PubgServerA - Session: 33f7bedb-9287-47c1-908f-57df3a766675/192.168.1.4:39978
+A new session connected!
+2020-02-03 22:14:03,042 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.4:39978
+2020-02-03 22:14:08,167 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:14:10,751 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 22:14:10,751 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 22:14:11,210 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#d4d933aeabbb7bfecc224d3bb43a4c7c#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20191220.211147)
+2020-02-03 22:14:11,389 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:14:11,389 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:14:11,396 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:14:13,160 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:14:13,714 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:14:15,686 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:14:17,708 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:14:18,174 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:14:19,690 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:14:21,252 [12] INFO  PubgServerA - Session: 33f7bedb-9287-47c1-908f-57df3a766675/192.168.1.4:39978
+This session was closed for ClientClosing!
+2020-02-03 22:14:44,550 [15] INFO  PubgServerA - Session: 6344d238-8d5e-4b23-a4a4-1af4a66422d6/192.168.1.4:39996
+A new session connected!
+2020-02-03 22:14:44,551 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.4:39996
+2020-02-03 22:14:49,680 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:14:54,656 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:14:59,691 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:03,229 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 22:15:03,230 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 22:15:03,686 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#d4d933aeabbb7bfecc224d3bb43a4c7c#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20191220.211147)
+2020-02-03 22:15:03,853 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:03,853 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:04,659 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:09,676 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:14,659 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:16,497 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#西安#16#cs
+2020-02-03 22:15:16,498 [8] INFO  server.DAO.EditGrounpDao - 创建队：西安
+2020-02-03 22:15:16,547 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:16,547 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:16,619 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#62
+2020-02-03 22:15:16,619 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：62
+2020-02-03 22:15:16,651 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#247
+2020-02-03 22:15:16,651 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：247
+2020-02-03 22:15:16,674 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:19,664 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:24,676 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:29,693 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:31,592 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@DeleteGrounp#62
+2020-02-03 22:15:31,639 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:31,639 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:34,686 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:37,559 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#123#16#cs
+2020-02-03 22:15:37,560 [8] INFO  server.DAO.EditGrounpDao - 创建队：123
+2020-02-03 22:15:37,577 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:37,578 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:37,593 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#63
+2020-02-03 22:15:37,593 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：63
+2020-02-03 22:15:37,610 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#252
+2020-02-03 22:15:37,610 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：252
+2020-02-03 22:15:37,633 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:39,662 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:43,461 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#456#16#cs
+2020-02-03 22:15:43,461 [14] INFO  server.DAO.EditGrounpDao - 创建队：456
+2020-02-03 22:15:43,513 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:43,513 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:43,531 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:15:43,531 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:15:43,547 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:15:43,547 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:15:43,569 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:44,662 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:48,508 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#789#16#cs
+2020-02-03 22:15:48,509 [8] INFO  server.DAO.EditGrounpDao - 创建队：789
+2020-02-03 22:15:48,570 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:48,571 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:48,744 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:15:48,744 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:15:48,795 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:15:48,795 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:15:48,818 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:49,669 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:50,844 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:15:50,844 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:15:50,894 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:15:50,894 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:15:50,906 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:54,684 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:15:57,212 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@UpdateGrounp#456#房间1二#123456#64#257
+2020-02-03 22:15:57,222 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:15:57,222 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:15:57,240 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:15:57,241 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:15:57,258 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:15:57,258 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:15:57,281 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:15:59,680 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:04,664 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:07,696 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:16:07,696 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:16:07,715 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:16:07,715 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:16:07,737 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:09,047 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#63
+2020-02-03 22:16:09,048 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：63
+2020-02-03 22:16:09,066 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#252
+2020-02-03 22:16:09,066 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：252
+2020-02-03 22:16:09,088 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:09,580 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#63
+2020-02-03 22:16:09,581 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：63
+2020-02-03 22:16:09,600 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#252
+2020-02-03 22:16:09,601 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：252
+2020-02-03 22:16:09,623 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:09,665 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:10,249 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:16:10,249 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:16:10,267 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:16:10,267 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:16:10,288 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:14,682 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:19,682 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:24,682 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:29,669 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:34,668 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:39,685 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:44,669 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:45,372 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@UpdateGrounp#456#房间1二问#123456#64#257
+2020-02-03 22:16:45,387 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:16:45,387 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:16:45,409 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:16:45,409 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:16:45,424 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:16:45,425 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:16:45,448 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:47,576 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:16:47,576 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:16:47,594 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:16:47,594 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:16:47,616 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:16:49,673 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:54,690 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:16:59,686 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:04,691 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:09,692 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:10,968 [8] INFO  PubgServerA - Session: 6344d238-8d5e-4b23-a4a4-1af4a66422d6/192.168.1.4:39996
+This session was closed for ClientClosing!
+2020-02-03 22:17:21,010 [15] INFO  PubgServerA - Session: 1d988961-76c2-46cb-b430-b207322a3ee8/192.168.1.4:40008
+A new session connected!
+2020-02-03 22:17:21,011 [14] INFO  PubgServerA - 新的客户端连接：192.168.1.4:40008
+2020-02-03 22:17:26,145 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:31,117 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:31,430 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767972#123456
+2020-02-03 22:17:31,430 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767972
+2020-02-03 22:17:31,860 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#d4d933aeabbb7bfecc224d3bb43a4c7c#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20191220.211147)
+2020-02-03 22:17:32,013 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:17:32,013 [13] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:17:32,018 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:32,111 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:17:32,111 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:17:32,304 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:17:32,304 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:17:32,327 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:34,288 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:36,161 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:36,366 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:38,294 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:40,295 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:40,595 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#123456#262#15
+2020-02-03 22:17:40,596 [13] INFO  server.DAO.JoinRoomDao - 加入房间：262,15
+2020-02-03 22:17:40,611 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:17:40,611 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:17:40,640 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:17:40,640 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:17:40,666 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:17:40,666 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:17:41,127 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:42,302 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:42,450 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#263
+2020-02-03 22:17:42,450 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：263
+2020-02-03 22:17:42,473 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:43,125 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@JoinRoom#123456#263#15
+2020-02-03 22:17:43,125 [12] INFO  server.DAO.JoinRoomDao - 加入房间：263,15
+2020-02-03 22:17:44,280 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:45,598 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@ExitRoom#263#15
+2020-02-03 22:17:45,612 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#0
+2020-02-03 22:17:45,612 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：0
+2020-02-03 22:17:45,630 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:17:45,630 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:17:45,647 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:17:45,647 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:17:45,670 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:46,115 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:46,321 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:48,282 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:49,199 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:17:49,199 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:17:49,231 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:17:49,231 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:17:49,254 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:50,288 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:50,604 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#63
+2020-02-03 22:17:50,604 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：63
+2020-02-03 22:17:50,634 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#252
+2020-02-03 22:17:50,634 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：252
+2020-02-03 22:17:50,657 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:51,115 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:51,317 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:17:51,317 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:17:51,333 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:17:51,334 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:17:51,356 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:51,851 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#259
+2020-02-03 22:17:51,851 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：259
+2020-02-03 22:17:51,875 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:52,303 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:52,438 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#260
+2020-02-03 22:17:52,439 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：260
+2020-02-03 22:17:52,450 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:52,586 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#258
+2020-02-03 22:17:52,586 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：258
+2020-02-03 22:17:52,609 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:17:54,286 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:56,129 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:17:56,332 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.JoinRoomDao@SearchEnterRoomState#15
+2020-02-03 22:17:58,089 [14] INFO  PubgServerA - Session: 1d988961-76c2-46cb-b430-b207322a3ee8/192.168.1.4:40008
+This session was closed for ClientClosing!
+2020-02-03 22:18:05,273 [15] INFO  PubgServerA - Session: 02c0d6c4-6be1-4eb1-8cae-814b96bdddc9/192.168.1.4:40018
+A new session connected!
+2020-02-03 22:18:05,274 [13] INFO  PubgServerA - 新的客户端连接：192.168.1.4:40018
+2020-02-03 22:18:10,377 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:15,377 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:20,397 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:24,849 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 22:18:24,849 [8] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 22:18:25,422 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:26,669 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#d4d933aeabbb7bfecc224d3bb43a4c7c#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20191220.211147)
+2020-02-03 22:18:26,879 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:18:26,879 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:18:27,157 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#65
+2020-02-03 22:18:27,157 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：65
+2020-02-03 22:18:27,254 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#262
+2020-02-03 22:18:27,254 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：262
+2020-02-03 22:18:27,277 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:18:30,396 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:33,515 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#二太爷#16#cs
+2020-02-03 22:18:33,515 [8] INFO  server.DAO.EditGrounpDao - 创建队：二太爷
+2020-02-03 22:18:33,570 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:18:33,570 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:18:33,603 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#66
+2020-02-03 22:18:33,603 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：66
+2020-02-03 22:18:33,613 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#267
+2020-02-03 22:18:33,613 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：267
+2020-02-03 22:18:33,636 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:18:35,394 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:38,825 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#456899#16#cs
+2020-02-03 22:18:38,825 [8] INFO  server.DAO.EditGrounpDao - 创建队：456899
+2020-02-03 22:18:38,868 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:18:38,868 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:18:38,884 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#67
+2020-02-03 22:18:38,884 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：67
+2020-02-03 22:18:38,928 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#272
+2020-02-03 22:18:38,928 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：272
+2020-02-03 22:18:38,951 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:18:40,394 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:44,559 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#正常vv#16#cs
+2020-02-03 22:18:44,559 [8] INFO  server.DAO.EditGrounpDao - 创建队：正常vv
+2020-02-03 22:18:44,581 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:18:44,581 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:18:44,602 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#68
+2020-02-03 22:18:44,602 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：68
+2020-02-03 22:18:44,620 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#277
+2020-02-03 22:18:44,620 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：277
+2020-02-03 22:18:44,643 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:18:45,394 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:50,395 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:53,690 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#789#16#cs
+2020-02-03 22:18:53,690 [8] INFO  server.DAO.EditGrounpDao - 创建队：789
+2020-02-03 22:18:55,396 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:18:59,346 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#我饿天通苑#16#cs
+2020-02-03 22:18:59,346 [8] INFO  server.DAO.EditGrounpDao - 创建队：我饿天通苑
+2020-02-03 22:18:59,360 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:18:59,360 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:18:59,407 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#69
+2020-02-03 22:18:59,407 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：69
+2020-02-03 22:18:59,430 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#282
+2020-02-03 22:18:59,430 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：282
+2020-02-03 22:18:59,452 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:00,383 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:05,397 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:10,380 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:11,753 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#请问#16#cs
+2020-02-03 22:19:11,753 [14] INFO  server.DAO.EditGrounpDao - 创建队：请问
+2020-02-03 22:19:11,798 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:11,799 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:11,820 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#70
+2020-02-03 22:19:11,820 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：70
+2020-02-03 22:19:11,846 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#287
+2020-02-03 22:19:11,847 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：287
+2020-02-03 22:19:11,868 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:15,382 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:16,680 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#是否发个#16#cs
+2020-02-03 22:19:16,680 [12] INFO  server.DAO.EditGrounpDao - 创建队：是否发个
+2020-02-03 22:19:16,714 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:16,714 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:16,728 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#71
+2020-02-03 22:19:16,728 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：71
+2020-02-03 22:19:16,758 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#292
+2020-02-03 22:19:16,758 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：292
+2020-02-03 22:19:16,781 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:20,400 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:22,550 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#下次VB#16#cs
+2020-02-03 22:19:22,551 [8] INFO  server.DAO.EditGrounpDao - 创建队：下次VB
+2020-02-03 22:19:22,560 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:22,560 [13] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:22,582 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#72
+2020-02-03 22:19:22,582 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：72
+2020-02-03 22:19:22,610 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#297
+2020-02-03 22:19:22,610 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：297
+2020-02-03 22:19:22,633 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:25,418 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:28,445 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#二太爷#16#cs
+2020-02-03 22:19:28,446 [8] INFO  server.DAO.EditGrounpDao - 创建队：二太爷
+2020-02-03 22:19:30,382 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:34,147 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#让英语#16#cs
+2020-02-03 22:19:34,148 [8] INFO  server.DAO.EditGrounpDao - 创建队：让英语
+2020-02-03 22:19:34,166 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:34,166 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:34,189 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#73
+2020-02-03 22:19:34,189 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：73
+2020-02-03 22:19:34,221 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#302
+2020-02-03 22:19:34,221 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：302
+2020-02-03 22:19:34,244 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:35,398 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:38,847 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#让他爷爷#16#cs
+2020-02-03 22:19:38,848 [14] INFO  server.DAO.EditGrounpDao - 创建队：让他爷爷
+2020-02-03 22:19:38,871 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:38,871 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:38,892 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#74
+2020-02-03 22:19:38,893 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：74
+2020-02-03 22:19:38,927 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#307
+2020-02-03 22:19:38,927 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：307
+2020-02-03 22:19:38,950 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:40,400 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:44,724 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#地方干活#16#cs
+2020-02-03 22:19:44,724 [8] INFO  server.DAO.EditGrounpDao - 创建队：地方干活
+2020-02-03 22:19:44,742 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:19:44,742 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:19:44,763 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#75
+2020-02-03 22:19:44,763 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：75
+2020-02-03 22:19:44,798 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#312
+2020-02-03 22:19:44,798 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：312
+2020-02-03 22:19:44,821 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:19:45,400 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:50,400 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:19:55,400 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:00,404 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:05,420 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:08,125 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#地方刚刚#16#cs
+2020-02-03 22:20:08,125 [14] INFO  server.DAO.EditGrounpDao - 创建队：地方刚刚
+2020-02-03 22:20:08,139 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:20:08,139 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:20:08,715 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#76
+2020-02-03 22:20:08,715 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：76
+2020-02-03 22:20:08,733 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#317
+2020-02-03 22:20:08,733 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：317
+2020-02-03 22:20:08,755 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:20:10,402 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:15,387 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:17,530 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#发个干活#16#cs
+2020-02-03 22:20:17,531 [8] INFO  server.DAO.EditGrounpDao - 创建队：发个干活
+2020-02-03 22:20:17,564 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:20:17,564 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:20:17,598 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#77
+2020-02-03 22:20:17,598 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：77
+2020-02-03 22:20:17,629 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#322
+2020-02-03 22:20:17,629 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：322
+2020-02-03 22:20:17,652 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:20:20,404 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:25,407 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:30,394 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:35,410 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:40,389 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:43,265 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#发个呵呵#16#cs
+2020-02-03 22:20:43,265 [8] INFO  server.DAO.EditGrounpDao - 创建队：发个呵呵
+2020-02-03 22:20:43,281 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:20:43,281 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:20:43,303 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#78
+2020-02-03 22:20:43,303 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：78
+2020-02-03 22:20:43,347 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#327
+2020-02-03 22:20:43,348 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：327
+2020-02-03 22:20:43,371 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:20:45,390 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:47,485 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#地方法规#16#cs
+2020-02-03 22:20:47,485 [8] INFO  server.DAO.EditGrounpDao - 创建队：地方法规
+2020-02-03 22:20:47,542 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:20:47,542 [14] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:20:47,556 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#79
+2020-02-03 22:20:47,556 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：79
+2020-02-03 22:20:47,609 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#332
+2020-02-03 22:20:47,609 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：332
+2020-02-03 22:20:47,632 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:20:50,408 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:20:51,535 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.EditGrounpDao@AddGrounp#地方刚刚#16#cs
+2020-02-03 22:20:51,535 [8] INFO  server.DAO.EditGrounpDao - 创建队：地方刚刚
+2020-02-03 22:20:55,426 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:00,409 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:05,392 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:08,854 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#78
+2020-02-03 22:21:08,854 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：78
+2020-02-03 22:21:08,869 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#327
+2020-02-03 22:21:08,869 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：327
+2020-02-03 22:21:08,892 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:09,153 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#75
+2020-02-03 22:21:09,153 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：75
+2020-02-03 22:21:09,358 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#74
+2020-02-03 22:21:09,358 [14] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：74
+2020-02-03 22:21:09,782 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#312
+2020-02-03 22:21:09,782 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：312
+2020-02-03 22:21:09,805 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:09,805 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#72
+2020-02-03 22:21:09,805 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：72
+2020-02-03 22:21:11,231 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:11,231 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#63
+2020-02-03 22:21:11,231 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：63
+2020-02-03 22:21:11,348 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#307
+2020-02-03 22:21:11,348 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：307
+2020-02-03 22:21:11,371 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:12,019 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#64
+2020-02-03 22:21:12,019 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：64
+2020-02-03 22:21:12,039 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#257
+2020-02-03 22:21:12,039 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：257
+2020-02-03 22:21:12,061 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:12,570 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#66
+2020-02-03 22:21:12,570 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：66
+2020-02-03 22:21:12,589 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#267
+2020-02-03 22:21:12,589 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：267
+2020-02-03 22:21:12,611 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:12,852 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#67
+2020-02-03 22:21:12,853 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：67
+2020-02-03 22:21:12,871 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#272
+2020-02-03 22:21:12,871 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：272
+2020-02-03 22:21:12,893 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:13,052 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#68
+2020-02-03 22:21:13,052 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：68
+2020-02-03 22:21:13,070 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#277
+2020-02-03 22:21:13,070 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：277
+2020-02-03 22:21:13,093 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:13,253 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#69
+2020-02-03 22:21:13,253 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：69
+2020-02-03 22:21:13,271 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#282
+2020-02-03 22:21:13,271 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：282
+2020-02-03 22:21:13,294 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:13,404 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#70
+2020-02-03 22:21:13,404 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：70
+2020-02-03 22:21:13,448 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#287
+2020-02-03 22:21:13,448 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：287
+2020-02-03 22:21:13,470 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:13,590 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#71
+2020-02-03 22:21:13,590 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：71
+2020-02-03 22:21:13,607 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#292
+2020-02-03 22:21:13,607 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：292
+2020-02-03 22:21:13,629 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:13,786 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#72
+2020-02-03 22:21:13,786 [12] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：72
+2020-02-03 22:21:13,805 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#297
+2020-02-03 22:21:13,805 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：297
+2020-02-03 22:21:13,827 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:14,062 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#67
+2020-02-03 22:21:14,062 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：67
+2020-02-03 22:21:14,071 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#272
+2020-02-03 22:21:14,072 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：272
+2020-02-03 22:21:14,094 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:14,472 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#274
+2020-02-03 22:21:14,472 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：274
+2020-02-03 22:21:14,495 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:15,086 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#274
+2020-02-03 22:21:15,087 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：274
+2020-02-03 22:21:15,109 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:15,220 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#273
+2020-02-03 22:21:15,221 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：273
+2020-02-03 22:21:15,244 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:15,395 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:15,790 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#276
+2020-02-03 22:21:15,791 [12] INFO  server.DAO.SearchGrounpDao - 查询room下的user：276
+2020-02-03 22:21:15,816 [12] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:16,348 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#275
+2020-02-03 22:21:16,348 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：275
+2020-02-03 22:21:16,377 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:16,827 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#274
+2020-02-03 22:21:16,827 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：274
+2020-02-03 22:21:16,849 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:17,243 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#273
+2020-02-03 22:21:17,243 [13] INFO  server.DAO.SearchGrounpDao - 查询room下的user：273
+2020-02-03 22:21:17,265 [13] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:17,606 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#272
+2020-02-03 22:21:17,607 [8] INFO  server.DAO.SearchGrounpDao - 查询room下的user：272
+2020-02-03 22:21:17,628 [8] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:21:20,411 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:25,395 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:30,395 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:35,414 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:40,419 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:45,398 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:50,414 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:21:55,427 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:00,401 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:05,401 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:10,417 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:15,402 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:20,417 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:25,436 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:30,369 [14] INFO  PubgServerA - Session: 02c0d6c4-6be1-4eb1-8cae-814b96bdddc9/192.168.1.4:40018
+This session was closed for ClientClosing!
+2020-02-03 22:22:39,996 [19] INFO  PubgServerA - Session: 5753d267-750d-49b4-a8f9-bd882f4f8940/192.168.1.4:40068
+A new session connected!
+2020-02-03 22:22:39,997 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.4:40068
+2020-02-03 22:22:44,829 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:47,408 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 22:22:47,408 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 22:22:47,822 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#d4d933aeabbb7bfecc224d3bb43a4c7c#Handheld#Android OS 8.1.0 / API-27 (OPM1.171019.026/eng.compil.20191220.211147)
+2020-02-03 22:22:48,064 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:22:48,065 [8] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:22:48,322 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#79
+2020-02-03 22:22:48,322 [13] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：79
+2020-02-03 22:22:48,402 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#332
+2020-02-03 22:22:48,402 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：332
+2020-02-03 22:22:48,425 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:22:49,843 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:54,828 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:22:59,850 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:04,866 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:09,829 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:11,090 [19] INFO  PubgServerA - Session: 7a9c76d0-9402-421e-b095-8f855284a224/192.168.1.2:50411
+A new session connected!
+2020-02-03 22:23:11,090 [8] INFO  PubgServerA - 新的客户端连接：192.168.1.2:50411
+2020-02-03 22:23:14,832 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:16,105 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:16,351 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.LoginDao@CheckLogin#17391767973#123456
+2020-02-03 22:23:16,351 [14] INFO  server.DAO.LoginDao - 用户登陆验证：17391767973
+2020-02-03 22:23:16,426 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.CodeDao@CheckCode#00001#4c177a35947eac9e2aed9743a1bd4a9d07aadf96#Desktop#Windows 7  (6.1.0) 64bit
+2020-02-03 22:23:16,524 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchAllGrounp#16
+2020-02-03 22:23:16,524 [12] INFO  server.DAO.SearchGrounpDao - 查询用户下的所有队：16
+2020-02-03 22:23:16,593 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleGrounp#79
+2020-02-03 22:23:16,593 [8] INFO  server.DAO.SearchGrounpDao - 查询单队下的房间：79
+2020-02-03 22:23:16,622 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：Post:server.DAO.SearchGrounpDao@SearchSingleRoom#332
+2020-02-03 22:23:16,622 [14] INFO  server.DAO.SearchGrounpDao - 查询room下的user：332
+2020-02-03 22:23:16,635 [14] INFO  server.Tool.MySqlExecuteTools - excepstion：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2020-02-03 22:23:19,842 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:21,104 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:24,834 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:26,105 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:29,861 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:31,105 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:34,861 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:36,105 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:39,373 [8] INFO  PubgServerA - Session: 7a9c76d0-9402-421e-b095-8f855284a224/192.168.1.2:50411
+This session was closed for ClientClosing!
+2020-02-03 22:23:39,840 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:44,852 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:49,833 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:54,842 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:23:59,856 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:04,877 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:09,835 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:14,851 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:19,837 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:24,854 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:29,851 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:34,868 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:39,842 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:44,855 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:49,839 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:54,841 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:24:59,852 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:04,873 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:09,844 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:14,861 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:19,844 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:24,855 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:29,858 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:34,847 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:39,845 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:44,852 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:49,865 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:54,856 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:25:59,865 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:04,865 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:09,853 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:14,853 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:19,852 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:24,864 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:29,871 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:34,880 [26] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:39,854 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:44,855 [24] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:49,854 [8] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:54,875 [25] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:26:59,865 [12] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:04,883 [26] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:09,856 [25] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:14,872 [25] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:19,860 [25] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:24,862 [26] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:29,859 [25] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:34,893 [26] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:39,904 [24] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-03 22:27:44,883 [24] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:

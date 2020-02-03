@@ -76,24 +76,26 @@ namespace server.DAO
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
-            roomList.ForEach((item) => {
-
-                List<Room_User>  roomUserList = SearchSingleGrounpCommon(item.id.ToString());
-                if(roomUserList.Count>0)
+     
+            foreach(Room item in roomList)
+            {
+                List<Room_User> roomUserList = SearchSingleGrounpCommon(item.id.ToString());
+                if (roomUserList.Count > 0)
                 {
                     dataResult.result = 1;
                     dataResult.resean = "该房间下存在用户，无法进行删除。";
                     session.Send(GetSendData(dataResult, body));
+
                     return;
                 }
-
-            });
+            }
+            
             //开始删除队信息
            string sql = "delete  from grounp where id = @grounpId";
            MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
             dataResult.result = 0;
             //删除房间的相关数据
-            DeleteRoom(grounpId);
+             DeleteRoom(grounpId);
             session.Send(GetSendData(dataResult, body));
         }
 

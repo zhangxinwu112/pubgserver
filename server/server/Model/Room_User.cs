@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace server.Model
 {
-   public  class Grounp_User
+   public  class Room_User
     {
         public int id;
 
-        public int grounp_id;
+        public int room_id;
 
         public int user_id;
 

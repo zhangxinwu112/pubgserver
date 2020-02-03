@@ -16,13 +16,12 @@ namespace server.DAO
     public class JoinRoomDao : RoomDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
-        //
-        private readonly int maxNum = 1;
-        public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,string userId)
+        private readonly int maxNum = 50;
+        public void JoinRoom(PubgSession session, string body, string checkCode,string roomId,string userId)
         {
-            Logger.InfoFormat("加入房间：{0},{1}", grounpId, userId);
-            string sql = "select * from grounp_user where user_id = @user_id";
-            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+            Logger.InfoFormat("加入房间：{0},{1}", roomId, userId);
+            string sql = "select * from room_user where user_id = @user_id";
+            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
                new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
             DataResult dataResult = new DataResult();
             if (grounp_UserList.Count>0)
@@ -36,9 +35,9 @@ namespace server.DAO
 
             //校验checkcode是否正确
 
-             sql = "select * from grounp where id = @grounpId and checkCode = @checkCode";
+             sql = "select * from room where id = @roomId and checkCode = @checkCode";
 
-           int countResult =  MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId), new MySqlParameter("@checkCode", checkCode) });
+           int countResult =  MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId), new MySqlParameter("@checkCode", checkCode) });
 
             if(countResult==0)
             {
@@ -48,7 +47,7 @@ namespace server.DAO
                 return;
             }
 
-            grounp_UserList = SearchSingleGrounpCommon(grounpId);
+            grounp_UserList = SearchSingleGrounpCommon(roomId);
            
             if (grounp_UserList.Count> maxNum)
             {
@@ -57,8 +56,8 @@ namespace server.DAO
             }
             else
             {
-                 sql = "insert into grounp_user(grounp_id,user_id) " +
-                   "values('" + grounpId + "','" + userId + "')";
+                 sql = "insert into room_user(room_id,user_id) " +
+                   "values('" + roomId + "','" + userId + "')";
                     MySqlExecuteTools.AddOrUpdate(sql);
                 dataResult.result = 0;
             }
@@ -75,13 +74,13 @@ namespace server.DAO
         /// <param name="userId">用户id</param>
         public void ExitRoom(PubgSession session, string body, string grounpId, string userId)
         {
-            string sql = "select * from grounp_user where user_id = @user_id";
-            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+            string sql = "select * from room_user where user_id = @user_id";
+            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
                new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
 
             grounp_UserList.ForEach((item) => {
 
-                sql = "delete from grounp_user  where id = @id";
+                sql = "delete from room_user  where id = @id";
                 MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", item.id) });
 
             });
@@ -100,8 +99,8 @@ namespace server.DAO
         {
             DataResult dataResult = new DataResult();
 
-            string sql = "select * from grounp_user where user_id = @user_id";
-            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+            string sql = "select * from room_user where user_id = @user_id";
+            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
                new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
 
             dataResult.result = 0;
@@ -113,11 +112,11 @@ namespace server.DAO
 
             if(grounp_UserList.Count==1)
             {
-                int grounp_id = grounp_UserList[0].grounp_id;
+                int grounp_id = grounp_UserList[0].room_id;
 
-                sql = "select * from grounp_user where grounp_id = @grounp_id";
-                List<Grounp_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
-                   new MySqlParameter[] { new MySqlParameter("@grounp_id", grounp_id) });
+                sql = "select * from room_user where room_id = @room_id";
+                List<Room_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
+                   new MySqlParameter[] { new MySqlParameter("@room_id", grounp_id) });
                 if(_grounp_UserList.Count< maxNum)
                 {
                     dataResult.data = false;
@@ -134,15 +133,15 @@ namespace server.DAO
         public void CheckEnterButton(PubgSession session, string body, string checkCode, string userId)
         {
             DataResult dataResult = new DataResult();
-            string sql = "select * from grounp_user where user_id = @user_id";
-            List<Grounp_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Grounp_User>(sql,
+            string sql = "select * from room_user where user_id = @user_id";
+            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
               new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
 
             if(grounp_UserList.Count==1)
             {
-                sql = "select * from grounp where id = @id  and checkCode = @checkCode";
-                List<Grounp> grounps = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
-                    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].grounp_id), new MySqlParameter("@checkCode", checkCode) });
+                sql = "select * from room where id = @id  and checkCode = @checkCode";
+                List<Room> grounps = MySqlExecuteTools.GetObjectResult<Room>(sql,
+                    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].room_id), new MySqlParameter("@checkCode", checkCode) });
                 if(grounps.Count==1)
                 {
                     dataResult.result = 0;
@@ -160,7 +159,7 @@ namespace server.DAO
         public void SendUpdateGrounData()
         {
             Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("data", SearAllGrounpUser());
+            dic.Add("data", SearAllRoomUser());
             EventMgr.Instance.SendEvent(EventName.UPATE_GROUNP_USER, dic);
         }
     }

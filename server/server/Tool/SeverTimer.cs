@@ -173,25 +173,25 @@ namespace server.Tool
         public bool HandleEvent(string eventName, IDictionary<string, object> dictionary)
         {
 
-            List<Grounp_User> list = dictionary["data"] as List<Grounp_User>;
+            List<Room_User> list = dictionary["data"] as List<Room_User>;
             DoGroundData(list);
             return true;
         }
 
         //key:grounpID  value:userList
         private Dictionary<string, List<int>> grounpUserDic = new Dictionary<string, List<int>>();
-        private void DoGroundData(List<Grounp_User> grounp_User_list)
+        private void DoGroundData(List<Room_User> room_User_list)
         {
             grounpUserDic.Clear();
             //去除重复的
-            var resultlist = grounp_User_list.GroupBy(p => p.grounp_id).Select(g => g.First()).ToList();
+            var resultlist = room_User_list.GroupBy(p => p.room_id).Select(g => g.First()).ToList();
 
             resultlist.ForEach((item) => {
 
-                int grounpId = item.grounp_id;
+                int grounpId = item.room_id;
 
-                var query = from s in grounp_User_list
-                            where s.grounp_id == grounpId
+                var query = from s in room_User_list
+                            where s.room_id == grounpId
                             select s.user_id;
                 grounpUserDic.Add(grounpId.ToString(), query.ToList<int>());
 

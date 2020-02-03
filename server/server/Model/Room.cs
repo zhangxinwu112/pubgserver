@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace server.Model
 {
-   public class Room
+    public class Room
     {
         public int id;
 
-        public string name;
+        public int gronpId;
 
-        //地区
-        public string area;
+        //编号
+        public int code;
 
-        //创建用户id
-        public int userId;
+        public string  name;
 
-      
+        public string checkCode;
     }
 }

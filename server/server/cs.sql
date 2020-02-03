@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2019-11-24 22:09:13
+Date: 2020-02-03 21:10:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,37 +41,17 @@ INSERT INTO `code` VALUES ('3', '00003', '0', '15', '0');
 DROP TABLE IF EXISTS `grounp`;
 CREATE TABLE `grounp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `roomId` int(11) DEFAULT NULL,
-  `code` smallint(4) DEFAULT NULL,
   `name` varchar(10) DEFAULT NULL,
-  `checkCode` varchar(10) DEFAULT NULL,
+  `area` varchar(10) DEFAULT NULL,
+  `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('1', '1', '1', '1队', '1');
-INSERT INTO `grounp` VALUES ('2', '1', '2', '2队', '1');
-INSERT INTO `grounp` VALUES ('3', '1', '3', '3队', '1');
-INSERT INTO `grounp` VALUES ('4', '1', '4', '4队', '1');
-INSERT INTO `grounp` VALUES ('5', '1', '5', '5队', '1');
-
--- ----------------------------
--- Table structure for grounp_user
--- ----------------------------
-DROP TABLE IF EXISTS `grounp_user`;
-CREATE TABLE `grounp_user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `grounp_id` int(11) DEFAULT NULL,
-  `user_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of grounp_user
--- ----------------------------
-INSERT INTO `grounp_user` VALUES ('1', '1', '15');
+INSERT INTO `grounp` VALUES ('53', '123', 'cs', '16');
+INSERT INTO `grounp` VALUES ('54', '456', 'cs', '16');
 
 -- ----------------------------
 -- Table structure for machine
@@ -96,18 +76,42 @@ CREATE TABLE `machine` (
 DROP TABLE IF EXISTS `room`;
 CREATE TABLE `room` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `grounpId` int(11) DEFAULT NULL,
+  `code` smallint(4) DEFAULT NULL,
   `name` varchar(10) DEFAULT NULL,
-  `area` varchar(10) DEFAULT NULL,
-  `userId` int(11) DEFAULT NULL,
+  `checkCode` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=212 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('1', '西安团队', '陕西西安', '16');
-INSERT INTO `room` VALUES ('2', '房间2', '陕西西安', '17');
-INSERT INTO `room` VALUES ('3', '房间1', '北京', '16');
+INSERT INTO `room` VALUES ('208', '54', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('207', '54', '1', '房间456', '123456');
+INSERT INTO `room` VALUES ('206', '53', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('205', '53', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('202', '53', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('203', '53', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('204', '53', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('210', '54', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('209', '54', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('211', '54', '5', '房间5', '123456');
+
+-- ----------------------------
+-- Table structure for room_user
+-- ----------------------------
+DROP TABLE IF EXISTS `room_user`;
+CREATE TABLE `room_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `room_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of room_user
+-- ----------------------------
+INSERT INTO `room_user` VALUES ('20', '207', '15');
 
 -- ----------------------------
 -- Table structure for user
@@ -121,7 +125,7 @@ CREATE TABLE `user` (
   `image` varchar(255) DEFAULT '',
   `type` smallint(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
@@ -129,3 +133,4 @@ CREATE TABLE `user` (
 INSERT INTO `user` VALUES ('15', '17391767972', '123456', '天涯', 'image1', '0');
 INSERT INTO `user` VALUES ('16', '17391767973', '123456', '管理员', 'image1', '1');
 INSERT INTO `user` VALUES ('17', '17391767974', '123456', '测试管理员', 'image1', '1');
+INSERT INTO `user` VALUES ('18', '17391767979', '123456', '玩家测试', 'image1', '0');

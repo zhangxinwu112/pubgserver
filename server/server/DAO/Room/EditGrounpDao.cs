@@ -20,7 +20,7 @@ namespace server.DAO
         private readonly int roomCount = 5;
 
         private readonly int createGrounpCount = 2;
-        public void AddGrounp(PubgSession session, string body, string grounpName,string userId,string area="shanxi")
+        public void AddGrounp(PubgSession session, string body, string grounpName,string playerTime, string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建队：{0}", grounpName);
             DataResult dataResult = new DataResult();
@@ -50,8 +50,8 @@ namespace server.DAO
             else
             {
                 //创建房间
-                sql = "insert into grounp(name,area,userId) " +
-                    "values('" + grounpName + "','" + area + "','" + userId + "')";
+                sql = "insert into grounp(name,runState,playerTime,area,userId) " +
+                    "values('" + grounpName + "','-1','" + playerTime + "','" + area + "','" + userId + "')";
                 long roomid = MySqlExecuteTools.GetAddID(sql);
                 if(roomid!=-1)
                 {
@@ -64,7 +64,7 @@ namespace server.DAO
                 else
                 {
                     dataResult.result = 1;
-                    dataResult.data ="房间队失败，请重试！";
+                    dataResult.data ="创建失败，请重试！";
                 }
               
             }
@@ -121,11 +121,11 @@ namespace server.DAO
         /// <param name="session"></param>
         /// <param name="body"></param>
         /// <param name="room"></param>
-        public void UpdateGrounp(PubgSession session, string body, string _grounpName, string _roomName, string checkCode, string _grounpId, string _roomId)
+        public void UpdateGrounp(PubgSession session, string body, string _grounpName, string playerTime,string _roomName, string checkCode, string _grounpId, string _roomId)
         {
             //string sql = "update room set name = '" + roomName + "', area = '" + room.area + "' where id = @id;";
             //更新队
-            string sql = "update grounp set name = '" + _grounpName + "' where id = @grounpId;";
+            string sql = "update grounp set name = '" + _grounpName + "', playerTime = '" + playerTime + "' where id = @grounpId;";
             MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", _grounpId) });
 
             //更新房间的信息

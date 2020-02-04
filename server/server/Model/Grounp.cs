@@ -18,6 +18,16 @@ namespace server.Model
         //创建用户id
         public int userId;
 
-      
+        //运行状态-1表示停止，0表示运行
+        public int runState;
+
+        public int playerTime;
+
+        public float fenceLon;
+
+        public float fenceLat;
+
+        public float fenceDistance;
+
     }
 }

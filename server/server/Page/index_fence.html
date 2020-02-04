@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>设置点标注的文本标签</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+	
+</head>
+
+ <script src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b&plugin=AMap.CircleEditor"></script>
+     <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+ <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+
+<body>
+    <div id="container"></div>
+
+	<input  type="button" class="btn" style="width: 60px;position: absolute;top:0;right: 0;" value="返回" onclick="Back()" />
+	<div id="app">
+		
+		<button v-on:click="StartEdit" class="btn" style="width: 60px;position: absolute;top:0;left: 0;" v-show="buttonShow"> 开始编辑 </button>
+		<button v-on:click="EndEdit" class="btn" style="width: 60px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 结束编辑 </button>
+	</div>
+	
+
+<script src="js/fence.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>

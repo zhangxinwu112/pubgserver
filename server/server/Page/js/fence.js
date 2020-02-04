@@ -28,31 +28,30 @@
 	var map;
 	var circleEditor;
 	var circle;
-  
+	//CreateMap(108.950543,34.199175,4000,12);
 
-	CreateMap(108.950543,34.199175,4000,12);
-
-	function CreateMap(lon,lat,radius,grounpId)
+	function CreateMap(json)
 	{
 		map = new AMap.Map('container', {
 		resizeEnable: true,
-		center: [lon, lat],
+		center: [json.lon, json.lat],
 		showLabel:true,
 		mapStyle: "amap://styles/whitesmoke",
 		zoom: 13
 		});
 		
-		createCircle(lon,lat,radius);
+		createCircle(json);
 		
 	}
 
   
  
-   function createCircle(lon,lat,radius)
+   function createCircle(json)
    {
+	  
 	    circle = new AMap.Circle({
-	           center: [lon, lat],
-	           radius: radius, //半径
+	           center: [json.lon, json.lat],
+	           radius: 2000, //半径
 	           borderWeight: 3,
 	           strokeColor: "#FF33FF", 
 	           strokeOpacity: 1,
@@ -77,16 +76,17 @@
 		   })
 	   
 		   circleEditor.on('adjust', function(event) {
-			  
+			   var grounpId = json.grounpId; 
 		   })
 	   
 		   circleEditor.on('end', function(event) {
 			 
 			   // event.target 即为编辑后的圆形对象
+			    var grounpId = json.grounpId; 
 		   })
 		   
 		   circleEditor.open();
-			   
+		  
    }
 	
 	

@@ -62,7 +62,7 @@ namespace server.DAO
                 dataResult.result = 0;
             }
             session.Send(GetSendData(dataResult, body));
-            SendUpdateGrounData();
+            SendUpdateRoomData();
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace server.DAO
             dataResult.result = 0;
             //查询能否删除
             session.Send(GetSendData(dataResult, body));
-            SendUpdateGrounData();
+            SendUpdateRoomData();
         }
 
         /// <summary>
@@ -156,10 +156,10 @@ namespace server.DAO
         /// <summary>
         /// 获取最新的grounp_user信息进行grounp信息
         /// </summary>
-        public void SendUpdateGrounData()
+        public void SendUpdateRoomData()
         {
             Dictionary<string, object> dic = new Dictionary<string, object>();
-            dic.Add("data", SearAllRoomUser());
+            dic.Add("data", SearchAllRoomUser());
             EventMgr.Instance.SendEvent(EventName.UPATE_GROUNP_USER, dic);
         }
     }

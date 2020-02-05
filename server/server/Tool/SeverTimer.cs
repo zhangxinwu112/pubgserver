@@ -33,7 +33,7 @@ namespace server.Tool
             EventMgr.Instance.AddListener(this, EventName.UPATE_GROUNP_USER);
             //获取
             JoinRoomDao joinRoomDao = new JoinRoomDao();
-            joinRoomDao.SendUpdateGrounData();
+            joinRoomDao.SendUpdateRoomData();
 
 
         }
@@ -62,19 +62,19 @@ namespace server.Tool
                 //{
                 //
 
-                SetGrounpDic();
+                CreateGPSRoomDic();
                 foreach (PubgSession session in dic.Keys)
                 {
                     SessionItem sessionItem = null;
                     dic.TryGetValue(session, out sessionItem);
                     if (sessionItem != null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
                     {
-                       int grounpid =  GetGrounpByUser(sessionItem.gpsItem.userId);
-                        List<GPSItem> list = null;
-                        gpsDic.TryGetValue(grounpid.ToString(), out list);
-                        if(list!=null && list.Count>0)
+                        int roomId = GetRoomByUser(sessionItem.gpsItem.userId);
+                        List<GPSItem> gpsList = null;
+                        gpsDic.TryGetValue(roomId.ToString(), out gpsList);
+                        if(gpsList != null && gpsList.Count>0)
                         {
-                            string resultJson = Utils.CollectionsConvert.ToJSON(list);
+                            string resultJson = Utils.CollectionsConvert.ToJSON(gpsList);
 
                             string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
                             session.Send(data);
@@ -83,8 +83,6 @@ namespace server.Tool
                     }
                 }
                 
-                //}
-              
             }
             catch(Exception e)
             {
@@ -151,54 +149,43 @@ namespace server.Tool
             }
         }
 
-        ~SeverTimer() // 析构函数
-        {
-          
-            StopTimer();
-        }
 
-        private void StopTimer()
-        {
-            if (tmrsendPostion != null)
-            {
-                tmrsendPostion.Dispose();
-               
-            }
-            if(tmrCheckConnect!=null)
-            {
-                tmrCheckConnect.Dispose();
-            }
-        }
+
+        #region 处理同一grounp推送经纬的数据的逻辑
 
         public bool HandleEvent(string eventName, IDictionary<string, object> dictionary)
         {
 
-            List<Room_User> list = dictionary["data"] as List<Room_User>;
-            DoGroundData(list);
+            List<Room_User> roomUserList = dictionary["data"] as List<Room_User>;
+            DoRoomData(roomUserList);
             return true;
         }
 
         //key:grounpID  value:userList
-        private Dictionary<string, List<int>> grounpUserDic = new Dictionary<string, List<int>>();
-        private void DoGroundData(List<Room_User> room_User_list)
+        private Dictionary<string, List<int>> roomUserDic = new Dictionary<string, List<int>>();
+        /// <summary>
+        /// 形成roomid，List<userid>
+        /// </summary>
+        /// <param name="room_User_list"></param>
+        private void DoRoomData(List<Room_User> room_User_list)
         {
-            grounpUserDic.Clear();
+            roomUserDic.Clear();
             //去除重复的
-            var resultlist = room_User_list.GroupBy(p => p.room_id).Select(g => g.First()).ToList();
+            var roomlist = room_User_list.GroupBy(p => p.room_id).Select(g => g.First()).ToList();
 
-            resultlist.ForEach((item) => {
+            roomlist.ForEach((item) => {
 
-                int grounpId = item.room_id;
+                int roomId = item.room_id;
 
                 var query = from s in room_User_list
-                            where s.room_id == grounpId
+                            where s.room_id == roomId
                             select s.user_id;
-                grounpUserDic.Add(grounpId.ToString(), query.ToList<int>());
+                roomUserDic.Add(roomId.ToString(), query.ToList<int>());
 
             });
-            if(grounpUserDic.Count>0)
+            if(roomUserDic.Count>0)
             {
-                Console.WriteLine(Utils.CollectionsConvert.ToJSON(grounpUserDic));
+                Console.WriteLine(Utils.CollectionsConvert.ToJSON(roomUserDic));
             }
            
         }
@@ -208,16 +195,16 @@ namespace server.Tool
         /// <summary>
         /// set grounpid,
         /// </summary>
-        private void SetGrounpDic()
+        private void CreateGPSRoomDic()
         {
             gpsDic.Clear();
-            foreach (string gronpId in grounpUserDic.Keys)
+            foreach (string roomId in roomUserDic.Keys)
             {
-                List<int> userids = grounpUserDic[gronpId];
+                List<int> userids = roomUserDic[roomId];
                 List<GPSItem> gpsList = GetSingleGPSByUser(userids);
                 if(gpsList.Count>0)
                 {
-                    gpsDic.Add(gronpId, gpsList);
+                    gpsDic.Add(roomId, gpsList);
                 }
             }
 
@@ -225,7 +212,7 @@ namespace server.Tool
         }
 
         /// <summary>
-        /// 获取同一grounp的用户的gpsList数据
+        /// 获取同一room的用户的gpsList数据
         /// </summary>
         /// <param name="userids"></param>
         /// <returns></returns>
@@ -248,22 +235,42 @@ namespace server.Tool
         }
 
         /// <summary>
-        /// 通过userid查询所在的grounp
+        /// 通过userid查询所在的room
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        private int GetGrounpByUser(int userId)
+        private int GetRoomByUser(int userId)
         {
-            foreach(string grounpid in grounpUserDic.Keys)
+            foreach(string roomId in roomUserDic.Keys)
             {
-                List<int> list = grounpUserDic[grounpid];
+                List<int> list = roomUserDic[roomId];
                if (list.Contains(userId))
                 {
-                    return Convert.ToInt16(grounpid);
+                    return Convert.ToInt16(roomId);
                 }
             }
 
             return -1;
+        }
+        #endregion
+
+        private void StopTimer()
+        {
+            if (tmrsendPostion != null)
+            {
+                tmrsendPostion.Dispose();
+
+            }
+            if (tmrCheckConnect != null)
+            {
+                tmrCheckConnect.Dispose();
+            }
+        }
+
+        ~SeverTimer() // 析构函数
+        {
+
+            StopTimer();
         }
 
     }

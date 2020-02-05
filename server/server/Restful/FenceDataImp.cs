@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using server.Model;
 using server.Tool;
 using System;
 using System.Collections.Generic;
@@ -34,12 +35,34 @@ namespace Restful
             return 0;
         }
 
-        public int Update(string grounpId)
+        /// <summary>
+        /// 设置grounp运行状态
+        /// </summary>
+        /// <param name="grounpId"></param>
+        /// <returns></returns>
+        public string UpdateState(string grounpId)
         {
-            string sql = "update  grounp set runState =0  where id = @grounpId;";
-            int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+            string sql = "select * from grounp where id = @grounpId";
+            List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
+                new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
 
-            return 0;
+
+            if(result.Count==1)
+            {
+                if(result[0].fenceLat<=0)
+                {
+                    return "电子围栏尚未设置，无法启动游戏！";
+                }
+            }
+            else
+            {
+                return "非法错误";
+            }
+
+            sql = "update  grounp set runState =0  where id = @grounpId;";
+            MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+
+            return "0";
         }
     }
 }

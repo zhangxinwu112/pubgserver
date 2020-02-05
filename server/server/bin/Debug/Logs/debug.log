@@ -228,3 +228,43 @@
 2020-02-05 21:41:30,806 [1] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
 2020-02-05 21:41:30,857 [1] DEBUG PubgServerA - Listener (0.0.0.0:9000) was started
 2020-02-05 21:41:30,862 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!
+2020-02-05 22:25:03,389 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been created!
+2020-02-05 22:25:03,437 [1] DEBUG PubgServerA - The command AddScore(server.command.AddScore, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:25:03,437 [1] DEBUG PubgServerA - The command Post(server.command.Post, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:25:03,437 [1] DEBUG PubgServerA - The command HeartBeat(server.command.HeartBeat, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:25:03,437 [1] DEBUG PubgServerA - The command UpdatePosition(server.command.UpdatePosition, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:25:03,452 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been initialized!
+2020-02-05 22:25:04,949 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been initialized!
+2020-02-05 22:25:04,949 [1] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
+2020-02-05 22:25:04,993 [1] DEBUG PubgServerA - Listener (0.0.0.0:9000) was started
+2020-02-05 22:25:04,998 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!
+2020-02-05 22:28:06,095 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been created!
+2020-02-05 22:28:06,132 [1] DEBUG PubgServerA - The command AddScore(server.command.AddScore, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:28:06,132 [1] DEBUG PubgServerA - The command Post(server.command.Post, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:28:06,132 [1] DEBUG PubgServerA - The command HeartBeat(server.command.HeartBeat, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:28:06,132 [1] DEBUG PubgServerA - The command UpdatePosition(server.command.UpdatePosition, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:28:06,146 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been initialized!
+2020-02-05 22:28:07,536 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been initialized!
+2020-02-05 22:28:07,536 [1] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
+2020-02-05 22:28:07,581 [1] DEBUG PubgServerA - Listener (0.0.0.0:9000) was started
+2020-02-05 22:28:07,585 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!
+2020-02-05 22:35:02,233 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been created!
+2020-02-05 22:35:02,272 [1] DEBUG PubgServerA - The command AddScore(server.command.AddScore, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:35:02,272 [1] DEBUG PubgServerA - The command Post(server.command.Post, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:35:02,272 [1] DEBUG PubgServerA - The command HeartBeat(server.command.HeartBeat, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:35:02,272 [1] DEBUG PubgServerA - The command UpdatePosition(server.command.UpdatePosition, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:35:02,286 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been initialized!
+2020-02-05 22:35:03,770 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been initialized!
+2020-02-05 22:35:03,770 [1] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
+2020-02-05 22:35:03,821 [1] DEBUG PubgServerA - Listener (0.0.0.0:9000) was started
+2020-02-05 22:35:03,825 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!
+2020-02-05 22:51:19,291 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been created!
+2020-02-05 22:51:19,329 [1] DEBUG PubgServerA - The command AddScore(server.command.AddScore, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:51:19,329 [1] DEBUG PubgServerA - The command Post(server.command.Post, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:51:19,329 [1] DEBUG PubgServerA - The command HeartBeat(server.command.HeartBeat, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:51:19,329 [1] DEBUG PubgServerA - The command UpdatePosition(server.command.UpdatePosition, server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null) has been discovered
+2020-02-05 22:51:19,343 [1] DEBUG DefaultBootstrap - The server instance PubgServerA has been initialized!
+2020-02-05 22:51:20,820 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been initialized!
+2020-02-05 22:51:20,820 [1] DEBUG DefaultBootstrap - The Bootstrap has been initialized!
+2020-02-05 22:51:20,873 [1] DEBUG PubgServerA - Listener (0.0.0.0:9000) was started
+2020-02-05 22:51:20,877 [1] DEBUG DefaultBootstrap - The PerformanceMonitor has been started!

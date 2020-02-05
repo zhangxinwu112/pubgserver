@@ -17,6 +17,6 @@ namespace Restful
 
         [OperationContract]
         [WebGet(UriTemplate = "UpdateGrounpState/{grounpId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        int Update(string grounpId);
+        string UpdateState(string grounpId);
     }
 }

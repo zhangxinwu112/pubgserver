@@ -43,7 +43,7 @@ namespace server.DAO
         }
 
 
-        protected List<Room_User> SearAllRoomUser()
+        protected List<Room_User> SearchAllRoomUser()
         {
             string sql = "select * from room_user";
             List<Room_User> result = MySqlExecuteTools.GetObjectResult<Room_User>(sql,null);

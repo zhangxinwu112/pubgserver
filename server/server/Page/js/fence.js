@@ -14,10 +14,23 @@
 			EndEdit:function(){
 				this.buttonShow= !this.buttonShow;
 				//console.log("end");
-				console.log(circle.getCenter());
-				console.log(circle.getRadius());
-			
+				//console.log(circle.getCenter().lat);
+				//console.log(circle.getRadius());
+				//console.log(this.url);
 				circleEditor.close();
+				
+				var requestUrl = url+"SaveFence/"+_grounpId+"|"+
+				circle.getCenter().getLng()+"|"+circle.getCenter().getLat()+"|"+circle.getRadius();
+				console.log(requestUrl);
+				axios.get(requestUrl)
+				  .then(function (response) {
+				    console.log(response);
+				  })
+				  .catch(function (error) {
+				    console.log(error);
+				  });
+				  
+				  
 				
 				
 			},
@@ -28,10 +41,18 @@
 	var map;
 	var circleEditor;
 	var circle;
-	//CreateMap(108.950543,34.199175,4000,12);
+	var _grounpId;
+	var url;
+	var fenceRadius;
+	var json ={"lon":108.950544,lat:34.199176,"grounpId":96,"ip":"192.168.1.6","fenceRadius":1000};
+	//CreateMap(json);
 
 	function CreateMap(json)
 	{
+		 _grounpId = json.grounpId;
+		 url ="http://" + json.ip + ":8899/" ;
+		 //console.log(url);
+		 fenceRadius =json.fenceRadius;
 		map = new AMap.Map('container', {
 		resizeEnable: true,
 		center: [json.lon, json.lat],
@@ -51,7 +72,7 @@
 	  
 	    circle = new AMap.Circle({
 	           center: [json.lon, json.lat],
-	           radius: 2000, //半径
+	           radius: fenceRadius, //半径
 	           borderWeight: 3,
 	           strokeColor: "#FF33FF", 
 	           strokeOpacity: 1,

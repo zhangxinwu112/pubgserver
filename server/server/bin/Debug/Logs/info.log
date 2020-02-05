@@ -1266,3 +1266,8 @@ A new session connected!
 2020-02-05 16:14:21,748 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
 2020-02-05 16:14:26,735 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
 2020-02-05 16:14:31,746 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-05 16:14:36,755 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-05 16:14:41,755 [15] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-05 16:14:46,754 [23] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-05 16:14:51,754 [20] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
+2020-02-05 16:14:56,739 [21] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:

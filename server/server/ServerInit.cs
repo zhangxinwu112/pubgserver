@@ -29,7 +29,7 @@ namespace server
             }
             var result = bootstrap.Start();
 
-            Console.WriteLine("服务器启动结果{0}", result);
+            Console.WriteLine("socket服务器启动结果{0}", result);
 
             if (result == StartResult.Failed)
             {

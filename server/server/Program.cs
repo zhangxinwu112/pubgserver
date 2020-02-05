@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using server.Restful;
 
 namespace server
 {
@@ -18,6 +19,10 @@ namespace server
         {
             MySQLHelp.Instance.Connect();
             //TestSql.TestLogin("admin", "1234563");
+
+            RestServiceInit RestServiceInit = new RestServiceInit();
+            RestServiceInit.Init();
+
             ServerInit serverInit = new ServerInit();
             serverInit.Init();
 

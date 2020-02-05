@@ -23,11 +23,11 @@ namespace server.Model
 
         public int playerTime;
 
-        public float fenceLon;
+        public double fenceLon;
 
-        public float fenceLat;
+        public double fenceLat;
 
-        public float fenceDistance;
+        public int fenceRadius;
 
     }
 }

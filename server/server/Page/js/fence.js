@@ -14,17 +14,15 @@
 			},
 			EndEdit:function(){
 				this.buttonShow= !this.buttonShow;
-				//console.log("end");
-				//console.log(circle.getCenter().lat);
-				//console.log(circle.getRadius());
-				//console.log(this.url);
+				 
 				circleEditor.close();
 				var requestUrl = url+"SaveFence/"+_grounpId+"|"+
 				circle.getCenter().getLng()+"|"+circle.getCenter().getLat()+"|"+circle.getRadius();
-				console.log(requestUrl);
+				//console.log(requestUrl);
 				axios.get(requestUrl)
 				  .then(function (response) {
-				    mui.toast('操作成功!',{ duration:'long', type:'div' }) 
+				    //mui.toast('操作成功!',{ duration:'long', type:'div' })
+					 mui.alert('操作成功');
 				  })
 				  .catch(function (error) {
 				    console.log(error);
@@ -44,8 +42,8 @@
 	var _grounpId;
 	var url;
 	var fenceRadius;
-	var json ={"lon":108.950544,lat:34.199176,"grounpId":98,"ip":"192.168.1.6","fenceRadius":1000};
-	//CreateMap(json);
+	var json ={"lon":108.950544,lat:34.199176,"grounpId":9,"ip":"192.168.1.6","fenceRadius":1000};
+	CreateMap(json);
 
 	function CreateMap(json)
 	{

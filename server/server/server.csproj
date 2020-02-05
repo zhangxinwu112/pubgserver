@@ -105,6 +105,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\MapDataPushBusiness.cs" />
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />
     <Compile Include="command\HeartBeat.cs" />

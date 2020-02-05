@@ -7,9 +7,9 @@ public class GPSItem  {
 
     public string userName ="";
 
-    public double lon = 0.0f;
+    public double lon = -1f;
 
-    public double lat = 0.0f;
+    public double lat = -1f;
 
     public int userType = 0;
 

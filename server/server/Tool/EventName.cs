@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 public class EventName  {
 
-    public const string UPATE_GROUNP_USER = "update_grounp_user";
+    public const string UPATE_ROOM_USER = "update_room_user";
+
+    public const string ALL_ROOM_DATA = "all_room_data";
 
     
 

@@ -49,5 +49,12 @@ namespace server.DAO
             List<Room_User> result = MySqlExecuteTools.GetObjectResult<Room_User>(sql,null);
             return result;
         }
+
+        protected List<Room> SearchAllRoom()
+        {
+            string sql = "select * from room";
+            List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql, null);
+            return result;
+        }
     }
 }

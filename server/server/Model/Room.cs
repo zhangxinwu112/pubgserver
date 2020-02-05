@@ -10,7 +10,7 @@ namespace server.Model
     {
         public int id;
 
-        public int gronpId;
+        public int grounpId;
 
         //编号
         public int code;

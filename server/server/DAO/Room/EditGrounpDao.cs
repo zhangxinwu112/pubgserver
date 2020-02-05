@@ -20,6 +20,8 @@ namespace server.DAO
         private readonly int roomCount = 5;
 
         private readonly int createGrounpCount = 2;
+
+        private JoinRoomDao joinRoomDao = new JoinRoomDao();
         public void AddGrounp(PubgSession session, string body, string grounpName,string playerTime, string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建队：{0}", grounpName);
@@ -68,6 +70,10 @@ namespace server.DAO
                 }
               
             }
+            if(dataResult.result == 0)
+            {
+                joinRoomDao.GetAllRoom();
+            }
             session.Send(GetSendData(dataResult, body));
         }
 
@@ -109,9 +115,13 @@ namespace server.DAO
             //开始删除队信息
            string sql = "delete  from grounp where id = @grounpId";
            MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
-            dataResult.result = 0;
+           dataResult.result = 0;
             //删除房间的相关数据
-             DeleteRoom(grounpId);
+            DeleteRoom(grounpId);
+            if (dataResult.result == 0)
+            {
+                joinRoomDao.GetAllRoom();
+            }
             session.Send(GetSendData(dataResult, body));
         }
 

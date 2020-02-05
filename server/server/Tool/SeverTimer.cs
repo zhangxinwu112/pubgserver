@@ -1,4 +1,5 @@
 ﻿using log4net;
+using server.Business;
 using server.DAO;
 using server.Model;
 using System;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 namespace server.Tool
 {
    
-    public class SeverTimer:IEventListener
+    public class SeverTimer
     {
 
         ILog Logger = log4net.LogManager.GetLogger("server.Tool.SeverTimer");
@@ -24,17 +25,16 @@ namespace server.Tool
         private System.Threading.Timer tmrCheckConnect = null;
 
 
+        private MapDataPushBusiness mapDataPushBusiness;
         public void Init()
         {
             tmrsendPostion = new System.Threading.Timer(SendPositionCallBack, null, IntervalSendPostion, IntervalSendPostion);
 
             tmrCheckConnect = new System.Threading.Timer(CheckConnectCallBack, null, IntervalCheckConnect, IntervalCheckConnect);
 
-            EventMgr.Instance.AddListener(this, EventName.UPATE_GROUNP_USER);
-            //获取
-            JoinRoomDao joinRoomDao = new JoinRoomDao();
-            joinRoomDao.SendUpdateRoomData();
+            mapDataPushBusiness = new MapDataPushBusiness();
 
+            mapDataPushBusiness.Init();
 
         }
 
@@ -62,18 +62,25 @@ namespace server.Tool
                 //{
                 //
 
-                CreateGPSRoomDic();
+                mapDataPushBusiness.CreateGPSRoomDic();
                 foreach (PubgSession session in dic.Keys)
                 {
                     SessionItem sessionItem = null;
                     dic.TryGetValue(session, out sessionItem);
                     if (sessionItem != null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
                     {
-                        int roomId = GetRoomByUser(sessionItem.gpsItem.userId);
-                        List<GPSItem> gpsList = null;
-                        gpsDic.TryGetValue(roomId.ToString(), out gpsList);
+                        int roomId = mapDataPushBusiness.GetRoomByUser(sessionItem.gpsItem.userId);
+                        List<GPSItem> gpsList = mapDataPushBusiness.GetGpsListByRoomId(roomId.ToString());
                         if(gpsList != null && gpsList.Count>0)
                         {
+                            //移除没上进入游戏地图的用户
+                            for(int i= gpsList.Count-1;i>=0;i--)
+                            {
+                                if(string.IsNullOrEmpty( gpsList[i].userName))
+                                {
+                                    gpsList.RemoveAt(i);
+                                }
+                            }
                             string resultJson = Utils.CollectionsConvert.ToJSON(gpsList);
 
                             string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
@@ -148,111 +155,6 @@ namespace server.Tool
                 tmrCheckConnect.Change(IntervalCheckConnect, IntervalCheckConnect);
             }
         }
-
-
-
-        #region 处理同一grounp推送经纬的数据的逻辑
-
-        public bool HandleEvent(string eventName, IDictionary<string, object> dictionary)
-        {
-
-            List<Room_User> roomUserList = dictionary["data"] as List<Room_User>;
-            DoRoomData(roomUserList);
-            return true;
-        }
-
-        //key:grounpID  value:userList
-        private Dictionary<string, List<int>> roomUserDic = new Dictionary<string, List<int>>();
-        /// <summary>
-        /// 形成roomid，List<userid>
-        /// </summary>
-        /// <param name="room_User_list"></param>
-        private void DoRoomData(List<Room_User> room_User_list)
-        {
-            roomUserDic.Clear();
-            //去除重复的
-            var roomlist = room_User_list.GroupBy(p => p.room_id).Select(g => g.First()).ToList();
-
-            roomlist.ForEach((item) => {
-
-                int roomId = item.room_id;
-
-                var query = from s in room_User_list
-                            where s.room_id == roomId
-                            select s.user_id;
-                roomUserDic.Add(roomId.ToString(), query.ToList<int>());
-
-            });
-            if(roomUserDic.Count>0)
-            {
-                Console.WriteLine(Utils.CollectionsConvert.ToJSON(roomUserDic));
-            }
-           
-        }
-
-
-        private Dictionary<string, List<GPSItem>> gpsDic = new Dictionary<string, List<GPSItem>>();
-        /// <summary>
-        /// set grounpid,
-        /// </summary>
-        private void CreateGPSRoomDic()
-        {
-            gpsDic.Clear();
-            foreach (string roomId in roomUserDic.Keys)
-            {
-                List<int> userids = roomUserDic[roomId];
-                List<GPSItem> gpsList = GetSingleGPSByUser(userids);
-                if(gpsList.Count>0)
-                {
-                    gpsDic.Add(roomId, gpsList);
-                }
-            }
-
-
-        }
-
-        /// <summary>
-        /// 获取同一room的用户的gpsList数据
-        /// </summary>
-        /// <param name="userids"></param>
-        /// <returns></returns>
-        private List<GPSItem> GetSingleGPSByUser(List<int> userids)
-        {
-            List<GPSItem> gpsList = new List<GPSItem>();
-            userids.ForEach((item) => {
-
-                ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
-                foreach (SessionItem sessionItem in dic.Values)
-                {
-                    if(sessionItem.gpsItem!=null && sessionItem.gpsItem.userId== item)
-                    {
-                        gpsList.Add(sessionItem.gpsItem);
-                    }
-                }
-
-            });
-            return gpsList;
-        }
-
-        /// <summary>
-        /// 通过userid查询所在的room
-        /// </summary>
-        /// <param name="userId"></param>
-        /// <returns></returns>
-        private int GetRoomByUser(int userId)
-        {
-            foreach(string roomId in roomUserDic.Keys)
-            {
-                List<int> list = roomUserDic[roomId];
-               if (list.Contains(userId))
-                {
-                    return Convert.ToInt16(roomId);
-                }
-            }
-
-            return -1;
-        }
-        #endregion
 
         private void StopTimer()
         {

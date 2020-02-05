@@ -112,19 +112,19 @@ namespace server.DAO
 
             if(grounp_UserList.Count==1)
             {
-                int grounp_id = grounp_UserList[0].room_id;
+                //int grounp_id = grounp_UserList[0].room_id;
 
-                sql = "select * from room_user where room_id = @room_id";
-                List<Room_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
-                   new MySqlParameter[] { new MySqlParameter("@room_id", grounp_id) });
-                if(_grounp_UserList.Count< maxNum)
-                {
-                    dataResult.data = false;
-                }
-                else
-                {
-                    dataResult.data = true;
-                }
+                //sql = "select * from room_user where room_id = @room_id";
+                //List<Room_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
+                //   new MySqlParameter[] { new MySqlParameter("@room_id", grounp_id) });
+                //if(_grounp_UserList.Count< maxNum)
+                //{
+                //    dataResult.data = false;
+                //}
+                //else
+                //{
+                 dataResult.data = true;
+               // }
             }
 
             session.Send(GetSendData(dataResult, body));
@@ -139,15 +139,15 @@ namespace server.DAO
 
             if(grounp_UserList.Count==1)
             {
-                sql = "select * from room where id = @id  and checkCode = @checkCode";
-                List<Room> grounps = MySqlExecuteTools.GetObjectResult<Room>(sql,
-                    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].room_id), new MySqlParameter("@checkCode", checkCode) });
-                if(grounps.Count==1)
-                {
-                    dataResult.result = 0;
-                    session.Send(GetSendData(dataResult, body));
-                    return;
-                }
+                //sql = "select * from room where id = @id  and checkCode = @checkCode";
+                //List<Room> grounps = MySqlExecuteTools.GetObjectResult<Room>(sql,
+                //    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].room_id), new MySqlParameter("@checkCode", checkCode) });
+                //if(grounps.Count==1)
+                //{
+                dataResult.result = 0;
+                session.Send(GetSendData(dataResult, body));
+                return;
+                //}
             }
             dataResult.result = 1;
             session.Send(GetSendData(dataResult, body));

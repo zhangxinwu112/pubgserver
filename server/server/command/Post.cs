@@ -1,4 +1,5 @@
-﻿using server.Tool;
+﻿using log4net;
+using server.Tool;
 using SuperSocket.SocketBase;
 using SuperSocket.SocketBase.Command;
 using SuperSocket.SocketBase.Protocol;
@@ -16,32 +17,42 @@ namespace server.command
     /// </summary>
    public class Post : CommandBase<PubgSession, StringRequestInfo>
     {
+        ILog Logger = log4net.LogManager.GetLogger("server.command.Post");
         public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
-           
-            string methodkey = requestInfo.Parameters.ToList<string>()[0];
-            string[] strs = methodkey.Split(Constant.METHOD_SPLIT.ToCharArray()[0]);
-            string className = strs[0];
-            string method = strs[1];
-            Assembly asm = Assembly.GetExecutingAssembly();
-            Object obj = asm.CreateInstance(className, true);
 
-            if(obj==null)
+            try
             {
-                Console.WriteLine(className +"未找到对象");
-                return;
-            }
-            MethodInfo mi = obj.GetType().GetMethod(method);
-            if (mi != null)
-            {
-                object[] parameters = new object[requestInfo.Parameters.Length + 1];
-                parameters[0] = session;
-                for (int i = 1; i < parameters.Length; i++)
+                string methodkey = requestInfo.Parameters.ToList<string>()[0];
+                string[] strs = methodkey.Split(Constant.METHOD_SPLIT.ToCharArray()[0]);
+                string className = strs[0];
+                string method = strs[1];
+                Assembly asm = Assembly.GetExecutingAssembly();
+                Object obj = asm.CreateInstance(className, true);
+
+                if (obj == null)
                 {
-                    parameters[i] = requestInfo.Parameters[i - 1];
+                    Console.WriteLine(className + "未找到对象");
+                    return;
                 }
-                mi.Invoke(obj, parameters);
+                MethodInfo mi = obj.GetType().GetMethod(method);
+                if (mi != null)
+                {
+                    object[] parameters = new object[requestInfo.Parameters.Length + 1];
+                    parameters[0] = session;
+                    for (int i = 1; i < parameters.Length; i++)
+                    {
+                        parameters[i] = requestInfo.Parameters[i - 1];
+                    }
+                    mi.Invoke(obj, parameters);
+                }
             }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Logger.Error(e.Message);
+            }
+           
 
         }
     }

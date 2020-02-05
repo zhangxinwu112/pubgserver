@@ -18,11 +18,11 @@
 				circleEditor.close();
 				var requestUrl = url+"SaveFence/"+_grounpId+"|"+
 				circle.getCenter().getLng()+"|"+circle.getCenter().getLat()+"|"+circle.getRadius();
-				//console.log(requestUrl);
+				mui.alert('操作成功');
 				axios.get(requestUrl)
 				  .then(function (response) {
 				    //mui.toast('操作成功!',{ duration:'long', type:'div' })
-					 mui.alert('操作成功');
+					 //mui.alert('操作成功');
 				  })
 				  .catch(function (error) {
 				    console.log(error);
@@ -43,7 +43,7 @@
 	var url;
 	var fenceRadius;
 	var json ={"lon":108.950544,lat:34.199176,"grounpId":9,"ip":"192.168.1.6","fenceRadius":1000};
-	//CreateMap(json);
+	CreateMap(json);
 
 	function CreateMap(json)
 	{

@@ -30,7 +30,15 @@ namespace Restful
             string sql = "update  grounp set fenceLon = '" + fenceLon + "', fenceLat = '" + fenceLat +
                 "', fenceRadius = '" + fenceRadius + "' where id = @grounpId;";
             int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
-            Console.WriteLine(count);
+           // Console.WriteLine(count);
+            return 0;
+        }
+
+        public int Update(string grounpId)
+        {
+            string sql = "update  grounp set runState =0  where id = @grounpId;";
+            int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+
             return 0;
         }
     }

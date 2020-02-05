@@ -14,5 +14,9 @@ namespace Restful
         [OperationContract]
         [WebGet(UriTemplate = "SaveFence/{json}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         int Save(string json);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "UpdateGrounpState/{grounpId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        int Update(string grounpId);
     }
 }

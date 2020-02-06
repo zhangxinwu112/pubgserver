@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-06 16:51:51
+Date: 2020-02-06 21:39:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -49,13 +49,14 @@ CREATE TABLE `grounp` (
   `fenceLon` double(12,6) DEFAULT '-1.000000',
   `fenceLat` double(12,6) DEFAULT '-1.000000',
   `fenceRadius` int(10) DEFAULT '2000',
+  `fenceTotalRadius` int(10) DEFAULT '2000',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=108 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('105', '122121', 'cs', '16', '0', '60', '108.995865', '34.173198', '2800');
+INSERT INTO `grounp` VALUES ('107', '西安团队', 'cs', '16', '0', '10', '108.964597', '34.173590', '100', '2000');
 
 -- ----------------------------
 -- Table structure for life
@@ -102,16 +103,16 @@ CREATE TABLE `room` (
   `name` varchar(10) DEFAULT NULL,
   `checkCode` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=467 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=477 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('462', '105', '1', '房间1', '123456');
-INSERT INTO `room` VALUES ('463', '105', '2', '房间2', '123456');
-INSERT INTO `room` VALUES ('464', '105', '3', '房间3', '123456');
-INSERT INTO `room` VALUES ('465', '105', '4', '房间4', '123456');
-INSERT INTO `room` VALUES ('466', '105', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('472', '107', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('473', '107', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('474', '107', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('475', '107', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('476', '107', '5', '房间5', '123456');
 
 -- ----------------------------
 -- Table structure for room_user
@@ -122,13 +123,12 @@ CREATE TABLE `room_user` (
   `room_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user
 -- ----------------------------
-INSERT INTO `room_user` VALUES ('31', '462', '15');
-INSERT INTO `room_user` VALUES ('29', '462', '18');
+INSERT INTO `room_user` VALUES ('34', '472', '15');
 
 -- ----------------------------
 -- Table structure for user

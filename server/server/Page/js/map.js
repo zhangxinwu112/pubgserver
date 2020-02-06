@@ -1,23 +1,24 @@
 
- var _data = {
+
+var _data ={
 	"currentUser": {
 		"userId": 15,
 		"userName": "\u5929\u6DAF",
-		"lon": 108.964176,
-		"lat": 34.218229,
+		"lon": 108.964236948926,
+		"lat": 34.1732384409584,
 		"userType": 0
 	},
 	"gpsData": [{
 		"userId": 15,
 		"userName": "\u5929\u6DAF",
-		"lon": 108.964176,
-		"lat": 34.218229,
+		"lon": 108.964236948926,
+		"lat": 34.1732384409584,
 		"userType": 0
 	}, {
 		"userId": 18,
 		"userName": "\u73A9\u5BB6\u6D4B\u8BD5",
-		"lon": 108.964236948926,
-		"lat": 34.1732384409584,
+		"lon": 108.995864758826,
+		"lat": 34.1731979651086,
 		"userType": 0
 	}],
 	"grounp": {
@@ -25,8 +26,8 @@
 		"userId": 16,
 		"runState": 0,
 		"playerTime": 60,
-		"fenceLon": 108.964236948926,
-		"fenceLat": 34.1732384409584,
+		"fenceLon": -1,
+		"fenceLat": -1,
 		"fenceRadius": 2000,
 		"id": 105,
 		"name": "122121"
@@ -34,10 +35,11 @@
 }
         var map;
         var markArray = new Array(); 
-        //CreateMapAndMarker(_data);
-        function CreateMapAndMarker(data)
+        CreateMapAndMarker(_data);
+        function CreateMapAndMarker(str)
         {
            // console.log(data);
+		     var data = JSON.parse(str);
             if(!map)
             {
                 CreateMap(data.currentUser.lon,data.currentUser.lat);

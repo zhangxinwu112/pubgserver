@@ -18,6 +18,7 @@ namespace server.Business
         private ILog Logger = log4net.LogManager.GetLogger("server.Business.MapDataPushBusiness");
         private JoinRoomDao joinRoomDao;
         private SearchGrounpDao searchGrounpDao;
+  
         public void Init()
         {
             EventMgr.Instance.AddListener(this, EventName.UPATE_ROOM_USER);
@@ -83,6 +84,18 @@ namespace server.Business
             List<GPSItem> gpsList = null;
             gpsDic.TryGetValue(roomId.ToString(), out gpsList);
 
+            if (gpsList != null && gpsList.Count > 0)
+            {
+                //移除没有进入游戏地图的用户
+                for (int i = gpsList.Count - 1; i >= 0; i--)
+                {
+                    if (string.IsNullOrEmpty(gpsList[i].userName))
+                    {
+                        gpsList.RemoveAt(i);
+                    }
+                }
+            }
+
             return gpsList;
         }
         /// <summary>
@@ -132,8 +145,12 @@ namespace server.Business
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        public int GetRoomByUser(int userId)
+        public int GetRoomByUser(int userId,int userType = 0)
         {
+            if(userType==1)
+            {
+                return -1;
+            }
             foreach (string roomId in roomUserDic.Keys)
             {
                 List<int> list = roomUserDic[roomId];
@@ -145,13 +162,49 @@ namespace server.Business
 
             return -1;
         }
+
+        public List<GPSItem> GetGpsListByUser(GPSItem userGpsItem)
+        {
+            
+            //玩家
+            if (userGpsItem.userType == 0)
+            {
+                int roomId = GetRoomByUser(userGpsItem.userId);
+                List<GPSItem> gpsList = GetGpsListByRoomId(roomId.ToString());
+                return gpsList;
+            }
+            //管理员
+            else if (userGpsItem.userType == 1)
+            
+            {
+                //查询所有用户的grounp
+                List<int> grounpIDs = searchGrounpDao.SearchGrounpListByUser(userGpsItem.userId);
+                List<GPSItem> result = new List<GPSItem>();
+                grounpIDs.ForEach((item) => {
+                    int[] roomIds =  GetRoomListByGrounpId(item);
+                   
+                    for(int k=0;k< roomIds.Length;k++)
+                    {
+                        List<GPSItem> gpsList = GetGpsListByRoomId(roomIds[k].ToString());
+                        result.AddRange(gpsList);
+                    }
+                });
+                return result;
+            }
+            
+            return null;
+        }
+
+     
         #endregion
 
 
-        #region 创建 grounp和room的关系
+        #region 创建 room和grounp的关系
         private Dictionary<int, Grounp> roomGrounp = new Dictionary<int, Grounp>();
+        private List<Room> roomList = null;
         private void CreateGroupRoomDic(List<Room> roomList)
         {
+            this.roomList = roomList;
             roomGrounp.Clear();
             roomList.ForEach((item) => {
 
@@ -171,6 +224,14 @@ namespace server.Business
             return grounp;
         }
 
+        public int[] GetRoomListByGrounpId(int grounpID)
+        {
+            var result = this.roomList.Where(a => a.grounpId == grounpID);
+
+            int[] roomIds = result.Select(a => a.id).ToArray();
+
+            return roomIds;
+        }
         #endregion
     }
 }

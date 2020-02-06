@@ -1,5 +1,6 @@
 
-
+//mui.alert('拖动圆的瞄点,调整圆形电子围栏的位置和大小.');
+//mui("#demo1").progressbar({progress:20}).show();
 var _data ={
 	"currentUser": {
 		"userId": 15,
@@ -28,8 +29,8 @@ var _data ={
 		"userId": 16,
 		"runState": 0,
 		"playerTime": 60,
-		"fenceLon": -1,
-		"fenceLat": -1,
+		"fenceLon": 108.964236948926,
+		"fenceLat": 34.1732384409584,
 		"fenceRadius": 2000,
 		"id": 105,
 		"name": "122121"

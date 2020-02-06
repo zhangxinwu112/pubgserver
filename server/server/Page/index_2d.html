@@ -12,29 +12,28 @@
     <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="js/mui.min.js"></script>
-	
+	<script>
+		
+		mui.init();
+		
+		
+		
+	</script>
 </head>
 
 <body>
     <div id="container"></div>
 
-    <button id="setFitView" type="button" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;">
-		视角定位</button>
-	<button id="exitButton" type="button" class="mui-btn mui-btn-primary" style="width: 60px;position: absolute;top:0;right: 0;" 
-	 onclick="Exit()">退出</button>
+    <button id="setFitView" type="button" class="mui-btn mui-btn-primary" 
+	style="width: 80px;font-size: 10px;position: absolute;top:3px;left: 5px;">视角定位</button>
+	<button id="exitButton" type="button" class="mui-btn mui-btn-primary" 
+	style="width: 80px;font-size: 10px;position: absolute;top:40px;left: 5px;" onclick="Exit()">退出</button>
 	 
 	<!-- <button id="2344" type="button" onclick="Test()" style="width: 80px;position: absolute;bottom:0;left: 0;">重新绘制</button> -->
 	 
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>
     <script type="text/javascript" src="js/map.js"/>
-	
-	<script>
-		
-		mui.init();
-		mui.alert('拖动圆的瞄点,调整圆形电子围栏的位置和大小.');
-		
-		
-	</script>
+
 
 </body>
 

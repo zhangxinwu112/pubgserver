@@ -48,20 +48,7 @@ namespace server.Tool
             {
                 tmrsendPostion.Change(Timeout.Infinite, Timeout.Infinite);
                 ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
-                //List<GPSItem> list = new List<GPSItem>();
-                //foreach (PubgSession session in dic.Keys)
-                //{
-                //    SessionItem sessionItem = null;
-                //    dic.TryGetValue(session, out sessionItem);
-                //    if(sessionItem!=null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
-                //    {
-                //        list.Add(sessionItem.gpsItem);
-                //    }
-                //}
-                //if(list.Count>0)
-                //{
-                //
-
+              
                 mapDataPushBusiness.CreateGPSRoomDic();
                 foreach (PubgSession session in dic.Keys)
                 {
@@ -69,29 +56,17 @@ namespace server.Tool
                     dic.TryGetValue(session, out sessionItem);
                     if (sessionItem != null && !string.IsNullOrEmpty(sessionItem.gpsItem.userName))
                     {
-                        int roomId = mapDataPushBusiness.GetRoomByUser(sessionItem.gpsItem.userId);
-                        List<GPSItem> gpsList = mapDataPushBusiness.GetGpsListByRoomId(roomId.ToString());
-                        if(gpsList != null && gpsList.Count>0)
-                        {
-                            //移除没上进入游戏地图的用户
-                            for(int i= gpsList.Count-1;i>=0;i--)
-                            {
-                                if(string.IsNullOrEmpty(gpsList[i].userName))
-                                {
-                                    gpsList.RemoveAt(i);
-                                }
-                            }
-                            Dictionary<string, object> dataDic = new Dictionary<string, object>();
-                            Grounp grounp =  mapDataPushBusiness.GetGrounpByRoomId(roomId);
+                      
+                        List<GPSItem> gpsList = mapDataPushBusiness.GetGpsListByUser(sessionItem.gpsItem);
+                        int roomId =  mapDataPushBusiness.GetRoomByUser(sessionItem.gpsItem.userId, sessionItem.gpsItem.userType);
+                        Dictionary<string, object> dataDic = new Dictionary<string, object>();
+                        Grounp grounp = mapDataPushBusiness.GetGrounpByRoomId(roomId);
 
-                            dataDic.Add("grounp", grounp);
-                            dataDic.Add("gpsData", gpsList);
-                            string resultJson = Utils.CollectionsConvert.ToJSON(dataDic);
-                            Logger.Debug(resultJson);
-                            string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
-                            session.Send(data);
-                        }
-                       
+                        dataDic.Add("grounp", grounp);
+                        dataDic.Add("gpsData", gpsList);
+                        string  resultJson = Utils.CollectionsConvert.ToJSON(dataDic);
+                        string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
+                        session.Send(data);
                     }
                 }
                 

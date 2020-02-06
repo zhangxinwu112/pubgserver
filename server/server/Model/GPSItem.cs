@@ -11,6 +11,7 @@ public class GPSItem  {
 
     public double lat = -1f;
 
+    //0玩家，1为管理员，2药品
     public int userType = 0;
 
 }

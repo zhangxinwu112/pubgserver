@@ -87,6 +87,13 @@ namespace server.DAO
 
             return null;
         }
+
+        public List<int> SearchGrounpListByUser(int userId)
+        {
+            string sql = "select * from grounp where userId = @userId and runState =0 and fenceLon>0  ORDER BY id DESC";
+            List<Grounp> list  = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+            return  list.Select(a => a.id).ToList<int>();
+        }
     }
 
 

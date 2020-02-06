@@ -148,6 +148,7 @@ namespace server.Business
         #endregion
 
 
+        #region 创建 grounp和room的关系
         private Dictionary<int, Grounp> roomGrounp = new Dictionary<int, Grounp>();
         private void CreateGroupRoomDic(List<Room> roomList)
         {
@@ -161,5 +162,15 @@ namespace server.Business
             Logger.Debug(Utils.CollectionsConvert.ToJSON(roomGrounp));
 
         }
+
+        public Grounp GetGrounpByRoomId(int roomID)
+        {
+            Grounp grounp = null;
+            roomGrounp.TryGetValue(roomID, out grounp);
+
+            return grounp;
+        }
+
+        #endregion
     }
 }

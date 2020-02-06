@@ -1,3 +1,4 @@
+
  var _data = {
 	"currentUser": {
 		"userId": 15,
@@ -24,8 +25,8 @@
 		"userId": 16,
 		"runState": 0,
 		"playerTime": 60,
-		"fenceLon": -1,
-		"fenceLat": -1,
+		"fenceLon": 108.964236948926,
+		"fenceLat": 34.1732384409584,
 		"fenceRadius": 2000,
 		"id": 105,
 		"name": "122121"
@@ -33,7 +34,7 @@
 }
         var map;
         var markArray = new Array(); 
-        CreateMapAndMarker(_data);
+        //CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);
@@ -48,6 +49,8 @@
             }
             DeleteMark();
             AddMarker(data.gpsData);
+			
+			CreateCircle(data.grounp);
            
         }
 
@@ -68,6 +71,40 @@
     		//批量添加图层
    		    //map.add([satelliteLayer, roadNetLayer]);
         }
+		
+		var circle;
+		function CreateCircle(grounp)
+		{
+			if(grounp.fenceLon>0)
+			{
+				if(circle==null)
+				{
+					circle = new AMap.Circle({
+					       center: [grounp.fenceLon, grounp.fenceLat],
+					       radius: grounp.fenceRadius, //半径
+					       borderWeight: 3,
+					       strokeColor: "#FF33FF", 
+					       strokeOpacity: 1,
+					       strokeWeight: 6,
+					       strokeOpacity: 0.2,
+					       fillOpacity: 0.4,
+					       strokeStyle: 'dashed',
+					       strokeDasharray: [10, 10], 
+					       // 线样式还支持 'dashed'
+					       fillColor: '#1791fc',
+					       zIndex: 50,
+					   })
+					   
+					   circle.setMap(map)
+				}
+				else
+				{
+					circle.setRadius(grounp);
+				}
+				
+			}
+			
+		}
 
         function AddMarker(data)
         // `<i class="content">111</i>`
@@ -76,17 +113,14 @@
                 var _markObject = new AMap.Marker({
                 map: map,
                 icon: _item.icon,
-                content: `<i class="content" style="background:red; font-size: 10px;font-weight: 600;">${_item.userName}</i>`,
+                content: `<i class="content" >${_item.userName}</i>`,
                 // direction: marker.direction,
                 position: [_item.lon, _item.lat],
                 offset: new AMap.Pixel(-13, -30)
             });
-            
-
-            
-            markArray.push(_markObject);
-          
-          
+           
+          markArray.push(_markObject);
+         
          });
         }
 
@@ -101,7 +135,6 @@
             }
            
             markArray =new Array();
-          
         }
 
         function SetHander()

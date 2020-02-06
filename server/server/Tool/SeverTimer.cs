@@ -76,13 +76,18 @@ namespace server.Tool
                             //移除没上进入游戏地图的用户
                             for(int i= gpsList.Count-1;i>=0;i--)
                             {
-                                if(string.IsNullOrEmpty( gpsList[i].userName))
+                                if(string.IsNullOrEmpty(gpsList[i].userName))
                                 {
                                     gpsList.RemoveAt(i);
                                 }
                             }
-                            string resultJson = Utils.CollectionsConvert.ToJSON(gpsList);
+                            Dictionary<string, object> dataDic = new Dictionary<string, object>();
+                            Grounp grounp =  mapDataPushBusiness.GetGrounpByRoomId(roomId);
 
+                            dataDic.Add("grounp", grounp);
+                            dataDic.Add("gpsData", gpsList);
+                            string resultJson = Utils.CollectionsConvert.ToJSON(dataDic);
+                            Logger.Debug(resultJson);
                             string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
                             session.Send(data);
                         }

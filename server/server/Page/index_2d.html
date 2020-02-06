@@ -6,9 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>设置点标注的文本标签</title>
+    <title>真人cs吃鸡游戏地图</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"/>
+	
+	
+	
 </head>
 
 <body>
@@ -16,150 +20,8 @@
 
     <input id="setFitView" type="button" class="btn" style="width: 60px;position: absolute;top:0;left: 0;" value="视角定位"  />
 	<input id="exitButton" type="button" class="btn" style="width: 60px;position: absolute;top:0;right: 0;" value="退出" onclick="Exit()" />
-<!--
-    <div class="info">
-        <div id="centerCoord"></div>
-        <div id="tips"></div>
-    </div>
-    <div class="input-card" style="width:15rem;width: 170px;">
-        <h4>自定义样式</h4>
-        <div id="map-styles" style="width: 100%;height: 40px; display: flex;      flex-wrap:wrap ;">
-         
-           <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='normal'><span>标准</span></div>
-            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='dark'><span>幻影黑</span></div>
-            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='graffiti'><span>涂鸦</span></div>
-            <div class="input-item" style="width: 50%;"><input type='radio' name='mapStyle' value='wine'><span>酱籽</span></div>
-  
-
--->
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b">
-    </script>
-
-<script type="text/javascript" src="js/common.js">
-</script>
-   
-    <script type="text/javascript">
-        
-        var _data = [{
-            icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-1.png',
-            lon: 116.205467,
-            lat:39.907761,
-            userName: `张三视力`,
-color:'red'
-        }, {
-            icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-2.png',
-            position: [116.368904, 39.913423],
-            lon: 116.368904,
-            lat:39.913423,
-            userName: `李四`,
-            color:'#abcdef'
-          
-        }, {
-            icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-3.png',
-            position: [116.305467, 39.807761],
-            lon: 116.305467,
-            lat:39.807761,
-            userName: `王五`
-
-        }];
-
-    
-        var map;
-        var markArray = new Array(); 
-       // CreateMarker(_data);
-        function CreateMarker(data)
-        {
-           // console.log(data);
-            if(!map)
-            {
-                CreateMap(data);
-                SetHander();
-            }
-            else
-            {
-                map.center = [data[0].lon, data[0].lat];
-            }
-            DeleteMark();
-            AddMarker(data);
-           
-        }
-
-        
-        function CreateMap(data)
-        {
-            map = new AMap.Map('container', {
-            resizeEnable: true,
-            center: [data[0].lon, data[0].lat],
-            showLabel:true,
-            mapStyle: "amap://styles/whitesmoke",
-            zoom: 13
-            });
-             // 构造官方卫星、路网图层
-   		    //var satelliteLayer = new AMap.TileLayer.Satellite();
-    		//var roadNetLayer =  new AMap.TileLayer.RoadNet();
-
-    		//批量添加图层
-   		    //map.add([satelliteLayer, roadNetLayer]);
-        }
-
-        function AddMarker(data)
-        // `<i class="content">111</i>`
-        {
-            data.forEach(function (_item) {
-                var _markObject = new AMap.Marker({
-                map: map,
-                icon: _item.icon,
-                content: `<i class="content" style="background:${_item.color}; font-size: 10px;font-weight: 600;">${_item.userName}</i>`,
-                // direction: marker.direction,
-                position: [_item.lon, _item.lat],
-                offset: new AMap.Pixel(-13, -30)
-            });
-            
-
-            
-            markArray.push(_markObject);
-          
-          
-         });
-        }
-
-        function DeleteMark()
-        {
-           for (var i = 0; i < markArray.length; i ++) {
-                markObject = markArray[i];
-                if (markObject) {
-                    markObject.setMap(null);
-                    markObject = null;
-                }
-            }
-           
-            markArray =new Array();
-          
-        }
-
-        function SetHander()
-        {
-           
-                // 添加事件监听, 使地图自适应显示到合适的范围
-                AMap.event.addDomListener(document.getElementById('setFitView'), 'click', function () {
-                    var newCenter = map.setFitView();
-                   // document.getElementById('centerCoord').innerHTML = '当前中心点坐标：' + newCenter.getCenter();
-                    //document.getElementById('tips').innerHTML = '通过setFitView，地图自适应显示到合适的范围内,点标记已全部显示在视野中！';
-                });
-        }
-		
-		
-
-        
-    </script>
-	<script type="text/javascript">
-		function Exit() {
-		//alert("122");
-		var num1 = 1;
-		//var num2 = 2;
-		window.location.href = "uniwebview://Exit?num1=" + num1;
-	}
-</script>
+    <script type="text/javascript" src="js/common.js"/>
+    <script type="text/javascript" src="js/map.js"/>
 
 </body>
 

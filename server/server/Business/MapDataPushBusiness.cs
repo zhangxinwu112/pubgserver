@@ -159,7 +159,7 @@ namespace server.Business
                 roomGrounp.Add(item.id, p);
             });
             // Console.WriteLine(Utils.CollectionsConvert.ToJSON(roomGrounp));
-            Logger.Debug(Utils.CollectionsConvert.ToJSON(roomGrounp));
+           // Logger.Debug(Utils.CollectionsConvert.ToJSON(roomGrounp));
 
         }
 

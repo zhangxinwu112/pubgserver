@@ -13,13 +13,15 @@ var _data ={
 		"userName": "\u5929\u6DAF",
 		"lon": 108.964236948926,
 		"lat": 34.1732384409584,
-		"userType": 0
+		"userType": 0,
+		"color": "#CC33FF"
 	}, {
 		"userId": 18,
 		"userName": "\u73A9\u5BB6\u6D4B\u8BD5",
 		"lon": 108.995864758826,
 		"lat": 34.1731979651086,
-		"userType": 0
+		"userType": 0,
+		"color": "#3366FF"
 	}],
 	"grounp": {
 		"area": "cs",
@@ -115,7 +117,7 @@ var _data ={
                 var _markObject = new AMap.Marker({
                 map: map,
                 icon: _item.icon,
-                content: `<i class="content" >${_item.userName}</i>`,
+                content: `<i class="content" style="background:${_item.color};">${_item.userName}</i>`,
                 // direction: marker.direction,
                 position: [_item.lon, _item.lat],
                 offset: new AMap.Pixel(-13, -30)

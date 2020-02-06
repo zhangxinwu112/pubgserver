@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="43568">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="45104">
       <assemblyIdentity name="server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wshOr93Yv4gEB9SJNKhbgbXXoeTpNeLFIFHuP2i8lvk=</dsig:DigestValue>
+        <dsig:DigestValue>IYvK+odEKjAZ0HpUk66i2HoYiXX0PDWyV7JX8eYx0VY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

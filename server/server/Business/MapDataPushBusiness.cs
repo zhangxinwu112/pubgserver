@@ -186,7 +186,11 @@ namespace server.Business
                     for(int k=0;k< roomIds.Length;k++)
                     {
                         List<GPSItem> gpsList = GetGpsListByRoomId(roomIds[k].ToString());
-                        result.AddRange(gpsList);
+                        if(gpsList!=null)
+                        {
+                            result.AddRange(gpsList);
+                        }
+                       
                     }
                 });
                 return result;

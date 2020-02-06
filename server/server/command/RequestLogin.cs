@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 namespace server.command
 {
     /// <summary>
-    /// 更新位置
+    /// 登录成功后
     /// </summary>
-   public class UpdatePosition:CommandBase<PubgSession, StringRequestInfo>
+   public class RequestLogin : CommandBase<PubgSession, StringRequestInfo>
     {
         public override void ExecuteCommand(PubgSession session, StringRequestInfo requestInfo)
         {
@@ -22,10 +22,10 @@ namespace server.command
             PubgSession.mOnLineConnections.TryGetValue(session, out sessionItem);
             if(sessionItem!=null)
             {
-                GPSItem gpsItem = Utils.CollectionsConvert.ToObject<GPSItem>( requestInfo.Body.ToString());
-                sessionItem.gpsItem = gpsItem;
+                sessionItem.telephone =  requestInfo.Body.ToString();
+                sessionItem.isLogin = true;
             }
-           // Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
+            Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
 
 
         }

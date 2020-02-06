@@ -98,28 +98,26 @@ namespace server.DAO
 
         public void UpdateFenceScope(int frequency)
         {
-            string sql = "select * from grounp where runState =0 and fenceLon>0 and fenceRadius>0 ORDER BY id DESC";
+            string sql = "select * from grounp where runState =0 and fenceLon>0 and fenceRadius>=0 ORDER BY id DESC";
             List<Grounp> list = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null );
 
             list.ForEach((item) => {
 
                 if(item.fenceRadius>0)
                 {
-                    int everyCount = item.fenceTotalRadius / (item.playerTime * 60 / frequency);
+                   int everyCount = item.fenceTotalRadius / (item.playerTime * 60 / frequency);
                    sql = "update  grounp set fenceRadius = '" + (item.fenceRadius- everyCount) + "' where id = @grounpId;";
-                    int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
+                   MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
                 }
                 else
                 {
-                    sql = "update  grounp set fenceRadius = 0 where id = @grounpId;";
-                    int count = MySqlExecuteTools.GetCountResult(sql, null);
+                    sql = "update  grounp set fenceRadius = '" + item.fenceTotalRadius + "',runState = -1  where id = @grounpId;";
+                    MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
                 }
 
             });
 
             joinRoomDao.GetAllRoom();
-
-
 
         }
     }

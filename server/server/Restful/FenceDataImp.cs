@@ -32,7 +32,7 @@ namespace Restful
             string fenceRadius = strs[3];
 
             string sql = "update  grounp set fenceLon = '" + fenceLon + "', fenceLat = '" + fenceLat +
-                "', fenceRadius = '" + fenceRadius + "' where id = @grounpId;";
+                "', fenceRadius = '" + fenceRadius + "', fenceTotalRadius = '" + fenceRadius + "' where id = @grounpId;";
             int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
             // Console.WriteLine(count);
             joinRoomDao.GetAllRoom();

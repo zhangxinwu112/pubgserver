@@ -237,5 +237,15 @@ namespace server.Business
             return roomIds;
         }
         #endregion
+
+
+        /// <summary>
+        /// 按照定时器的频率
+        /// </summary>
+        /// <param name="frequency"></param>
+        public void UpdateFenceScope(int frequency)
+        {
+            searchGrounpDao.UpdateFenceScope(frequency);
+        }
     }
 }

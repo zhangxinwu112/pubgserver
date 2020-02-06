@@ -109,6 +109,7 @@
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />
     <Compile Include="command\HeartBeat.cs" />
+    <Compile Include="command\RequestLogin.cs" />
     <Compile Include="command\UpdatePosition.cs" />
     <Compile Include="DAO\CodeDao.cs" />
     <Compile Include="DAO\CommonDao.cs" />

@@ -14,5 +14,10 @@ namespace server.Model
         public long heartTimeStamp =-1;
 
         public long createTimeStamp = -1;
+
+        public bool isLogin = false;
+
+        public string telephone = "";
+
     }
 }

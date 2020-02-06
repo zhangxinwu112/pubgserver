@@ -5,6 +5,7 @@ using server;
 using server.Model;
 using server.Tool;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,10 +32,39 @@ namespace server.DAO
             }
             else
             {
-                dataResult.result = 0;
-                dataResult.data = result[0];
+                bool isLogin = CheckIsLogin(username);
+                if(isLogin)
+                {
+                    dataResult.result = 1;
+                    dataResult.resean = "该账号已在线，不能重复登录，请重试!";
+                }
+                else
+                {
+                    dataResult.result = 0;
+                    dataResult.data = result[0];
+                }
+               
             }
             session.Send(GetSendData(dataResult, body));
+        }
+
+        /// <summary>
+        /// 查看session中是否有登录的用户
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <returns></returns>
+        private bool CheckIsLogin(string userName)
+        {
+            ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
+            foreach (SessionItem sessionItem in dic.Values)
+            {
+                if(sessionItem.isLogin && sessionItem.telephone.Trim().Equals(userName.Trim()))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

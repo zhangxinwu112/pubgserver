@@ -17,20 +17,27 @@ namespace server.Tool
     {
 
         ILog Logger = log4net.LogManager.GetLogger("server.Tool.SeverTimer");
+        //推送地图
         private int IntervalSendPostion = 1000 * 5;
         private System.Threading.Timer tmrsendPostion = null;
 
-
+        //检查在线连接
         private int IntervalCheckConnect = 1000 * 10;
         private System.Threading.Timer tmrCheckConnect = null;
 
 
+        //检查电子围栏
+        private int IntervalCheckFence = 1000 * 30;
+        private System.Threading.Timer tmrCheckCFence = null;
+
         private MapDataPushBusiness mapDataPushBusiness;
         public void Init()
         {
-            tmrsendPostion = new System.Threading.Timer(SendPositionCallBack, null, IntervalSendPostion, IntervalSendPostion);
+            tmrsendPostion = new System.Threading.Timer(SendMapDataCallBack, null, IntervalSendPostion, IntervalSendPostion);
 
             tmrCheckConnect = new System.Threading.Timer(CheckConnectCallBack, null, IntervalCheckConnect, IntervalCheckConnect);
+
+            tmrCheckCFence = new System.Threading.Timer(CheckFenceCallBack, null, IntervalCheckFence, IntervalCheckFence);
 
             mapDataPushBusiness = new MapDataPushBusiness();
 
@@ -42,7 +49,7 @@ namespace server.Tool
         /// 定时发送经纬度数据
         /// </summary>
         /// <param name="state"></param>
-        private void SendPositionCallBack(object state)
+        private void SendMapDataCallBack(object state)
         {
             try
             {
@@ -65,6 +72,7 @@ namespace server.Tool
                         dataDic.Add("grounp", grounp);
                         dataDic.Add("gpsData", gpsList);
                         string  resultJson = Utils.CollectionsConvert.ToJSON(dataDic);
+                        Logger.Debug(resultJson);
                         string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
                         session.Send(data);
                     }
@@ -75,7 +83,7 @@ namespace server.Tool
             {
                 Logger.InfoFormat("更新位置异常：：{0}", e.Message);
                 tmrsendPostion.Dispose();
-                tmrsendPostion = new System.Threading.Timer(SendPositionCallBack, null, IntervalSendPostion, IntervalSendPostion);
+                tmrsendPostion = new System.Threading.Timer(SendMapDataCallBack, null, IntervalSendPostion, IntervalSendPostion);
                 Console.WriteLine("位置更新异常信息：" + e.Message);
             }
             finally
@@ -133,6 +141,31 @@ namespace server.Tool
             finally
             {
                 tmrCheckConnect.Change(IntervalCheckConnect, IntervalCheckConnect);
+            }
+        }
+
+
+
+        private void CheckFenceCallBack(object state)
+        {
+            try
+            {
+                
+                tmrCheckCFence.Change(Timeout.Infinite, Timeout.Infinite);
+                mapDataPushBusiness.UpdateFenceScope(IntervalCheckFence/1000);
+
+            }
+            catch (Exception e)
+            {
+                Logger.InfoFormat("电子围栏定时异常：：{0}", e.Message);
+                tmrCheckConnect.Dispose();
+                tmrCheckCFence = new System.Threading.Timer(CheckFenceCallBack, null, IntervalCheckFence, IntervalCheckFence);
+
+                Console.WriteLine("电子围栏定时异常：" + e.Message);
+            }
+            finally
+            {
+                tmrCheckCFence.Change(IntervalCheckFence, IntervalCheckFence);
             }
         }
 

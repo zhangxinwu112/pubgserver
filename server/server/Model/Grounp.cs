@@ -29,5 +29,7 @@ namespace server.Model
 
         public int fenceRadius;
 
+        public int fenceTotalRadius;
+
     }
 }

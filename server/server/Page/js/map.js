@@ -36,10 +36,10 @@ var _data ={
         var map;
         var markArray = new Array(); 
         CreateMapAndMarker(_data);
-        function CreateMapAndMarker(str)
+        function CreateMapAndMarker(data)
         {
            // console.log(data);
-		     var data = JSON.parse(str);
+		    // var data = JSON.parse(str);
             if(!map)
             {
                 CreateMap(data.currentUser.lon,data.currentUser.lat);
@@ -101,7 +101,7 @@ var _data ={
 				}
 				else
 				{
-					circle.setRadius(grounp);
+					circle.setRadius(grounp.fenceRadius);
 				}
 				
 			}

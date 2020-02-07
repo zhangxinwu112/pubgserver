@@ -42,7 +42,15 @@ namespace server.DAO
                 }
                 
             }
-            
+
+            result.ForEach((item) => {
+
+                if(item.fenceLat>0)
+                {
+                    item.isDefence = true;
+                }
+
+            });
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
             dataResult.data = result;
@@ -108,7 +116,7 @@ namespace server.DAO
 
         public void UpdateFenceScope(int frequency)
         {
-            string sql = "select * from grounp where runState =0 and fenceLon>0 and fenceRadius>=0 ORDER BY id DESC";
+            string sql = "select * from grounp where runState =0 and fenceLon>0 ORDER BY id DESC";
             List<Grounp> list = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null );
 
             list.ForEach((item) => {
@@ -121,7 +129,7 @@ namespace server.DAO
                 }
                 else
                 {
-                    sql = "update  grounp set fenceRadius = '" + item.fenceTotalRadius + "',runState = -1  where id = @grounpId;";
+                    sql = "update  grounp set fenceRadius = 2000,fenceTotalRadius=2000,runState = -1,fenceLon=-1,fenceLat=-1 where id = @grounpId;";
                     MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
                 }
 

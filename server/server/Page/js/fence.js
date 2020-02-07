@@ -1,5 +1,5 @@
     	mui.init();
-		mui.alert('拖动圆的瞄点,调整圆形电子围栏的位置和大小.');
+		mui.alert('请拖动圆中心和周边的锚点,调整电子围栏的位置和大小.');
 	var app=new Vue({
     
     	el:"#app",

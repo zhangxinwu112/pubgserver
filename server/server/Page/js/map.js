@@ -107,7 +107,14 @@ var _data ={
 				}
 				else
 				{
-					circle.setRadius(grounp.fenceRadius);
+					if(grounp.fenceRadius<=0)
+					{
+						circle.setRadius(0.1);
+					}
+					else{
+						circle.setRadius(grounp.fenceRadius);
+					}
+					
 				}
 				
 			}

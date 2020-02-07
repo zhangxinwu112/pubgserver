@@ -122,6 +122,7 @@
     <Compile Include="Model\CodeModel.cs" />
     <Compile Include="Model\DataResult.cs" />
     <Compile Include="Model\GPSItem.cs" />
+    <Compile Include="Model\Life.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\Room_User.cs" />
     <Compile Include="Model\Grounp.cs" />

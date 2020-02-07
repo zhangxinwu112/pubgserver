@@ -13,7 +13,7 @@ var app = new Vue({
                 },
                 list: [
                 ],
-				currentUser:"当前用户:我的天涯",
+				currentUser:"当前用户:管理员",
 				roomName:"房间名称:房间123"
             },
             mounted() {
@@ -76,6 +76,7 @@ var app = new Vue({
 				app.msg.lifeName = "生命值"+data.life.lifeValue+"/100";
 			}
 			else{
+				app.currentUser = "当前用户:管理员";
 				app.showlife = false;
 			}
 			

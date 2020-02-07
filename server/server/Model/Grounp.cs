@@ -31,5 +31,7 @@ namespace server.Model
 
         public int fenceTotalRadius;
 
+        public bool isDefence = false;
+
     }
 }

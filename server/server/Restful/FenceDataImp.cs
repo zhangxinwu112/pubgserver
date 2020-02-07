@@ -39,6 +39,23 @@ namespace Restful
             return 0;
         }
 
+        public string SearchState(string grounpId)
+        {
+            // throw new NotImplementedException();
+            string sql = "select * from grounp where id = @grounpId  and runState = 0";
+            int count  = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+            if(count>0)
+            {
+                return "0";
+            }
+            else
+            {
+                return "1";
+            }
+
+
+        }
+
         /// <summary>
         /// 设置grounp运行状态
         /// </summary>
@@ -49,7 +66,6 @@ namespace Restful
             string sql = "select * from grounp where id = @grounpId";
             List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
                 new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
-
 
             if(result.Count==1)
             {

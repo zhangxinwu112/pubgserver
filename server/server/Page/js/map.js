@@ -38,7 +38,7 @@ var _data ={
 }
         var map;
         var markArray = new Array(); 
-        CreateMapAndMarker(_data);
+       // CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);

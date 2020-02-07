@@ -8,19 +8,22 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>真人cs吃鸡游戏地图</title>
     <link rel="stylesheet" href="css/style.css"/> 
+	
+	<link href="css/user.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="css/mui.min.css" rel="stylesheet"/>
-    <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	 
 	<script src="js/mui.min.js"></script>
+	
 	<script>
 		
 		mui.init();
 		
-		
-		
+	
 	</script>
 </head>
-
 <body>
     <div id="container"></div>
 
@@ -29,12 +32,56 @@
 	<button id="exitButton" type="button" class="mui-btn mui-btn-primary" 
 	style="width: 80px;font-size: 10px;position: absolute;top:40px;left: 5px;" onclick="Exit()">退出</button>
 	 
-	<!-- <button id="2344" type="button" onclick="Test()" style="width: 80px;position: absolute;bottom:0;left: 0;">重新绘制</button> -->
-	 
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+	
+  
+	<div id="app">
+	    <button type="button" class="btn icon-b" :class="cut?'btn-primary':'btn-warning'"
+	        @click="isShow">{{cut?'隐藏':'显示'}}</button>
+	    <div class="msg">
+			<div class="progress mb-2">
+			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>
+			</div>
+			
+			<div class="progress mb-2">
+			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{roomName}}</div>
+			</div>
+			
+			
+	        <div class="progress mb-2">
+	            <div class="progress-bar bg-success " :style="{width: msg.bulletValue + '%'}">{{msg.bulletName}}</div>
+	        </div>
+	        <div class="progress mb-2">
+	            <div class="progress-bar bg-warning " :style="{width: msg.scoreValue + '%'}">{{msg.scoreName}}</div>
+	        </div>
+	
+	        <div class="progress mb-2">
+	            <div class="progress-bar bg-danger " :style="{width: msg.lifeValue + '%'}">{{msg.lifeName}}</div>
+	        </div>
+	    </div>
+	    <transition name="slide-fade">
+	        <div class="container" v-if="cut">
+	
+	            <div class="card p-1" style="width: 350px;height: 220px;">
+	
+	                <div class="card-body">
+	                    <h5 v-for="(item,index) in list" :key="index">
+	                        {{item.name}}
+	                    </h5>
+	                </div>
+	                <div class="input-group mb-0 w-75">
+	                    <input type="text" class="form-control " placeholder="输入内容">
+	                    <button type="submit" class="btn btn-primary ml-0" @click="send">发送</button>
+	                </div>
+	            </div>
+	
+	
+	        </div>
+	    </transition>
+	</div>
 
-
+   <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>
+   <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/User.js"></script>
 </body>
 
 </html>

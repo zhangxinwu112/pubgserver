@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using server.Restful;
+using System.Configuration;
 
 namespace server
 {
@@ -17,6 +18,7 @@ namespace server
     {
         static void Main(string[] args)
         {
+            //Console.WriteLine(ConfigurationManager.AppSettings["ip"]);
             MySQLHelp.Instance.Connect();
             //TestSql.TestLogin("admin", "1234563");
 

@@ -90,7 +90,7 @@ namespace server.DAO
             DataResult dataResult = new DataResult();
             //查询能否删除
 
-            List<Room> roomList = SearchSingleRoomCommon(grounpId);
+            List<Room> roomList = SearchRoomListByGrounp(grounpId);
             if(roomList==null || roomList.Count==0)
             {
                 dataResult.result = 1;

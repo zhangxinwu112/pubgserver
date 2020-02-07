@@ -45,7 +45,7 @@ namespace server.DAO
            
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
-            dataResult.data = SearchSingleRoomCommon(grounpId);
+            dataResult.data = SearchRoomListByGrounp(grounpId);
             session.Send(GetSendData(dataResult, body));
         }
 

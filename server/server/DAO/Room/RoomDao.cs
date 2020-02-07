@@ -15,14 +15,23 @@ namespace server.DAO
         /// <summary>
         /// 通过grounp查询room
         /// </summary>
-        /// <param name="roomId"></param>
+        /// <param name="grounpId"></param>
         /// <returns></returns>
-        protected List<Room> SearchSingleRoomCommon(string grounpId)
+        protected List<Room> SearchRoomListByGrounp(string grounpId)
         {
             
             string sql = "select * from room where grounpId = @grounpId ORDER BY id ASC";
             List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql,
                 new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+
+            result.ForEach((item) => {
+
+                sql = "select * from room_user where room_id = @room_id ";
+                int  count = MySqlExecuteTools.GetCountResult(sql,
+                    new MySqlParameter[] { new MySqlParameter("@room_id", item.id) });
+                item.userCount = count;
+               // Console.WriteLine(count);
+            });
 
             return result;
 

@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Xsq5UdUITJd5MVg2sV3pUd3sfKeyV1gpKua+oWS7X/g=</dsig:DigestValue>
+        <dsig:DigestValue>mLS0wnYgFJKHgV9zdP/CaHj+QpF3k+Xjy3o5etJwLe4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -149,13 +149,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="server.exe.config" size="1745">
+  <file name="server.exe.config" size="1749">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Plv/ejHhbWZH3xQw1tIwiHfsBT4mi7r30ieEZzywiEk=</dsig:DigestValue>
+      <dsig:DigestValue>hDyISetmfRGUqYaZjyHQ4gSGjiTd31tWDpMYSOhEGdI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

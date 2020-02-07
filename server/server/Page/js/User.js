@@ -10,33 +10,21 @@ var app = new Vue({
                     lifeValue: 90,
 					 lifeName: "生命值90/100",
                 },
-                list: [{
-                        name: '88888888'
-                    },
-                    {
-                        name: '2222222222222222'
-                    },
-                    {
-                        name: '333333333333333'
-                    },
-                    {
-                        name: '444444444444'
-                    },
-                    {
-                        name: '55555555555555'
-                    },{
-                        name: '55555555555555'
-                    }
+                list: [
                 ],
 				currentUser:"当前用户:我的天涯",
 				roomName:"房间名称:房间123"
             },
             mounted() {
-               /** setInterval(() => {
-                    this.receive()
-                    this.delete()
+				/**
+               setInterval(() => {
+                   // this.receive()
+                   // this.delete()
+				   showMessage("123");
                 }, 2000)
+				
 				**/
+				
             },
             methods: {
                 receive() {
@@ -56,5 +44,18 @@ var app = new Vue({
                 }
             }
         })
+		
+		function showMessage(message)
+		{
+			app.list.push({
+                        name: message
+                    })
+					
+		   
+		   if(app.list.length>6)
+		   {
+			   app.list.splice(0, 1);
+		   }
+		}
 		
 

@@ -32,12 +32,30 @@ namespace  server.DAO
             {
                 int type = Convert.ToInt32(userType);
                 dataResult.result = 0;
+
                 sql = "insert into user(password,name ,telephone,image,type) " +
                     "values('" + password + "','" + name + "','" + telephone + "','" + icon + "','"+ type + "')";
-                MySqlExecuteTools.AddOrUpdate(sql);
+                long newuserId = MySqlExecuteTools.GetAddID(sql);
+
+                //玩家,增加生命信息
+                if(type==0)
+                {
+                    sql = "insert into life(userId) " +
+                   "values('" + newuserId + "')";
+                    MySqlExecuteTools.AddOrUpdate(sql);
+                }
             }
 
             session.Send(GetSendData(dataResult, body));
+        }
+
+        public Life GetLifeById(int userId)
+        {
+            string sql = "select * from life where userId = @userId";
+            Life life = MySqlExecuteTools.GetObjectResult<Life>(sql,
+                new MySqlParameter[] { new MySqlParameter("@userId", userId) }).FirstOrDefault<Life>();
+
+            return life;
         }
     }
 }

@@ -236,6 +236,12 @@ namespace server.Business
 
             return roomIds;
         }
+
+        public Room GetRoomById(int roomID)
+        {
+            var room = this.roomList.Where(a => a.id == roomID).FirstOrDefault<Room>();
+            return room;
+        }
         #endregion
 
 

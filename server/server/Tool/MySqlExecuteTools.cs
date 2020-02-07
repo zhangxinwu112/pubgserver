@@ -139,16 +139,18 @@ namespace server.Tool
         }
 
 
-        public static int AddOrUpdate(string sql)
+        public static object AddOrUpdate(string sql)
         {
             MySqlCommand cmd = null;
-            int result = 0;
+            object result = 0;
             try
             {
 
                 cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
-               // cmd.CommandTimeout = 10;
-                result = cmd.ExecuteNonQuery();
+                // cmd.CommandTimeout = 10;
+                //返回操作的数据库id
+                result = cmd.ExecuteScalar();
+              
               
             }
             catch(Exception e)
@@ -180,7 +182,7 @@ namespace server.Tool
                 reader = cmd.ExecuteReader();
 
                 result = cmd.LastInsertedId;
-   
+                Console.WriteLine(result.ToString());
                 //while (reader.Read())
                 //{
                 //    if (reader.HasRows)

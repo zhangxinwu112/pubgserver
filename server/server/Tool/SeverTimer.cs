@@ -31,6 +31,7 @@ namespace server.Tool
         private System.Threading.Timer tmrCheckCFence = null;
 
         private MapDataPushBusiness mapDataPushBusiness;
+        private RegisterDao registerDao;
         public void Init()
         {
             tmrsendPostion = new System.Threading.Timer(SendMapDataCallBack, null, IntervalSendPostion, IntervalSendPostion);
@@ -41,6 +42,7 @@ namespace server.Tool
 
             mapDataPushBusiness = new MapDataPushBusiness();
 
+            registerDao = new RegisterDao();
             mapDataPushBusiness.Init();
 
         }
@@ -69,6 +71,19 @@ namespace server.Tool
                         Dictionary<string, object> dataDic = new Dictionary<string, object>();
                         Grounp grounp = mapDataPushBusiness.GetGrounpByRoomId(roomId);
 
+                        //玩家增加房间和生命值
+                        if(sessionItem.gpsItem.userType == 0)
+                        {
+                            Room room =  mapDataPushBusiness.GetRoomById(roomId);
+                            dataDic.Add("room", room);
+                            Life life =  registerDao.GetLifeById(sessionItem.gpsItem.userId);
+                            dataDic.Add("life", life);
+                        }
+                        else
+                        {
+                            dataDic.Add("room", null);
+                            dataDic.Add("life", null);
+                        }
                         dataDic.Add("grounp", grounp);
                         dataDic.Add("gpsData", gpsList);
                         string  resultJson = Utils.CollectionsConvert.ToJSON(dataDic);

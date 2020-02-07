@@ -17,7 +17,7 @@ namespace server.DAO
         /// </summary>
         /// <param name="grounpId"></param>
         /// <returns></returns>
-        protected List<Room> SearchRoomListByGrounp(string grounpId)
+        protected List<Room> SearchRoomListByGrounp(string grounpId,string  userId="-1")
         {
             
             string sql = "select * from room where grounpId = @grounpId ORDER BY id ASC";
@@ -30,7 +30,19 @@ namespace server.DAO
                 int  count = MySqlExecuteTools.GetCountResult(sql,
                     new MySqlParameter[] { new MySqlParameter("@room_id", item.id) });
                 item.userCount = count;
-               // Console.WriteLine(count);
+
+                if(!userId.Equals("-1"))
+                {
+                    sql = "select * from room_user where room_id = @room_id  and user_id = @user_id";
+
+                    count = MySqlExecuteTools.GetCountResult(sql,
+                    new MySqlParameter[] { new MySqlParameter("@room_id", item.id), new MySqlParameter("@user_id", userId) });
+                    if(count>0)
+                    {
+                        item.isCurrentUser = true;
+                    }
+                }
+              
             });
 
             return result;

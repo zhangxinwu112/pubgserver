@@ -18,7 +18,7 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.SearchGrounpDao");
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
-        public void SearchAllGrounp(PubgSession session, string body, string  userId)
+        public void SearchAllGrounp(PubgSession session, string body, string  userId,string keyName)
         {
             Logger.InfoFormat("查询用户下的所有队：{0}", userId);
             List<Grounp> result = null;
@@ -27,10 +27,20 @@ namespace server.DAO
                 string sql = "select * from grounp where userId = @userId ORDER BY id DESC";
                 result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,new MySqlParameter[] { new MySqlParameter("@userId", userId) });
             }
+            //玩家登录，查询所有的grounp
             else
             {
-                string sql = "select * from grounp  ORDER BY id DESC";
-                result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
+                if(keyName.Equals("-1"))
+                {
+                    string sql = "select * from grounp  ORDER BY id DESC";
+                    result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
+                }
+                else
+                {
+                    string sql = "select * from grounp where name like '%"+ keyName +"%' ORDER BY id DESC";
+                    result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
+                }
+                
             }
             
             DataResult dataResult = new DataResult();
@@ -39,13 +49,13 @@ namespace server.DAO
             session.Send(GetSendData(dataResult, body));
         }
 
-        public void SearchSingleGrounp(PubgSession session, string body, string grounpId)
+        public void SearchSingleGrounp(PubgSession session, string body, string grounpId,string userId)
         {
             Logger.InfoFormat("查询单队下的房间：{0}", grounpId);
            
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
-            dataResult.data = SearchRoomListByGrounp(grounpId);
+            dataResult.data = SearchRoomListByGrounp(grounpId, userId);
             session.Send(GetSendData(dataResult, body));
         }
 

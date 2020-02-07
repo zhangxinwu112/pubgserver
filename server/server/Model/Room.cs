@@ -20,5 +20,7 @@ namespace server.Model
         public string checkCode;
 
         public int userCount = 0;
+
+        public bool isCurrentUser = false;
     }
 }

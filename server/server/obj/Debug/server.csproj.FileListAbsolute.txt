@@ -114,3 +114,4 @@ D:\cs\server\pubgserver\server\server\obj\Debug\server.application
 D:\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 D:\cs\server\pubgserver\server\server\obj\Debug\server.exe
 D:\cs\server\pubgserver\server\server\obj\Debug\server.pdb
+D:\cs\server\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache

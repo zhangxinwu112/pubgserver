@@ -21,10 +21,17 @@ namespace server.Restful
 
                 string url = "http://" + ipAdress + ":8899/";
                 Console.WriteLine(url);
-                FenceDataImp service = new FenceDataImp();
+                ServiceImp service = new ServiceImp();
                 WebServiceHost _serviceHost = new WebServiceHost(service, new Uri(url));
              
                 _serviceHost.Open();
+
+                //ChatDataImp ChatDataImpService = new ChatDataImp();
+                //WebServiceHost ChatDataImpServiceHost = new WebServiceHost(ChatDataImpService, new Uri(url));
+
+                //ChatDataImpServiceHost.Open();
+
+
                 Console.WriteLine("Web服务已开启...");
                
             }

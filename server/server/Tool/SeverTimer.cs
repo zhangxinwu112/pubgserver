@@ -87,7 +87,7 @@ namespace server.Tool
                         dataDic.Add("grounp", grounp);
                         dataDic.Add("gpsData", gpsList);
                         string  resultJson = Utils.CollectionsConvert.ToJSON(dataDic);
-                        Logger.Debug(resultJson);
+                        //Logger.Debug(resultJson);
                         string data = "ShowPosition" + Constant.START_SPLIT + resultJson + "\r\n";
                         session.Send(data);
                     }

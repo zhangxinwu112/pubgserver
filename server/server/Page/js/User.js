@@ -46,9 +46,15 @@ var app = new Vue({
                 send() { //发送
 						
 						//alert(roomId);
+						if (this.inputContent  == '') {
+							alert('输入内容不能为空!');
+							return ;
+						}
+						var that =this;
 						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent
 						axios.get(requestUrl)
 						  .then(function (response) {
+							  that.inputContent = "";
 						    //mui.toast('操作成功!',{ duration:'long', type:'div' })
 							 //mui.alert('操作成功');
 						  })
@@ -66,8 +72,9 @@ var app = new Vue({
 		
 		function ChatMessage(message)
 		{
+			app.inputContent ="";
 			app.list.push({
-                        name: message
+                        name: message.name +":"+message.content + "   "+message.time
                     })
 					
 		   

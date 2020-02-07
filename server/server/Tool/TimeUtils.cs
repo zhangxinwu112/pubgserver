@@ -15,5 +15,10 @@ namespace server.Tool
             long TotalSeconds = Convert.ToInt64(ts.TotalSeconds);
             return TotalSeconds;
         }
+
+        public static string GetCurrentFormatTime()
+        {
+            return DateTime.Now.ToString("hh:mm:ss");
+        }
     }
 }

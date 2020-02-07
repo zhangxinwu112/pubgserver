@@ -2,44 +2,58 @@
 //mui.alert('拖动圆的瞄点,调整圆形电子围栏的位置和大小.');
 //mui("#demo1").progressbar({progress:20}).show();
 var _data ={
-	"currentUser": {
-		"userId": 15,
-		"userName": "\u5929\u6DAF",
-		"lon": 108.964236948926,
-		"lat": 34.1732384409584,
-		"userType": 0
-	},
-	"gpsData": [{
-		"userId": 15,
-		"userName": "\u5929\u6DAF",
-		"lon": 108.964236948926,
-		"lat": 34.1732384409584,
-		"userType": 0,
-		"color": "#CC33FF"
-	}, {
-		"userId": 18,
-		"userName": "\u73A9\u5BB6\u6D4B\u8BD5",
-		"lon": 108.995864758826,
-		"lat": 34.1731979651086,
-		"userType": 0,
-		"color": "#3366FF"
-	}],
-	"grounp": {
-		"area": "cs",
-		"userId": 16,
-		"runState": 0,
-		"playerTime": 60,
-		"fenceLon": 108.964236948926,
-		"fenceLat": 34.1732384409584,
-		"fenceRadius": 2000,
-		"id": 105,
-		"name": "122121"
+	
+		"currentUser": {
+			"userId": 15,
+			"userName": "\u5929\u6DAF",
+			"lon": 108.964176,
+			"lat": 34.218229,
+			"userType": 0,
+			"color": "#CC33FF"
+		},
+		"gpsData": [{
+			"userId": 15,
+			"userName": "\u5929\u6DAF",
+			"lon": 108.964176,
+			"lat": 34.218229,
+			"userType": 0,
+			"color": "#CC33FF"
+		}],
+		"grounp": {
+			"area": "cs",
+			"userId": 16,
+			"runState": 0,
+			"playerTime": 60,
+			"fenceLon": 108.9637,
+			"fenceLat": 34.17328,
+			"fenceRadius": 801,
+			"isDefence": false,
+			"id": 109,
+			"name": "\u897F\u5B89\u56E2\u961F"
+		},
+		"room": {
+			"grounpId": 109,
+			"code": 2,
+			"checkCode": "123456",
+			"userCount": 0,
+			"isCurrentUser": false,
+			"id": 483,
+			"name": "\u6211\u7684\u623F\u95F4"
+		},
+		"life": {
+			"id": 2,
+			"userId": 15,
+			"bulletCount": 200,
+			"lifeValue": 50,
+			"fightScore": 36
+		},
+		"ip": "192.168.1.4"
 	}
-}
+
         var map;
         var markArray = new Array(); 
 		
-       // CreateMapAndMarker(_data);
+       CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);

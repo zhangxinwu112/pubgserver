@@ -133,8 +133,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PubgSession.cs" />
     <Compile Include="PubgServer.cs" />
-    <Compile Include="Restful\IFenceData.cs" />
-    <Compile Include="Restful\FenceDataImp.cs" />
+    <Compile Include="Restful\ChatDataImp.cs" />
+    <Compile Include="Restful\IChatData.cs" />
+    <Compile Include="Restful\IService.cs" />
+    <Compile Include="Restful\ServiceImp.cs" />
     <Compile Include="Restful\RestServiceInit.cs" />
     <Compile Include="ServerInit.cs" />
     <Compile Include="Test\TestSql.cs" />

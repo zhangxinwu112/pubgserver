@@ -54,7 +54,7 @@ namespace server.DAO
         /// </summary>
         /// <param name="grounpId"></param>
         /// <returns></returns>
-        protected List<Room_User> SearchSingleGrounpCommon(string roomId)
+        public List<Room_User> SearchSingleGrounpCommon(string roomId)
         {
      
             string sql = "select * from room_user where room_id = @room_id";

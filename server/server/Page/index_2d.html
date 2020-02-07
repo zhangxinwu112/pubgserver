@@ -68,7 +68,8 @@
 	                    </h5>
 	                </div>
 	                <div class="input-group mb-0 w-75">
-	                    <input type="text" class="form-control " placeholder="输入内容" v-model="inputContent">
+	                    <input type="text" class="form-control " placeholder="输入内容" 
+						v-model="inputContent" maxlength="20">
 	                    <button type="submit" class="btn btn-primary ml-0" @click="send">发送</button>
 	                </div>
 	            </div>
@@ -79,8 +80,9 @@
 	</div>
 
    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>
+   <script type="text/javascript" src="js/User.js"></script>
    <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript" src="js/User.js"></script>
+    
 </body>
 
 </html>

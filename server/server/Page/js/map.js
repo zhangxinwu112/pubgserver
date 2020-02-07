@@ -43,6 +43,7 @@ var _data ={
         {
            // console.log(data);
 		    // var data = JSON.parse(str);
+			SetLifeMesage(data);
             if(!map)
             {
                 CreateMap(data.currentUser.lon,data.currentUser.lat);
@@ -58,6 +59,8 @@ var _data ={
 			CreateCircle(data.grounp);
            
         }
+		
+		
 
         
         function CreateMap(lon,lat)

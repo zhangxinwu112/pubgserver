@@ -41,19 +41,19 @@
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>
 			</div>
 			
-			<div class="progress mb-2">
+			<div class="progress mb-2" v-show="showlife">
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{roomName}}</div>
 			</div>
 			
 			
-	        <div class="progress mb-2">
+	        <div class="progress mb-2" v-show="showlife">
 	            <div class="progress-bar bg-success " :style="{width: msg.bulletValue + '%'}">{{msg.bulletName}}</div>
 	        </div>
-	        <div class="progress mb-2">
+	        <div class="progress mb-2" v-show="showlife">
 	            <div class="progress-bar bg-warning " :style="{width: msg.scoreValue + '%'}">{{msg.scoreName}}</div>
 	        </div>
 	
-	        <div class="progress mb-2">
+	        <div class="progress mb-2" v-show="showlife">
 	            <div class="progress-bar bg-danger " :style="{width: msg.lifeValue + '%'}">{{msg.lifeName}}</div>
 	        </div>
 	    </div>

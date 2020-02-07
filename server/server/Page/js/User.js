@@ -1,3 +1,8 @@
+
+var userId;
+var userName;
+var roomId =-1;
+var url ;
 var app = new Vue({
             el: '#app',
             data: {
@@ -14,7 +19,8 @@ var app = new Vue({
                 list: [
                 ],
 				currentUser:"当前用户:管理员",
-				roomName:"房间名称:房间123"
+				roomName:"房间名称:房间123",
+				inputContent:""
             },
             mounted() {
 				/**
@@ -38,7 +44,19 @@ var app = new Vue({
                     this.list.splice(0, 1);
                 },
                 send() { //发送
-
+						
+						//alert(roomId);
+						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent
+						axios.get(requestUrl)
+						  .then(function (response) {
+						    //mui.toast('操作成功!',{ duration:'long', type:'div' })
+							 //mui.alert('操作成功');
+						  })
+						  .catch(function (error) {
+						    console.log(error);
+						  });
+						  
+						  
                 },
                 isShow() {
                     this.cut = !this.cut
@@ -79,8 +97,24 @@ var app = new Vue({
 				app.currentUser = "当前用户:管理员";
 				app.showlife = false;
 			}
-			
 		
+		}
+		
+		
+		function SetValue(data)
+		{
+			
+			url ="http://" + data.ip + ":8899/" ;
+			if("undefined" != typeof data.currentUser){ 
+				this.userId = data.currentUser.userId;
+				this.userName = data.currentUser.userName;
+				
+			}
+			
+			if("undefined" != typeof data.room){
+				this.roomId = data.room.id;
+				
+			}
 		}
 		
 		

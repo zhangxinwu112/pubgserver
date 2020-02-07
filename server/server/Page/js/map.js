@@ -38,12 +38,14 @@ var _data ={
 }
         var map;
         var markArray = new Array(); 
+		
        // CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);
 		    // var data = JSON.parse(str);
 			SetLifeMesage(data);
+			SetValue(data);
             if(!map)
             {
                 CreateMap(data.currentUser.lon,data.currentUser.lat);

@@ -2,7 +2,7 @@
 var userId;
 var userName;
 var roomId =-1;
-var url ;
+var url;
 var app = new Vue({
             el: '#app',
             data: {

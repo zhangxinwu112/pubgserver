@@ -51,7 +51,7 @@ var app = new Vue({
 							return ;
 						}
 						var that =this;
-						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent
+						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent+"|"+userName
 						axios.get(requestUrl)
 						  .then(function (response) {
 							  that.inputContent = "";

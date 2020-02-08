@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-07 16:12:11
+Date: 2020-02-08 12:14:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -51,13 +51,13 @@ CREATE TABLE `grounp` (
   `fenceRadius` int(10) DEFAULT '2000',
   `fenceTotalRadius` int(10) DEFAULT '2000',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=109 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('107', '西安团队', 'cs', '16', '-1', '10', '108.964597', '34.173590', '2000', '2000');
-INSERT INTO `grounp` VALUES ('108', '曲江', 'cs', '16', '-1', '60', '-1.000000', '-1.000000', '2000', '2000');
+INSERT INTO `grounp` VALUES ('109', '西安团队', 'cs', '16', '-1', '60', '-1.000000', '-1.000000', '2000', '2000');
+INSERT INTO `grounp` VALUES ('110', '北京团队', 'cs', '16', '-1', '30', '-1.000000', '-1.000000', '2000', '2000');
 
 -- ----------------------------
 -- Table structure for life
@@ -65,9 +65,9 @@ INSERT INTO `grounp` VALUES ('108', '曲江', 'cs', '16', '-1', '60', '-1.000000
 DROP TABLE IF EXISTS `life`;
 CREATE TABLE `life` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `bulletCount` smallint(3) DEFAULT '0' COMMENT '弹量',
-  `lifeValue` smallint(3) DEFAULT '0' COMMENT '生命值',
-  `fightScore` smallint(3) DEFAULT '0' COMMENT '战绩',
+  `bulletCount` smallint(3) DEFAULT '80' COMMENT '弹量',
+  `lifeValue` smallint(3) DEFAULT '50' COMMENT '生命值',
+  `fightScore` smallint(3) DEFAULT '35' COMMENT '战绩',
   `userId` int(11) DEFAULT '-1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
@@ -107,21 +107,21 @@ CREATE TABLE `room` (
   `name` varchar(10) DEFAULT NULL,
   `checkCode` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=482 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=492 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('472', '107', '1', '房间1', '123456');
-INSERT INTO `room` VALUES ('473', '107', '2', '房间2', '123456');
-INSERT INTO `room` VALUES ('474', '107', '3', '房间3', '123456');
-INSERT INTO `room` VALUES ('475', '107', '4', '房间4', '123456');
-INSERT INTO `room` VALUES ('476', '107', '5', '房间5', '123456');
-INSERT INTO `room` VALUES ('477', '108', '1', '房间1', '123456');
-INSERT INTO `room` VALUES ('478', '108', '2', '房间2', '123456');
-INSERT INTO `room` VALUES ('479', '108', '3', '房间3', '123456');
-INSERT INTO `room` VALUES ('480', '108', '4', '房间4', '123456');
-INSERT INTO `room` VALUES ('481', '108', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('482', '109', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('483', '109', '2', '我的房间', '123456');
+INSERT INTO `room` VALUES ('484', '109', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('485', '109', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('486', '109', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('487', '110', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('488', '110', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('489', '110', '3', 'CS战队', '123456');
+INSERT INTO `room` VALUES ('490', '110', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('491', '110', '5', '房间5', '123456');
 
 -- ----------------------------
 -- Table structure for room_user
@@ -132,13 +132,13 @@ CREATE TABLE `room_user` (
   `room_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user
 -- ----------------------------
-INSERT INTO `room_user` VALUES ('34', '472', '15');
-INSERT INTO `room_user` VALUES ('35', '472', '18');
+INSERT INTO `room_user` VALUES ('36', '483', '15');
+INSERT INTO `room_user` VALUES ('40', '487', '18');
 
 -- ----------------------------
 -- Table structure for user

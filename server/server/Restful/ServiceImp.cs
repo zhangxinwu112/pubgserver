@@ -214,7 +214,19 @@ namespace Restful
         private readonly int SubTractValue = 1;
         public string SubTractLife(string userId)
         {
-            userDao.SubTractLife(userId, SubTractValue);
+            userDao.SetLifeValue(userId, SubTractValue);
+            return "";
+        }
+
+        public string AddLife(string json)
+        {
+            string[] strs = json.Split('|');
+            string userId = strs[0];
+
+            string addValue = strs[1];
+
+
+            userDao.SetLifeValue(userId, int.Parse( addValue),false);
             return "";
         }
     }

@@ -39,5 +39,9 @@ namespace Restful
         [OperationContract]
         [WebGet(UriTemplate = "SubtractLife/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string SubTractLife(string userId);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "AddLife/{json}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string AddLife(string json);
     }
 }

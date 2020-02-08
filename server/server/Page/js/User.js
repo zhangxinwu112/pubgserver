@@ -11,6 +11,13 @@ var lon;
 var url;
 
 var runState =-1;
+
+var lifeUserName;
+
+var lifeuserId;
+
+	
+			 	  
 var app = new Vue({
             el: '#app',
             data: {
@@ -191,5 +198,24 @@ var app = new Vue({
 				}
 			}
 		}
+		//管理员加血
+		function AddLife(addValue)
+		{
+			if(userType==1)
+			{
+				var requestUrl = url+"AddLife/"+this.lifeuserId+"|"+addValue;
+				axios.get(requestUrl)
+				  .then(function (response) {
+					
+				  })
+				  .catch(function (error) {
+					console.log(error);
+				  });
+				
+			}
+		}
+		
+		
+		
 		
 		

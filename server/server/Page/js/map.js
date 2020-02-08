@@ -8,7 +8,7 @@ var _data ={
 			"userName": "\u5929\u6DAF",
 			"lon": 108.963393,
 			"lat": 34.274106,
-			"userType": 0,
+			"userType": 1,
 			"color": "#CC33FF"
 		},
 		"gpsData": [{
@@ -18,7 +18,17 @@ var _data ={
 			"lat": 34.274106,
 			"userType": 0,
 			"color": "#CC33FF"
-		}],
+		},
+		{
+			"userId": 16,
+			"userName": "测试",
+			"lon": 108.953393,
+			"lat": 34.244106,
+			"userType": 0,
+			"color": "#CC33FF"
+		}
+		
+		],
 		"grounp": {
 			"area": "cs",
 			"userId": 16,
@@ -53,12 +63,12 @@ var _data ={
         var map;
         var markArray = new Array(); 
 		
-        //CreateMapAndMarker(_data);
-        function CreateMapAndMarker(str)
+        CreateMapAndMarker(_data);
+        function CreateMapAndMarker(data)
         {
            // console.log(data);
 		  
-		    var data = JSON.parse(str);
+		   // var data = JSON.parse(str);
 			SetLifeMesage(data);
 			
 			SetValue(data);
@@ -151,9 +161,20 @@ var _data ={
                 // direction: marker.direction,
                 position: [_item.lon, _item.lat],
                 offset: new AMap.Pixel(-13, -30)
+				
             });
+			if(userType==1)
+			{
+				var clickHandle = AMap.event.addListener(_markObject, 'click', function(e) {
+				    this.lifeUserName = _item.userName;
+					  this.lifeuserId = _item.userId;
+					  alert(this.lifeuserId);
+				  });
+			}
            
           markArray.push(_markObject);
+		
+			
          
          });
         }

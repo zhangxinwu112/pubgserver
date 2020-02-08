@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-08 12:14:27
+Date: 2020-02-08 14:39:57
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -51,13 +51,13 @@ CREATE TABLE `grounp` (
   `fenceRadius` int(10) DEFAULT '2000',
   `fenceTotalRadius` int(10) DEFAULT '2000',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('109', '西安团队', 'cs', '16', '-1', '60', '-1.000000', '-1.000000', '2000', '2000');
-INSERT INTO `grounp` VALUES ('110', '北京团队', 'cs', '16', '-1', '30', '-1.000000', '-1.000000', '2000', '2000');
+INSERT INTO `grounp` VALUES ('111', '西安团队', 'cs', '24', '0', '30', '108.896570', '34.159456', '1340', '2000');
+INSERT INTO `grounp` VALUES ('112', '北京团队', 'cs', '24', '-1', '30', '-1.000000', '-1.000000', '2000', '2000');
 
 -- ----------------------------
 -- Table structure for life
@@ -70,14 +70,13 @@ CREATE TABLE `life` (
   `fightScore` smallint(3) DEFAULT '35' COMMENT '战绩',
   `userId` int(11) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of life
 -- ----------------------------
-INSERT INTO `life` VALUES ('1', '65', '23', '56', '23');
-INSERT INTO `life` VALUES ('2', '200', '50', '36', '15');
-INSERT INTO `life` VALUES ('3', '80', '90', '44', '18');
+INSERT INTO `life` VALUES ('4', '80', '0', '35', '25');
+INSERT INTO `life` VALUES ('5', '80', '8', '35', '26');
 
 -- ----------------------------
 -- Table structure for machine
@@ -107,21 +106,21 @@ CREATE TABLE `room` (
   `name` varchar(10) DEFAULT NULL,
   `checkCode` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=492 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=502 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('482', '109', '1', '房间1', '123456');
-INSERT INTO `room` VALUES ('483', '109', '2', '我的房间', '123456');
-INSERT INTO `room` VALUES ('484', '109', '3', '房间3', '123456');
-INSERT INTO `room` VALUES ('485', '109', '4', '房间4', '123456');
-INSERT INTO `room` VALUES ('486', '109', '5', '房间5', '123456');
-INSERT INTO `room` VALUES ('487', '110', '1', '房间1', '123456');
-INSERT INTO `room` VALUES ('488', '110', '2', '房间2', '123456');
-INSERT INTO `room` VALUES ('489', '110', '3', 'CS战队', '123456');
-INSERT INTO `room` VALUES ('490', '110', '4', '房间4', '123456');
-INSERT INTO `room` VALUES ('491', '110', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('492', '111', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('493', '111', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('494', '111', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('495', '111', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('496', '111', '5', '房间5', '123456');
+INSERT INTO `room` VALUES ('497', '112', '1', '房间1', '123456');
+INSERT INTO `room` VALUES ('498', '112', '2', '房间2', '123456');
+INSERT INTO `room` VALUES ('499', '112', '3', '房间3', '123456');
+INSERT INTO `room` VALUES ('500', '112', '4', '房间4', '123456');
+INSERT INTO `room` VALUES ('501', '112', '5', '房间5', '123456');
 
 -- ----------------------------
 -- Table structure for room_user
@@ -132,13 +131,13 @@ CREATE TABLE `room_user` (
   `room_id` int(11) DEFAULT NULL,
   `user_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user
 -- ----------------------------
-INSERT INTO `room_user` VALUES ('36', '483', '15');
-INSERT INTO `room_user` VALUES ('40', '487', '18');
+INSERT INTO `room_user` VALUES ('42', '492', '25');
+INSERT INTO `room_user` VALUES ('43', '492', '26');
 
 -- ----------------------------
 -- Table structure for user
@@ -152,13 +151,11 @@ CREATE TABLE `user` (
   `image` varchar(255) DEFAULT '',
   `type` smallint(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('15', '17391767972', '123456', '天涯', 'image1', '0');
-INSERT INTO `user` VALUES ('16', '17391767973', '123456', '李小管', 'image1', '1');
-INSERT INTO `user` VALUES ('17', '17391767974', '123456', '测试管', 'image1', '1');
-INSERT INTO `user` VALUES ('18', '17391767979', '123456', '玩家测试', 'image1', '0');
-INSERT INTO `user` VALUES ('23', '18392120357', '123456', '旧手机', 'image1', '0');
+INSERT INTO `user` VALUES ('24', '17391767973', '123456', 'cs管理', 'image1', '1');
+INSERT INTO `user` VALUES ('25', '17391767972', '123456', '天涯', 'image1', '0');
+INSERT INTO `user` VALUES ('26', '17391767979', '123456', '玩打仗', 'image1', '0');

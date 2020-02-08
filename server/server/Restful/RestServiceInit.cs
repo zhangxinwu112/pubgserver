@@ -16,6 +16,8 @@ namespace server.Restful
         {
             string ipAdress = CommonUtils.GetLocalIP();
 
+            // string ipAdress = CommonUtils.GetLocalIP();
+
             try
             {
 

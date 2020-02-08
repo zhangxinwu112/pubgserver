@@ -6,16 +6,16 @@ var _data ={
 		"currentUser": {
 			"userId": 15,
 			"userName": "\u5929\u6DAF",
-			"lon": 108.964176,
-			"lat": 34.218229,
+			"lon": 108.963393,
+			"lat": 34.274106,
 			"userType": 0,
 			"color": "#CC33FF"
 		},
 		"gpsData": [{
 			"userId": 15,
 			"userName": "\u5929\u6DAF",
-			"lon": 108.964176,
-			"lat": 34.218229,
+			"lon": 108.963393,
+			"lat": 34.274106,
 			"userType": 0,
 			"color": "#CC33FF"
 		}],
@@ -53,12 +53,12 @@ var _data ={
         var map;
         var markArray = new Array(); 
 		
-      // CreateMapAndMarker(_data);
-        function CreateMapAndMarker(str)
+        //CreateMapAndMarker(_data);
+        function CreateMapAndMarker(data)
         {
            // console.log(data);
 		  
-		    var data = JSON.parse(str);
+		   // var data = JSON.parse(str);
 			SetLifeMesage(data);
 			
 			SetValue(data);

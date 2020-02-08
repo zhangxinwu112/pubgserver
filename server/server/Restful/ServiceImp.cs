@@ -14,13 +14,14 @@ using System.Threading.Tasks;
 
 namespace Restful
 {
-   
+
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Single, IncludeExceptionDetailInFaults = true)]
-     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 
     public class ServiceImp : IService
     {
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
+        private UserDao userDao = new UserDao();
         public int Save(string json)
         {
 
@@ -46,8 +47,8 @@ namespace Restful
         {
             // throw new NotImplementedException();
             string sql = "select * from grounp where id = @grounpId  and runState = 0";
-            int count  = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
-            if(count>0)
+            int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+            if (count > 0)
             {
                 return "0";
             }
@@ -70,9 +71,9 @@ namespace Restful
             List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,
                 new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
 
-            if(result.Count==1)
+            if (result.Count == 1)
             {
-                if(result[0].fenceLat<=0)
+                if (result[0].fenceLat <= 0)
                 {
                     return "电子围栏尚未设置，无法启动游戏！";
                 }
@@ -132,7 +133,7 @@ namespace Restful
 
                 //获取管理员
                 int AdminUser = roomDao.GetGrounpAdminByRoom(int.Parse(roomId));
-               
+
                 roomUsers.ForEach((item) =>
                 {
                     foreach (PubgSession session in dic.Keys)
@@ -182,14 +183,14 @@ namespace Restful
 
                 });
             }
-           
+
 
 
             return "success";
 
         }
 
-        public void StartSendChatMessage(string content,string userName, PubgSession session)
+        public void StartSendChatMessage(string content, string userName, PubgSession session)
         {
             Dictionary<string, string> _dic = new Dictionary<string, string>();
             _dic.Add("time", TimeUtils.GetCurrentFormatTime());
@@ -206,6 +207,14 @@ namespace Restful
         public string ShowDebug(string info)
         {
             Console.WriteLine(info);
+            return "";
+        }
+
+
+        private readonly int SubTractValue = 1;
+        public string SubTractLife(string userId)
+        {
+            userDao.SubTractLife(userId, SubTractValue);
             return "";
         }
     }

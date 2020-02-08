@@ -31,7 +31,7 @@ namespace server.Tool
         private System.Threading.Timer tmrCheckCFence = null;
 
         private MapDataPushBusiness mapDataPushBusiness;
-        private RegisterDao registerDao;
+        private UserDao registerDao;
         public void Init()
         {
             tmrsendPostion = new System.Threading.Timer(SendMapDataCallBack, null, IntervalSendPostion, IntervalSendPostion);
@@ -42,7 +42,7 @@ namespace server.Tool
 
             mapDataPushBusiness = new MapDataPushBusiness();
 
-            registerDao = new RegisterDao();
+            registerDao = new UserDao();
             mapDataPushBusiness.Init();
 
         }

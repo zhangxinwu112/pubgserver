@@ -6,6 +6,8 @@ var roomId =-1;
 
 var userType =-1;
 
+var lat;
+var lon;
 var url;
 var app = new Vue({
             el: '#app',
@@ -27,14 +29,12 @@ var app = new Vue({
 				inputContent:""
             },
             mounted() {
-				/**
-               setInterval(() => {
-                   // this.receive()
-                   // this.delete()
-				   showMessage("123");
-                }, 2000)
 				
-				**/
+               setInterval(() => {
+				  ChckeScope();
+                }, 10000)
+				
+				
 				
             },
             methods: {
@@ -125,6 +125,8 @@ var app = new Vue({
 				this.userId = data.currentUser.userId;
 				this.userName = data.currentUser.userName;
 				this.userType = data.currentUser.userType;
+				this.lat = data.currentUser.lat;
+				this.lon =data.currentUser.lon;
 				
 			}
 			
@@ -161,6 +163,25 @@ var app = new Vue({
 			}
 			ChatMessage(json);
 			
+		}
+		
+		//检查值
+		function ChckeScope()
+		{
+			if(userType==0)
+			{
+				var myLngLat = new AMap.LngLat(this.lon,this.lat);
+				if(!circle.contains(myLngLat)){
+					var requestUrl = url+"SubtractLife/"+userId;
+					axios.get(requestUrl)
+					  .then(function (response) {
+						
+					  })
+					  .catch(function (error) {
+					    console.log(error);
+					  });
+				}
+			}
 		}
 		
 		

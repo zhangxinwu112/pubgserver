@@ -18,7 +18,9 @@ namespace server.Tool
 
         public static string GetCurrentFormatTime()
         {
-            return DateTime.Now.ToString("hh:mm:ss");
+           // return DateTime.Now.ToString("hh:mm:ss");
+
+            return System.DateTime.Now.ToString("T"); 
         }
     }
 }

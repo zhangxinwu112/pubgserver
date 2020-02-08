@@ -24,7 +24,7 @@ namespace server.DAO
             if(result.Count==0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "激活码有误，请重试!";
+                dataResult.resean = "授权码输入有误，请重试!";
             }
 
             else

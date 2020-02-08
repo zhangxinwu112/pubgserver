@@ -1,7 +1,11 @@
 
+//alert(new Date()).Format("yyyy-MM-dd hh:mm:ss.S"));
 var userId;
 var userName;
 var roomId =-1;
+
+var userType =-1;
+
 var url;
 var app = new Vue({
             el: '#app',
@@ -45,16 +49,20 @@ var app = new Vue({
                 },
                 send() { //发送
 						
-						//alert(roomId);
+						
 						if (this.inputContent  == '') {
 							alert('输入内容不能为空!');
 							return ;
 						}
-						var that =this;
-						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent+"|"+userName
+					
+						//var that =this;
+						
+						var requestUrl = url+"SendMessage/"+roomId+"|"+this.inputContent+"|"+
+						userName +"|"+userType+"|"+userId;
+						ShowCurrrentMessage();
 						axios.get(requestUrl)
 						  .then(function (response) {
-							  that.inputContent = "";
+							  //that.inputContent = "";
 						    //mui.toast('操作成功!',{ duration:'long', type:'div' })
 							 //mui.alert('操作成功');
 						  })
@@ -86,7 +94,7 @@ var app = new Vue({
 		
 		function SetLifeMesage(data)
 		{
-			if(data.currentUser.userType != -1) {
+			if(data.currentUser.userType == 0) {
 				app.showlife = true;
 				app.currentUser = "当前用户:"+data.currentUser.userName;
 				app.roomName = "所在房间:"+data.room.name;
@@ -112,18 +120,47 @@ var app = new Vue({
 		{
 			
 			url ="http://" + data.ip + ":8899/" ;
+			//alert(data.currentUser);
 			if("undefined" != typeof data.currentUser){ 
 				this.userId = data.currentUser.userId;
 				this.userName = data.currentUser.userName;
+				this.userType = data.currentUser.userType;
 				
 			}
 			
-			if("undefined" != typeof data.room){
+			if("undefined" != typeof data.room && data.room!=null){
+				
 				this.roomId = data.room.id;
 				
 			}
 		}
 		
+		function GetNowFormatDate() {//获取当前时间
+			var date = new Date();
+			
+			var seperator2 = ":";
+			currentdate = 
+					date.getHours()  + seperator2  + date.getMinutes()
+					+ seperator2 + date.getSeconds();
+			return currentdate;
+		}
+		
+		function ShowCurrrentMessage()
+		{
+			var _name = this.userName;
+			if(this.userType!=0)
+			{
+				_name = "系统管理员";
+			}
+			
+			var json =
+			{
+				name:_name,
+				content:this.app.inputContent,
+				time:GetNowFormatDate()
+			}
+			ChatMessage(json);
+			
+		}
 		
 		
-

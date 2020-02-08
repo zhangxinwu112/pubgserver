@@ -138,6 +138,71 @@ namespace server.Tool
 
         }
 
+        /// <summary>
+        /// 获取单字段的值
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="commandParameters"></param>
+        /// <returns></returns>
+        public static List<object> GetSingleFieldResult(string sql, params MySqlParameter[] commandParameters)
+        {
+
+            MySqlDataReader reader = null;
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                // cmd.CommandTimeout = 10;
+
+                if (commandParameters != null)
+                {
+                    foreach (MySqlParameter parm in commandParameters)
+                        cmd.Parameters.Add(parm);
+                }
+
+                reader = cmd.ExecuteReader();
+                int filedCount = reader.FieldCount;
+
+
+                List<object> list = new List<object>();
+                while (reader.Read())
+                {
+                    if (reader.HasRows)
+                    {
+
+                    
+                        for (int i = 0; i < filedCount; i++)
+                        {
+                            list.Add( reader.GetValue(i));
+                          
+                        }
+                    
+                    }
+
+                }
+
+                return list;
+
+
+
+            }
+            catch (Exception e)
+            {
+                ReConnect();
+                Logger.InfoFormat("excepstion：{0}", e.Message);
+            }
+            finally
+            {
+
+                if (reader != null)
+                {
+                    reader.Close();
+
+                }
+            }
+            return null;
+
+        }
+
 
         public static object AddOrUpdate(string sql)
         {

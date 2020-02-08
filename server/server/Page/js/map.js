@@ -54,11 +54,11 @@ var _data ={
         var markArray = new Array(); 
 		
         //CreateMapAndMarker(_data);
-        function CreateMapAndMarker(data)
+        function CreateMapAndMarker(str)
         {
            // console.log(data);
 		  
-		   // var data = JSON.parse(str);
+		    var data = JSON.parse(str);
 			SetLifeMesage(data);
 			
 			SetValue(data);

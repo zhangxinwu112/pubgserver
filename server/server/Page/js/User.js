@@ -9,6 +9,8 @@ var userType =-1;
 var lat;
 var lon;
 var url;
+
+var runState =-1;
 var app = new Vue({
             el: '#app',
             data: {
@@ -133,8 +135,14 @@ var app = new Vue({
 			if("undefined" != typeof data.room && data.room!=null){
 				
 				this.roomId = data.room.id;
+			}
+			if("undefined" != typeof data.grounp && data.grounp!=null){
+				
+				this.runState = data.grounp.runState;
 				
 			}
+			
+			
 		}
 		
 		function GetNowFormatDate() {//获取当前时间
@@ -168,7 +176,7 @@ var app = new Vue({
 		//检查值
 		function ChckeScope()
 		{
-			if(userType==0)
+			if(userType==0 && runState==0)
 			{
 				var myLngLat = new AMap.LngLat(this.lon,this.lat);
 				if(!circle.contains(myLngLat)){

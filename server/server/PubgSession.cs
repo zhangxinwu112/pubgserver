@@ -44,6 +44,7 @@ namespace server
         {
             //add you logics which will be executed after the session is closed
             base.OnSessionClosed(reason);
+           // Console.WriteLine("客户端断开了");
             SessionItem sessionItem = null;
             mOnLineConnections.TryRemove(this, out sessionItem);
             string content = "客户端主动断开了连接。";

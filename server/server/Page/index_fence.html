@@ -21,6 +21,16 @@
       width: 100%;
       height: 100%;
     }
+	.input{
+	    outline-style: none ;
+	    border: 1px solid #ccc; 
+	    border-radius: 3px;
+	    padding: 14px 14px;
+	    width: 620px;
+	    font-size: 24px;
+	
+	-web-kit-appearance:none;
+	  -moz-appearance: none;
     </style>
 	
 	
@@ -41,15 +51,27 @@
 		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 结束编辑 </button>
 	</div>
 	
-
-   <label style="font-size: 15px; position: relative;left: auto;bottom: 80px;left: 10px;">拖动地图</label>
-   <div class="mui-switch" style="position: relative;left: auto;bottom: 110px;left: 80px;">
-	  
-       <div class="mui-switch-handle" ></div>
-      
-   </div>
-
+	<div id="app1" class="mui-input-group" style="position: relative;auto;bottom: 85px;width: 320px;background-color: #bfbfbf">
+		
+		<div class="mui-input-row" >
+			<label style="font-size: 14px;">拖拽地图：</label>
+			<div class="mui-switch" id="mySwitch">
+				<div class="mui-switch-handle" ></div>
+			</div>
+		   
+		</div>
+		<div class="mui-input-row"  >
+		      <label style="font-size: 14px;">半径设置：</label>
+		      <input type="text"  v-model="radius"/>
+			  <button type="button" class="mui-btn mui-btn-primary"  @click="SaveRadius"
+			  style="position: relative;top: -45px;right: 10px;width: 80px;">保存</button>
+			  
+		</div>
+		
+	</div>
+<script src="js/fence_set.js" type="text/javascript" charset="utf-8"></script>	
 <script src="js/fence.js" type="text/javascript" charset="utf-8"></script>
+
 
 </body>
 

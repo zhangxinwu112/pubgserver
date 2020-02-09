@@ -1,5 +1,20 @@
     	mui.init();
 		mui.alert('请拖动圆中心和周边的锚点,调整电子围栏的位置和大小.');
+		//mui("#mySwitch").switch().toggle();
+		document.getElementById("mySwitch").addEventListener("toggle",function(event){
+		  if(event.detail.isActive){
+		    //console.log("你启动了开关");
+			map.setStatus({
+			        dragEnable: true,
+			      });
+		  }else{
+		   map.setStatus({
+		           dragEnable: false,
+		           
+		         });
+		  }
+		})
+		
 	var app=new Vue({
     
     	el:"#app",
@@ -43,7 +58,7 @@
 	var _grounpId;
 	var url;
 	var fenceRadius;
-	var json ={"lon":108.950544,lat:34.199176,"grounpId":9,"ip":"192.168.1.6","fenceRadius":1000};
+	var json ={"lon":108.950544,lat:34.199176,"grounpId":9,"ip":"192.168.1.6","fenceRadius":1500};
 	CreateMap(json);
 
 	function CreateMap(json)
@@ -58,10 +73,11 @@
 		showLabel:true,
 		mapStyle: "amap://styles/whitesmoke",
 		zoom: 13,
-		//dragEnable: false
+		dragEnable: false
 		});
 		
 		createCircle(json);
+		SetRadius(fenceRadius);
 		
 	}
 
@@ -98,12 +114,14 @@
 		   })
 	   
 		   circleEditor.on('adjust', function(event) {
+			    SetRadius(circle.getRadius());
 			   var grounpId = json.grounpId; 
 		   })
 	   
 		   circleEditor.on('end', function(event) {
 			 
 			   // event.target 即为编辑后的圆形对象
+			   SetRadius(circle.getRadius());
 			    var grounpId = json.grounpId; 
 		   })
 		   

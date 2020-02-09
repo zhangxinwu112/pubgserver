@@ -43,12 +43,12 @@
 <body>
     <div id="container"></div>
 
-	<button type="button" class="mui-btn mui-btn-primary" style="width: 60px;position: absolute;top:0;right: 0px;" 
+	<button type="button" class="mui-btn mui-btn-primary" style="width: 60px;position: absolute;top:10px;right: 10px;" 
 	onclick="Back()">返回</button>
 	<div id="app">
 		
-		<button v-on:click="StartEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="buttonShow"> 开始编辑 </button>
-		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 保存设置 </button>
+		<button v-on:click="StartEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="buttonShow"> 开始编辑 </button>
+		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="!buttonShow"> 保存设置 </button>
 	</div>
 	
 	<div id="app1" class="mui-input-group" style="position: relative;auto;bottom: 85px;width: 250px;background-color: #bfbfbf">
@@ -64,7 +64,7 @@
 		      <label style="font-size: 14px; width:calc();" >圆半径设置(米)：</label>
 		      <input type="text"  v-model="radius"/>
 			  <button type="button" class="mui-btn mui-btn-primary"  @click="SaveRadius"
-			  style="position: relative;top: -45px;right: 10px;width: 80px;">保存</button>
+			  style="position: relative;top: -45px;right: 10px;width: 80px;">设置</button>
 			  
 		</div>
 		

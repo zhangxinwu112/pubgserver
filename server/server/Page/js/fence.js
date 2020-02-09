@@ -57,7 +57,8 @@
 		center: [json.lon, json.lat],
 		showLabel:true,
 		mapStyle: "amap://styles/whitesmoke",
-		zoom: 13
+		zoom: 13,
+		//dragEnable: false
 		});
 		
 		createCircle(json);
@@ -90,7 +91,7 @@
 		   map.setFitView([ circle ])
 	   
 		   circleEditor = new AMap.CircleEditor(map, circle)
-		  
+		   circleEditor.set
 	   
 		   circleEditor.on('move', function(event) {
 			   

@@ -7,13 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <title>点击围栏编辑器</title>
-    <link rel="stylesheet" href="css/style.css"/>  
-   <!-- <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />  -->
+   <!-- <link rel="stylesheet" href="css/style.css"/>  --> 
+   <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
 	
-	<link href="css/mui.min.css" rel="stylesheet"/>
+	<link href="css/mui.min.css" rel="stylesheet"/> 
 	
 </head>
 
+ <style>
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+	
+	
  <script src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b&plugin=AMap.CircleEditor"></script>
  <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
  <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
@@ -31,6 +41,13 @@
 		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 结束编辑 </button>
 	</div>
 	
+
+   <label style="font-size: 15px; position: relative;left: auto;bottom: 80px;left: 10px;">拖动地图</label>
+   <div class="mui-switch" style="position: relative;left: auto;bottom: 110px;left: 80px;">
+	  
+       <div class="mui-switch-handle" ></div>
+      
+   </div>
 
 <script src="js/fence.js" type="text/javascript" charset="utf-8"></script>
 

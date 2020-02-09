@@ -7693,3 +7693,6 @@ This session was closed for ClientClosing!
 2020-02-08 14:36:01,134 [13] INFO  server.MyRequestInfoParser - 接收到客户端数据：UpdatePosition:{"userId":26,"userName":"\u73A9\u6253\u4ED7","lon":108.964068531706,"lat":34.1734593631421,"userType":0,"color":"#3366FF"}
 2020-02-08 14:36:02,297 [14] INFO  server.MyRequestInfoParser - 接收到客户端数据：HeartBeat:
 2020-02-08 14:36:03,334 [10] INFO  server.MyRequestInfoParser - 接收到客户端数据：RequestLogin:17391767979
+2020-02-09 17:38:03,982 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-09 17:46:21,154 [1] INFO  PubgServerA - The server instance PubgServerA has been started!
+2020-02-09 17:46:41,827 [1] INFO  PubgServerA - The server instance PubgServerA has been started!

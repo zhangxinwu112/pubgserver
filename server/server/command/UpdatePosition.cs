@@ -22,7 +22,7 @@ namespace server.command
             PubgSession.mOnLineConnections.TryGetValue(session, out sessionItem);
             if(sessionItem!=null)
             {
-                GPSItem gpsItem = Utils.CollectionsConvert.ToObject<GPSItem>( requestInfo.Body.ToString());
+                GPSItem gpsItem = Utils.CollectionsConvert.ToObject<GPSItem>(requestInfo.Body.ToString());
                 sessionItem.gpsItem = gpsItem;
             }
            // Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);

@@ -22,8 +22,17 @@ namespace server.command
             PubgSession.mOnLineConnections.TryGetValue(session, out sessionItem);
             if(sessionItem!=null)
             {
-                sessionItem.telephone =  requestInfo.Body.ToString();
-                sessionItem.isLogin = true;
+                if(requestInfo.Body.ToString().Equals("-1"))
+                {
+                    sessionItem.telephone = requestInfo.Body.ToString();
+                    sessionItem.isLogin = false;
+                }
+                else
+                {
+                    sessionItem.telephone = requestInfo.Body.ToString();
+                    sessionItem.isLogin = true;
+                }
+                
             }
             Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
 

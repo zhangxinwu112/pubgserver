@@ -59,7 +59,7 @@
 	var url;
 	var fenceRadius;
 	var json ={"lon":108.950544,lat:34.199176,"grounpId":9,"ip":"192.168.1.6","fenceRadius":1500};
-	CreateMap(json);
+	//CreateMap(json);
 
 	function CreateMap(json)
 	{

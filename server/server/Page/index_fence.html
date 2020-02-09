@@ -48,20 +48,20 @@
 	<div id="app">
 		
 		<button v-on:click="StartEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="buttonShow"> 开始编辑 </button>
-		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 结束编辑 </button>
+		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:0;left: 0;" v-show="!buttonShow"> 保存设置 </button>
 	</div>
 	
-	<div id="app1" class="mui-input-group" style="position: relative;auto;bottom: 85px;width: 320px;background-color: #bfbfbf">
+	<div id="app1" class="mui-input-group" style="position: relative;auto;bottom: 85px;width: 250px;background-color: #bfbfbf">
 		
 		<div class="mui-input-row" >
-			<label style="font-size: 14px;">拖拽地图：</label>
+			<label style="font-size: 14px;">允许拖拽地图：</label>
 			<div class="mui-switch" id="mySwitch">
 				<div class="mui-switch-handle" ></div>
 			</div>
 		   
 		</div>
 		<div class="mui-input-row"  >
-		      <label style="font-size: 14px;">半径设置：</label>
+		      <label style="font-size: 14px; width:calc();" >圆半径设置(米)：</label>
 		      <input type="text"  v-model="radius"/>
 			  <button type="button" class="mui-btn mui-btn-primary"  @click="SaveRadius"
 			  style="position: relative;top: -45px;right: 10px;width: 80px;">保存</button>

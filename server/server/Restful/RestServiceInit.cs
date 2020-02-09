@@ -2,6 +2,8 @@
 using server.Tool;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Configuration;
 using System.Linq;
 using System.ServiceModel.Web;
 using System.Text;
@@ -14,13 +16,19 @@ namespace server.Restful
 
         public void Init()
         {
-            string ipAdress = CommonUtils.GetLocalIP();
-
             // string ipAdress = CommonUtils.GetLocalIP();
+
+            string ipAdress = "";
 
             try
             {
 
+                NameValueCollection sall = ConfigurationManager.AppSettings;
+                foreach (string s in sall.Keys)
+                {
+                    //Console.WriteLine(s + ":" + sall.Get(s));
+                    ipAdress = sall.Get(s);
+                }
                 string url = "http://" + ipAdress + ":8899/";
                 Console.WriteLine(url);
                 ServiceImp service = new ServiceImp();

@@ -14,5 +14,7 @@ namespace server.Model
         public int count;
         public long expiretime;
 
+        public int userType;
+
     }
 }

@@ -13,12 +13,12 @@ namespace server.DAO
 {
     public  class CodeDao: CommonDao
     {
-        public void CheckCode(PubgSession session,string body,string code,string 
+        public void CheckCode(PubgSession session,string body,string code,string userId,string userType,string 
             deviceUniqueIdentifier,string plat,string system)
         {
-            string sql = "select * from code where name = @name";
+            string sql = "select * from code where name = @name and userType = @userType";
             List<CodeModel> result = MySqlExecuteTools.GetObjectResult<CodeModel>(sql,
-                new MySqlParameter[] { new MySqlParameter("@name", code) });
+                new MySqlParameter[] { new MySqlParameter("@name", code), new MySqlParameter("@userType", userType) });
             DataResult dataResult = new DataResult();
             //不存在
             if(result.Count==0)
@@ -29,10 +29,14 @@ namespace server.DAO
 
             else
             {
-                CheckCountOrDateTime(result[0], dataResult, deviceUniqueIdentifier, plat, system);
+                CheckCountOrDateTime(result[0], dataResult, deviceUniqueIdentifier, plat, system, userId);
                
             }
-
+            //save machine
+            if(dataResult.result==0)
+            {
+                SaveMachineCode(result[0], deviceUniqueIdentifier, plat, system, userId);
+            }
            
             session.Send(GetSendData(dataResult,body));
         }
@@ -43,9 +47,9 @@ namespace server.DAO
         /// <param name="codeModel"></param>
         /// <param name="dataResult"></param>
         private void CheckCountOrDateTime(CodeModel codeModel, DataResult dataResult, 
-           string  deviceUniqueIdentifier, string plat, string system)
+           string  deviceUniqueIdentifier, string plat, string system,string userId)
         {
-            //次数
+            //次数校验
             if(codeModel.ctype==0)
             {
                 //0或者-1无限制
@@ -76,7 +80,7 @@ namespace server.DAO
                     }
                 }
             }
-            //时间戳
+            //时间校验
             else
             {
               
@@ -88,10 +92,18 @@ namespace server.DAO
                 }
                 else
                 {
+                   
                     dataResult.result = 0;
                 }
             }
 
+        }
+
+        private void SaveMachineCode(CodeModel codeModel,string deviceUniqueIdentifier, string plat, string system,string userId)
+        {
+            string sql = "insert into machine(codeid,deviceUniqueIdentifier,plat,system,userId) " +
+                 "values('" + codeModel.id + "','" + deviceUniqueIdentifier + "','" + plat + "','" + system + "','" + userId + "')";
+            MySqlExecuteTools.AddOrUpdate(sql);
         }
         /// <summary>
         /// code存在

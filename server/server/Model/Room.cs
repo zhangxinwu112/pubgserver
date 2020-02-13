@@ -12,9 +12,6 @@ namespace server.Model
 
         public int grounpId;
 
-        //编号
-        public int code;
-
         public string  name;
 
         public string checkCode;
@@ -22,5 +19,10 @@ namespace server.Model
         public int userCount = 0;
 
         public bool isCurrentUser = false;
+
+        public int userId;
+
+        public int runState;
+
     }
 }

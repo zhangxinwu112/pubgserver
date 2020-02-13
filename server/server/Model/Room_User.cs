@@ -14,5 +14,7 @@ namespace server.Model
 
         public int user_id;
 
+        public int runState;
+
     }
 }

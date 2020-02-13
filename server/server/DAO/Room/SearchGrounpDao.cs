@@ -18,31 +18,21 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.SearchGrounpDao");
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
-        public void SearchAllGrounp(PubgSession session, string body, string  userId,string keyName)
+        public void SearchAllGrounp(PubgSession session, string body, string keyName,string userId,string userType)
         {
-            Logger.InfoFormat("查询用户下的所有队：{0}", userId);
+            Logger.InfoFormat("查询所有的游戏：{0}", keyName);
             List<Grounp> result = null;
-            if (!userId.Equals("0"))
+            if(keyName.Equals("-1"))
             {
-                string sql = "select * from grounp where userId = @userId ORDER BY id DESC";
-                result = MySqlExecuteTools.GetObjectResult<Grounp>(sql,new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+                string sql = "select * from grounp  ORDER BY id DESC";
+                result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
             }
-            //玩家登录，查询所有的grounp
             else
             {
-                if(keyName.Equals("-1"))
-                {
-                    string sql = "select * from grounp  ORDER BY id DESC";
-                    result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
-                }
-                else
-                {
-                    string sql = "select * from grounp where name like '%"+ keyName +"%' ORDER BY id DESC";
-                    result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
-                }
-                
+                string sql = "select * from grounp where name like '%"+ keyName +"%' ORDER BY id DESC";
+                result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
             }
-
+                
             result.ForEach((item) => {
 
                 if(item.fenceLat>0)
@@ -51,6 +41,13 @@ namespace server.DAO
                 }
 
             });
+            if(userType.Equals("1"))
+            {
+
+                Grounp grounp = result.Where((item) => item.userId == int.Parse(userId)).FirstOrDefault<Grounp>();
+                result.Remove(grounp);
+                result.Insert(0, grounp);
+            }
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
             dataResult.data = result;

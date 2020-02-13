@@ -44,6 +44,13 @@ namespace  server.DAO
                    "values('" + newuserId + "')";
                     MySqlExecuteTools.AddOrUpdate(sql);
                 }
+                //管理员，增加一条grounp数据
+                if(type == 1)
+                {
+                    sql = "insert into grounp(name,userId) " +
+                   "values('" + name + "','" + newuserId + "')";
+                    MySqlExecuteTools.AddOrUpdate(sql);
+                }
             }
 
             session.Send(GetSendData(dataResult, body));

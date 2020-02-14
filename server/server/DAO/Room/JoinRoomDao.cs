@@ -19,7 +19,7 @@ namespace server.DAO
         private readonly int maxNum = 50;
         public void JoinRoom(PubgSession session, string body, string checkCode,string roomId,string userId)
         {
-            Logger.InfoFormat("加入房间：{0},{1}", roomId, userId);
+            Logger.InfoFormat("加入队：{0},{1}", roomId, userId);
             string sql = "select * from room_user where user_id = @user_id";
             List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
                new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
@@ -72,11 +72,20 @@ namespace server.DAO
         /// <param name="body"></param>
         /// <param name="id">roomid</param>
         /// <param name="userId">用户id</param>
-        public void ExitRoom(PubgSession session, string body, string grounpId, string userId)
+        public void ExitRoom(PubgSession session, string body, string roomId, string userId)
         {
             string sql = "select * from room_user where user_id = @user_id";
             List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
                new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
+            DataResult dataResult = new DataResult();
+            if (grounp_UserList.Count==0)
+            {
+
+                dataResult.result = 1;
+                dataResult.resean = "非法操作";
+                session.Send(GetSendData(dataResult, body));
+                return;
+            }
 
             grounp_UserList.ForEach((item) => {
 
@@ -84,11 +93,10 @@ namespace server.DAO
                 MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", item.id) });
 
             });
-
-            DataResult dataResult = new DataResult();
             dataResult.result = 0;
-            //查询能否删除
             session.Send(GetSendData(dataResult, body));
+
+            //刷新缓存数据
             GetRoomUserData();
         }
 

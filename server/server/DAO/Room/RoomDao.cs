@@ -31,6 +31,7 @@ namespace server.DAO
                     new MySqlParameter[] { new MySqlParameter("@room_id", item.id) });
                 item.userCount = count;
 
+                //是玩家的话
                 if(!userId.Equals("-1"))
                 {
                     sql = "select * from room_user where room_id = @room_id  and user_id = @user_id";

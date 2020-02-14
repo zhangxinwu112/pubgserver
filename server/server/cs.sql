@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-13 22:33:06
+Date: 2020-02-14 13:43:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -59,7 +59,7 @@ CREATE TABLE `grounp` (
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('116', '管六安22', '陕西地区', '31', '-1', '25', '-1.000000', '-1.000000', '2000', '2000', '25896', '10');
+INSERT INTO `grounp` VALUES ('116', '管六安22', '陕西地区', '31', '-1', '25', '-1.000000', '-1.000000', '2000', '2000', '123456', '10');
 INSERT INTO `grounp` VALUES ('117', '二管家', '陕西地区', '33', '-1', '60', '-1.000000', '-1.000000', '2000', '2000', '123456', '10');
 
 -- ----------------------------
@@ -92,7 +92,7 @@ CREATE TABLE `machine` (
   `system` varchar(150) DEFAULT NULL,
   `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of machine
@@ -148,6 +148,18 @@ INSERT INTO `machine` VALUES ('48', '1', 'be367d090e0f13218448182032916d36525aeb
 INSERT INTO `machine` VALUES ('49', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 INSERT INTO `machine` VALUES ('50', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 INSERT INTO `machine` VALUES ('51', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('52', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('53', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('54', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('55', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('56', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('57', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('58', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('59', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('60', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('61', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('62', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('63', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 
 -- ----------------------------
 -- Table structure for room
@@ -161,12 +173,12 @@ CREATE TABLE `room` (
   `userId` int(10) DEFAULT '-1',
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=513 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=517 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('512', '117', '344', '44', '32', '-1');
+INSERT INTO `room` VALUES ('516', '117', '战狼团队', '123456', '32', '-1');
 
 -- ----------------------------
 -- Table structure for room_user
@@ -178,7 +190,7 @@ CREATE TABLE `room_user` (
   `user_id` int(11) DEFAULT NULL,
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user

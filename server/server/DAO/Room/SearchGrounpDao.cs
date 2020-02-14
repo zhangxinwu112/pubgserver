@@ -74,10 +74,10 @@ namespace server.DAO
         }
 
 
-        private List<UserName> GetUserList(List<Room_User> groupList)
+        private List<UserName> GetUserList(List<Room_User> roomUserList)
         {
             List<string> ids = new List<string>();
-            groupList.ForEach((item) => {
+            roomUserList.ForEach((item) => {
                 ids.Add(item.user_id.ToString());
 
             });
@@ -85,6 +85,11 @@ namespace server.DAO
             string result =  StrUtil.ConnetString(ids, ",");
             string sql = "select * from user where id in  ("+ result+")";
             List<UserName> resultData = MySqlExecuteTools.GetObjectResult<UserName>(sql,null);
+            resultData.ForEach((user)=> {
+
+                int runState = roomUserList.Where((item) => item.user_id == user.id).FirstOrDefault<Room_User>().runState;
+                user.runState = runState;
+            });
 
             return resultData;
 

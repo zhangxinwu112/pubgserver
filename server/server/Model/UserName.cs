@@ -21,5 +21,8 @@ namespace server.Model
       // 2 道具
       // 3 普通玩家
         public int type;
+
+        //如果是玩家是否准备好
+        public int runState = -1;
     }
 }

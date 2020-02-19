@@ -22,6 +22,7 @@ namespace Restful
     {
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
         private UserDao userDao = new UserDao();
+        private UserRoomDao userRoomDao = new UserRoomDao();
         public int Save(string json)
         {
 
@@ -77,6 +78,17 @@ namespace Restful
                 {
                     return "电子围栏尚未设置，无法启动游戏！";
                 }
+                //查询grounp下room 的状态
+                sql = "select * from room where grounpId = @grounpId and  runState = -1";
+                int resultCount = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+                if(resultCount>0)
+                {
+                    
+                    return "该游戏的队员尚未准备就绪，无法启动游戏";
+                    
+                }
+
+
             }
             else
             {
@@ -106,8 +118,6 @@ namespace Restful
         /// <param name="json"></param>
         public string SendMeesage(string json)
         {
-
-
             string[] strs = json.Split('|');
             string roomId = strs[0];
 
@@ -134,6 +144,7 @@ namespace Restful
                 //获取管理员
                 int AdminUser = roomDao.GetGrounpAdminByRoom(int.Parse(roomId));
 
+                //推送给所有队员
                 roomUsers.ForEach((item) =>
                 {
                     foreach (PubgSession session in dic.Keys)
@@ -149,6 +160,7 @@ namespace Restful
                     }
 
                 });
+                //推送给该对的管理员
 
                 foreach (PubgSession session in dic.Keys)
                 {
@@ -183,9 +195,6 @@ namespace Restful
 
                 });
             }
-
-
-
             return "success";
 
         }
@@ -226,8 +235,17 @@ namespace Restful
             string addValue = strs[1];
 
 
-            userDao.SetLifeValue(userId, int.Parse( addValue),false);
+            userDao.SetLifeValue(userId, int.Parse(addValue),false);
             return "";
+        }
+
+        /// <summary>
+        /// 设置玩家准备好了状态
+        /// </summary>
+        /// <param name="userId"></param>
+        public string SetPlayerState(string userId)
+        {
+            return  userRoomDao.SetUserRoomState(userId);
         }
     }
 

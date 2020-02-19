@@ -32,7 +32,7 @@ namespace server.DAO
             }
             else
             {
-                bool isLogin = CheckIsLogin(username);
+                bool isLogin = CheckIsLogin(result[0].id.ToString());
                 if(isLogin)
                 {
                     dataResult.result = 1;
@@ -53,12 +53,12 @@ namespace server.DAO
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>
-        private bool CheckIsLogin(string userName)
+        private bool CheckIsLogin(string userId)
         {
             ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
             foreach (SessionItem sessionItem in dic.Values)
             {
-                if(sessionItem.isLogin && sessionItem.telephone.Trim().Equals(userName.Trim()))
+                if(sessionItem.isLogin && sessionItem.userId.Trim().Equals(userId.Trim()))
                 {
                     return true;
                 }

@@ -98,7 +98,7 @@ namespace server.DAO
         public int GetGrounpAdminByRoom(int roomId)
         {
            
-            string sql = "select userId from room r join grounp p on p.id = r.grounpId and r.id = @roomid;";
+            string sql = "select p.userId from room r join grounp p on p.id = r.grounpId and r.id = @roomid";
             int userId = -1;
                 
              object result = MySqlExecuteTools.GetSingleFieldResult(sql,

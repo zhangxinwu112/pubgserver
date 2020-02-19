@@ -17,7 +17,7 @@ namespace server.Model
 
         public bool isLogin = false;
 
-        public string telephone = "";
+        public string userId = "";
 
     }
 }

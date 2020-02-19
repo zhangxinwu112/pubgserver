@@ -24,12 +24,12 @@ namespace server.command
             {
                 if(requestInfo.Body.ToString().Equals("-1"))
                 {
-                    sessionItem.telephone = requestInfo.Body.ToString();
+                    sessionItem.userId = requestInfo.Body.ToString();
                     sessionItem.isLogin = false;
                 }
                 else
                 {
-                    sessionItem.telephone = requestInfo.Body.ToString();
+                    sessionItem.userId = requestInfo.Body.ToString();
                     sessionItem.isLogin = true;
                 }
                 

@@ -73,5 +73,28 @@ namespace server.Business
 
             });
         }
+
+        public void PublishUserListByAdmin(int adminUserId)
+        {
+            ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
+            List<int> userIdList = roomDao.GetRoomUserListByAdmin(adminUserId);
+
+            userIdList.ForEach((userId) =>
+            {
+                foreach (PubgSession session in dic.Keys)
+                {
+                    SessionItem sessionItem = null;
+                    dic.TryGetValue(session, out sessionItem);
+                    if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
+                    {
+
+                        string data = Update_Command + Constant.START_SPLIT + "player" + "\r\n";
+                        session.Send(data);
+                    }
+
+                }
+
+            });
+        }
     }
 }

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-14 13:43:26
+Date: 2020-02-19 23:03:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -73,12 +73,13 @@ CREATE TABLE `life` (
   `fightScore` smallint(3) DEFAULT '35' COMMENT '战绩',
   `userId` int(11) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of life
 -- ----------------------------
 INSERT INTO `life` VALUES ('1', '80', '50', '35', '32');
+INSERT INTO `life` VALUES ('2', '80', '50', '35', '34');
 
 -- ----------------------------
 -- Table structure for machine
@@ -92,7 +93,7 @@ CREATE TABLE `machine` (
   `system` varchar(150) DEFAULT NULL,
   `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of machine
@@ -160,6 +161,52 @@ INSERT INTO `machine` VALUES ('60', '1', 'be367d090e0f13218448182032916d36525aeb
 INSERT INTO `machine` VALUES ('61', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 INSERT INTO `machine` VALUES ('62', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 INSERT INTO `machine` VALUES ('63', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('64', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('65', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('66', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('67', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('68', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('69', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('70', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('71', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('72', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('73', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('74', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('75', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('76', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('77', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '31');
+INSERT INTO `machine` VALUES ('78', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('79', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '31');
+INSERT INTO `machine` VALUES ('80', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '31');
+INSERT INTO `machine` VALUES ('81', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '31');
+INSERT INTO `machine` VALUES ('82', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('83', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '31');
+INSERT INTO `machine` VALUES ('84', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '33');
+INSERT INTO `machine` VALUES ('85', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('86', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('87', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('88', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('89', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('90', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('91', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('92', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('93', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('94', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('95', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('96', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '34');
+INSERT INTO `machine` VALUES ('97', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('98', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('99', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('100', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('101', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('102', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('103', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('104', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('105', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('106', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('107', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('108', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
+INSERT INTO `machine` VALUES ('109', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '32');
 
 -- ----------------------------
 -- Table structure for room
@@ -173,7 +220,7 @@ CREATE TABLE `room` (
   `userId` int(10) DEFAULT '-1',
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=517 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=519 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
@@ -190,11 +237,12 @@ CREATE TABLE `room_user` (
   `user_id` int(11) DEFAULT NULL,
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user
 -- ----------------------------
+INSERT INTO `room_user` VALUES ('53', '516', '32', '-1');
 
 -- ----------------------------
 -- Table structure for user
@@ -208,7 +256,7 @@ CREATE TABLE `user` (
   `image` varchar(255) DEFAULT '',
   `type` smallint(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
@@ -216,3 +264,4 @@ CREATE TABLE `user` (
 INSERT INTO `user` VALUES ('31', '17391767973', '123456', '管六安', 'image1', '1');
 INSERT INTO `user` VALUES ('32', '17391767972', '123456', '天涯', 'image1', '0');
 INSERT INTO `user` VALUES ('33', '17391767974', '123456', '二管家', 'image1', '1');
+INSERT INTO `user` VALUES ('34', '17391767971', '123456', '删除测试', 'image1', '0');

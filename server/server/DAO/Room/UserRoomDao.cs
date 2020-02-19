@@ -12,13 +12,19 @@ using server.Business;
 namespace server.DAO
 {
     /// <summary>
-    /// 创建删除修改
+    /// 
     /// </summary>
     public class UserRoomDao : CommonDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.UserRoomDao");
 
         private PublishPlayerState publishPlayerState = new PublishPlayerState();
+        //====================================================================
+        //玩家： 没有启动的时候不刷新
+        //启动的时候刷新
+        //队长的话， 不断刷新
+        //管理员刷新，变化推送。
+       //======================================================================
         public string SetUserRoomState(string userID)
         {
             //是否有房间创建

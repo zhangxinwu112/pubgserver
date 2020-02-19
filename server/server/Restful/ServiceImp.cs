@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using server;
+using server.Business;
 using server.DAO;
 using server.Model;
 using server.Tool;
@@ -23,6 +24,8 @@ namespace Restful
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
         private UserDao userDao = new UserDao();
         private UserRoomDao userRoomDao = new UserRoomDao();
+
+       private  PublishPlayerState publishPlayerState = new PublishPlayerState();
         public int Save(string json)
         {
 
@@ -92,11 +95,16 @@ namespace Restful
             }
             else
             {
-                return "非法错误";
+                return "非法操作";
             }
 
             sql = "update  grounp set runState =0  where id = @grounpId;";
             MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+
+            //推送给该组的其他玩家更新状态
+
+            
+            publishPlayerState.PublishUserListByAdmin(result[0].userId);
 
             return "0";
         }

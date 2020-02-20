@@ -223,8 +223,8 @@ namespace Restful
 
         public string ShowDebug(string info)
         {
-            Console.WriteLine(info);
-            return "";
+            Console.WriteLine("调试信息:{0}",info);
+            return info;
         }
 
 

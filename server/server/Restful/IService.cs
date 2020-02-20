@@ -33,7 +33,7 @@ namespace Restful
         string GetMessage(string userId);
 
         [OperationContract]
-        [WebGet(UriTemplate = "Deubg/{info}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(UriTemplate = "Debug/{info}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string ShowDebug(string info);
 
         [OperationContract]

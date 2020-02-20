@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="63504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="64016">
       <assemblyIdentity name="server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>59aZkmEw4nRLjDvHt2i/7ffKlvGEnrm0i+PUspj3aqQ=</dsig:DigestValue>
+        <dsig:DigestValue>aCvbHWVLnTBRRGwWmTYYBx+ww+Wm7EfaI9nS1S/f2X8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -149,13 +149,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="server.exe.config" size="1833">
+  <file name="server.exe.config" size="1850">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lJ9dwnw1+AwfJsrWZRLD1cvxcKoKBcGvRW0rh4K423Y=</dsig:DigestValue>
+      <dsig:DigestValue>FrwKKqwEWEHIQ6RWYbGijdmOgAaOLPXOUcqL+ffHhYk=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

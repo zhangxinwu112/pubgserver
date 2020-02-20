@@ -133,7 +133,6 @@ D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Common.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Facility.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketEngine.xml
-D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.exe.manifest
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.application

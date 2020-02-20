@@ -53,25 +53,29 @@ namespace server.Business
         /// </summary>
         public void PublishPlayerList(List<int> userList)
         {
-            ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
-
             //推送给所有队员
             userList.ForEach((userId) =>
             {
-                foreach (PubgSession session in dic.Keys)
+
+                SendSingleUserMessage(userId);
+            });
+        }
+
+        public void SendSingleUserMessage(int userId)
+        {
+            ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
+            foreach (PubgSession session in dic.Keys)
+            {
+                SessionItem sessionItem = null;
+                dic.TryGetValue(session, out sessionItem);
+                if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
                 {
-                    SessionItem sessionItem = null;
-                    dic.TryGetValue(session, out sessionItem);
-                    if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
-                    {
 
-                        string data = Update_Command + Constant.START_SPLIT + "player" + "\r\n";
-                        session.Send(data);
-                    }
-
+                    string data = Update_Command + Constant.START_SPLIT + "player" + "\r\n";
+                    session.Send(data);
                 }
 
-            });
+            }
         }
 
         public void PublishUserListByAdmin(int adminUserId)

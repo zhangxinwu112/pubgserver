@@ -37,12 +37,16 @@ namespace server.DAO
                 //更新玩家状态
                 UpdateRoomUserState(userID);
 
+                //该队中其他玩家，不包括玩家
                 List<int> userList = GetUserListBySingleUser(int.Parse(userID));
                 if(userList.Count>0)
                 {
                     publishPlayerState.PublishPlayerList(userList);
                 }
 
+                //推送给队长
+                int adminUser =  FindLeaderByPlayer(int.Parse(userID));
+                publishPlayerState.SendSingleUserMessage(adminUser);
                 return "0";
 
             }
@@ -174,6 +178,21 @@ namespace server.DAO
             });
 
             return userIdList;
+        }
+
+
+        public int FindLeaderByPlayer(int userId)
+        {
+            string sql = "select r.userId from room_user ru  left join room r on r.id = ru.room_id where ru.user_id =  " + userId;
+            List<object> dataResult = MySqlExecuteTools.GetSingleFieldResult(sql, null);
+
+            List<int> userIdList = new List<int>();
+
+            dataResult.ForEach((item) => {
+
+                userIdList.Add((int)item);
+            });
+            return userIdList[0];
         }
        
     }

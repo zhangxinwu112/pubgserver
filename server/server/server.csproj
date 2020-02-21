@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\MapDataPushBusiness.cs" />
+    <Compile Include="Business\PublishTipsMessage.cs" />
     <Compile Include="Business\PublishPlayerState.cs" />
     <Compile Include="command\AddScore.cs" />
     <Compile Include="command\Post.cs" />

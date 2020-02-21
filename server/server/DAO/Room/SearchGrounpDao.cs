@@ -140,6 +140,27 @@ namespace server.DAO
             joinRoomDao.GetAllRoom();
 
         }
+
+        public int CheckEnterButton(string usreId,string userType)
+        {
+            string sql = "";
+            //管理员
+            int runState = -1;
+            if (userType.Equals("1"))
+            {
+                sql = "select * from grounp where userId = @userId";
+                Grounp  p = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@userId", usreId) }).FirstOrDefault<Grounp>();
+
+                runState =  p.runState;
+            }
+            else
+            {
+                sql = "select p.* from grounp p join room r  on p.id =r.grounpId join room_user ru on r.id = ru.room_id where ru.user_id=" + usreId;
+                runState = (int)MySqlExecuteTools.GetObjectResult<Grounp>(sql, null).FirstOrDefault<Grounp>().runState;
+            }
+
+            return runState;
+        }
     }
 
 

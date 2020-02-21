@@ -25,6 +25,8 @@ namespace Restful
         private UserDao userDao = new UserDao();
         private UserRoomDao userRoomDao = new UserRoomDao();
 
+        private SearchGrounpDao searchGrounpDao = new SearchGrounpDao();
+
        private  PublishPlayerState publishPlayerState = new PublishPlayerState();
         public int Save(string json)
         {
@@ -254,6 +256,17 @@ namespace Restful
         public string SetPlayerState(string userId)
         {
             return  userRoomDao.SetUserRoomState(userId);
+        }
+
+        public  int CheckEnterButton(string json)
+        {
+            string[] strs = json.Split('|');
+
+            string userId = strs[0];
+
+            string userType = strs[1];
+
+            return searchGrounpDao.CheckEnterButton(userId, userType);
         }
     }
 

@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using server.Restful;
 using System.Configuration;
+using server.DAO;
 
 namespace server
 {
@@ -25,8 +26,14 @@ namespace server
             RestServiceInit RestServiceInit = new RestServiceInit();
             RestServiceInit.Init();
 
+            //UserRoomDao userRoomDao = new UserRoomDao();
+            //userRoomDao.GetOtherByLeader(32);
+
+
             ServerInit serverInit = new ServerInit();
             serverInit.Init();
+
+            
 
 
 

@@ -47,5 +47,12 @@ namespace Restful
         [OperationContract]
         [WebGet(UriTemplate = "SetPlayerState/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string  SetPlayerState(string userId);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "CheckEnterButton/{json}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        int CheckEnterButton(string json);
+
+
+        
     }
 }

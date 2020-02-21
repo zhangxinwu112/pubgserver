@@ -79,8 +79,8 @@ namespace server.DAO
                     //推送管理员
                     publishPlayerState.PublishAdmin(room);
                     //推送给其他玩家
-                    List<int> userIdList = GetOtherByLeader(int.Parse(userID));
-                    if(userIdList.Count>0)
+                    List<int> userIdList = GetOtherByLeader(userID);
+                    if(userIdList!=null && userIdList.Count>0)
                     {
                         publishPlayerState.PublishPlayerList(userIdList);
                     }
@@ -139,12 +139,17 @@ namespace server.DAO
         /// 通过队长查询其他同队的用户
         /// </summary>
         /// <returns></returns>
-        public List<int> GetOtherByLeader(int leaderUserId)
+        public List<int> GetOtherByLeader(string leaderUserId)
         {
-            string sql = " select ru.user_id from room r  join room_user ru on r.userId =  " + leaderUserId +
+            string sql = "select ru.user_id from room r join room_user ru on r.userId =  " + leaderUserId +
                 " and ru.user_id <>"+ leaderUserId + " and r.id = ru.room_id";
 
             List<object> dataResult = MySqlExecuteTools.GetSingleFieldResult(sql,null);
+            if(dataResult==null)
+            {
+                Console.WriteLine(sql +"查询结果为空");
+                return null;
+            }
             List<int> userIdList = new List<int>();
 
             dataResult.ForEach((item) => {
@@ -158,12 +163,22 @@ namespace server.DAO
 
 
         /// <summary>
-        /// 通过一个玩家获取同队的其他玩家,并且状态准备好
+        /// /// <summary>
+        /// 通过一个玩家获取同队的其他玩家,
         /// </summary>
-        public List<int> GetUserListBySingleUser(int userId)
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="isState">并且状态准备好</param>
+        /// <returns></returns>
+        public List<int> GetUserListBySingleUser(int userId,bool isState = true)
         {
             string sql = " select ru.user_id from room_user ru  " +
                 "left join room r on r.id = ru.room_id   and ru.user_id = "+ userId + " where  ru.runState=0";
+
+            if(!isState)
+            {
+               sql = " select ru.user_id from room_user ru  " +"left join room r on r.id = ru.room_id   and ru.user_id = " + userId ;
+            }
 
             List<object> dataResult = MySqlExecuteTools.GetSingleFieldResult(sql, null);
             if(dataResult==null)

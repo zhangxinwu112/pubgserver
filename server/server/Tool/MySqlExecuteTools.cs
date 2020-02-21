@@ -54,8 +54,9 @@ namespace server.Tool
             }
             catch(Exception e)
             {
+                Logger.InfoFormat("excepstion1：{0}", e.Message);
                 ReConnect();
-                Logger.InfoFormat("excepstion：{0}", e.Message);
+               
             }
             finally
             {
@@ -122,8 +123,9 @@ namespace server.Tool
             }
             catch (Exception e)
             {
+                Logger.InfoFormat("excepstion2：{0}", e.Message);
                 ReConnect();
-                Logger.InfoFormat("excepstion：{0}", e.Message);
+              
             }
             finally
             { 
@@ -187,8 +189,9 @@ namespace server.Tool
             }
             catch (Exception e)
             {
+                Logger.InfoFormat("excepstion3：{0}", e.Message);
                 ReConnect();
-                Logger.InfoFormat("excepstion：{0}", e.Message);
+              
             }
             finally
             {
@@ -220,8 +223,9 @@ namespace server.Tool
             }
             catch(Exception e)
             {
+                Logger.InfoFormat("excepstion4：{0}", e.Message);
                 ReConnect();
-                Logger.InfoFormat("excepstion：{0}", e.Message);
+                
             }
             finally
             {
@@ -258,8 +262,8 @@ namespace server.Tool
             }
             catch (Exception e)
             {
+                Logger.InfoFormat("excepstion5：{0}", e.Message);
                 ReConnect();
-                Logger.InfoFormat("excepstion：{0}", e.Message);
             }
             finally
             {

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using log4net;
 using server.Tool;
 using MySql.Data.MySqlClient;
+using server.Business;
 
 namespace server.DAO
 {
@@ -17,7 +18,9 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
         private readonly int maxNum = 50;
-        public void JoinRoom(PubgSession session, string body, string checkCode,string roomId,string userId)
+
+        private PublishTipsMessage publishTipsMessage = new PublishTipsMessage();
+        public void JoinRoom(PubgSession session, string body, string checkCode,string roomId,string userId,string userName)
         {
             Logger.InfoFormat("加入队：{0},{1}", roomId, userId);
             string sql = "select * from room_user where user_id = @user_id";
@@ -31,7 +34,6 @@ namespace server.DAO
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
-
 
             //校验checkcode是否正确
 
@@ -60,6 +62,12 @@ namespace server.DAO
                    "values('" + roomId + "','" + userId + "')";
                     MySqlExecuteTools.AddOrUpdate(sql);
                 dataResult.result = 0;
+
+                sql = "select name from room where id=" + roomId;
+                string rommName = MySqlExecuteTools.GetSingleFieldResult(sql, null)[0].ToString();
+                publishTipsMessage.JoinAndExitLeader(userName, int.Parse(userId), rommName, true);
+
+
             }
             session.Send(GetSendData(dataResult, body));
             GetRoomUserData();
@@ -72,7 +80,7 @@ namespace server.DAO
         /// <param name="body"></param>
         /// <param name="id">roomid</param>
         /// <param name="userId">用户id</param>
-        public void ExitRoom(PubgSession session, string body, string roomId, string userId)
+        public void ExitRoom(PubgSession session, string body, string roomId, string userId,string userName)
         {
             string sql = "select * from room_user where user_id = @user_id";
             List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
@@ -87,12 +95,16 @@ namespace server.DAO
                 return;
             }
 
-            grounp_UserList.ForEach((item) => {
+            // 删除之前提示
+            sql = "select name from room where id=" + roomId;
+            string rommName = MySqlExecuteTools.GetSingleFieldResult(sql, null)[0].ToString();
+            publishTipsMessage.JoinAndExitLeader(userName, int.Parse(userId), rommName, false);
 
-                sql = "delete from room_user  where id = @id";
-                MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", item.id) });
 
-            });
+
+            sql = "delete from room_user  where id = @id";
+            MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].id) });
+
             dataResult.result = 0;
             session.Send(GetSendData(dataResult, body));
 

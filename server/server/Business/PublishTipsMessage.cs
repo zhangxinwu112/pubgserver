@@ -16,6 +16,7 @@ namespace server.Business
 
         private const string Show_Message = "ShowMessage";
         private UserRoomDao roomUser = new UserRoomDao();
+        private PublishPlayerState publishPlayerState = new PublishPlayerState();
         /// <summary>
         /// 用户入队，退队
         /// </summary>
@@ -46,6 +47,10 @@ namespace server.Business
                 dic.TryGetValue(session, out sessionItem);
                 if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
                 {
+                    //推送的时候刷洗状态
+                    publishPlayerState.SendSingleUserMessage(userId);
+
+
                     string data = Show_Message + Constant.START_SPLIT + message + "\r\n";
                     session.Send(data);
                 }

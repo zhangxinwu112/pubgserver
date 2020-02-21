@@ -75,7 +75,7 @@ namespace server.DAO
                         else
                         {
                             dataResult.result = 1;
-                            dataResult.resean = "激活码无效，请重试。";
+                            dataResult.resean = "授权无效，请重试。";
                         }
                     }
                 }

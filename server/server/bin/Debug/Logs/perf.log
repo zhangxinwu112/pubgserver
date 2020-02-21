@@ -1132,3 +1132,59 @@ Request Handling Speed (#/second): 1
 Avialable Sending Queue Items: 831
 Total Sending Queue Items: 833
 
+2020-02-21 21:52:51,192 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 60,960,768.00, Total Thread Count: 26
+AvailableWorkingThreads: 2046, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 2047, MaxCompletionPortThreads: 1000
+PubgServerA ----------------------------------
+Started Time: 2020/2/21 21:52:51
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 5000
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 833
+Total Sending Queue Items: 833
+
+2020-02-21 21:53:51,191 Performance - ---------------------------------------------------
+CPU Usage: 0.07%, Physical Memory Usage: 62,255,104.00, Total Thread Count: 27
+AvailableWorkingThreads: 2042, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 2047, MaxCompletionPortThreads: 1000
+PubgServerA ----------------------------------
+Started Time: 2020/2/21 21:52:51
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 5000
+Total Handled Requests: 26
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 832
+Total Sending Queue Items: 833
+
+2020-02-21 21:54:51,192 Performance - ---------------------------------------------------
+CPU Usage: 0.09%, Physical Memory Usage: 64,593,920.00, Total Thread Count: 27
+AvailableWorkingThreads: 2043, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 2047, MaxCompletionPortThreads: 1000
+PubgServerA ----------------------------------
+Started Time: 2020/2/21 21:52:51
+Is Running: True
+Total Connections: 2
+Maximum Allowed Connection Number: 5000
+Total Handled Requests: 130
+Request Handling Speed (#/second): 2
+Avialable Sending Queue Items: 831
+Total Sending Queue Items: 833
+
+2020-02-21 21:55:51,199 Performance - ---------------------------------------------------
+CPU Usage: 0.03%, Physical Memory Usage: 65,052,672.00, Total Thread Count: 27
+AvailableWorkingThreads: 2044, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 2047, MaxCompletionPortThreads: 1000
+PubgServerA ----------------------------------
+Started Time: 2020/2/21 21:52:51
+Is Running: True
+Total Connections: 1
+Maximum Allowed Connection Number: 5000
+Total Handled Requests: 186
+Request Handling Speed (#/second): 1
+Avialable Sending Queue Items: 832
+Total Sending Queue Items: 833
+

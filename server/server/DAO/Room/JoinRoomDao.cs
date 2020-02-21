@@ -111,68 +111,6 @@ namespace server.DAO
             //刷新缓存数据
             GetRoomUserData();
         }
-
-        /// <summary>
-        /// 查询能否进入房间
-        /// </summary>
-        public void SearchEnterRoomState(PubgSession session, string body, string userId)
-        {
-            DataResult dataResult = new DataResult();
-
-            string sql = "select * from room_user where user_id = @user_id";
-            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
-               new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
-
-            dataResult.result = 0;
-            //没有加入房间
-            if (grounp_UserList.Count==0)
-            {
-                dataResult.data = false;
-            }
-
-            if(grounp_UserList.Count==1)
-            {
-                //int grounp_id = grounp_UserList[0].room_id;
-
-                //sql = "select * from room_user where room_id = @room_id";
-                //List<Room_User> _grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
-                //   new MySqlParameter[] { new MySqlParameter("@room_id", grounp_id) });
-                //if(_grounp_UserList.Count< maxNum)
-                //{
-                //    dataResult.data = false;
-                //}
-                //else
-                //{
-                 dataResult.data = true;
-               // }
-            }
-
-            session.Send(GetSendData(dataResult, body));
-        }
-
-        public void CheckEnterButton(PubgSession session, string body, string checkCode, string userId)
-        {
-            DataResult dataResult = new DataResult();
-            string sql = "select * from room_user where user_id = @user_id";
-            List<Room_User> grounp_UserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
-              new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
-
-            if(grounp_UserList.Count==1)
-            {
-                //sql = "select * from room where id = @id  and checkCode = @checkCode";
-                //List<Room> grounps = MySqlExecuteTools.GetObjectResult<Room>(sql,
-                //    new MySqlParameter[] { new MySqlParameter("@id", grounp_UserList[0].room_id), new MySqlParameter("@checkCode", checkCode) });
-                //if(grounps.Count==1)
-                //{
-                dataResult.result = 0;
-                session.Send(GetSendData(dataResult, body));
-                return;
-                //}
-            }
-            dataResult.result = 1;
-            session.Send(GetSendData(dataResult, body));
-        }
-
         /// <summary>
         /// 获取最新的grounp_user信息进行grounp信息
         /// </summary>

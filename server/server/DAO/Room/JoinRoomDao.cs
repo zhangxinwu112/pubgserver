@@ -49,26 +49,36 @@ namespace server.DAO
                 return;
             }
 
-            grounp_UserList = SearchSingleGrounpCommon(roomId);
-           
-            if (grounp_UserList.Count> maxNum)
+
+            Grounp p = GetGrounpByPlayer(int.Parse( userId));
+
+            if(p!=null && p.runState == 0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "房间人数加入已满，请重试。";
+                dataResult.resean = "游戏运行中，无法加入战队。";
+                session.Send(GetSendData(dataResult, body));
+                return;
             }
-            else
-            {
-                 sql = "insert into room_user(room_id,user_id) " +
-                   "values('" + roomId + "','" + userId + "')";
-                    MySqlExecuteTools.AddOrUpdate(sql);
-                dataResult.result = 0;
+            //grounp_UserList = SearchSingleGrounpCommon(roomId);
+           
+            //if (grounp_UserList.Count> maxNum)
+            //{
+            //    dataResult.result = 1;
+            //    dataResult.resean = "房间人数加入已满，请重试。";
+            //}
+            //else
+            //{
+            sql = "insert into room_user(room_id,user_id) " + "values('" + roomId + "','" + userId + "')";
+            MySqlExecuteTools.AddOrUpdate(sql);
+            dataResult.result = 0;
 
-                sql = "select name from room where id=" + roomId;
-                string rommName = MySqlExecuteTools.GetSingleFieldResult(sql, null)[0].ToString();
-                publishTipsMessage.JoinAndExitLeader(userName, int.Parse(userId), rommName, true);
+            //推送数据
+            sql = "select name from room where id=" + roomId;
+            string rommName = MySqlExecuteTools.GetSingleFieldResult(sql, null)[0].ToString();
+            publishTipsMessage.JoinAndExitLeader(userName, int.Parse(userId), rommName, true);
 
 
-            }
+           // }
             session.Send(GetSendData(dataResult, body));
             GetRoomUserData();
         }
@@ -94,6 +104,17 @@ namespace server.DAO
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
+
+
+            Grounp p = GetGrounpByPlayer(int.Parse(userId));
+            if (p != null && p.runState == 0)
+            {
+                dataResult.result = 1;
+                dataResult.resean = "游戏运行中，无法退出战队。";
+                session.Send(GetSendData(dataResult, body));
+                return;
+            }
+
 
             // 删除之前提示
             sql = "select name from room where id=" + roomId;

@@ -43,6 +43,7 @@ namespace server.DAO
                 }
 
             });
+            //管理员
             if(userType.Equals("1"))
             {
 
@@ -50,6 +51,20 @@ namespace server.DAO
                 result.Remove(grounp);
                 result.Insert(0, grounp);
             }
+
+            else
+            {
+                //当前的grounp显示top
+                Grounp p = GetGrounpByPlayer(int.Parse( userId));
+                if(p!=null)
+                {
+                    Grounp grounp = result.Where((item) => item.id == p.id).FirstOrDefault<Grounp>();
+                    result.Remove(grounp);
+                    result.Insert(0, grounp);
+
+                }
+            }
+
             DataResult dataResult = new DataResult();
             dataResult.result = 0;
             dataResult.data = result;
@@ -118,10 +133,6 @@ namespace server.DAO
             return  list.Select(a => a.id).ToList<int>();
         }
 
-      
-
-       
-
         public int CheckEnterButton(string usreId,string userType)
         {
             string sql = "";
@@ -143,8 +154,7 @@ namespace server.DAO
             }
             else
             {
-                sql = "select p.* from grounp p join room r on p.id =r.grounpId join room_user ru on r.id = ru.room_id where ru.user_id=" + usreId;
-                Grounp p = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null).FirstOrDefault<Grounp>();
+                Grounp p = GetGrounpByPlayer(int.Parse(usreId));
                 if (p == null)
                 {
                     return -1;
@@ -154,6 +164,8 @@ namespace server.DAO
 
             return runState;
         }
+
+       
     }
 
 

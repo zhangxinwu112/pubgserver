@@ -3358,3 +3358,17 @@ Request Handling Speed (#/second): 1
 Avialable Sending Queue Items: 831
 Total Sending Queue Items: 833
 
+2020-02-23 21:26:53,163 Performance - ---------------------------------------------------
+CPU Usage: 0.00%, Physical Memory Usage: 65,802,240.00, Total Thread Count: 26
+AvailableWorkingThreads: 2046, AvailableCompletionPortThreads: 1000
+MaxWorkingThreads: 2047, MaxCompletionPortThreads: 1000
+PubgServerA ----------------------------------
+Started Time: 2020/2/23 21:26:52
+Is Running: True
+Total Connections: 0
+Maximum Allowed Connection Number: 5000
+Total Handled Requests: 0
+Request Handling Speed (#/second): 0
+Avialable Sending Queue Items: 833
+Total Sending Queue Items: 833
+

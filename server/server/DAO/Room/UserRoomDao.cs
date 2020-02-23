@@ -78,7 +78,7 @@ namespace server.DAO
                     //推送管理员
                     publishPlayerState.PublishAdmin(room);
                     //推送给其他玩家
-                    List<int> userIdList = GetOtherByLeader(userID);
+                    List<int> userIdList = GetOtherUserByLeader(userID);
                     if(userIdList!=null && userIdList.Count>0)
                     {
                         publishPlayerState.PublishPlayerList(userIdList);
@@ -138,7 +138,7 @@ namespace server.DAO
         /// 通过队长查询其他同队的用户
         /// </summary>
         /// <returns></returns>
-        public List<int> GetOtherByLeader(string leaderUserId)
+        public List<int> GetOtherUserByLeader(string leaderUserId)
         {
             string sql = "select ru.user_id from room r join room_user ru on r.userId =  " + leaderUserId +
                 " and ru.user_id <>"+ leaderUserId + " and r.id = ru.room_id";

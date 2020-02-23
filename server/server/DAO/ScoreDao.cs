@@ -65,10 +65,18 @@ namespace server.DAO
             //玩家的排行
             if (isPlayerOrder)
             {
-                sql = "select * from score where roomId = @roomId";
+
+                sql = "select count(*) from room_user where room_id = @roomId";
+
+                List<object> list = MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+                //查出数量room下的玩家人数
+               int count = int.Parse((MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) })[0].ToString()));
+
+
+                sql = "select * from score where roomId = @roomId  order by createTime desc limit 0," + count;
                 List<Score>  scoreLsit = MySqlExecuteTools.GetObjectResult<Score>(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
-                string json = Utils.CollectionsConvert.ToJSON(scoreLsit);
-                return json;
+                string result = Utils.CollectionsConvert.ToJSON(scoreLsit);
+                return result;
             }
             //room的排行
             else

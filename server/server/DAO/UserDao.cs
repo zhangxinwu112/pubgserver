@@ -65,34 +65,49 @@ namespace  server.DAO
             return life;
         }
 
+        /// <summary>
+        /// 增加或减少命值
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="SubTractValue"></param>
+        /// <param name="isSub">时候减少</param>
         public void SetLifeValue(string userId, int SubTractValue, bool isSub = true)
         {
 
             string sql = "select * from life where userId = @userId";
-            Life life = MySqlExecuteTools.GetObjectResult<Life>(sql,
-                new MySqlParameter[] { new MySqlParameter("@userId", userId) }).FirstOrDefault<Life>();
-
-            if (life != null)
+            List<Life> lifes = MySqlExecuteTools.GetObjectResult<Life>(sql,new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+            if(lifes.Count>0)
             {
-                if (isSub)
+                Life life = MySqlExecuteTools.GetObjectResult<Life>(sql,
+                new MySqlParameter[] { new MySqlParameter("@userId", userId) }).FirstOrDefault<Life>();
+               
+
+                if (life != null)
                 {
-                    if(life.lifeValue<0)
+                    if (isSub)
                     {
-                        sql = "update  life set lifeValue  = 0  where id = @id;";
+                        int subValue = life.lifeValue - SubTractValue;
+                        if (subValue < 0)
+                        {
+                            subValue = 0;
+                        }
+                        sql = "update  life set lifeValue  =" + (subValue) + " where id = @id;";
+
                     }
                     else
                     {
-                        sql = "update  life set lifeValue  =" + (life.lifeValue - SubTractValue) + " where id = @id;";
+                        sql = "update  life set lifeValue  =" + (life.lifeValue + SubTractValue) + " where id = @id;";
                     }
-                   
-                }
-                else
-                {
-                    sql = "update  life set lifeValue  =" + (life.lifeValue + SubTractValue) + " where id = @id;";
+
+                    MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", life.id) });
                 }
 
-                MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", life.id) });
             }
+            else
+            {
+                Console.WriteLine(sql + " :is null");
+            }
+            
 
 
 

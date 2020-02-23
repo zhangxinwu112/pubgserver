@@ -62,7 +62,7 @@ var _data ={
 
         var map;
         var markArray = new Array(); 
-		
+		//StartGameOver();
         //CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
@@ -203,9 +203,28 @@ var _data ={
                 });
         }
 		
-		function Exit() {
+		function Back() {
 		//alert("122");
 			var num1 = 1;
 			//var num2 = 2;
-			window.location.href = "uniwebview://Exit?num1=" + num1;
+			window.location.href = "uniwebview://Back?num1=" + num1;
+		}
+		
+		function ConfirmGameOver() {
+		//alert("122");
+			var num1 = 1;
+			//var num2 = 2;
+			window.location.href = "uniwebview://GameOver?num1=" + num1;
+		}
+		
+		function StartGameOver() {
+		
+			var btnArray = ['是'];
+			    var message = '本局游戏结束,确定后返回战绩界面.';
+			    mui.confirm(message, '信息提示', btnArray, function(e) {
+			       
+			          ConfirmGameOver();
+			        
+			    },'div');
+			
 		}

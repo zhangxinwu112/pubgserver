@@ -18,7 +18,9 @@ namespace server.Business
         private ILog Logger = log4net.LogManager.GetLogger("server.Business.MapDataPushBusiness");
         private JoinRoomDao joinRoomDao;
         private SearchGrounpDao searchGrounpDao;
-  
+        private EditGrounpDao editGrounpDao;
+
+
         public void Init()
         {
             EventMgr.Instance.AddListener(this, EventName.UPATE_ROOM_USER);
@@ -26,6 +28,7 @@ namespace server.Business
             //获取
             searchGrounpDao = new SearchGrounpDao();
             joinRoomDao = new JoinRoomDao();
+            editGrounpDao = new EditGrounpDao();
             joinRoomDao.GetRoomUserData();
             joinRoomDao.GetAllRoom();
         }
@@ -248,10 +251,11 @@ namespace server.Business
         /// <summary>
         /// 按照定时器的频率
         /// </summary>
-        /// <param name="frequency"></param>
         public void UpdateFenceScope(int frequency)
+        /// <param name="frequency"></param>
         {
-            searchGrounpDao.UpdateFenceScope(frequency);
+            editGrounpDao.UpdateFenceScope(frequency);
         }
+
     }
 }

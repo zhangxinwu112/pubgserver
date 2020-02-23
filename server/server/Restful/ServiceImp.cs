@@ -28,6 +28,8 @@ namespace Restful
         private SearchGrounpDao searchGrounpDao = new SearchGrounpDao();
 
        private  PublishPlayerState publishPlayerState = new PublishPlayerState();
+
+        private ScoreDao scoreDao = new ScoreDao();
         public int Save(string json)
         {
 
@@ -105,8 +107,7 @@ namespace Restful
 
             //推送给该组的其他玩家更新状态
 
-            
-            publishPlayerState.PublishUserListByAdmin(result[0].userId);
+            publishPlayerState.SendUserListByAdmin(result[0].userId, PublishPlayerState.Update_Command);
 
             return "0";
         }
@@ -229,7 +230,9 @@ namespace Restful
             return info;
         }
 
-
+        /// <summary>
+        /// 减命
+        /// </summary>
         private readonly int SubTractValue = 1;
         public string SubTractLife(string userId)
         {
@@ -237,6 +240,11 @@ namespace Restful
             return "";
         }
 
+        /// <summary>
+        /// 加命
+        /// </summary>
+        /// <param name="json"></param>
+        /// <returns></returns>
         public string AddLife(string json)
         {
             string[] strs = json.Split('|');
@@ -267,6 +275,24 @@ namespace Restful
             string userType = strs[1];
 
             return searchGrounpDao.CheckEnterButton(userId, userType);
+        }
+
+        /// <summary>
+        /// 查询
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="currrent"></param>
+        /// <returns></returns>
+        public string SearchScore(string userId, string currrentUser)
+        {
+            if(currrentUser.Equals("0"))
+            {
+                return  scoreDao.SearchScore(int.Parse(userId), true);
+            }
+            else
+            {
+                return scoreDao.SearchScore(int.Parse(userId), false);
+            }
         }
     }
 

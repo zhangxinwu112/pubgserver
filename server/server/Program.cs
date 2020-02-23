@@ -26,16 +26,13 @@ namespace server
             RestServiceInit RestServiceInit = new RestServiceInit();
             RestServiceInit.Init();
 
-            //UserRoomDao userRoomDao = new UserRoomDao();
-            //userRoomDao.GetOtherByLeader(32);
+
+            //ScoreDao scoreDao = new ScoreDao();
+            //scoreDao.SearchScore(36,false);
 
 
             ServerInit serverInit = new ServerInit();
             serverInit.Init();
-
-            
-
-
 
 
         }

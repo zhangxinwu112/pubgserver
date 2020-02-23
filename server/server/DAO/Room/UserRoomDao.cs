@@ -14,8 +14,7 @@ namespace server.DAO
     /// <summary>
     /// 
     /// </summary>
-    public class UserRoomDao : CommonDao
-    {
+    public class UserRoomDao : CommonDao    {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.UserRoomDao");
 
         private PublishPlayerState publishPlayerState = new PublishPlayerState();
@@ -46,7 +45,7 @@ namespace server.DAO
 
                 //推送给队长
                 int adminUser =  FindLeaderByPlayer(int.Parse(userID));
-                publishPlayerState.SendSingleUserMessage(adminUser);
+                publishPlayerState.SendSingleUserMessage(adminUser, PublishPlayerState.Update_Command);
                 return "0";
 
             }

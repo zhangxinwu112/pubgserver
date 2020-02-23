@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using log4net;
 using server.Tool;
 using MySql.Data.MySqlClient;
+using server.Business;
 
 namespace server.DAO
 {
@@ -22,6 +23,9 @@ namespace server.DAO
         private readonly int createGrounpCount = 2;
 
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
+        private ScoreDao scoreDao = new ScoreDao();
+        private PublishPlayerState publishPlayerState = new PublishPlayerState();
+
         public void AddGrounp(PubgSession session, string body, string grounpName,string playerTime, string userId,string area="shanxi")
         {
             Logger.InfoFormat("创建队：{0}", grounpName);
@@ -197,8 +201,79 @@ namespace server.DAO
             });
         }
 
-       
+        /// <summary>
+        /// 更新范围
+        /// </summary>
+        /// <param name="frequency"></param>
+        public void UpdateFenceScope(int frequency)
+        {
+            string sql = "select * from grounp where runState =0 and fenceLon>0 ORDER BY id DESC";
+            List<Grounp> list = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null);
+
+            list.ForEach((grounp) => {
+
+                if (grounp.fenceRadius > 0)
+                {
+                    int everyCount = grounp.fenceTotalRadius / (grounp.playerTime * 60 / frequency);
+                    sql = "update  grounp set fenceRadius = '" + (grounp.fenceRadius - everyCount) + "' where id = @grounpId;";
+                    MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounp.id) });
+                }
+                else
+                {
+                    sql = "update  grounp set fenceRadius = 2000,fenceTotalRadius=2000,runState = -1,fenceLon=-1,fenceLat=-1 where id = @grounpId;";
+                    MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounp.id) });
+
+                    //保存战绩,复位生命值
+                    scoreDao.SaveScoreResetLife(grounp.id);
+
+                    //向管理员和玩家通知游戏结束
+                    publishPlayerState.SendSingleUserMessage(grounp.userId, PublishPlayerState.Game_Over);
+                    publishPlayerState.SendUserListByAdmin(grounp.userId, PublishPlayerState.Game_Over);
+
+
+
+                    //更新room和roomUser状态
+                    UpdateRoomAndUserState(grounp.id);
+
+
+
+
+                }
+
+            });
+
+            joinRoomDao.GetAllRoom();
+
+        }
+        private void UpdateRoomAndUserState(int grounpId)
+        {
+            string sql = "select * from room where grounpId = @grounpId";
+            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql,
+                new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
+
+            roomList.ForEach((room) => {
+
+                //更新room状态
+                sql = "update  room set runState = -1  where  id = " + room.id;
+                MySqlExecuteTools.AddOrUpdate(sql);
+
+                sql = "select * from room_user where room_id = @room_id";
+                List<Room_User> roomUserList = MySqlExecuteTools.GetObjectResult<Room_User>(sql,
+               new MySqlParameter[] { new MySqlParameter("@room_id", room.id) });
+                roomUserList.ForEach((roomUser) => {
+
+                    sql = "update  room_user set runState = -1  where  id = " + roomUser.id;
+                    MySqlExecuteTools.AddOrUpdate(sql);
+                });
+
+            });
+
+
+        }
+
 
 
     }
+
+
 }

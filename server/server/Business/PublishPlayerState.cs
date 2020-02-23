@@ -13,6 +13,11 @@ namespace server.Business
    public  class PublishPlayerState
     {
 
+        public static readonly string Update_Command = "UpdatePlayerState";
+
+        public static readonly string Game_Over = "GameOver";
+
+
         private RoomDao roomDao = new RoomDao();
         /// <summary>
         /// 推送管理员
@@ -47,7 +52,7 @@ namespace server.Business
         }
 
 
-        private const string Update_Command = "UpdatePlayerState";
+       
         /// <summary>
         /// 通过队长，推送给他玩家
         /// </summary>
@@ -57,11 +62,11 @@ namespace server.Business
             userList.ForEach((userId) =>
             {
 
-                SendSingleUserMessage(userId);
+                SendSingleUserMessage(userId, Update_Command);
             });
         }
 
-        public void SendSingleUserMessage(int userId)
+        public void SendSingleUserMessage(int userId,string CommandName)
         {
             ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
             foreach (PubgSession session in dic.Keys)
@@ -71,14 +76,14 @@ namespace server.Business
                 if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
                 {
 
-                    string data = Update_Command + Constant.START_SPLIT + "player" + "\r\n";
+                    string data = CommandName + Constant.START_SPLIT + "player" + "\r\n";
                     session.Send(data);
                 }
 
             }
         }
 
-        public void PublishUserListByAdmin(int adminUserId)
+        public void SendUserListByAdmin(int adminUserId,string CommandName)
         {
             ConcurrentDictionary<PubgSession, SessionItem> dic = PubgSession.mOnLineConnections;
             List<int> userIdList = roomDao.GetRoomUserListByAdmin(adminUserId);
@@ -92,7 +97,7 @@ namespace server.Business
                     if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
                     {
 
-                        string data = Update_Command + Constant.START_SPLIT + "player" + "\r\n";
+                        string data = CommandName + Constant.START_SPLIT + "player" + "\r\n";
                         session.Send(data);
                     }
 

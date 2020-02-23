@@ -70,6 +70,9 @@
     <Reference Include="MySql.Data, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.10.7\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SuperSocket.Common, Version=1.6.6.1, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
       <HintPath>..\packages\SuperSocket.1.6.6.1\lib\net45\SuperSocket.Common.dll</HintPath>
     </Reference>
@@ -116,6 +119,7 @@
     <Compile Include="DAO\CodeDao.cs" />
     <Compile Include="DAO\CommonDao.cs" />
     <Compile Include="DAO\LoginDao.cs" />
+    <Compile Include="DAO\ScoreDao.cs" />
     <Compile Include="DAO\Room\UserRoomDao.cs" />
     <Compile Include="DAO\Room\CURDRoomDao.cs" />
     <Compile Include="DAO\UserDao.cs" />
@@ -130,6 +134,7 @@
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\Room_User.cs" />
     <Compile Include="Model\Grounp.cs" />
+    <Compile Include="Model\Score.cs" />
     <Compile Include="Model\SessionItem.cs" />
     <Compile Include="Model\UserName.cs" />
     <Compile Include="MyRequestInfoParser.cs" />

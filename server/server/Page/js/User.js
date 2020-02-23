@@ -115,6 +115,10 @@ var app = new Vue({
 				app.msg.scoreName = "战绩信息"+data.life.fightScore+"/100";
 				
 				app.msg.lifeValue = data.life.lifeValue;
+				if(data.life.lifeValue<0){
+					data.life.lifeValue = 0;
+				}
+				
 				app.msg.lifeName = "生命值"+data.life.lifeValue+"/100";
 			}
 			else{

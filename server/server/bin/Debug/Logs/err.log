@@ -1,1 +1,12 @@
-﻿
+﻿2020-02-23 19:59:43,067 [20] ERROR DefaultBootstrap - The process crashed for an unhandled exception!
+System.ObjectDisposedException: 无法访问已释放的对象。
+   在 System.Threading.TimerQueueTimer.Change(UInt32 dueTime, UInt32 period)
+   在 System.Threading.Timer.Change(Int32 dueTime, Int32 period)
+   在 server.Tool.SeverTimer.CheckConnectCallBack(Object state) 位置 D:\svn\cs\server\pubgserver\server\server\Tool\SeverTimer.cs:行号 158
+   在 System.Threading.TimerQueueTimer.CallCallbackInContext(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.TimerQueueTimer.CallCallback()
+   在 System.Threading.TimerQueueTimer.Fire()
+   在 System.Threading.TimerQueue.FireNextTimers()
+   在 System.Threading.TimerQueue.AppDomainTimerCallback()

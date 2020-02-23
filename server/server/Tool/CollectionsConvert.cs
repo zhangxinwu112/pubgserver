@@ -48,8 +48,8 @@ namespace Utils
 
         public static string ToJSON(object o)
         {
-            return fastJSON.JSON.ToJSON(o, jsonParamet);
-           // return Newtonsoft.Json.JsonConvert.SerializeObject(o);
+            //return fastJSON.JSON.ToJSON(o, jsonParamet);
+            return Newtonsoft.Json.JsonConvert.SerializeObject(o);
             
         }
 

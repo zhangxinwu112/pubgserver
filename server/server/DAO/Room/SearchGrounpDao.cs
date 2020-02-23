@@ -8,6 +8,7 @@ using log4net;
 using server.Tool;
 using MySql.Data.MySqlClient;
 using Utils;
+using server.Business;
 
 namespace server.DAO
 {
@@ -18,6 +19,7 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.SearchGrounpDao");
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
+        
         public void SearchAllGrounp(PubgSession session, string body, string keyName,string userId,string userType)
         {
             Logger.InfoFormat("查询所有的游戏：{0}", keyName);
@@ -116,36 +118,16 @@ namespace server.DAO
             return  list.Select(a => a.id).ToList<int>();
         }
 
-        public void UpdateFenceScope(int frequency)
-        {
-            string sql = "select * from grounp where runState =0 and fenceLon>0 ORDER BY id DESC";
-            List<Grounp> list = MySqlExecuteTools.GetObjectResult<Grounp>(sql, null );
+      
 
-            list.ForEach((item) => {
-
-                if(item.fenceRadius>0)
-                {
-                   int everyCount = item.fenceTotalRadius / (item.playerTime * 60 / frequency);
-                   sql = "update  grounp set fenceRadius = '" + (item.fenceRadius- everyCount) + "' where id = @grounpId;";
-                   MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
-                }
-                else
-                {
-                    sql = "update  grounp set fenceRadius = 2000,fenceTotalRadius=2000,runState = -1,fenceLon=-1,fenceLat=-1 where id = @grounpId;";
-                    MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", item.id) });
-                }
-
-            });
-
-            joinRoomDao.GetAllRoom();
-
-        }
+       
 
         public int CheckEnterButton(string usreId,string userType)
         {
             string sql = "";
-            //管理员
+           
             int runState = -1;
+            //管理员
             if (userType.Equals("1"))
             {
                 sql = "select * from grounp where userId = @userId";

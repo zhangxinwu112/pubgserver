@@ -53,6 +53,11 @@ namespace Restful
         int CheckEnterButton(string json);
 
 
-        
+        [OperationContract]
+        [WebGet(UriTemplate = "SearchScore/{userId}/{currrentUser}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string SearchScore(string userId,string currrentUser);
+
+
+
     }
 }

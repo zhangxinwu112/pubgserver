@@ -174,7 +174,7 @@ namespace server.Tool
                     
                         for (int i = 0; i < filedCount; i++)
                         {
-                            list.Add( reader.GetValue(i));
+                            list.Add(reader.GetValue(i));
                           
                         }
                     
@@ -274,6 +274,65 @@ namespace server.Tool
                 }
             }
 
+            return result;
+
+        }
+
+        /// <summary>
+        /// 返回多个字段
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="commandParameters"></param>
+        /// <returns></returns>
+        public static List<Object> GetMuchFieldResult(string sql, params MySqlParameter[] commandParameters)
+        {
+            List<object> result = new List<object>();
+
+            MySqlDataReader reader = null;
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, MySQLHelp.Instance.GetSqlConn);
+                // cmd.CommandTimeout = 10;
+
+                if (commandParameters != null)
+                {
+                    foreach (MySqlParameter parm in commandParameters)
+                        cmd.Parameters.Add(parm);
+                }
+
+                reader = cmd.ExecuteReader();
+                int filedCount = reader.FieldCount;
+
+               
+                while (reader.Read())
+                {
+                    if (reader.HasRows)
+                    {
+                        List<object> rowList = new List<object>();
+                        for (int i = 0; i < filedCount; i++)
+                        {
+                            rowList.Add( reader.GetValue(i));
+                        }
+                        result.Add(rowList);
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                Logger.InfoFormat("excepstion2：{0}", e.Message);
+                ReConnect();
+
+            }
+            finally
+            {
+
+                if (reader != null)
+                {
+                    reader.Close();
+
+                }
+            }
             return result;
 
         }

@@ -48,7 +48,7 @@ namespace server.Business
                 if (sessionItem != null && sessionItem.userId.Equals(userId.ToString()))
                 {
                     //推送的时候刷洗状态
-                    publishPlayerState.SendSingleUserMessage(userId);
+                    publishPlayerState.SendSingleUserMessage(userId, PublishPlayerState.Update_Command);
 
 
                     string data = Show_Message + Constant.START_SPLIT + message + "\r\n";

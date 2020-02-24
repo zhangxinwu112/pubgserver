@@ -96,7 +96,7 @@ namespace server.DAO
             if(result>0)
             {
                 dataResult.result = 1;
-                dataResult.resean = "队下存在用户，无法进行删除";
+                dataResult.resean = "战队下有玩家用户，无法进行删除";
                 session.Send(GetSendData(dataResult, body));
                 return;
             }

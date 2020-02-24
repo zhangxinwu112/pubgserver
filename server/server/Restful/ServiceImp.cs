@@ -283,16 +283,32 @@ namespace Restful
         /// <param name="userId"></param>
         /// <param name="currrent"></param>
         /// <returns></returns>
-        public string SearchScore(string userId, string currrentUser)
+        public string SearchScore(string userId, string userType,string currrentUser)
         {
             if(currrentUser.Equals("0"))
             {
-                return  scoreDao.SearchScore(int.Parse(userId), true);
+                return  scoreDao.SearchScore(int.Parse(userId), userType, true);
             }
             else
             {
-                return scoreDao.SearchScore(int.Parse(userId), false);
+                return scoreDao.SearchScore(int.Parse(userId), userType, false);
             }
+        }
+
+        public string GetRoomList(string adminUserId)
+        {
+           List<Room> roomList =   joinRoomDao.GetRoomListByAdmin(int.Parse(adminUserId));
+            return Utils.CollectionsConvert.ToJSON(roomList);
+        }
+
+        public string SearchScoreByRoom(string roomId)
+        {
+            return scoreDao.SearchScoreByRoomId(int.Parse(roomId));
+        }
+
+        public int IsEditRoom(string roomId, string userId)
+        {
+            return  joinRoomDao.IsEditRoom(roomId, userId);
         }
     }
 

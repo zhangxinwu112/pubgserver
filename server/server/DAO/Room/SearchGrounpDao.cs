@@ -142,13 +142,13 @@ namespace server.DAO
             if (userType.Equals("1"))
             {
                 sql = "select * from grounp where userId = @userId";
-                Grounp  p = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@userId", usreId) }).FirstOrDefault<Grounp>();
+                List<Grounp> ps = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@userId", usreId) });
 
-               
-                if (p == null)
+                if(ps==null || ps.Count==0)
                 {
                     return -1;
                 }
+                Grounp p = ps[0];
                 runState = p.runState;
 
             }

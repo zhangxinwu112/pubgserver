@@ -149,6 +149,19 @@ namespace server.DAO
             dic.Add("data", SearchAllRoom());
             EventMgr.Instance.SendEvent(EventName.ALL_ROOM_DATA, dic);
         }
+
+        public int IsEditRoom(string roomId, string userId)
+        {
+            string sql = "select *  from room where id = @id and userId = @userId";
+            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql,
+             new MySqlParameter[] { new MySqlParameter("@id", roomId), new MySqlParameter("@userId", userId) });
+            if(roomList.Count>0)
+            {
+                return 0;
+            }
+
+            return -1;
+        }
     }
 
 

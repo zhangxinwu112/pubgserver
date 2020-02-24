@@ -122,6 +122,7 @@ D:\svn\cs\server\pubgserver\server\server\bin\Debug\server.exe
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\server.pdb
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\log4net.dll
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\MySql.Data.dll
+D:\svn\cs\server\pubgserver\server\server\bin\Debug\Newtonsoft.Json.dll
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Common.dll
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Facility.dll
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.dll
@@ -129,6 +130,7 @@ D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketEngine.dll
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketService.exe
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\log4net.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\MySql.Data.xml
+D:\svn\cs\server\pubgserver\server\server\bin\Debug\Newtonsoft.Json.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Common.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.Facility.xml
 D:\svn\cs\server\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.xml
@@ -139,5 +141,4 @@ D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.application
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.exe
 D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.pdb
-D:\svn\cs\server\pubgserver\server\server\bin\Debug\Newtonsoft.Json.dll
-D:\svn\cs\server\pubgserver\server\server\bin\Debug\Newtonsoft.Json.xml
+D:\svn\cs\server\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache

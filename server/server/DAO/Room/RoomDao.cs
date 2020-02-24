@@ -116,12 +116,12 @@ namespace server.DAO
         /// 通过admin获取roomUserList
         /// </summary>
         /// <returns></returns>
-        public List<int>  GetRoomUserListByAdmin(int userID)
+        public List<int>  GetRoomUserListByAdmin(int adminUserID)
         {
             string sql = " select ru.user_id from room r join grounp p join room_user ru on p.id = r.grounpId and r.id = ru.room_id and p.userId = @userId";
           
              List<object> dataResult = MySqlExecuteTools.GetSingleFieldResult(sql,
-               new MySqlParameter[] { new MySqlParameter("@userId", userID) });
+               new MySqlParameter[] { new MySqlParameter("@userId", adminUserID) });
             List<int> result = new List<int>();
 
             dataResult.ForEach((item) => {
@@ -133,6 +133,20 @@ namespace server.DAO
 
 
 
+        }
+
+        /// <summary>
+        /// 通过管理员获取下所有的room
+        /// </summary>
+        /// <param name="adminUser"></param>
+        /// <returns></returns>
+        public List<Room> GetRoomListByAdmin(int adminUser)
+        {
+            string sql = "select r.* from room  r join grounp p on p.id = r.grounpId where p.userId = @userId";
+            List<Room> result = MySqlExecuteTools.GetObjectResult<Room>(sql,
+                new MySqlParameter[] { new MySqlParameter("@userId", adminUser) });
+
+            return result;
         }
     }
 }

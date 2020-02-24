@@ -57,7 +57,7 @@ namespace server.DAO
         /// <param name="userId"></param>
         /// <param name="currentScore">0，为当前</param>
         ///  <param name="isPlayerOrder">是否为玩家排行</param>
-        public string SearchScore(int userId,bool isPlayerOrder = true, int currentScore = 0)
+        public string SearchScore(int userId, string userType,bool isPlayerOrder = true, int currentScore = 0)
         {
             //只考虑玩家
             int roomId = GetRoomIdByUser(userId);
@@ -65,24 +65,30 @@ namespace server.DAO
             //玩家的排行
             if (isPlayerOrder)
             {
-
-                sql = "select count(*) from room_user where room_id = @roomId";
-
-                List<object> list = MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
-                //查出数量room下的玩家人数
-               int count = int.Parse((MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) })[0].ToString()));
-
-
-                sql = "select * from score where roomId = @roomId  order by createTime desc limit 0," + count;
-                List<Score>  scoreLsit = MySqlExecuteTools.GetObjectResult<Score>(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
-                string result = Utils.CollectionsConvert.ToJSON(scoreLsit);
-                return result;
+                return SearchScoreByRoomId(roomId);
             }
             //room的排行
             else
             {
-                 sql = "select grounpId from room where id = @roomId";
-                int gournpId = (int)(MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) })[0]);
+                int gournpId = -1;
+                //玩家
+                if (userType.Equals("0"))
+                {
+                    sql = "select grounpId from room where id = @roomId";
+
+                    List<object> list = (MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) }));
+                    if(list ==null || list.Count==0)
+                    {
+                        return "";
+                    }
+                    gournpId = (int)(list[0]);
+                }
+                else
+                {
+                    sql = "select id from grounp where userId = @userId";
+                    gournpId = (int)(MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) })[0]);
+                }
+               
 
                 sql = "select * from room where grounpId = @grounpId";
                 //获取分组的
@@ -92,11 +98,30 @@ namespace server.DAO
                     //求平均值
                     sql = " select avg(bulletCount),avg(lifeValue),avg(fightScore),createTime from score   where roomId = " + room.id;
                      List<object>  result =  (List<object>)(MySqlExecuteTools.GetMuchFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", room.id) })[0]);
-                    int bulletCount = Convert.ToInt16(result[0]);
-                    Console.WriteLine(bulletCount);
-                    int lifeValue = Convert.ToInt16(result[1]);
-                    int fightScore = Convert.ToInt16(result[2]);
-                    int createTime = int.Parse(result[3].ToString());
+                    int bulletCount = 0;
+                    if (result[0]!= DBNull.Value)
+                    {
+                        bulletCount = Convert.ToInt16(result[0]);
+                    }
+
+                    int lifeValue = 0;
+                    if(result[1]!= DBNull.Value)
+                    {
+                        lifeValue = Convert.ToInt16(result[1]);
+                    }
+
+                    int fightScore = 0;
+
+                    if(result[2]!= DBNull.Value)
+                    {
+                        fightScore = Convert.ToInt16(result[2]);
+                    }
+                    int createTime = 0;
+                    if(result[3]!= DBNull.Value)
+                    {
+                        createTime = int.Parse(result[3].ToString());
+                    }
+                   
                     Score score = new Score();
                     score.bulletCount = bulletCount;
                     score.lifeValue = lifeValue;
@@ -109,6 +134,21 @@ namespace server.DAO
                  return Utils.CollectionsConvert.ToJSON(scores);
             }
             
+        }
+
+        public string SearchScoreByRoomId(int roomId)
+        {
+            string sql = "select count(*) from room_user where room_id = @roomId";
+
+            List<object> list = MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+            //查出数量room下的玩家人数
+            int count = int.Parse((MySqlExecuteTools.GetSingleFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) })[0].ToString()));
+
+
+            sql = "select * from score where roomId = @roomId  order by createTime desc limit 0," + count;
+            List<Score> scoreLsit = MySqlExecuteTools.GetObjectResult<Score>(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+            string result = Utils.CollectionsConvert.ToJSON(scoreLsit);
+            return result; 
         }
 
         private int GetRoomIdByUser(int userId)

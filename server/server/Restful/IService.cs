@@ -54,8 +54,23 @@ namespace Restful
 
 
         [OperationContract]
-        [WebGet(UriTemplate = "SearchScore/{userId}/{currrentUser}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string SearchScore(string userId,string currrentUser);
+        [WebGet(UriTemplate = "SearchScore/{userId}/{userType}/{currrentUser}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string SearchScore(string userId,string userType,string currrentUser);
+
+
+
+        [OperationContract]
+        [WebGet(UriTemplate = "GetRoomList/{adminUserId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string GetRoomList(string adminUserId);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "SearchScoreByRoom/{roomId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string SearchScoreByRoom(string roomId);
+
+
+        [OperationContract]
+        [WebGet(UriTemplate = "EditRoom/{roomId}/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        int  IsEditRoom(string roomId,string userId);
 
 
 

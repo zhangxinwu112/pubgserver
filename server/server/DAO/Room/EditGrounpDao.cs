@@ -137,18 +137,26 @@ namespace server.DAO
         /// <param name="room"></param>
         public void UpdateGrounp(PubgSession session, string body, string grounpId, string grounpName, string checkCode, string playerTime)
         {
-            //string sql = "update room set name = '" + roomName + "', area = '" + room.area + "' where id = @id;";
+
+            DataResult dataResult = new DataResult();
+            Grounp p = SearchGrounpDao.GetGrounpById(grounpId);
+
+            if (p != null && p.runState == 0)
+            {
+                dataResult.result = 1;
+                dataResult.resean = "游戏运行中，无法修改游戏。";
+                session.Send(GetSendData(dataResult, body));
+                return;
+            }
+
+
             //更新队
             string sql = "update grounp set name = '" + grounpName + "', playerTime = '" + playerTime +
                 "', checkCode = '" + checkCode + "' where id = @grounpId;";
             MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
 
-            ////更新房间的信息
-            //sql = "update  room set name = '" + _roomName + "', checkCode = '" + checkCode + "' where id = @roomId;";
-            //MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", _roomId) });
-
+      
             //更新分队信息
-            DataResult dataResult = new DataResult();
             dataResult.result = 0;
             session.Send(GetSendData(dataResult, body));
 

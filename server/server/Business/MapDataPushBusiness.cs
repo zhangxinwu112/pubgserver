@@ -215,7 +215,8 @@ namespace server.Business
             roomGrounp.Clear();
             roomList.ForEach((item) => {
 
-                Grounp p = searchGrounpDao.GetGrounpById(item.grounpId.ToString());
+                
+                Grounp p = SearchGrounpDao.GetGrounpById(item.grounpId.ToString());
                 roomGrounp.Add(item.id, p);
             });
             // Console.WriteLine(Utils.CollectionsConvert.ToJSON(roomGrounp));

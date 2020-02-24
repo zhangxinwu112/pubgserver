@@ -113,7 +113,7 @@ namespace server.DAO
 
         }
 
-       public Grounp GetGrounpById(string grounpId)
+       public static  Grounp GetGrounpById(string grounpId)
         {
             string sql = "select * from grounp where id = @grounpId ORDER BY id DESC";
             List<Grounp> result = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });

@@ -20,7 +20,8 @@ namespace server.DAO
         private readonly int maxNum = 50;
 
         private PublishTipsMessage publishTipsMessage = new PublishTipsMessage();
-        public void JoinRoom(PubgSession session, string body, string checkCode,string roomId,string userId,string userName)
+        public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,
+            string roomId,string userId,string userName)
         {
             Logger.InfoFormat("加入队：{0},{1}", roomId, userId);
             string sql = "select * from room_user where user_id = @user_id";
@@ -50,7 +51,7 @@ namespace server.DAO
             }
 
 
-            Grounp p = GetGrounpByPlayer(int.Parse( userId));
+            Grounp p = SearchGrounpDao.GetGrounpById(grounpId);
 
             if(p!=null && p.runState == 0)
             {

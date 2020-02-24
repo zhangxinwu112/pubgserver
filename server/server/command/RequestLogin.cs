@@ -34,7 +34,7 @@ namespace server.command
                 }
                 
             }
-            Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
+            //Console.WriteLine("收到客户端位置更新：" + session.RemoteEndPoint);
 
 
         }

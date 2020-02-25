@@ -35,7 +35,7 @@ var appManager = new Vue({
                
 				AddPlayerLife(index,_userId)
 				{
-					var addlifeValue = this.$refs.input[index].value
+					var addlifeValue = this.$refs.input[index].value;
 					//alert(addlifeValue + ","+_userId);
 					mui.toast('命值增加成功!')
 					var requestUrl = url+"AddLife/"+addlifeValue+"|"+_userId;

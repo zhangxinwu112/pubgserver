@@ -165,7 +165,59 @@ namespace server.DAO
             return runState;
         }
 
-       
+        /// <summary>
+        /// 通过管理员查询房间和用户列表
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public string GetRoomUserTreeData(string userId)
+        {
+
+            string sql = "select r.* from grounp p JOIN room r on p.id = r.grounpId where p.userId =@userId";
+            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+            if(roomList.Count==0)
+            {
+                Logger.Debug("GetRoomUserTreeData is null");
+                return "";
+            }
+
+            List<Dictionary<string, object>> result = new List<Dictionary<string, object>>();
+            roomList.ForEach((room) => {
+
+                Dictionary<string, object> roomDic = new Dictionary<string, object>();
+                roomDic.Add("id",room.id);
+                roomDic.Add("name", room.name);
+               
+                List<Dictionary<string, object>> userListDic = new List<Dictionary<string, object>>();
+
+
+                sql = "SELECT u.id,u.name from room_user ru JOIN `user` u  on ru.user_id = u.id where ru.room_id = @roomId";
+                List<object> list = MySqlExecuteTools.GetMuchFieldResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", room.id) });
+
+                list.ForEach((item) => {
+
+                    Dictionary<string, object>  userDic = new Dictionary<string, object>();
+                    List<object> userList = (List<object>)item;
+
+                    string _userId = userList[0].ToString();
+                    string userName = userList[1].ToString();
+                    userDic.Add("id", _userId);
+                    userDic.Add("name", userName);
+                    userListDic.Add(userDic);
+
+                });
+                roomDic.Add("child", userListDic);
+                result.Add(roomDic);
+
+            });
+
+            string resultStr = Utils.CollectionsConvert.ToJSON(result);
+            resultStr = resultStr.Replace("\\", "");
+            Logger.Debug(resultStr);
+            return resultStr;
+        }
+
+
     }
 
 

@@ -62,4 +62,19 @@ body,
     width: 400px;
     display: flex;
     flex-wrap:wrap ;
-}
+	}
+	.box {
+		position: absolute;;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	
+	 closeButton{
+	    width: 100px;
+	    height:45px;
+	    background: url("image/close.png") no-repeat;
+	    border-style: none;
+	}

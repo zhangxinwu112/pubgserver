@@ -248,11 +248,8 @@ namespace Restful
         public string AddLife(string json)
         {
             string[] strs = json.Split('|');
-            string userId = strs[0];
-
-            string addValue = strs[1];
-
-
+            string addValue = strs[0];
+            string userId = strs[1];
             userDao.SetLifeValue(userId, int.Parse(addValue),false);
             return "";
         }
@@ -309,6 +306,11 @@ namespace Restful
         public int IsEditRoom(string roomId, string userId)
         {
             return  joinRoomDao.IsEditRoom(roomId, userId);
+        }
+
+        public string GetRoomUserTreeData(string userId)
+        {
+            return searchGrounpDao.GetRoomUserTreeData(userId);
         }
     }
 

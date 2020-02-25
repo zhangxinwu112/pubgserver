@@ -22,7 +22,9 @@ var app = new Vue({
             data: {
                 cut: true,
 				showFastMessageWindow:false,
+				ShowManagerUI:false,
 				showlife:false,
+				isShowAdminButton:true,
                 msg: {
                     bulletValue: 80,
 					bulletName: "弹量信息80/100",
@@ -44,8 +46,6 @@ var app = new Vue({
                setInterval(() => {
 				  ChckeScope();
                 }, 10000)
-				
-				
 				
             },
             methods: {
@@ -97,6 +97,16 @@ var app = new Vue({
 				},
 				SelectMessage(message){
 					this.inputContent = message;
+				},
+				OpenManagerPlayer()
+				{
+					appManager.ShowManagerUI = !appManager.ShowManagerUI;
+					if(appManager.ShowManagerUI)
+					{
+						
+						window.location.href = "uniwebview://GetRoomList?userId=" + userId;
+					}
+					
 				}
             }
         })
@@ -152,6 +162,14 @@ var app = new Vue({
 				this.userId = data.currentUser.userId;
 				this.userName = data.currentUser.userName;
 				this.userType = data.currentUser.userType;
+				if(this.userType == 1)
+				{
+					app.isShowAdminButton = true;
+				}
+				else
+				{
+					app.isShowAdminButton = false;
+				}
 				this.lat = data.currentUser.lat;
 				this.lon =data.currentUser.lon;
 				

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css"/> 
 	
 	<link href="css/user.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/elm.css">
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	<link href="css/mui.min.css" rel="stylesheet"/>
     <script src="js/system/vue.min.js"></script>
@@ -24,6 +25,42 @@
 	</script>
 </head>
 <body>
+	<!--管理界面 -->
+	<div id="managerUIApp" >
+		<div class="mui-card" style="width: 500px;z-index: 10;"  v-if="ShowManagerUI" >
+			 <div style="text-align:right;"><button @click="closeUIManager()"
+			 class="mui-btn mui-btn-warning mui-btn-outlined" style="transform:scale(0.80)">关闭</button></div>
+			 
+			<div style="text-align:center;">
+				<p5 style="color: #000000;">玩家管理</p5>
+			</div>
+			<ul class="mui-table-view mui-table-view-chevron" >
+				<li class="mui-table-view-cell mui-collapse" v-for="item in list">
+					<a class="mui-navigate-right">{{item.name}}<span
+							class="mui-badge mui-badge-primary">{{item.child.length}}</span></a>
+					<ul class="mui-table-view mui-table-view-chevron" v-for="(subitem,index_) in item.child">
+						<li class="mui-table-view-cell">
+							<div class="mui-navigate-right">
+								<span style="margin-right: 4px;">{{subitem.name}}</span>
+					
+								<el-input-number ref="input" v-model="subitem.value" size="mini" @change="handleChange"
+									:min="0" :max="100" label="描述文字">
+								</el-input-number>
+								<el-button size="mini" @click="AddPlayerLife(index_,subitem.id)">增加命值</el-button>
+								<el-button size="mini" type="primary">查看信息</el-button>
+							</div>
+					
+						</li>
+					
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+	
     <div id="container"></div>
 
     <button id="setFitView" type="button" class="mui-btn mui-btn-primary" 
@@ -31,10 +68,14 @@
 	<button id="exitButton" type="button" class="mui-btn mui-btn-primary" 
 	style="width: 80px;font-size: 10px;position: absolute;top:50px;left: 5px;" onclick="Back()">返回</button>
 	 
-
 	<div id="app">
+		
+		
 	    <button type="button" class="btn icon-b" :class="cut?'btn-primary':'btn-warning'"
 	        @click="isShow" style="transform:scale(0.90)">{{cut?'隐藏':'显示'}}</button>
+			<button type="button" class="btn icon-b" :class="'btn-primary'" v-if="isShowAdminButton"
+			style="position:absolute;left: 80px;transform:scale(0.90)"
+			    @click="OpenManagerPlayer">管理</button>
 	    <div class="msg">
 			<div class="progress mb-2">
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>
@@ -80,8 +121,8 @@
 	    </transition>
 		
 		<transition name="slide-fade1">
-		        <div  class="container" v-if="showFastMessageWindow" style="width: 365px;height: 250px;
-				background-color: #5555ff;position: absolute;bottom: 110px; left: 36px;" >
+		        <div  class="container" v-if="showFastMessageWindow" style="width: 350px;height: 260px;
+				background-color: #5555ff;position: absolute;bottom: 108px; left: 36px;" >
 			
 		          <div>
 		              <div class="mui-row" style="width: 100%;" >
@@ -93,7 +134,7 @@
 						
 		                  </div>
 						  <button   class="mui-btn mui-btn-royal"
-						  style="position: relative; bottom: -80px;transform:scale(0.90);" @click="CloseMessageWindow">关闭</button>
+						  style="position: relative; bottom: -80px;transform:scale(0.95);" @click="CloseMessageWindow">关闭</button>
 		                  
 		              </div>
 		          </div>
@@ -102,10 +143,14 @@
 		    
 		</transition>
 	</div>
+	
+	
 
    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>
    <script type="text/javascript" src="js/User.js"></script>
+   <script type="text/javascript" src="js/ManagerPlayer.js"></script>
    <script type="text/javascript" src="js/map.js"></script>
+   <script src="js/system/elm.js"></script>
     
 </body>
 

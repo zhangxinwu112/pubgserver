@@ -1,50 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<link href="css/mui.min.css" rel="stylesheet"/>
-	<script src="js/system/mui.min.js"></script>
-	<body>
-		
-		<div class="mui-card" style="width: 300px;">
-			<ul class="mui-table-view mui-table-view-chevron" >
-				<li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">产品<span class="mui-badge mui-badge-primary">14</span></a>
-					<ul class="mui-table-view mui-table-view-chevron">
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">iOS     <button>  测试</button></a>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<link href="css/mui.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/elm.css">
+
+
+<body>
+
+	<div id="managerUIApp">
+		<div class="mui-card" style="width: 450px;z-index: 10;" v-if="ShowManagerUI">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse" v-for="(item,index) in list">
+
+					<a class="mui-navigate-right">{{item.name}}<span
+							class="mui-badge mui-badge-primary">{{item.child.length}}</span></a>
+					<ul class="mui-table-view mui-table-view-chevron" v-for="(subitem,index_) in item.child">
+						<li class="mui-table-view-cell">
+							<div class="mui-navigate-right">
+								<span style="margin-right: 4px;">{{subitem.name}}</span>
+
+								<el-input-number ref="input" v-model="subitem.value" size="mini" @change="handleChange"
+									:min="0" :max="100" label="描述文字">
+								</el-input-number>
+								<el-button size="mini" @click="AddPlayerLife(index_,subitem.id)">增加命值</el-button>
+								<el-button size="mini" type="primary">查看信息</el-button>
+							</div>
+
 						</li>
-						
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">Android</a>
-						</li>
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">HTML5</a>
-						</li>
+
 					</ul>
 				</li>
-				<li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">方案</a>
-					<ul class="mui-table-view mui-table-view-chevron">
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">PC方案</a>
-						</li>
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">手机方案</a>
-						</li>
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">TV方案</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mui-table-view-cell mui-collapse"><a class="mui-navigate-right" href="#">新闻</a>
-					<ul class="mui-table-view mui-table-view-chevron">
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">公司新闻</a>
-						</li>
-						<li class="mui-table-view-cell"><a class="mui-navigate-right" href="#">行业新闻</a>
-						</li>
-					</ul>
-				</li>
+
 			</ul>
 		</div>
-				
-	</body>
+	</div>
+	<script src="js/system/mui.min.js"></script>
+	<script src="./js/system/vue.min.js"></script>
+	<script src="./js/system/elm.js"></script>
 	<script>
-			
-			
-		</script>
+		var appManager = new Vue({
+			el: '#managerUIApp',
+			data: {
+
+				ShowManagerUI: true,
+				list: [{
+					"id": 523,
+					"name": "战队",
+					"child": [{
+						"id": "55",
+						"name": "天涯",
+						"value": 0
+					}, {
+						"id": "56",
+						"name": "天涯1",
+						"value": 0
+					}, {
+						"id": "57",
+						"name": "天涯0",
+						"value": 0
+					}]
+				}, {
+					"id": 524,
+					"name": "测试战队",
+					"child": []
+				}]
+
+
+
+			},
+			mounted() {
+
+
+
+			},
+			methods: {
+				handleChange(value) {
+					console.log(value);
+				},
+				OpenManagerPlayer() {
+					this.ShowManagerUI = !this.ShowManagerUI;
+				},
+				// AddPlayerLife(data, userid) {
+				// 	alert(data + "，" + userid);
+				// },
+				AddPlayerLife(index, userid) {
+
+
+					var val = this.$refs.input[index].value
+
+					alert(val + "，" + userid)
+				}
+			}
+		})
+	</script>
+</body>
+
 </html>

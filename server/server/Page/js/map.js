@@ -62,7 +62,7 @@ var _data ={
 
         var map;
         var markArray = new Array(); 
-		//StartGameOver();
+		
         //CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {

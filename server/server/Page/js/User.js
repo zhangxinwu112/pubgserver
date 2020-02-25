@@ -16,12 +16,12 @@ var lifeUserName;
 
 var lifeuserId;
 
-	
-			 	  
+	 	  
 var app = new Vue({
             el: '#app',
             data: {
                 cut: true,
+				showFastMessageWindow:false,
 				showlife:false,
                 msg: {
                     bulletValue: 80,
@@ -31,6 +31,8 @@ var app = new Vue({
                     lifeValue: 90,
 					 lifeName: "生命值90/100",
                 },
+				fastMessagecontent:["集合","注意隐蔽","卧倒","攻击","前进","后退","开火"],
+				
                 list: [
                 ],
 				currentUser:"当前用户:管理员",
@@ -58,7 +60,7 @@ var app = new Vue({
                 },
                 send() { //发送
 						
-						
+						this.showFastMessageWindow =false;
 						if (this.inputContent  == '') {
 							alert('输入内容不能为空!');
 							return ;
@@ -82,8 +84,20 @@ var app = new Vue({
 						  
                 },
                 isShow() {
-                    this.cut = !this.cut
-                }
+                    this.cut = !this.cut;
+					this.showFastMessageWindow = false;
+                },
+				FastChange()
+				{
+					this.showFastMessageWindow =!this.showFastMessageWindow;
+				},
+				CloseMessageWindow()
+				{
+					this.showFastMessageWindow = false;
+				},
+				SelectMessage(message){
+					this.inputContent = message;
+				}
             }
         })
 		
@@ -149,11 +163,9 @@ var app = new Vue({
 			}
 			if("undefined" != typeof data.grounp && data.grounp!=null){
 				
-				this.runState = data.grounp.runState;
-				
+				this.runState = data.grounp.runState;		
 			}
-			
-			
+		
 		}
 		
 		function GetNowFormatDate() {//获取当前时间

@@ -55,7 +55,10 @@ body {
         .slide-fade-leave-to
 
         /* .slide-fade-leave-active for below version 2.1.8 */
-            {
+       {
             transform: translateX(20px);
             opacity: 0;
-        }
+       }
+		
+		.transparentD{ background:#000;color:#F00;
+		filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6};

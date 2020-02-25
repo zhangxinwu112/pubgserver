@@ -20,7 +20,6 @@
 	<script>
 		
 		mui.init();
-		
 	
 	</script>
 </head>
@@ -35,7 +34,7 @@
 
 	<div id="app">
 	    <button type="button" class="btn icon-b" :class="cut?'btn-primary':'btn-warning'"
-	        @click="isShow">{{cut?'隐藏':'显示'}}</button>
+	        @click="isShow" style="transform:scale(0.90)">{{cut?'隐藏':'显示'}}</button>
 	    <div class="msg">
 			<div class="progress mb-2">
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>
@@ -58,7 +57,7 @@
 	        </div>
 	    </div>
 	    <transition name="slide-fade">
-	        <div class="container" v-if="cut">
+	        <div class="container" v-if="cut" >
 	
 	            <div class="card p-1" style="width: 350px;height: 220px;">
 	
@@ -67,16 +66,41 @@
 	                        {{item.name}}
 	                    </h5>
 	                </div>
-	                <div class="input-group mb-0 w-75">
+	                <div class="input-group mb-0 w-76" style="width: 100%;">
 	                    <input type="text" class="form-control " placeholder="输入内容" 
-						v-model="inputContent" maxlength="15">
-	                    <button type="submit" class="btn btn-primary ml-0" @click="send">发送</button>
+						v-model="inputContent" maxlength="25" >
+	                    <button type="submit" style="transform:scale(0.90)" class="btn btn-primary ml-0" @click="send">发送</button>
+						 <div style="width: 10px;"></div>
+						 <button  class="btn btn-primary ml-0" @click="FastChange" style="transform:scale(0.90)">快捷</button>
 	                </div>
 	            </div>
 	
 	
 	        </div>
 	    </transition>
+		
+		<transition name="slide-fade1">
+		        <div  class="container" v-if="showFastMessageWindow" style="width: 365px;height: 250px;
+				background-color: #5555ff;position: absolute;bottom: 110px; left: 36px;" >
+			
+		          <div>
+		              <div class="mui-row" style="width: 100%;" >
+						  <div style="text-align:center;"><p1 style="color: #ffff00;">快捷通讯用语</p1></div>
+						  <div style="height: 10px;"></div>
+		                  <div class="mui-col-xs-4 mui-col-xs-12" style="padding-bottom: 10px;" v-for="item in fastMessagecontent">
+							 <button type="button" class="mui-btn mui-btn-warning mui-btn-outlined"  @click="SelectMessage(item)">
+							 {{item}} </button>
+						
+		                  </div>
+						  <button   class="mui-btn mui-btn-royal"
+						  style="position: relative; bottom: -80px;transform:scale(0.90);" @click="CloseMessageWindow">关闭</button>
+		                  
+		              </div>
+		          </div>
+		           
+		        </div>
+		    
+		</transition>
 	</div>
 
    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b"></script>

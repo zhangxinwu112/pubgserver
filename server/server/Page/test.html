@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">  
-	
 <body>
-
-	
-	<div class="progress mb-2" >
-	    <div class="progress-bar bg-success "  style="width:78%">5222/100</div>
-	 </div>
-	 
-	 
-	 <div class="progress">
-	   <div class="progress-bar" style="width:70%"></div>
-	 </div>
-
+<input type="text">
+<input type="button" value="开始倒计时">
 </body>
+<script>
+//js代码在下面
 
+var timer=setInterval(test,1000);
+
+ 
+
+function test(){
+    var t1="2020/02/26 22:00"
+    if(new Date(t1)-new Date()<=0){
+      clearInterval(timer);
+      alert('计时完成');
+    }else{
+      var h=cd(t1, new Date(), 'h');
+      var m=cd(t1, new Date(), 'm');
+      var s=cd(t1, new Date(), 's');
+	  console.log(h+'时'+m+'分'+s+'秒');
+      
+    }
+	
+	/*
+	2017-01-04 by xw
+	获取倒计时 返回值数字
+	
+	t1 开始时 时间格式
+	t2 结束时 时间格式
+	tg 要获取的值 字符串
+	  d 天
+	  h 时
+	  m 分
+	  s 秒
+	*/
+	function cd(t1, t2, tg) {
+	    //相差的毫秒数
+	    var ms = Date.parse(t1) - Date.parse(t2);
+	    var minutes = 1000 * 60;
+	    var hours = minutes * 60;
+	    
+	    //求出除开天数，剩余的毫秒数
+	  
+	    var h = Math.floor(ms / hours);
+	    ms %= hours;
+	    var m = Math.floor(ms / minutes);
+	    ms %= minutes;
+	    var s = Math.floor(ms / 1000);
+	    //返回所需值并退出函数
+	    switch(tg){
+	      case 'h' : return h;
+	      case 'm' : return m;
+	      case 's' : return s;
+	    }
+	}
+  }
+</script>
 </html>

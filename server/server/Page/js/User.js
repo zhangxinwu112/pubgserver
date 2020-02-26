@@ -26,6 +26,7 @@ var app = new Vue({
 				showlife:false,
 				dis:true,
 				buttonName:"管理",
+				timeShow:"剩余：01小时12分18秒",
                 msg: {
                     bulletValue: 80,
 					bulletName: "弹量信息80/100",
@@ -127,9 +128,15 @@ var app = new Vue({
 		
 		function ChatMessage(message)
 		{
+			
+			var content = message.name +":"+message.content + "   ["+message.time +"]";
+			if(content.length>30)
+			{
+				content = content.substring(0,30);
+			}
 			app.inputContent ="";
 			app.list.push({
-                        name: message.name +":"+message.content + "   "+message.time
+                        name: content
                     })
 					
 		   
@@ -257,6 +264,56 @@ var app = new Vue({
 				  });
 				
 			}
+		}
+		
+		var timer=setInterval(callTime,1000);
+		
+		function callTime(){
+		    var t1="2020/02/26 22:00"
+		    if(new Date(t1)-new Date()<=0){
+		      clearInterval(timer);
+		      //alert('计时完成');
+		    }else{
+		      var h=cd(t1, new Date(), 'h');
+		      var m=cd(t1, new Date(), 'm');
+		      var s=cd(t1, new Date(), 's');
+			   app.timeShow = "剩余时间："+h+'时'+m+'分'+s+'秒';
+		      
+		    }
+	
+		
+		}
+		
+		/*
+		2017-01-04 by xw
+		获取倒计时 返回值数字
+		
+		t1 开始时 时间格式
+		t2 结束时 时间格式
+		tg 要获取的值 字符串
+		  h 时
+		  m 分
+		  s 秒
+		*/
+		function cd(t1, t2, tg) {
+		    //相差的毫秒数
+		    var ms = Date.parse(t1) - Date.parse(t2);
+		    var minutes = 1000 * 60;
+		    var hours = minutes * 60;
+		    
+		    //求出除开天数，剩余的毫秒数
+		  
+		    var h = Math.floor(ms / hours);
+		    ms %= hours;
+		    var m = Math.floor(ms / minutes);
+		    ms %= minutes;
+		    var s = Math.floor(ms / 1000);
+		    //返回所需值并退出函数
+		    switch(tg){
+		      case 'h' : return h;
+		      case 'm' : return m;
+		      case 's' : return s;
+		    }
 		}
 		
 		

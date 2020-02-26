@@ -33,7 +33,7 @@ var playerUIApp = new Vue({
 				
             },
             methods: {
-               closePlayInfoWindow()
+               ClosePlayInfoWindow()
                {
 					playerUIApp.isShowPlayInfo = false;
                },

@@ -25,7 +25,8 @@
 	</script>
 </head>
 <body>
-	<div style="margin: 0 auto; width: 600px; position: absolute; top: 150px; background-color: #262626;" 
+	
+	<div style="margin: 0 auto; width: 600px; background-color: #262626; z-index: 10000;" 
 	id="playerUIApp" v-if="isShowPlayInfo">
 	<table class="table table-dark">
 		
@@ -51,7 +52,7 @@
 	  </thead>
 	  <tbody>
 	    <tr v-for="(item,index) in playerScoreList">
-	      <th scope="row" style="width: 10%">{{index+1}}</th>
+	      <th scope="row" style="width: 15%">{{index+1}}</th>
 	      <td style="width: 15%">
 			     {{item.userName}}
 		  </td>

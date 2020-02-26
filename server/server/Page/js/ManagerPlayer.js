@@ -53,11 +53,15 @@ var appManager = new Vue({
 				
 				 ClosePlayInfoWindow()
 				{
-					appManager.ShowManagerUI = false;
+					playerUIApp.isShowPlayInfo = false;
 				},
 				handleChange(value) {
 					console.log(value);
 				},
+				closeUIManager()
+				{
+					appManager.ShowManagerUI = false;
+				}
             }
         })
 		

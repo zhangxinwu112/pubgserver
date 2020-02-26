@@ -101,11 +101,12 @@ var app = new Vue({
 				OpenManagerPlayer()
 				{
 					//玩家
-					if(this.userType==0)
+					if(userType==0)
 					{
+						playerUIApp.isShowPlayInfo = !playerUIApp.isShowPlayInfo;
 						if(playerUIApp.isShowPlayInfo)
 						{
-							window.location.href = "uniwebview://ShowPlayInfo?userId=" + userId;
+							//window.location.href = "uniwebview://ShowPlayInfo?userId=" + userId;
 						}
 					}
 					else

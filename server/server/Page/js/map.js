@@ -8,7 +8,7 @@ var _data ={
 			"userName": "\u5929\u6DAF",
 			"lon": 108.963393,
 			"lat": 34.274106,
-			"userType": 1,
+			"userType": 0,
 			"color": "#CC33FF"
 		},
 		"gpsData": [{
@@ -72,6 +72,7 @@ var _data ={
 			SetLifeMesage(data);
 			
 			SetValue(data);
+			
 			
             if(!map)
             {

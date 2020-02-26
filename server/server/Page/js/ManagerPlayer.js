@@ -51,7 +51,7 @@ var appManager = new Vue({
 					
 				},
 				
-				 closeUIManager()
+				 ClosePlayInfoWindow()
 				{
 					appManager.ShowManagerUI = false;
 				},

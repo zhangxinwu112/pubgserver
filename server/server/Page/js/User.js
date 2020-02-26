@@ -24,7 +24,7 @@ var app = new Vue({
 				showFastMessageWindow:false,
 				ShowManagerUI:false,
 				showlife:false,
-				isShowAdminButton:true,
+				buttonName:"管理",
                 msg: {
                     bulletValue: 80,
 					bulletName: "弹量信息80/100",
@@ -100,12 +100,24 @@ var app = new Vue({
 				},
 				OpenManagerPlayer()
 				{
-					appManager.ShowManagerUI = !appManager.ShowManagerUI;
-					if(appManager.ShowManagerUI)
+					//玩家
+					if(this.userType==0)
 					{
-						
-						window.location.href = "uniwebview://GetRoomList?userId=" + userId;
+						if(playerUIApp.isShowPlayInfo)
+						{
+							window.location.href = "uniwebview://ShowPlayInfo?userId=" + userId;
+						}
 					}
+					else
+					{
+						appManager.ShowManagerUI = !appManager.ShowManagerUI;
+						if(appManager.ShowManagerUI)
+						{
+							
+							window.location.href = "uniwebview://GetRoomList?userId=" + userId;
+						}
+					}
+					
 					
 				}
             }
@@ -127,6 +139,7 @@ var app = new Vue({
 		
 		function SetLifeMesage(data)
 		{
+			//玩家
 			if(data.currentUser.userType == 0) {
 				app.showlife = true;
 				app.currentUser = "当前用户:"+data.currentUser.userName;
@@ -144,10 +157,12 @@ var app = new Vue({
 				}
 				
 				app.msg.lifeName = "生命值"+data.life.lifeValue+"/100";
+				app.buttonName = "查看";
 			}
 			else{
 				app.currentUser = "当前用户:管理员";
 				app.showlife = false;
+				app.buttonName = "管理";
 			}
 		
 		}
@@ -161,15 +176,7 @@ var app = new Vue({
 			if("undefined" != typeof data.currentUser){ 
 				this.userId = data.currentUser.userId;
 				this.userName = data.currentUser.userName;
-				this.userType = data.currentUser.userType;
-				if(this.userType == 1)
-				{
-					app.isShowAdminButton = true;
-				}
-				else
-				{
-					app.isShowAdminButton = false;
-				}
+				this.userType = data.currentUser.userType;			
 				this.lat = data.currentUser.lat;
 				this.lon =data.currentUser.lon;
 				

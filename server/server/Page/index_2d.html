@@ -25,6 +25,57 @@
 	</script>
 </head>
 <body>
+	<div style="margin: 0 auto; width: 600px; position: absolute; top: 150px; background-color: #262626;" 
+	id="playerUIApp" v-if="isShowPlayInfo">
+	<table class="table table-dark">
+		
+	 <thead>
+				  
+		  <tr>
+		    <th scope="col" colspan ="4" style="align-content: center;" >玩家所在战队数据信息</th>
+			 <th scope="col" ><button 
+			 class="mui-btn mui-btn-warning mui-btn-outlined" 
+			 style="transform:scale(0.80)" @click="ClosePlayInfoWindow">关闭</button></th>
+		  </tr>
+	  </thead>
+		
+	  <thead>
+		  
+	    <tr>
+	      <th scope="col">编号</th>
+	      <th scope="col">姓名</th>
+	      <th scope="col">弹量</th>
+	      <th scope="col">生命值</th>
+		  <th scope="col">战绩</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr v-for="(item,index) in playerScoreList">
+	      <th scope="row" style="width: 10%">{{index+1}}</th>
+	      <td style="width: 15%">
+			     {{item.userName}}
+		  </td>
+	      <td style="width: 25%">
+			  <div class="progress mb-2"  style="height: 20px;">
+			      <div class="progress-bar bg-success "  :style="{width:item.bulletCount+'%'}">{{item.bulletCount}}/100</div>
+			   </div>
+		  </td>
+	      <td style="width: 25%">
+			  <div class="progress mb-2"  style="height: 20px;">
+			  	  <div class="progress-bar bg-warning " :style="{width:item.lifeValue+'%'}">{{item.lifeValue}}/100</div>
+			  </div>
+		   </td>
+		   <td style="width: 25%">
+			   <div class="progress mb-2"  style="height: 20px;">
+			  	  <div class="progress-bar bg-danger " :style="{width:item.fightScore+'%'}">{{item.fightScore}}/100</div>
+			  	</div>
+		   </td>
+	    </tr>
+	    
+	  </tbody>
+	</table>
+	</div>
+	
 	<!--管理界面 -->
 	<div id="managerUIApp" >
 		<div class="mui-card" style="width: 500px;z-index: 10;"  v-if="ShowManagerUI" >
@@ -73,9 +124,9 @@
 		
 	    <button type="button" class="btn icon-b" :class="cut?'btn-primary':'btn-warning'"
 	        @click="isShow" style="transform:scale(0.90)">{{cut?'隐藏':'显示'}}</button>
-			<button type="button" class="btn icon-b" :class="'btn-primary'" v-if="isShowAdminButton"
+			<button type="button" class="btn icon-b" :class="'btn-primary'"
 			style="position:absolute;left: 80px;transform:scale(0.90)"
-			    @click="OpenManagerPlayer">管理</button>
+			    @click="OpenManagerPlayer">{{buttonName}}</button>
 	    <div class="msg">
 			<div class="progress mb-2">
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>
@@ -151,6 +202,7 @@
    <script type="text/javascript" src="js/ManagerPlayer.js"></script>
    <script type="text/javascript" src="js/map.js"></script>
    <script src="js/system/elm.js"></script>
+   <script type="text/javascript" src="js/PlayerInfo.js"></script>
     
 </body>
 

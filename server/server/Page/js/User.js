@@ -24,6 +24,7 @@ var app = new Vue({
 				showFastMessageWindow:false,
 				ShowManagerUI:false,
 				showlife:false,
+				dis:true,
 				buttonName:"管理",
                 msg: {
                     bulletValue: 80,
@@ -106,7 +107,7 @@ var app = new Vue({
 						playerUIApp.isShowPlayInfo = !playerUIApp.isShowPlayInfo;
 						if(playerUIApp.isShowPlayInfo)
 						{
-							//window.location.href = "uniwebview://ShowPlayInfo?userId=" + userId;
+							window.location.href = "uniwebview://ShowPlayInfo?userId=" + userId;
 						}
 					}
 					else
@@ -140,6 +141,7 @@ var app = new Vue({
 		
 		function SetLifeMesage(data)
 		{
+			app.dis = false;
 			//玩家
 			if(data.currentUser.userType == 0) {
 				app.showlife = true;
@@ -158,7 +160,7 @@ var app = new Vue({
 				}
 				
 				app.msg.lifeName = "生命值"+data.life.lifeValue+"/100";
-				app.buttonName = "查看";
+				app.buttonName = "队友";
 			}
 			else{
 				app.currentUser = "当前用户:管理员";

@@ -3,6 +3,7 @@ var appManager = new Vue({
             data: {
                 
 				ShowManagerUI:false,
+				isShowDetailInfo:false,
 				
 				list: 
 				    [{
@@ -22,7 +23,17 @@ var appManager = new Vue({
 				    	"id": 524,
 				    	"name": "测试战队",
 				    	"child": []
-				    }]
+				    }],
+					
+					UserDetailInfo:
+					{
+						"id": 17,
+						"userId": 59,
+						"bulletCount": 80,
+						"lifeValue": 50,
+						"fightScore": 35,
+						"userName": "天涯4"
+					}
 				
 			
                
@@ -61,6 +72,17 @@ var appManager = new Vue({
 				closeUIManager()
 				{
 					appManager.ShowManagerUI = false;
+				},
+				 ShowDetailInfo(_userId)
+				{
+					appManager.isShowDetailInfo = true;
+					window.location.href = "uniwebview://ShowPlayerDetailInfoList?userId=" + _userId;
+					
+					
+				},
+				closeDetailInfoUI()
+				{
+					appManager.isShowDetailInfo = false;
 				}
             }
         })
@@ -71,6 +93,13 @@ var appManager = new Vue({
 		var _json = JSON.stringify(data);
 		 var o = JSON.parse(_json);
 		 appManager.list = o;
+	}
+	
+	function ShowPlayerDetailInfo(data)
+	{
+		var _json = JSON.stringify(data);
+		 var o = JSON.parse(_json);
+		 appManager.UserDetailInfo = o;
 	}
 		
 		

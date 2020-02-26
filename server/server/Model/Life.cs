@@ -17,5 +17,7 @@ namespace server.Model
         public int lifeValue;
 
         public int fightScore;
+
+        public string userName;
     }
 }

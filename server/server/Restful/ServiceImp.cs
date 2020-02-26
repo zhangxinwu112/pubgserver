@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using log4net;
+using MySql.Data.MySqlClient;
 using server;
 using server.Business;
 using server.DAO;
@@ -21,6 +22,8 @@ namespace Restful
 
     public class ServiceImp : IService
     {
+        ILog Logger = log4net.LogManager.GetLogger("Restful.ServiceImp");
+
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
         private UserDao userDao = new UserDao();
         private UserRoomDao userRoomDao = new UserRoomDao();
@@ -311,6 +314,18 @@ namespace Restful
         public string GetRoomUserTreeData(string userId)
         {
             return searchGrounpDao.GetRoomUserTreeData(userId);
+        }
+
+        public string GetRoomLifeInfoByUser(string userId)
+        {
+            return scoreDao.GetRoomLifeInfoByUser(userId);
+          
+        }
+
+        public string GetPlayerInfoByUser(string userId)
+        {
+            Logger.Debug("userid:="+userId);
+            return scoreDao.GetPlayerInfoByUser(userId);
         }
     }
 

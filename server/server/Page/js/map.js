@@ -8,7 +8,7 @@ var _data ={
 			"userName": "\u5929\u6DAF",
 			"lon": 108.963393,
 			"lat": 34.274106,
-			"userType": 0,
+			"userType": 1,
 			"color": "#CC33FF"
 		},
 		"gpsData": [{
@@ -63,12 +63,12 @@ var _data ={
         var map;
         var markArray = new Array(); 
 		
-        CreateMapAndMarker(_data);
+        //CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);
 		  
-		   // var data = JSON.parse(str);
+		   //var data = JSON.parse(str);
 			SetLifeMesage(data);
 			
 			SetValue(data);

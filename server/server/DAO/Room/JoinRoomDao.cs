@@ -38,7 +38,7 @@ namespace server.DAO
 
             //校验checkcode是否正确
 
-             sql = "select * from room where id = @roomId and checkCode = @checkCode";
+           sql = "select * from room where id = @roomId and checkCode = @checkCode";
 
            int countResult =  MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId), new MySqlParameter("@checkCode", checkCode) });
 
@@ -60,8 +60,19 @@ namespace server.DAO
                 session.Send(GetSendData(dataResult, body));
                 return;
             }
+            sql = "select * from room where id = @roomId";
+
+             List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql, new MySqlParameter[] { new MySqlParameter("@roomId", roomId) });
+            if(roomList.Count==1 && roomList[0].runState == 0)
+            {
+                dataResult.result = 1;
+                dataResult.resean = "该战队已经准备就绪，无法加入，请重试。";
+                session.Send(GetSendData(dataResult, body));
+                return;
+            }
+
             //grounp_UserList = SearchSingleGrounpCommon(roomId);
-           
+
             //if (grounp_UserList.Count> maxNum)
             //{
             //    dataResult.result = 1;

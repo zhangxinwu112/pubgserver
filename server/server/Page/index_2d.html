@@ -26,14 +26,17 @@
 </head>
 <body>
 	
-	<div style="margin: 0 auto; width: 600px; background-color: #262626; z-index: 10000;" 
+	
+	
+	
+	<div style="position: absolute; width: 100%; height: 100%; background-color: #262626; z-index: 9999;" 
 	id="playerUIApp" v-if="isShowPlayInfo">
 	<table class="table table-dark">
 		
 	 <thead>
 				  
 		  <tr>
-		    <th scope="col" colspan ="4" style="align-content: center;" >玩家所在战队数据信息</th>
+		    <th scope="col" colspan ="4" style="align-content: center;" >战队队友数据展示</th>
 			 <th scope="col" ><button 
 			 class="mui-btn mui-btn-warning mui-btn-outlined" 
 			 style="transform:scale(0.80)" @click="ClosePlayInfoWindow">关闭</button></th>
@@ -79,7 +82,7 @@
 	
 	<!--管理界面 -->
 	<div id="managerUIApp" >
-		<div class="mui-card" style="width: 500px;z-index: 10;"  v-if="ShowManagerUI" >
+		<div class="mui-card" style="width: 98%; height: 100%;z-index: 10;"  v-if="ShowManagerUI" >
 			 <div style="text-align:right;"><button @click="closeUIManager()"
 			 class="mui-btn mui-btn-warning mui-btn-outlined" style="transform:scale(0.80)">关闭</button></div>
 			 
@@ -99,7 +102,7 @@
 									:min="0" :max="100" label="描述文字">
 								</el-input-number>
 								<el-button size="mini" @click="AddPlayerLife(index_,subitem.id)">增加命值</el-button>
-								<el-button size="mini" type="primary">查看信息</el-button>
+								<el-button size="mini" type="primary" @click="ShowDetailInfo(subitem.id)">查看信息</el-button>
 							</div>
 					
 						</li>
@@ -108,6 +111,60 @@
 				</li>
 				
 			</ul>
+		</div>
+		<div style="position: absolute; top: 5px; width: 100%; height: 100%; background-color: #a3a3a3; z-index: 9999;" v-if="isShowDetailInfo">
+			
+			<table class="table table-bordered" >
+			    <thead>
+			      <tr style="text-align: center;">
+			        <th colspan ="2" style="align-content: center;">玩家数据展示</th>
+			
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>姓名</td>
+			        <td>{{UserDetailInfo.userName}}</td>
+			        
+			      </tr>
+			      <tr>
+			        <td>弹量</td>
+			        <td> <div class="progress mb-2"  style="height: 20px;">
+					      <div class="progress-bar bg-success "  :style="{width: UserDetailInfo.bulletCount + '%'}">{{UserDetailInfo.bulletCount}}/100</div>
+					   </div>
+					 </td>
+			       
+			      </tr>
+			      <tr>
+			        <td>生命值</td>
+			        <td>
+						<div class="progress mb-2"  style="height: 20px;">
+						      <div class="progress-bar bg-warning " :style="{width: UserDetailInfo.lifeValue + '%'}">{{UserDetailInfo.lifeValue}}/100</div>
+						 </div>
+					</td>
+			       
+			      </tr>
+				  
+				  <tr>
+				    <td>战绩</td>
+				    <td>
+						
+						<div class="progress mb-2"  style="height: 20px;">
+						      <div class="progress-bar bg-danger "  :style="{width: UserDetailInfo.fightScore + '%'}">{{UserDetailInfo.fightScore}}/100</div>
+						 </div>
+					</td>
+				   
+				  </tr>
+				  
+				  <tr style="text-align: center;">
+					  <td colspan ="2"><button
+					  class="mui-btn mui-btn-primary mui-btn-outlined" 
+					  style="transform:scale(0.90)" @click="closeDetailInfoUI">关闭窗口</button></td>
+					  
+				  </tr>
+			    </tbody>
+			</table>
+			
 		</div>
 	</div>
 	
@@ -125,9 +182,9 @@
 		
 	    <button type="button" class="btn icon-b" :class="cut?'btn-primary':'btn-warning'"
 	        @click="isShow" style="transform:scale(0.90)">{{cut?'隐藏':'显示'}}</button>
-			<button type="button" class="btn icon-b" :class="'btn-primary'"
+			<button type="button" class="btn icon-b" :class="'btn-primary'" 
 			style="position:absolute;left: 80px;transform:scale(0.90)"
-			    @click="OpenManagerPlayer">{{buttonName}}</button>
+			    @click="OpenManagerPlayer" v-bind:disabled="dis">{{buttonName}}</button>
 	    <div class="msg">
 			<div class="progress mb-2">
 			    <div class="progress-bar bg-success " :style="{width: '100%'}">{{currentUser}}</div>

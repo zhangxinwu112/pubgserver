@@ -359,6 +359,21 @@ namespace Restful
             return "";
             
         }
+
+        public string GetLeaderAuthority(string userId)
+        {
+            string sql = "select * from room where userId = @userId";
+            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+            if(roomList!=null && roomList.Count>0)
+            {
+                return "1";
+            }
+            else
+            {
+                return "0";
+            }
+
+        }
     }
 
 

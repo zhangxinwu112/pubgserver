@@ -41,15 +41,32 @@ namespace server.DAO
                 if(roomCount>=1)
                 {
                     dataResult.result = 1;
-                    dataResult.resean = "创建失败，每个队长只能创建一个房间";
+                    dataResult.resean = "创建失败，每个队长只能创建一个战队";
+                    session.Send(GetSendData(dataResult, body));
+                    return;
+                }
+                //不能加入其他队还进行队的创建
+
+                sql = "select * from room_user where user_id = @userId";
+
+                roomCount = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+                if(roomCount>0)
+                {
+                    dataResult.result = 1;
+                    dataResult.resean = "创建失败，您已经加入战队，无法再次创建";
                     session.Send(GetSendData(dataResult, body));
                     return;
                 }
 
-
+                //创建房间
                 sql = "insert into room(grounpId,name,checkCode,userId) " +
                    "values('" + grounpId + "','" + roomName + "','" + checkCode + "','" + userId + "')";
-                MySqlExecuteTools.GetAddID(sql);
+                 long newRoomId =   MySqlExecuteTools.GetAddID(sql);
+
+                //用户加入到该房间
+                sql = "insert into room_user(room_id,user_id) " + "values('" + newRoomId + "','" + userId + "')";
+                MySqlExecuteTools.AddOrUpdate(sql);
+      
             }
             //更新
             else
@@ -77,7 +94,7 @@ namespace server.DAO
 
             string sql = "select * from room where id = @room_id and userId = @userId";
 
-             int roomCount = MySqlExecuteTools.GetCountResult(sql,
+            int roomCount = MySqlExecuteTools.GetCountResult(sql,
             new MySqlParameter[] { new MySqlParameter("@room_id", roomId), new MySqlParameter("@userId", userId) });
 
             if(roomCount==0)
@@ -89,11 +106,11 @@ namespace server.DAO
             }
 
 
-            sql = "select * from room_user where room_id = @room_id";
-            int result = MySqlExecuteTools.GetCountResult(sql,
-            new MySqlParameter[] { new MySqlParameter("@room_id", roomId)});
+            sql = "select * from room_user where room_id = @room_id and user_id <>  @userId";
+            int countResult = MySqlExecuteTools.GetCountResult(sql,
+            new MySqlParameter[] { new MySqlParameter("@room_id", roomId), new MySqlParameter("@userId", userId) });
 
-            if(result>0)
+            if(countResult > 0)
             {
                 dataResult.result = 1;
                 dataResult.resean = "战队下有玩家用户，无法进行删除";
@@ -101,8 +118,14 @@ namespace server.DAO
                 return;
             }
            
+            //删除队长创建的room
             sql = "delete from room  where id = @id";
             MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@id", roomId) });
+
+            //删除room_user
+
+            sql = "delete from room_user  where user_id = @user_id";
+            MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@user_id", userId) });
 
             dataResult.result = 0;
             //查询能否删除

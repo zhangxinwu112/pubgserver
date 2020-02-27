@@ -41,7 +41,15 @@ namespace server.DAO
                 else
                 {
                     dataResult.result = 0;
-                    dataResult.data = result[0];
+
+                    UserName userName = result[0];
+                    sql = "select * from room where userId = @userId";
+                     int count = MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@userId", userName.id)});
+                    if(count>0)
+                    {
+                        userName.isLeader = true;
+                    }
+                    dataResult.data = userName;
                 }
                
             }

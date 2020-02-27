@@ -24,5 +24,7 @@ namespace server.Model
 
         //如果是玩家是否准备好
         public int runState = -1;
+
+        public bool isLeader = false;
     }
 }

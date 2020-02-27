@@ -232,20 +232,20 @@
 	    </transition>
 		
 		<transition name="slide-fade1">
-		        <div  class="container" v-if="showFastMessageWindow" style="width: 350px;height: 260px;
-				background-color: #5555ff;position: absolute;bottom: 108px; left: 36px;" >
+		        <div  class="container" v-if="showFastMessageWindow" style="width: 350px;height: 230px;
+				background-color: #7d7d7d;position: absolute;bottom: 108px; left: 36px;" >
 			
 		          <div>
 		              <div class="mui-row" style="width: 100%;" >
 						  <div style="text-align:center;"><p1 style="color: #ffff00;">快捷通讯用语</p1></div>
-						  <div style="height: 10px;"></div>
+						 <hr />
 		                  <div class="mui-col-xs-4 mui-col-xs-12" style="padding-bottom: 10px;" v-for="item in fastMessagecontent">
 							 <button type="button" class="mui-btn mui-btn-warning mui-btn-outlined"  @click="SelectMessage(item)">
 							 {{item}} </button>
 						
 		                  </div>
-						  <button   class="mui-btn mui-btn-royal"
-						  style="position: relative; bottom: -80px;transform:scale(0.95);" @click="CloseMessageWindow">关闭</button>
+						  <button   class="mui-btn mui-btn-success mui-btn-outlined"
+						  style="position: relative; bottom: -10px;transform:scale(0.95);" @click="CloseMessageWindow">关闭</button>
 		                  
 		              </div>
 		          </div>

@@ -327,6 +327,38 @@ namespace Restful
             Logger.Debug("userid:="+userId);
             return scoreDao.GetPlayerInfoByUser(userId);
         }
+
+        public string GetRemainTime(string userId,string userType)
+        {
+            userId = userId.Trim();
+            userType = userType.Trim();
+            Console.WriteLine("userId={0},userType={1}", userId, userType);
+            string sql = "";
+            //管理员
+            if (userType.Equals("1"))
+            {
+                sql = "select * from grounp where userId = @userId  and runState = 0";
+                List<Grounp> pList = MySqlExecuteTools.GetObjectResult<Grounp>(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+                if (pList.Count > 0)
+                {
+                    return  pList[0].remainTime.ToString();
+                }
+            }
+            //玩家
+            else
+            {
+                sql = "select p.remainTime from grounp p JOIN room r on p.id = r.grounpId join room_user ru on r.id = ru.room_id where ru.user_id =" + userId;
+                List<object> list = MySqlExecuteTools.GetSingleFieldResult(sql, null);
+                if(list!=null && list.Count>0)
+                {
+                    return list[0].ToString();
+                }
+            }
+            
+
+            return "";
+            
+        }
     }
 
 

@@ -26,7 +26,7 @@ var app = new Vue({
 				showlife:false,
 				dis:true,
 				buttonName:"管理",
-				timeShow:"剩余：01小时12分18秒",
+				timeShow:"游戏剩时：加载中...",
                 msg: {
                     bulletValue: 80,
 					bulletName: "弹量信息80/100",
@@ -35,7 +35,7 @@ var app = new Vue({
                     lifeValue: 90,
 					 lifeName: "生命值90/100",
                 },
-				fastMessagecontent:["集合","注意隐蔽","卧倒","攻击","前进","后退","开火"],
+				fastMessagecontent:["我来了","集合","注意隐蔽","卧倒","攻击","前进","后退","开火","冲锋"],
 				
                 list: [
                 ],
@@ -266,18 +266,29 @@ var app = new Vue({
 			}
 		}
 		
-		var timer=setInterval(callTime,1000);
+		var t1;
+		///倒计时,参数为秒
+		function RemianTime(remianTime)
+		{
+			remianTime = remianTime/60;
+			t1 = new Date();
+			t1 = new Date(t1.valueOf() + (60 * 1000 * remianTime));
+		
+			var timer=setInterval(callTime,1000);
+		}
+		
 		
 		function callTime(){
-		    var t1="2020/02/26 22:00"
+		    //var t1="2020/02/27 22:00"
 		    if(new Date(t1)-new Date()<=0){
 		      clearInterval(timer);
+			  app.timeShow = "游戏已结束";
 		      //alert('计时完成');
 		    }else{
 		      var h=cd(t1, new Date(), 'h');
 		      var m=cd(t1, new Date(), 'm');
 		      var s=cd(t1, new Date(), 's');
-			   app.timeShow = "剩余时间："+h+'时'+m+'分'+s+'秒';
+			   app.timeShow = "游戏剩时："+h+'时'+m+'分'+s+'秒';
 		      
 		    }
 	

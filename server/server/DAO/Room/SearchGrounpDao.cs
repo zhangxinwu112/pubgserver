@@ -170,11 +170,11 @@ namespace server.DAO
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        public string GetRoomUserTreeData(string userId)
+        public string GetRoomUserTreeData(string adminUserId)
         {
 
             string sql = "select r.* from grounp p JOIN room r on p.id = r.grounpId where p.userId =@userId";
-            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql, new MySqlParameter[] { new MySqlParameter("@userId", userId) });
+            List<Room> roomList = MySqlExecuteTools.GetObjectResult<Room>(sql, new MySqlParameter[] { new MySqlParameter("@userId", adminUserId) });
             if(roomList.Count==0)
             {
                 Logger.Debug("GetRoomUserTreeData is null");

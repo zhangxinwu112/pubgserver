@@ -159,8 +159,6 @@ namespace server.Tool
             }
         }
 
-
-
         private void CheckFenceCallBack(object state)
         {
             try

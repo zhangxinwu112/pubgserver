@@ -84,5 +84,10 @@ namespace Restful
         [WebGet(UriTemplate = "GetPlayerInfoByUser/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetPlayerInfoByUser(string userId);
 
+
+        [OperationContract]
+        [WebGet(UriTemplate = "GetRemainTime/{userId}/{userType}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string GetRemainTime(string userId,string userType);
+
     }
 }

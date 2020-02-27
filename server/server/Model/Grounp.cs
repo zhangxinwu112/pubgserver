@@ -38,5 +38,8 @@ namespace server.Model
 
         public int roomCount;
 
+        //剩余的时间
+        public int remainTime;
+
     }
 }

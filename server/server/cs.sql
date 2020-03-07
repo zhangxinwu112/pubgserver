@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50528
 File Encoding         : 65001
 
-Date: 2020-02-27 12:03:46
+Date: 2020-03-07 18:47:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -55,12 +55,12 @@ CREATE TABLE `grounp` (
   `roomCount` int(5) DEFAULT '10',
   `remainTime` int(10) DEFAULT '3600',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=132 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=134 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of grounp
 -- ----------------------------
-INSERT INTO `grounp` VALUES ('131', '管理', '陕西地区', '75', '0', '65', '116.415036', '39.912279', '1530', '2278', '123456', '10', '3180');
+INSERT INTO `grounp` VALUES ('133', '管理', '陕西地区', '81', '-1', '60', '-1.000000', '-1.000000', '2000', '2000', '123456', '10', '3600');
 
 -- ----------------------------
 -- Table structure for life
@@ -73,13 +73,14 @@ CREATE TABLE `life` (
   `fightScore` smallint(3) DEFAULT '35' COMMENT '战绩',
   `userId` int(11) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of life
 -- ----------------------------
-INSERT INTO `life` VALUES ('30', '80', '50', '35', '76');
-INSERT INTO `life` VALUES ('31', '80', '75', '35', '77');
+INSERT INTO `life` VALUES ('34', '80', '50', '35', '82');
+INSERT INTO `life` VALUES ('35', '80', '50', '35', '83');
+INSERT INTO `life` VALUES ('36', '80', '50', '35', '84');
 
 -- ----------------------------
 -- Table structure for machine
@@ -93,20 +94,18 @@ CREATE TABLE `machine` (
   `system` varchar(150) DEFAULT NULL,
   `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=352 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=365 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of machine
 -- ----------------------------
-INSERT INTO `machine` VALUES ('343', '3', 'f0546f2e84bdb859ad64454d637a9de2', 'Handheld', 'Android OS 6.0.1 / API-23 (V417IR/eng.root.20191227.073224)', null);
-INSERT INTO `machine` VALUES ('344', '3', 'f0546f2e84bdb859ad64454d637a9de2', 'Handheld', 'Android OS 6.0.1 / API-23 (V417IR/eng.root.20191227.073224)', '75');
-INSERT INTO `machine` VALUES ('345', '1', '6272121cad86df65d005712ff229d381', 'Handheld', 'Android OS 5.1.1 / API-22 (LMY49I/V9.5.3.0.LACCNFA)', '76');
-INSERT INTO `machine` VALUES ('346', '1', '0f1d5f0165787b54f64607de2cf818ba', 'Handheld', 'Android OS 5.1.1 / API-22 (HUAWEIMLA-AL10/500191128)', '77');
-INSERT INTO `machine` VALUES ('347', '3', 'f0546f2e84bdb859ad64454d637a9de2', 'Handheld', 'Android OS 6.0.1 / API-23 (V417IR/eng.root.20191227.073224)', '75');
-INSERT INTO `machine` VALUES ('348', '3', 'f0546f2e84bdb859ad64454d637a9de2', 'Handheld', 'Android OS 6.0.1 / API-23 (V417IR/eng.root.20191227.073224)', '75');
-INSERT INTO `machine` VALUES ('349', '3', '6272121cad86df65d005712ff229d381', 'Handheld', 'Android OS 5.1.1 / API-22 (LMY49I/V9.5.3.0.LACCNFA)', null);
-INSERT INTO `machine` VALUES ('350', '3', '6272121cad86df65d005712ff229d381', 'Handheld', 'Android OS 5.1.1 / API-22 (LMY49I/V9.5.3.0.LACCNFA)', '75');
-INSERT INTO `machine` VALUES ('351', '3', '6272121cad86df65d005712ff229d381', 'Handheld', 'Android OS 5.1.1 / API-22 (LMY49I/V9.5.3.0.LACCNFA)', '75');
+INSERT INTO `machine` VALUES ('358', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', null);
+INSERT INTO `machine` VALUES ('359', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '81');
+INSERT INTO `machine` VALUES ('360', '1', '6272121cad86df65d005712ff229d381', 'Handheld', 'Android OS 5.1.1 / API-22 (LMY49I/V9.5.3.0.LACCNFA)', '83');
+INSERT INTO `machine` VALUES ('361', '1', 'f0546f2e84bdb859ad64454d637a9de2', 'Handheld', 'Android OS 6.0.1 / API-23 (V417IR/eng.root.20191227.073224)', '84');
+INSERT INTO `machine` VALUES ('362', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '82');
+INSERT INTO `machine` VALUES ('363', '1', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '82');
+INSERT INTO `machine` VALUES ('364', '3', 'be367d090e0f13218448182032916d36525aeba0', 'Desktop', 'Windows 10  (10.0.0) 64bit', '81');
 
 -- ----------------------------
 -- Table structure for room
@@ -120,12 +119,13 @@ CREATE TABLE `room` (
   `userId` int(10) DEFAULT '-1',
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=531 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=540 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room
 -- ----------------------------
-INSERT INTO `room` VALUES ('530', '131', 'cs战队', '123456', '76', '0');
+INSERT INTO `room` VALUES ('537', '133', '天涯战队', '123456', '82', '-1');
+INSERT INTO `room` VALUES ('539', '133', '天涯1站队', '123456', '83', '-1');
 
 -- ----------------------------
 -- Table structure for room_user
@@ -137,13 +137,14 @@ CREATE TABLE `room_user` (
   `user_id` int(11) DEFAULT NULL,
   `runState` smallint(2) DEFAULT '-1',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=98 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of room_user
 -- ----------------------------
-INSERT INTO `room_user` VALUES ('96', '530', '76', '0');
-INSERT INTO `room_user` VALUES ('97', '530', '77', '0');
+INSERT INTO `room_user` VALUES ('108', '537', '82', '-1');
+INSERT INTO `room_user` VALUES ('112', '539', '83', '-1');
+INSERT INTO `room_user` VALUES ('111', '537', '84', '-1');
 
 -- ----------------------------
 -- Table structure for score
@@ -160,7 +161,7 @@ CREATE TABLE `score` (
   `userId` int(11) DEFAULT NULL,
   `userName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of score
@@ -178,11 +179,12 @@ CREATE TABLE `user` (
   `image` varchar(255) DEFAULT '',
   `type` smallint(2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('75', '18392120357', '123456', '管理', 'image1', '1');
-INSERT INTO `user` VALUES ('76', '17391767972', '123456', '天涯', 'image1', '0');
-INSERT INTO `user` VALUES ('77', '17391767971', '123456', '天涯1', 'image1', '0');
+INSERT INTO `user` VALUES ('81', '18392120357', '123456', '管理', 'image1', '1');
+INSERT INTO `user` VALUES ('82', '17391767972', '123456', '天涯', 'image1', '0');
+INSERT INTO `user` VALUES ('83', '17391767971', '123456', '天涯1', 'image1', '0');
+INSERT INTO `user` VALUES ('84', '17391767970', '123456', '天涯0', 'image1', '0');

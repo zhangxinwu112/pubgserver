@@ -76,13 +76,15 @@ namespace Restful
         [WebGet(UriTemplate = "GetRoomUserTreeData/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetRoomUserTreeData(string userId);
 
+        //通过玩家获取当前房间的所有玩家的生命值
         [OperationContract]
         [WebGet(UriTemplate = "GetRoomLifeInfoByUser/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetRoomLifeInfoByUser(string userId);
 
+     
         [OperationContract]
-        [WebGet(UriTemplate = "GetPlayerInfoByUser/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string GetPlayerInfoByUser(string userId);
+        [WebGet(UriTemplate = "GetPlayerLifeInfoByUser/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string GetPlayerLifeInfoByUser(string userId);
 
 
         [OperationContract]

@@ -33,6 +33,9 @@ namespace Restful
        private  PublishPlayerState publishPlayerState = new PublishPlayerState();
 
         private ScoreDao scoreDao = new ScoreDao();
+
+
+        private LifeDao lifeDao = new LifeDao();
         public int Save(string json)
         {
 
@@ -319,14 +322,14 @@ namespace Restful
 
         public string GetRoomLifeInfoByUser(string userId)
         {
-            return scoreDao.GetRoomLifeInfoByUser(userId);
+            return lifeDao.GetRoomLifeInfoByUser(userId);
           
         }
 
-        public string GetPlayerInfoByUser(string userId)
+        public string GetPlayerLifeInfoByUser(string userId)
         {
             Logger.Debug("userid:="+userId);
-            return scoreDao.GetPlayerInfoByUser(userId);
+            return lifeDao.GetPlayerInfoByUser(userId);
         }
 
         public string GetRemainTime(string userId,string userType)
@@ -375,6 +378,7 @@ namespace Restful
             }
 
         }
+
     }
 
 

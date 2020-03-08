@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="80944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="server.exe" size="81456">
       <assemblyIdentity name="server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y06bF5ju7yVwzGlssh/dwEf/dE2KKct+nI2Z9/MMJ/U=</dsig:DigestValue>
+        <dsig:DigestValue>NuTRLY4w5sAQ/OJXgQp+PQ3V9KbtGDo54ZXa/rscoGc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

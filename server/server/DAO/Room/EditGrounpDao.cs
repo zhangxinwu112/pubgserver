@@ -18,9 +18,9 @@ namespace server.DAO
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.EditGrounpDao");
 
-        private readonly int roomCount = 5;
+        //private readonly int roomCount = 5;
 
-        private readonly int createGrounpCount = 2;
+        //private readonly int createGrounpCount = 2;
 
         private JoinRoomDao joinRoomDao = new JoinRoomDao();
         private ScoreDao scoreDao = new ScoreDao();

@@ -161,10 +161,10 @@ D:\cs\server1\pubgserver\server\server\bin\Debug\SuperSocket.Common.xml
 D:\cs\server1\pubgserver\server\server\bin\Debug\SuperSocket.Facility.xml
 D:\cs\server1\pubgserver\server\server\bin\Debug\SuperSocket.SocketBase.xml
 D:\cs\server1\pubgserver\server\server\bin\Debug\SuperSocket.SocketEngine.xml
-D:\cs\server1\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.csproj.CoreCompileInputs.cache
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.exe.manifest
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.application
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.csproj.CopyComplete
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.exe
 D:\cs\server1\pubgserver\server\server\obj\Debug\server.pdb
+D:\cs\server1\pubgserver\server\server\obj\Debug\server.csprojAssemblyReference.cache

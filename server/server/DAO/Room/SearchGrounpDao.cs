@@ -135,6 +135,7 @@ namespace server.DAO
 
         public int CheckEnterButton(string usreId,string userType)
         {
+           
             string sql = "";
            
             int runState = -1;

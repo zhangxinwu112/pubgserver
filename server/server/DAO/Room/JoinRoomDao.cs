@@ -17,7 +17,7 @@ namespace server.DAO
     public class JoinRoomDao : RoomDao
     {
         ILog Logger = log4net.LogManager.GetLogger("server.DAO.JoinRoomDao");
-        private readonly int maxNum = 50;
+        //private readonly int maxNum = 50;
 
         private PublishTipsMessage publishTipsMessage = new PublishTipsMessage();
         public void JoinRoom(PubgSession session, string body, string checkCode,string grounpId,

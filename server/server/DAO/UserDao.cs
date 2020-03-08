@@ -107,10 +107,7 @@ namespace  server.DAO
             {
                 Console.WriteLine(sql + " :is null");
             }
-            
-
-
-
+           
         }
     }
 

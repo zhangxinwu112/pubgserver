@@ -119,6 +119,7 @@
     <Compile Include="DAO\CodeDao.cs" />
     <Compile Include="DAO\CommonDao.cs" />
     <Compile Include="DAO\LoginDao.cs" />
+    <Compile Include="DAO\LifeDao.cs" />
     <Compile Include="DAO\ScoreDao.cs" />
     <Compile Include="DAO\Room\UserRoomDao.cs" />
     <Compile Include="DAO\Room\CURDRoomDao.cs" />

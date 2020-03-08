@@ -282,6 +282,7 @@ namespace Restful
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="currrent"></param>
+        /// <param name="currrentUser">0为玩家排行，1为room排行</param>
         /// <returns></returns>
         public string SearchScore(string userId, string userType,string currrentUser)
         {
@@ -301,10 +302,10 @@ namespace Restful
             return Utils.CollectionsConvert.ToJSON(roomList);
         }
 
-        public string SearchScoreByRoom(string roomId)
-        {
-            return scoreDao.SearchScoreByRoomId(int.Parse(roomId));
-        }
+        //public string SearchScoreByRoom(string roomId)
+        //{
+        //    return scoreDao.SearchScoreByRoomId(int.Parse(roomId));
+        //}
 
         public int IsEditRoom(string roomId, string userId)
         {

@@ -63,9 +63,9 @@ namespace Restful
         [WebGet(UriTemplate = "GetRoomList/{adminUserId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetRoomList(string adminUserId);
 
-        [OperationContract]
-        [WebGet(UriTemplate = "SearchScoreByRoom/{roomId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string SearchScoreByRoom(string roomId);
+        //[OperationContract]
+        //[WebGet(UriTemplate = "SearchScoreByRoom/{roomId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        //string SearchScoreByRoom(string roomId);
 
 
         [OperationContract]

@@ -8,7 +8,7 @@ var _data ={
 			"userName": "\u5929\u6DAF",
 			"lon": 108.963393,
 			"lat": 34.274106,
-			"userType": 1,
+			"userType": 0,
 			"color": "#CC33FF"
 		},
 		"gpsData": [{
@@ -63,7 +63,7 @@ var _data ={
         var map;
         var markArray = new Array(); 
 		
-        //CreateMapAndMarker(_data);
+       // CreateMapAndMarker(_data);
         function CreateMapAndMarker(data)
         {
            // console.log(data);
@@ -90,9 +90,6 @@ var _data ={
            
         }
 		
-		
-
-        
         function CreateMap(lon,lat)
         {
             map = new AMap.Map('container', {

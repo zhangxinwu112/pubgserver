@@ -43,7 +43,7 @@ var appManager = new Vue({
     
             },
             methods: {
-               
+               /**
 				AddPlayerLife(index,_userId)
 				{
 					var addlifeValue = this.$refs.input[index].value;
@@ -61,7 +61,7 @@ var appManager = new Vue({
 					  });
 					
 				},
-				
+				**/
 				 ClosePlayInfoWindow()
 				{
 					playerUIApp.isShowPlayInfo = false;

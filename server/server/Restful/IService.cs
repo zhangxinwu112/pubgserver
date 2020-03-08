@@ -57,8 +57,6 @@ namespace Restful
         [WebGet(UriTemplate = "SearchScore/{userId}/{userType}/{currrentUser}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string SearchScore(string userId,string userType,string currrentUser);
 
-
-
         [OperationContract]
         [WebGet(UriTemplate = "GetRoomList/{adminUserId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetRoomList(string adminUserId);
@@ -94,6 +92,14 @@ namespace Restful
         [OperationContract]
         [WebGet(UriTemplate = "GetLeaderAuthority/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetLeaderAuthority(string userId);
+
+
+        [OperationContract]
+        [WebGet(UriTemplate = "AddPlayerLife/{userId}/{addLifeValue}/{currentUser}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string AddPlayerLife(string userId,string addLifeValue,string currentUser);
+
+
+        
 
 
     }

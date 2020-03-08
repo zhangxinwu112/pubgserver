@@ -379,6 +379,10 @@ namespace Restful
 
         }
 
+        public string AddPlayerLife(string userId, string addLifeValue, string currentUser)
+        {
+            return lifeDao.AddPlayerLife( userId,  addLifeValue, currentUser);
+        }
     }
 
 

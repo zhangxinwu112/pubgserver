@@ -91,7 +91,7 @@ namespace  server.DAO
                         {
                             subValue = 0;
                         }
-                        sql = "update  life set lifeValue  =" + (subValue) + " where id = @id;";
+                        sql = "update  life set lifeValue  =" + (subValue) + " where id = @id";
 
                     }
                     else
@@ -108,6 +108,16 @@ namespace  server.DAO
                 Console.WriteLine(sql + " :is null");
             }
            
+        }
+
+        public void UpdateLifeValue(int lifeValue,int bulletCountValue,string userId)
+        {
+         
+          string sql =   "update life set lifeValue = '" + lifeValue + "', bulletCount = '" + bulletCountValue  + "' where userId = "+ userId;
+          MySqlExecuteTools.AddOrUpdate(sql);
+
+
+
         }
     }
 

@@ -1,0 +1,7 @@
+﻿2020-03-08 21:18:12,525 [2] ERROR DefaultBootstrap - The process crashed for an unhandled exception!
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 MySql.Data.MySqlClient.MySqlConnection.set_Reader(MySqlDataReader value)
+   在 MySql.Data.MySqlClient.MySqlDataReader.Close()
+   在 MySql.Data.MySqlClient.MySqlConnection.Close()
+   在 MySql.Data.MySqlClient.MySqlConnection.Dispose(Boolean disposing)
+   在 MySql.Data.MySqlClient.MySqlConnection.Finalize()

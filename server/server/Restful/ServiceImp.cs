@@ -251,12 +251,13 @@ namespace Restful
         /// </summary>
         /// <param name="json"></param>
         /// <returns></returns>
-        public string AddLife(string json)
+        public string SetLife(string json)
         {
             string[] strs = json.Split('|');
-            string addValue = strs[0];
-            string userId = strs[1];
-            userDao.SetLifeValue(userId, int.Parse(addValue),false);
+            string addLifeValue = strs[0];
+            string bulletCountValue = strs[1];
+            string userId = strs[2];
+            userDao.UpdateLifeValue(int.Parse(addLifeValue), int.Parse(bulletCountValue),userId);
             return "";
         }
 

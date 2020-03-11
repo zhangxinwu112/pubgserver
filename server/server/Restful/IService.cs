@@ -41,8 +41,8 @@ namespace Restful
         string SubTractLife(string userId);
 
         [OperationContract]
-        [WebGet(UriTemplate = "AddLife/{json}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        string AddLife(string json);
+        [WebGet(UriTemplate = "SetLife/{json}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        string SetLife(string json);
 
         [OperationContract]
         [WebGet(UriTemplate = "SetPlayerState/{userId}", BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]

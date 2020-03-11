@@ -152,7 +152,7 @@ namespace server.DAO
 
             //更新队
             string sql = "update grounp set name = '" + grounpName + "', playerTime = '" + playerTime +
-                "', checkCode = '" + checkCode + "', remainTime = '" + (int.Parse(playerTime)*60) + "' where id = @grounpId;";
+                "', checkCode = '" + checkCode + "', remainTime = '" + (int.Parse(playerTime)*60) + "' where id = @grounpId";
             MySqlExecuteTools.GetCountResult(sql, new MySqlParameter[] { new MySqlParameter("@grounpId", grounpId) });
 
       

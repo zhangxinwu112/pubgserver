@@ -1,76 +1,91 @@
-
 <!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>点击围栏编辑器</title>
-   <!-- <link rel="stylesheet" href="css/style.css"/>  --> 
-   <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
-	
-	<link href="css/mui.min.css" rel="stylesheet"/> 
-	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+	<title>点击围栏编辑器</title>
+	<!-- <link rel="stylesheet" href="css/style.css"/>  -->
+	<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<style>
+		.amap-icon {
+			width: 20px !important;
+			height: 20px !important;
+			overflow: auto !important;
+		}
+
+		.amap-icon img {
+			width: 20px !important;
+			height: 20px !important;
+		}
+	</style>
 </head>
 
- <style>
-    html,
-    body,
-    #container {
-      width: 100%;
-      height: 100%;
-    }
-	.input{
-	    outline-style: none ;
-	    border: 1px solid #ccc; 
-	    border-radius: 3px;
-	    padding: 14px 14px;
-	    width: 620px;
-	    font-size: 24px;
-	
-	-web-kit-appearance:none;
-	  -moz-appearance: none;
-    </style>
-	
-	
- <script src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b&plugin=AMap.CircleEditor"></script>
- <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
- <script src="js/system/vue.min.js" type="text/javascript" charset="utf-8"></script>
- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
- <script src="js/system/mui.min.js"></script>
+<style>
+	html,
+	body,
+	#container {
+		width: 100%;
+		height: 100%;
+	}
+
+	.input {
+		outline-style: none;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		padding: 14px 14px;
+		width: 620px;
+		font-size: 24px;
+
+		-web-kit-appearance: none;
+		-moz-appearance: none;
+</style>
+
+
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=ac777d263933f2cb36d0480f38bb471b&plugin=AMap.CircleEditor">
+</script>
+<script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
+<script src="js/system/vue.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/system/mui.min.js"></script>
 
 <body>
-    <div id="container"></div>
+	<div id="container"></div>
 
-	<button type="button" class="mui-btn mui-btn-primary" style="width: 60px;position: absolute;top:10px;right: 10px;" 
-	onclick="Back()">返回</button>
+	<button type="button" class="mui-btn mui-btn-primary" style="width: 60px;position: absolute;top:10px;right: 10px;"
+		onclick="Back()">返回</button>
 	<div id="app">
-		
-		<button v-on:click="StartEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="buttonShow"> 开始编辑 </button>
-		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary" style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="!buttonShow"> 保存设置 </button>
+
+		<button v-on:click="StartEdit" class="mui-btn mui-btn-primary"
+			style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="buttonShow"> 开始编辑 </button>
+		<button v-on:click="EndEdit" class="mui-btn mui-btn-primary"
+			style="width: 80px;position: absolute;top:5px;left: 5px;" v-show="!buttonShow"> 保存设置 </button>
 	</div>
-	
-	<div id="app1" class="mui-input-group" style="position: relative;auto;bottom: 85px;width: 250px;background-color: #bfbfbf">
-		
-		<div class="mui-input-row" >
+
+	<div id="app1" class="mui-input-group"
+		style="position: relative;auto;bottom: 85px;width: 250px;background-color: #bfbfbf">
+
+		<div class="mui-input-row">
 			<label style="font-size: 14px;">允许拖拽地图：</label>
 			<div class="mui-switch" id="mySwitch">
-				<div class="mui-switch-handle" ></div>
+				<div class="mui-switch-handle"></div>
 			</div>
-		   
+
 		</div>
-		<div class="mui-input-row"  >
-		      <label style="font-size: 14px; width:calc();" >圆半径设置(米)：</label>
-		      <input type="text"  v-model="radius"/>
-			  <button type="button" class="mui-btn mui-btn-primary"  @click="SaveRadius"
-			  style="position: relative;top: -45px;right: 10px;width: 80px;">设置</button>
-			  
+		<div class="mui-input-row">
+			<label style="font-size: 14px; width:calc();">圆半径设置(米)：</label>
+			<input type="text" v-model="radius" />
+			<button type="button" class="mui-btn mui-btn-primary" @click="SaveRadius"
+				style="position: relative;top: -45px;right: 10px;width: 80px;">设置</button>
+
 		</div>
-		
+
 	</div>
-<script src="js/fence_set.js" type="text/javascript" charset="utf-8"></script>	
-<script src="js/fence.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fence_set.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fence.js" type="text/javascript" charset="utf-8"></script>
 
 
 </body>
